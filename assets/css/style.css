@@ -3,7 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  font-family: inherit; }
 
 html {
   font-size: 62.5%; }
@@ -637,13 +638,17 @@ body {
   .filter__picked {
     height: 10vh;
     overflow-y: scroll;
-    border-top: 1px solid #707070; }
+    border-top: 1px solid #707070;
+    display: none; }
+    .filter__picked::-webkit-scrollbar {
+      width: 1rem; }
   .filter__optios {
     height: 15vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    border-top: 1px solid #707070;
-    display: none; }
+    border-top: 1px solid #707070; }
+    .filter__optios::-webkit-scrollbar {
+      width: 1rem; }
   .filter__lable {
     font-size: 1.5rem;
     padding-right: .5rem;
@@ -907,7 +912,8 @@ body {
     border-radius: 2rem;
     box-shadow: 2px 3px 5px #A0A0A0;
     overflow-y: scroll;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    display: none; }
     .map-header__filter-optios::-webkit-scrollbar {
       width: 1rem; }
 
@@ -1535,7 +1541,6 @@ body {
     width: 15%;
     height: 6rem;
     border-radius: 3rem;
-    margin-left: 2rem;
     border: none;
     outline: none;
     background-color: #90C73D;
@@ -1562,7 +1567,7 @@ body {
     width: 80%;
     border-radius: 5rem;
     position: relative;
-    margin: 2rem auto;
+    margin: 2rem 1rem;
     background-color: #fff; }
   .search__input {
     position: absolute;
@@ -1940,7 +1945,7 @@ body {
       display: none; } }
 
 .illness-main {
-  height: 130vh;
+  height: 150vh;
   width: 100%;
   margin-top: 10rem; }
   @media only screen and (max-width: 30em) {

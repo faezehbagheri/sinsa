@@ -100,7 +100,7 @@ function openIllnessTextMobile(num){
 }
 
 
-var showOption = [true ,true ,true ,true ,true ,true ];
+var showOption = [false ,false ,false ,false ,false ,false ];
 var filterType = ["","takhasos" , "shahr" , "mahale" , "bime" , "jensiat" , "moshavere"];
 var id = 1;
 function openOption(num){
@@ -167,3 +167,10 @@ function openSuggestionBox(){
         document.querySelector(".search__advanced").style.display = "flex";
     }
 }
+
+// window.addEventListener("scroll", function(event) { 
+    
+//     if(this.scrollY > 700){
+//         console.log("lll");
+//     }
+// });
