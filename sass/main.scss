@@ -1,0 +1,50 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/about-doctors";
+@import "components/about-illness";
+@import "components/about-illness-mobile";
+@import "components/article";
+@import "components/comment";
+@import "components/database";
+@import "components/date-box";
+@import "components/filter";
+@import "components/grid";
+@import "components/hospital-details";
+@import "components/hospital-list";
+@import "components/map-header";
+@import "components/map-toolbar";
+@import "components/map";
+@import "components/mobile-article";
+@import "components/mobile-category";
+@import "components/mobile-left-side";
+@import "components/mobile-specialty";
+@import "components/orbit";
+@import "components/question";
+@import "components/right-side";
+@import "components/search-advanced";
+@import "components/search";
+@import "components/service";
+@import "components/suggestion";
+@import "components/tab";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/illness-main";
+@import "layout/main";
+@import "layout/map-main";
+@import "layout/mobile-bottom-menu";
+@import "layout/mobile-header";
+@import "layout/mobile-main";
+@import "layout/mobile-menu";
+@import "layout/navigation";
+
+
+
+@import "pages/home";

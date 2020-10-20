@@ -1,0 +1,156 @@
+.question{
+    position: relative;
+    width: 100%;
+    @font-face {
+        font-family: 'Icons';
+        src: url("../../assets/css/open-iconic.woff");
+        src: url("../../assets/css/open-iconic.eot?#iconic-sm") format("embedded-opentype"), url("../../assets/css/open-iconic.woff") format("woff"), url("../../assets/css/open-iconic.ttf") format("truetype"), url("../../assets/css/open-iconic.otf") format("opentype"), url("../../assets/css/open-iconic.svg#iconic-sm") format("svg");
+        font-weight: normal;
+        font-style: normal
+    }
+    &__qa{
+        height: 48vh;
+        width: 45%;
+        margin: 2rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 2px 5px $color-gray;
+
+        
+        @include respond(big-desktop){ height: 40vh; }
+    }
+
+    &__form{
+        height: 50vh;
+        width: 30%;
+        // background-color: royalblue;
+        margin: 1rem;
+    }
+
+    &__que{
+        height: 5rem;
+        background-color: $color-primary;
+    }
+
+    &__header{
+        font-size: 1.8rem;
+        color: #fff;
+        text-align: right;
+        padding: 1rem;
+    }
+
+    &__icon{
+        font-size: 3rem;
+        color: #fff;
+        margin-right: 1rem;
+    }
+
+    &__ans{
+        background-color: #fff;
+    }
+
+    &__pragraph{
+        font-size: 1.4rem;
+        color: $color-gray;
+        text-align: right;
+        padding:3rem 6rem;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:active{
+        font-size: 1.5rem;
+        color: $color-primary-light;
+        text-decoration: none;
+        padding:0 6rem;
+    }
+
+    &__fullName{
+        height: 3.5rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+        box-shadow: 0 1px 6px $color-gray;
+        text-align: right;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+
+        &::placeholder{
+            text-align: right;
+            padding-right: 1.2rem;
+            font-family: 'irsans';
+        }
+    }
+
+    &__question{
+        height: 11rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+        box-shadow: 0 1px 6px $color-gray;
+        text-align: right;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+
+        &::placeholder{
+            text-align: right;
+            padding-right: 1.2rem;
+            font-family: 'irsans';
+        }
+    }
+
+    &__email{
+        height: 3.5rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+        box-shadow: 0 1px 6px $color-gray;
+        text-align: right;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+
+        &::placeholder{
+            text-align: right;
+            padding-right: 1.2rem;
+            font-family: 'irsans';
+        }
+    }
+
+    &__phone{
+        height: 3.5rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+        box-shadow: 0 1px 6px $color-gray;
+        text-align: right;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+
+        &::placeholder{
+            text-align: right;
+            padding-right: 1.2rem;
+            font-family: 'irsans';
+        }
+    }
+
+    &__btn{
+        height: 5rem;
+        width: 15rem;
+        border-radius: 5rem;
+        border: none;
+        outline: none;
+        background-color: $color-primary-light;
+        color: #fff;
+        font-size: 1.6rem;
+        box-shadow: 0 2px 5px $color-primary-light;
+        cursor: pointer;
+    }
+}

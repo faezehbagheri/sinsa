@@ -1,0 +1,45 @@
+.search-advanced{
+    height: 9vh;
+    width: 65vw;
+    background-color: rgba($color: $color-black, $alpha: .3);
+    border-radius: 6rem;
+    margin-top: -2rem;
+    display: none;
+    overflow: hidden;
+    
+    @include respond(big-desktop){width: 60vw; }
+
+    &__list{        
+        height: 12rem;
+        width: 99%;
+    }
+
+    &__item{
+        list-style-type: none;
+        background-color: #ffffff;
+        width: 14rem;
+        height: 4rem;
+        border-radius: 4rem;
+        text-align: center;
+        transition: all 2s;
+        
+        @include respond(big-desktop){ width: 15rem;}
+    }
+
+    &__link{
+        text-decoration: none;
+        font-size: 1.8rem;
+    }
+
+    &__btn{
+        height: 3rem;
+        width: 2rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: none;
+    }
+    
+    
+    
+}

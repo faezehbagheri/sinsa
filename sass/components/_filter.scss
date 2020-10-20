@@ -1,0 +1,313 @@
+.filter{
+    width: 15vw;
+    // background-color: salmon;
+    
+
+    &__main-box{
+        height: 13vh;
+        width: 90%;
+        background-color: #fff;
+        border-radius: 2.5rem;
+        box-shadow: 0 2px 5px $color-gray-light;
+        margin-bottom: 2rem;
+    }
+
+    &__icon-box{
+        height: 8rem;
+        width:  8rem;
+        border-radius: 100%;background-color: #fff;
+        border: 2px solid $color-primary-light;
+        position: relative;
+    }
+
+    &__icon{
+        font-size: 4rem;
+        color: $color-gray;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__span{
+        font-size: 1.5rem;
+    }
+
+    &__header{
+        
+        &:hover{
+            cursor: pointer;
+
+            & > * {
+                color: $color-pink;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__box{
+        // height: 45vh;
+        width: 90%;
+        background-color: #fff;
+        border-radius: 2.5rem;
+        box-shadow: 0 2px 5px $color-gray-light;
+        margin-bottom: 2rem;
+        
+    }
+
+    &__title{
+        font-size: 1.5rem;
+        color: $color-gray;
+        margin: 1rem auto;
+        width: 85%;
+    }
+
+    &__arrow-icon{
+        margin-right: 1rem;
+        font-size: 2rem;
+    }
+
+    &__item{
+        margin: 1.5rem;
+
+        &:hover{
+            & > *{
+                color: $color-pink;
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__close-icon{
+        font-size: 1.8rem;
+        color: $color-primary;
+    }
+
+    &__text{
+        font-size: 1.8rem;
+        color: $color-primary;
+        padding-right: 1rem;
+    }
+
+    &__picked{
+        height: 10vh;
+        overflow-y: scroll;
+        border-top: 1px solid $color-gray;
+    }
+
+    &__optios{
+        height: 15vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-top: 1px solid $color-gray;
+        display: none;
+    }
+
+    &__lable{
+        font-size: 1.5rem;
+        padding-right: .5rem;
+        color: $color-gray;
+    }
+
+    &__checkbox{
+        margin: 1rem 1.5rem;
+    }
+
+    &__search-box{
+        height: 3.2rem;
+        width: 90%;
+        border-radius: 5rem;
+        position: relative;
+        border: 2px solid $color-gray;
+        margin: 1rem auto;
+        background-color: #EEF1EF;
+    }
+
+    &__input{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        height: 96%;
+        width: 70%;
+        border: none;
+        outline: none;
+        background-color: #EEF1EF;
+        font-size: 1.5rem;
+        text-align: right;
+        padding-right: 1rem;
+    }
+
+    &__right-icon{
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 95%;
+        transform: translate(-95% , -50%);
+        color: $color-gray;
+    }
+
+    &__buttons{
+        width: 100%;
+    }
+
+    &__filter-btn{
+        height: 4.5rem;
+        width: 13rem;
+        border-radius: 3rem;
+        background-color: $color-gray;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        color: #fff;
+        font-family: 'irsans';
+    }
+
+    &__filter-icon{
+        font-size: 2.3rem;
+        color: #fff;
+        margin-left: 1rem;
+    }
+
+    &__reset-btn{
+        height: 4.5rem;
+        width: 13rem;
+        border-radius: 3rem;
+        background-color: #fff;
+        border: 1px solid $color-gray;
+        outline: none;
+        font-size: 1.5rem;
+        color: $color-gray;
+        font-family: 'irsans';
+    }
+
+    &__reset-icon{
+        font-size: 2.3rem;
+        color: $color-gray;
+        margin-left: 1rem;
+    }
+}
+
+
+/* Styling Checkbox Starts */
+.checkbox-label {
+    display: block;
+    position: relative;
+    // margin: auto;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 2px solid $color-gray;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: $color-primary-light;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity:1;
+    border: none;
+}
+
+
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 5px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+
+
+/* For Ripple Effect */
+.checkbox-label .checkbox-custom::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);    
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::before {
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity:0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+
+

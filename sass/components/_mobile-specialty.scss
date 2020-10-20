@@ -1,0 +1,47 @@
+.mobile-specialty{
+    box-shadow: 0 4px 7px -2px #dbd9d9;
+    
+    &__item{
+        background-color: $color-primary;
+        height: 18rem;
+        width:  17rem;
+        border-radius: 2rem;
+        margin: 1.5rem;
+
+        @include respond(phone-small){
+            height: 15rem;
+            width:  13rem;
+        }
+    }
+
+
+    &__icon{
+        font-size: 7rem;
+        color: #fff;
+
+        @include respond(phone-small){
+            font-size: 6rem;
+        }
+    }
+
+    &__span{
+        font-size: 2.5rem;
+        color: #fff;
+
+        @include respond(phone-small){
+            font-size: 2rem;
+        }
+    }
+
+    &__text{
+        font-size: 2.5rem;
+        color: $color-primary;
+        margin-bottom: 1rem;
+        margin-top: -1rem;
+    }
+
+    &__arrow{
+        padding-right: 2rem;
+        font-size: 2.5rem;
+    }
+}

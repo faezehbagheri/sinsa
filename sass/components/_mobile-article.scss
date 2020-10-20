@@ -1,0 +1,82 @@
+.mobile-article{
+    
+    &__item{
+        height: 38rem;
+        width: 90vw;
+        border-radius: 5rem;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 2px 5px $color-gray-light;
+
+        @include respond(phone-small){
+            height: 30rem;
+        }
+    }
+
+    &__header{
+        height: 7rem;
+        padding-right: 5rem;
+        background-color: #ffffff;
+
+        @include respond(phone-small){height: 5rem;}
+    }
+
+    &__heading-primary{
+        font-size: 2.5rem;
+        color: $color-pink;
+
+        
+        @include respond(phone-small){font-size: 2.3rem;}
+    }
+
+    &__heading-secondary{
+        font-size: 2rem;
+        color: $color-primary;
+        padding-right: 2rem;
+        
+        @include respond(phone-small){font-size: 1.8rem;}
+    }
+
+    &__main{        
+        height: 36rem;
+        width: 90vw;
+        position: relative;
+        overflow: hidden;
+
+        @include respond(phone-small){
+            height: 28rem;
+        }
+    }
+
+    &__photo{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -999;
+    }
+    
+    &__icon{
+        font-size: 1.8rem;
+        color: #fff;
+        padding-left: .8rem;
+        margin-bottom: 1rem;
+
+        
+        @include respond(phone-small){font-size: 1.5rem;}
+    }
+
+    &__text{
+        background-color: rgba($color: #fff, $alpha: .6);
+        height: 16rem;
+        font-size: 1.8rem;
+        color: $color-gray;
+        padding: 1.2rem;
+
+        
+        @include respond(phone-small){
+            font-size: 1.5rem;
+            height: 12rem;
+        }
+    }
+    
+}

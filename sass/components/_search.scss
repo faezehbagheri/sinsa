@@ -1,0 +1,103 @@
+.search{
+    height: 50rem;
+    width: 70%;
+    margin-top: 4rem;
+    position: relative;
+    
+    @include respond(big-desktop){ margin-top: 8rem;}
+
+    &__form{
+        position: relative;
+    }
+
+    &__label{
+        font-size: 5rem;
+        color: #ffffff;
+    }
+
+    &__box{
+        background-color: rgba($color: $color-black, $alpha: .3);
+        height: 8rem;
+        width: 80%;
+        border-radius: 4rem;
+    }
+
+    &__btn{
+        width: 15%;
+        height: 6rem;
+        border-radius: 3rem;
+        margin-left: 2rem;
+        border: none;
+        outline: none;
+        background-color: $color-primary-light;
+        color: #ffffff;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    &__advanced-btn{
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 100%;
+        border: none;
+        outline: none;
+        background-size: cover;
+        background-image: url(../../assets/img/advanced@2x.png);
+        margin-left: 1.5rem;
+        margin-top: -2rem;
+        cursor: pointer;
+    }
+
+    &__advanced-label{
+        font-size: 1.7rem;
+        color: $color-white;
+        margin-top: -2rem;
+    }
+
+    
+    &__search-container{
+        height: 6rem;
+        width: 80%;
+        border-radius: 5rem;
+        position: relative;
+        margin: 2rem auto;
+        background-color: #fff;
+    }
+
+    &__input{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 60%;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        font-size: 3rem;
+        text-align: right;
+        color: $color-gray;
+        border-left: 1px solid $color-primary;
+    }
+
+    &__right-icon{
+        font-size: 3rem;
+        position: absolute;
+        top: 50%;
+        left: 95%;
+        transform: translate(-95% , -50%);
+        color: $color-primary;
+
+    }
+    &__left-icon{
+        font-size: 3rem;
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translate(-15% , -50%);
+        color: $color-primary;
+
+    }
+}
+
+
+// @include respond(tab-land){ width: 65rem;}

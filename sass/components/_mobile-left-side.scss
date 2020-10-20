@@ -1,0 +1,45 @@
+.left-side{
+    // height: 50vh;
+    width: 20%;
+    position: fixed;
+    top: 84%;
+    left: 4%;
+    z-index: 9999;
+    display: none;
+
+    @include respond(phone){display: flex;}
+
+
+    &__box{
+        position: absolute;
+        top: 90%;
+        opacity: 0;
+        transition: all .5s;
+    }
+
+    &__btn{
+        height: 7rem;
+        width: 7rem;
+        border-radius: 100%;
+        background-color: #ffffff;
+        border: none;
+        outline: none;
+        transition: all .3s ease-in;
+        box-shadow: 1px 2px 3px $color-gray-light;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        color: $color-gray;
+        
+    }
+
+    &__icon{
+        font-size: 3rem;
+        color: $color-gray;
+        // display: none;
+    }
+
+    &__z-index{
+        z-index: 99999;
+    }
+
+}

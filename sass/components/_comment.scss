@@ -1,0 +1,86 @@
+.comment{
+    height: 50vh;
+    width: 90%;
+
+    &__box{
+        height: 50vh;
+        width: 85% !important;
+    }
+
+    &__main{
+        height: 20rem;
+        width: 20rem;
+        background-color: #ffffff;
+        border-radius: 3rem;
+        position: relative;
+        box-shadow: 0 0 1rem #d9d9d9;
+        margin-top: 10rem;
+
+        &:not(:last-child){
+            margin-left: 1rem;
+        }
+        
+        
+        @include respond(big-desktop){ margin-top: 15rem; }
+    }
+
+    &__photo-box{        
+        height: 13rem;
+        width: 13rem;
+        border-radius: 100%;
+        position: relative;
+        top: -10%;
+        transform: translateY(-50%);
+        shape-outside: circle(50% at 50% 50%);
+        margin-bottom: -10rem;
+        background-color: #ffffff;
+    }
+
+    &__photo{        
+        height: 11rem;
+        width: 11rem !important;
+        border-radius: 100%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $color-gray;
+    }
+
+
+    &__name{
+        font-size: 1.8rem;
+        color: $color-primary;
+    }
+
+    &__comment{
+        padding: 1.8rem;
+        font-size: 1.3rem;
+        color: $color-gray;
+        text-align: right;
+    }
+
+    &__icons-box{
+        align-self: flex-start;
+        margin-left: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    &__icon{
+        font-size: 1.7rem;
+        margin-left: 5px;
+        color: $color-gray;
+    }
+
+    &__img{
+        height: 16rem;
+        width: 16rem;
+    }
+
+    &__arrow-icon{        
+        font-size: 4rem;
+        margin: 2.5rem;
+        color: $color-gray;
+    }
+    
+}

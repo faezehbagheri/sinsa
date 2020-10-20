@@ -1,0 +1,36 @@
+.mobile-nav{
+    display: none;
+
+    @include respond(phone){
+        display: flex;
+        height: 10vh;
+        width: 100%;
+        background-color: $color-primary;
+        position: fixed;
+        top: 90%;
+        z-index: 99999;
+    }
+
+    &__icon{
+        font-size: 4.5rem;
+        color: #99D4D1;
+    }
+
+    &__span{
+        font-size: 2.5rem;
+        color: #fff;
+        margin-top: 1rem;
+    }
+
+    &__photo{
+        position: absolute;
+        height: 20rem;
+        top: -20%;
+        left: 50%;
+        transform: translate(-50% , -20%);
+
+        @include respond(phone-small){            
+            height: 17rem;  
+        }
+    }
+}

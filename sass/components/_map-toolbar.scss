@@ -1,0 +1,73 @@
+.map-toolbar{
+    height: 5vh;
+    width: 100%;
+    background-color: #ffffff;
+    // margin-top: .2rem;
+    position: absolute;
+
+    &__btn{
+        height: 4rem;
+        width: 12rem;
+        background-color: #ffffff;
+        border-radius: 3rem;
+        border: 1px solid $color-gray;
+        font-size: 1.7rem;
+        font-family: 'irsans';
+        color: $color-gray;
+        margin:0 3rem;
+    }
+
+    &__reset-icon{
+        color: $color-gray;
+        margin-left: 1rem;
+    }
+
+    &__search{
+        height: 4rem;
+        width: 55%;
+    }
+
+    &__search-icon{
+        font-size: 2.5rem;
+        color: $color-primary-light;
+    }
+
+    &__search-box{
+        height: 3.5rem;
+        width: 70%;
+        background-color: #ffffff;
+        border: 1px solid $color-gray;
+        border-radius: 2rem;
+        margin: 3rem;
+    }
+    &__search-input{
+        width:85%;
+        margin: 2rem;
+        height: 90%;
+        text-align: right;
+        font-size: 1.5rem;
+        border: none;
+        outline: none;
+
+        &::placeholder{
+            font-size: 1.5rem;
+            color: $color-gray-light;
+            font-weight: 100;
+        }
+    }
+
+    &__arrow-icon{
+        font-size: 2rem;
+        margin: 2rem;
+        color: $color-gray;
+    }
+
+    &__filter{
+        width: 10%;
+    }
+
+    &__filter-icon{
+        font-size: 2.5rem;
+        color: $color-gray;
+    }
+}

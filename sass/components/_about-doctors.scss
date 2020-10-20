@@ -1,0 +1,161 @@
+.doctors{
+    width: 100%;
+    margin-top: -4rem;
+    
+
+    &__main{
+        height: 23rem;
+        width: 22rem;
+        background-color: #ffffff;
+        border-radius: 3rem;
+        margin-top: 15rem;
+        position: relative;
+        box-shadow: 0 0 1rem #d9d9d9;
+
+            
+        @include respond(big-desktop){
+            height: 26rem;
+            width: 26rem;          
+        }
+    }
+
+    &__photo-box{        
+        height: 11rem;
+        width: 11rem;
+        border-radius: 100%;
+        position: relative;
+        top: -10%;
+        transform: translateY(-50%);
+        shape-outside: circle(50% at 50% 50%);
+        margin-bottom: -10rem;
+        background-color: #ffffff;
+
+        @include respond(big-desktop){
+            height: 13rem;
+            width: 13rem;          
+        }       
+    }
+
+    &__photo{        
+        height: 9rem;
+        width: 9rem !important;
+        border-radius: 100%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $color-gray;
+
+        @include respond(big-desktop){
+            height: 11rem;
+            width: 11rem !important;          
+        }
+    }
+
+    &__name{
+        font-size: 1.8rem;
+        color: $color-pink;
+    }
+
+    &__specialty{
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: $color-primary;
+    }
+
+    &__percentage{
+        display: inline-block;
+        background-color: $color-primary-dark;
+        width: 4rem;
+        height: 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.1rem;
+    }
+
+    &__comment{
+        font-size: 1rem;
+        margin-right: 1rem;
+        color: $color-gray;
+    }
+
+    &__consulting{
+        color: $color-gray;
+        font-size: .85rem;
+    }
+
+    &__btn{
+        height: 4rem;
+        width: 13rem;
+        background-color: $color-primary-light;
+        color: #ffffff;
+        font-size: 1.6rem;
+        border-radius: 2rem;
+        border: none;
+        outline: none;
+        position: relative;
+        top: 7%;
+        box-shadow: 0 2px 4px $color-primary-light;
+        font-family: 'irsans';
+        cursor: pointer;
+    }
+
+
+
+}
+
+.owl-item > div {
+    cursor: pointer;
+    margin: 6% 4%;
+    transition: margin 0.4s ease;
+  }
+.owl-item.center  .doctors__main {
+    height: 28rem;
+    width: 25rem;
+    background-color: #ffffff;
+    border-radius: 3rem;
+    position: relative;
+    box-shadow: 0 0 1rem #d9d9d9;
+    // margin-right: 10rem;
+
+    @include respond(big-desktop){
+        height: 30rem;
+        width: 30rem;          
+    }  
+}
+
+.owl-item.center  .doctors__photo {
+    height: 14rem;
+    width: 14rem !important;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+
+    
+    @include respond(big-desktop){
+        height: 16rem;
+        width: 16rem !important;          
+    }  
+}
+
+.owl-item.center .doctors__photo-box{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 100%;
+    position: relative;
+    top: -10%;
+    transform: translateY(-50%);
+    shape-outside: circle(50% at 50% 50%);
+    margin-bottom: -10rem;
+    background-color: #ffffff;
+
+    
+    @include respond(big-desktop){
+        height: 19rem;
+        width: 19rem;          
+    }  
+}

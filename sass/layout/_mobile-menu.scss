@@ -1,0 +1,131 @@
+.mobile-menu{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: .9);
+    position: fixed;
+    z-index: 9999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    display: none;
+
+    @include respond(phone){ display: inline; }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content{
+        visibility: visible;
+        transform: translate(18%);
+    }
+
+    &__logo{
+        height: 12rem;
+        width:  12rem;
+        position: absolute;
+        top: 45%;
+        left: 75%;
+        transform: translate(-50% , -50%);
+    }
+
+    &__content{
+        width: 85%;
+        height: 180vh;
+        transform: translate(100% , 0);
+        background-color: #ffffff;
+        visibility: hidden;
+        transition: all .6s;
+    }
+
+    &__header{
+        height: 24rem;
+        width: 100%;
+        position: relative;
+        background-image: url(../../assets/img/mobile-menu.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    &__nav{
+        width: 100%;
+        direction: rtl;
+        height: 90vh;
+        overflow: scroll;
+        
+        &::-webkit-scrollbar {
+            width: 2.5rem;
+        }
+        &::-webkit-scrollbar-thumb {
+            // background: $color-yellow-light;
+            height: 100%; 
+            border-top-right-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+        }
+
+        
+    }
+
+    &__item{
+        margin: 4rem 2.5rem;
+        direction: ltr;        
+    }
+
+    &__icon{
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+
+    &__link:link,
+    &__link:visited,
+    &__link{
+        text-decoration: none;
+        font-size: 2.8rem;
+        font-weight: 400;
+        padding-right: 1rem;
+        background-image: linear-gradient(to right bottom, #3FAF2C, #4f73eb);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__margin{
+        margin-right: 5rem;
+    }
+
+    &__icon{
+        font-size: 3rem;
+    }
+
+    &__down-icon{
+        font-size: 3rem;
+        display: none;
+    }
+
+    &__sub-list{
+        height: 0;
+        transform: translate(150%);
+        transition: all .7s;
+    }   
+
+
+    &__sub-item{
+        margin: 1rem 2.5rem;
+        direction: ltr;
+    }
+
+    &__sub-link:link,
+    &__sub-link:visited,
+    &__sub-link{
+        text-decoration: none;
+        font-size: 2.8rem;
+        font-weight: 400;
+        padding-right: 3rem;
+        background-image: linear-gradient(to bottom, #3FAF2C, #4f73eb);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin: 1.5rem;
+    }
+
+}

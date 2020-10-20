@@ -1,0 +1,21 @@
+{
+  "name": "sinsa",
+  "version": "1.0.0",
+  "description": "sinsa project",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss assets/css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "faeze",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "@material-ui/icons": "^4.9.1",
+    "live-server": "^1.2.1"
+  }
+}

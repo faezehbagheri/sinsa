@@ -1,0 +1,67 @@
+.right-side{
+    position: fixed;
+    left: 85%;
+    top: 30%;
+            
+    &__btn{
+        height: 6.5rem;
+        width: 6.5rem;
+        border-radius: 100%;
+        background-color: rgba($color: $color-white, $alpha: .3);
+        border: 2px solid $color-gray-light;
+        outline: none;
+        transition: all .3s ease-in;
+        
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+
+        &:hover{
+            box-shadow:
+            0 0 0 4px #ffffff, 
+            0 0 0 6px $color-gray-light;
+        }
+    }
+
+    &__photo{
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    &__span{
+        display: inline-block;
+        width: 17rem;
+        font-size: 1.7rem;
+        color: $color-gray;
+        text-align: center;
+        border-bottom: 2px solid $color-gray-light;
+        margin-bottom: 4rem;
+    }
+
+    &__circle{
+        height: 1rem;
+        width: 1rem;
+        border-radius: 100%;
+        background-color: $color-gray-light;
+        margin-bottom: 1.2rem;
+    }
+
+    &__tips{
+        opacity: 0;
+        transition: all .4s ease-in;
+    }
+
+    &__btn-1:hover + &__tips-1{
+        opacity: 100;
+    }
+    &__btn-2:hover + &__tips-2{
+        opacity: 100;
+    }
+    &__btn-3:hover + &__tips-3{
+        opacity: 100;
+    }
+    &__btn-4:hover + &__tips-4{
+        opacity: 100;
+    }
+}

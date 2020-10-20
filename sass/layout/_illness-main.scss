@@ -1,0 +1,10 @@
+.illness-main{
+    height: 130vh;
+    width: 100%;
+
+    margin-top: 10rem;
+
+    @include respond(phone){
+        display: none;
+    }
+}

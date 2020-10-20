@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'irsans-bold';
+    src: url(../../assets/fonts/iransans-bold/iransansweb_bold.eot?) format('embedded-opentype'), url(../../assets/fonts/iransans-bold/iransansweb_bold.ttf) format('truetype'), url(../../assets/fonts/iransans-bold/iransansweb_bold.woff) format('woff'), url(../../assets/fonts/iransans-bold/iransansweb_bold.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'irsans';
+    src: url(../../assets/fonts/iransans/iransansweb.eot?) format('embedded-opentype'), url(../../assets/fonts/iransans/iransansweb.ttf) format('truetype'), url(../../assets/fonts/iransans/iransansweb.woff) format('woff'), url(../../assets/fonts/iransans/iransansweb.woff2) format('woff2');
+}
+body{
+    font-family: 'irsans';
+}
+
+.active{
+    color: $color-primary-light !important;
+}
+
+.active-item{
+    background-color: rgba($color: $color-primary-light, $alpha: .5);
+    border: 1px solid $color-primary-light !important;
+}
+
+.heading-primary{
+    font-size: 2rem;
+    color: #707070;
+    font-weight: bold;
+    margin: 2rem 0;
+
+
+    @include respond(phone){
+        font-size: 3.5rem;
+        color: #fff;
+    }
+}
+
+.heading-secondary{
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: $color-pink;
+    margin: 2rem 0;
+    
+
+    @include respond(phone){
+        font-size: 3rem;
+        color: $color-primary;
+        margin-right: 3rem;
+        margin-bottom: 0;
+    }
+}
+
+.yellow{
+    color: yellow !important;
+}
