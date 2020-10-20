@@ -54,13 +54,15 @@
     &__filter-title{
         font-size: 1.7rem;
         font-weight: 200;
+        cursor: pointer;
     }
 
-    &__filter-optios{
+    &__filter-optios2{
         height: 19vh;
         width: 25vh;
         position: absolute;
-        top: 70%;
+        top: 100%;
+        left: -50%;
         left: 5;
         z-index: 99;
         background-color: #ffff;
@@ -75,8 +77,33 @@
         }
         
         &::-webkit-scrollbar-thumb {
+            color: none;
         }
-        // display: none;
     }
+
+    &__filter-optios3{
+        height: 19vh;
+        width: 25vh;
+        position: absolute;
+        top: 100%;
+        left: 5;
+        z-index: 99;
+        background-color: #ffff;
+        border-radius: 2rem;
+        box-shadow: 2px 3px 5px $color-gray-light;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: none;
+        // animation: openFilter .5s;
+
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            color: none;
+        }
+    }
+
 
 }

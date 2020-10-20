@@ -136,6 +136,11 @@ function openOption(num){
     showOption[num] = ! showOption[num];
 }
 
+var showOption_map = [false ,false ,false ,false ,false ,false ];
+var filterType_map = ["","ostan" , "shahr" , "mahale" , "bime" , "takhasos" ];
+function openFilterOption_map(num){
+
+}
 function removeItem(id){
     var el = document.getElementById(id);
     el.parentElement.removeChild(el);
