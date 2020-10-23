@@ -1,9 +1,11 @@
 .header{
-    background-image: linear-gradient(
+    &.homepage{
+        background-image: linear-gradient(
         to right bottom,
         rgba($color-black, 0.3),
         rgba($color-black, 0.3)),
         url(../../assets/img/PICc.png);
+    }
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
