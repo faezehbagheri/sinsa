@@ -16,7 +16,7 @@
 }
 
 .tabs .tab-label {
-    font-size: 18px;
+    font-size: 15px;
     vertical-align: bottom;
     // border: 3px solid $color-primary;
     padding: 15px 25px 8px;
@@ -26,6 +26,8 @@
     position: relative;
     z-index: 0;
     color: #fff;
+    
+    @include respond(big-desktop){font-size: 18px;}
 }
 
 .tabs .tab-label:before,
@@ -37,6 +39,7 @@
     height: 100%;
     width: 33px;  
     background-color: $color-primary;
+    
 }
 
 .tabs .tab-label:before {

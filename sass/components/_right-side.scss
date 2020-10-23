@@ -1,16 +1,25 @@
 .right-side{
     position: fixed;
-    left: 85%;
+    left: 86%;
     top: 30%;
+    
+    @include respond(big-desktop){left: 85%;}
             
     &__btn{
-        height: 6.5rem;
-        width: 6.5rem;
+        height: 6rem;
+        width: 6rem;
         border-radius: 100%;
         background-color: rgba($color: $color-white, $alpha: .3);
         border: 2px solid $color-gray-light;
         outline: none;
+        position: relative;
         transition: all .3s ease-in;
+
+        
+        @include respond(big-desktop){
+            height: 6.5rem;
+            width: 6.5rem;
+        }
         
 
         &:not(:last-child){
@@ -19,24 +28,41 @@
 
         &:hover{
             box-shadow:
-            0 0 0 4px #ffffff, 
-            0 0 0 6px $color-gray-light;
+            0 0 0 2px #ffffff, 
+            0 0 0 4px $color-gray-light;
+            
+            @include respond(big-desktop){
+                box-shadow:
+                    0 0 0 4px #ffffff, 
+                    0 0 0 6px $color-gray-light;
+            }
         }
     }
 
     &__photo{
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 3rem;
+        width: 3rem;
+        @include centerABS();
+        
+        @include respond(big-desktop){
+            height: 3.5rem;
+            width: 3.5rem;
+        }
     }
 
     &__span{
         display: inline-block;
-        width: 17rem;
-        font-size: 1.7rem;
+        width: 13rem;
+        font-size: 1.5rem;
         color: $color-gray;
         text-align: center;
         border-bottom: 2px solid $color-gray-light;
         margin-bottom: 4rem;
+        
+        @include respond(big-desktop){
+            width: 17rem;
+            font-size: 1.7rem;
+        }
     }
 
     &__circle{

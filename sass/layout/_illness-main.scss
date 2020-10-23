@@ -1,5 +1,5 @@
 .illness-main{
-    height: 150vh;
+    height: 170vh;
     width: 100%;
 
     margin-top: 10rem;
@@ -7,4 +7,6 @@
     @include respond(phone){
         display: none;
     }
+    
+    @include respond(big-desktop){height: 150vh;}
 }

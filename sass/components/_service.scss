@@ -13,30 +13,43 @@
     }
 
     &__logo-box{
-        height: 8rem;
-        width:  8rem;
+        height: 6rem;
+        width:  6rem;
         background-color: #fff;
         border-radius: 100%;
         border: 1px solid $color-gray-light;
-        margin-top: 3rem;
+        margin-top: 2rem;
         position: relative;
         left: -55%;
+        
+        @include respond(big-desktop){
+            height: 8rem;
+            width: 8rem;
+            margin-top: 3rem;
+        }
     }
 
     &__circle{
-        height: 4rem;
-        width:  4rem;
+        height: 3rem;
+        width:  3rem;
         background-color: $color-primary;
         border-radius: 100%;
         border: 5px solid #d9d9d9;
         margin-top: 3rem;
         position: relative;
         left: -30%;
+        
+        @include respond(big-desktop){
+            height: 4rem;
+            width: 4rem;
+        }
     }
 
     &__icon{
-        font-size: 4rem;
+        font-size: 3rem;
         color: $color-gray;
         @include centerABS;
+        
+        @include respond(big-desktop){font-size: 4rem;}
     }
 }

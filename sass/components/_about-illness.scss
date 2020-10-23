@@ -1,6 +1,6 @@
 .about-illness{
-    width: 48vw;
-    margin-right: 5rem;
+    width: 52vw;
+    // margin-right: 5rem;
 
     &__tab{
         width: 100%;
@@ -12,11 +12,14 @@
     }
 
     &__box{
-        width: 112%;
+        width: 110%;
         background-color: #fff;
         margin-top: 2rem;
         border-radius: 1rem 0 0 1rem;
         box-shadow: -2px 2px 8px $color-gray-light;
+        cursor: pointer;
+        
+        @include respond(big-desktop){height: 112%;}
     }
 
     &__header{
@@ -26,36 +29,51 @@
     &__title{
         text-align: right;
         padding-right: 1.8rem;
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 200;
         color: $color-gray-light;
         transition: all .5s;
+
+        
+        @include respond(big-desktop){
+            font-size: 2rem;
+        }
     }
 
     &__btn{
-        height: 5rem;
-        width:  5rem;
+        height: 4rem;
+        width:  4rem;
         border-radius: 100%;
         background-color: #d9d9d9;
-        left: 8%;
+        left: 6.5%;
         position: relative;
         border: none;
         outline: none;
         cursor: pointer;
         transition: all .5s;
+        
+        @include respond(big-desktop){
+            height: 5rem;
+            width: 5rem;
+            left: 8%;
+        }
     }
 
     &__logo{
         @include centerABS();
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: #fff;
+        
+        @include respond(big-desktop){font-size: 3rem;}
     }
 
     &__logo-active{
         @include centerABS();
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: #fff;
         display: none;
+        
+        @include respond(big-desktop){font-size: 3rem;}
     }
 
     &__text{
@@ -73,13 +91,16 @@
         // opacity: 0;
         // display: none;
         transition: all 1s ease;
+        
     }
 }
 
 .activate{
 
     &>:last-child{
-        height: 40vh !important;
+        height: 48vh;
+        
+        @include respond(big-desktop){height: 40vh;}
     }
 
     & button{
@@ -88,19 +109,26 @@
 
     & h2{
         width: 50%;
-        font-size: 2.2rem !important;
-        color: $color-primary !important;
-        padding: 2rem;
-        border-bottom: 3px solid $color-primary !important;
+        font-size: 2rem;
+        color: $color-primary;
+        padding: 1rem;
+        border-bottom: 3px solid $color-primary;
+        
+        @include respond(big-desktop){
+            font-size: 2.2rem;
+            padding: 2rem;
+        }
     }
 
     & p{
         
         text-align: right;
-        font-size: 2rem;
+        font-size: 1.7rem;
         padding: 2.5rem;
         color: $color-gray;
         line-height: 5rem;
+        
+        @include respond(big-desktop){font-size: 2rem;}
     }
 
     & i{
