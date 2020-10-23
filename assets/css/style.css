@@ -915,12 +915,73 @@ body {
   flex-wrap: wrap; }
 
 .hospital-details {
-  height: 15vh;
+  height: 20vh;
   width: 100%;
   background-color: #fff;
   position: absolute;
   top: 100%;
-  transform: translateY(-100%); }
+  transform: translateY(-100%);
+  display: none; }
+  .hospital-details__container {
+    width: 77%;
+    height: 85%;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    box-shadow: 0 -5px 5px -5px #707070; }
+  .hospital-details__col-1 {
+    width: 35%;
+    height: 90%; }
+  .hospital-details__col-2 {
+    width: 35%;
+    height: 90%; }
+  .hospital-details__name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #E43F6F; }
+  .hospital-details__full-width {
+    width: 100%;
+    margin-bottom: 1rem; }
+  .hospital-details__type {
+    font-size: 1.4rem;
+    color: #49838B; }
+  .hospital-details__time {
+    display: inline-block;
+    width: 7rem;
+    border: 1px solid #A0A0A0;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: #707070;
+    text-align: center;
+    margin-right: 5px; }
+  .hospital-details__clock-icon {
+    font-size: 1.5rem;
+    color: #E43F6F; }
+  .hospital-details__location-icon {
+    font-size: 2rem;
+    color: #49838B;
+    margin-left: 6px; }
+  .hospital-details__address {
+    font-size: 1.2rem;
+    text-align: right; }
+  .hospital-details__star-icon {
+    font-size: 1.5rem;
+    color: #F4E36F; }
+  .hospital-details__phone-icon {
+    font-size: 1.4rem;
+    color: #90C73D; }
+  .hospital-details__phone {
+    font-size: 1.3rem;
+    color: #707070; }
+  .hospital-details__btn {
+    width: 11rem;
+    height: 3rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: #90C73D;
+    color: #fff;
+    box-shadow: 2px 2px 5px #90C73D; }
 
 .hospital-list {
   height: 100%;
@@ -1037,8 +1098,11 @@ body {
 
 .map-header {
   width: 100%;
-  height: 13vh;
+  height: 10vh;
   background-color: #f6f6f6; }
+  @media only screen and (min-width: 112.5em) {
+    .map-header {
+      height: 13vh; } }
   .map-header__box1 {
     width: 15%; }
   .map-header__box2 {
@@ -1047,7 +1111,11 @@ body {
     width: 40%; }
   .map-header__filter-main {
     height: 10vh;
-    width: 20rem; }
+    width: 20rem;
+    margin-top: -1rem; }
+    @media only screen and (min-width: 112.5em) {
+      .map-header__filter-main {
+        margin-top: 0; } }
   .map-header__icon-box {
     height: 5rem;
     width: 5rem;
@@ -1195,6 +1263,75 @@ body {
     @media only screen and (min-width: 112.5em) {
       .map-toolbar__filter-icon {
         font-size: 2.5rem; } }
+
+.map-tools {
+  height: 13rem;
+  width: 13rem;
+  position: fixed;
+  top: 95%;
+  transform: translateY(-95%); }
+  .map-tools__main-circle {
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid #707070;
+    border-radius: 100%;
+    position: relative;
+    transform: all .5s; }
+    .map-tools__main-circle:hover {
+      height: 6rem;
+      width: 6rem; }
+  .map-tools__main-circle:hover > .map-tools__red-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .map-tools__main-circle:hover > .map-tools__gray-circle {
+    top: -100%;
+    left: -500%; }
+  .map-tools__main-circle:hover > .map-tools__icon {
+    font-size: 3rem; }
+  .map-tools__main-circle:hover ~ div .map-tools__span {
+    font-size: 1.1rem;
+    width: 7rem; }
+  .map-tools__gray-circle {
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid #A0A0A0;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .4s; }
+  .map-tools__red-circle {
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid #E43F6F;
+    border-radius: 100%;
+    position: absolute;
+    top: 400%;
+    left: 500%;
+    transition: all .4s; }
+  .map-tools__icon {
+    font-size: 2.5rem;
+    transform: all .5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .map-tools__circle {
+    width: 8px;
+    height: 8px;
+    background-color: #E43F6F;
+    border-radius: 100%; }
+  .map-tools__span {
+    display: inline-block;
+    width: 0;
+    border-bottom: 1px solid #707070;
+    font-size: 0;
+    color: #707070;
+    text-align: center;
+    margin-top: -1.6rem; }
 
 .mobile-article__item {
   height: 38rem;
@@ -2292,8 +2429,8 @@ body {
 
 .map-main {
   width: 100%;
-  height: 87vh;
-  background-color: #829dee;
+  height: 90vh;
+  background-color: #dfe7ff;
   position: relative; }
 
 .mobile-bottom-menu {

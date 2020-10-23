@@ -1,8 +1,97 @@
 .hospital-details{
-    height: 15vh;
+    height: 20vh;
     width: 100%;
     background-color: #fff;
     position: absolute;
     top: 100%;
     transform: translateY(-100%);
+    display: none;
+
+    &__container{
+        width: 77%;
+        height: 85%;
+        background-color: #f6f6f6;
+        position: absolute;
+        top: 100%;
+        transform: translateY(-100%);
+        box-shadow: 0 -5px 5px -5px $color-gray;
+    }
+
+    &__col-1{
+        width: 35%;
+        height: 90%;
+    }
+
+    &__col-2{
+        width: 35%;
+        height: 90%;
+    }
+
+    &__name{
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $color-pink;
+    }
+
+    &__full-width{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    &__type{
+        font-size: 1.4rem;
+        color: $color-primary-dark;
+    }
+
+    &__time{
+        display: inline-block;
+        width: 7rem;
+        border: 1px solid $color-gray-light;
+        border-radius: 1rem;
+        font-size: 1rem;
+        color: $color-gray;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    &__clock-icon{
+        font-size: 1.5rem;
+        color: $color-pink;
+    }
+
+    &__location-icon{
+        font-size: 2rem;
+        color: $color-primary-dark;
+        margin-left: 6px;
+    }
+
+    &__address{
+        font-size: 1.2rem;
+        text-align: right;
+    }
+
+    &__star-icon{
+        font-size: 1.5rem;
+        color: $color-yellow;
+    }
+
+    &__phone-icon{
+        font-size: 1.4rem;
+        color: $color-primary-light;
+    }
+
+    &__phone{
+        font-size: 1.3rem;
+        color: $color-gray;
+    }
+
+    &__btn{
+        width: 11rem;
+        height: 3rem;
+        border: none;
+        border-radius: 3rem;
+        background-color: $color-primary-light;
+        color: #fff;
+        box-shadow: 2px 2px 5px $color-primary-light;
+    }
 }

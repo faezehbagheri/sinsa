@@ -376,7 +376,7 @@
                 </div>
             </div>
             <div class="hospital-list__list flex column align-center">                
-                <div class="hospital-list__item item-active flex column align-center justi-center" id="hospital-1" onclick="toggleActive('1')">
+                <div class="hospital-list__item flex column align-center justi-center" id="hospital-1" onclick="toggleActive('1')">
                     <div class="hospital-list__row flex  r-reverse align-center justi-around">
                         <div class="hospital-list__img-container">
                             <img class="hospital-list__img" src="./assets/img/HOS06_PIC_01@2x.png">
@@ -492,8 +492,31 @@
         <!-- نقشه -->
         <div class="map"></div>
         <!-- اطلاعات بیمارستان ها -->
-        <div class="hospital-details">
-            
+        <div class="hospital-details"></div>
+        <!-- ابزارهای پایین نقشه -->
+        <div class="map-tools flex column align-center justi-around">
+            <div class="flex align-center">
+                <div class="map-tools__main-circle">
+                    <i class="fas fa-map-marker-alt map-tools__icon"></i>
+                    <div class="map-tools__gray-circle"></div>
+                    <div class="map-tools__red-circle"></div>
+                </div>
+                <div class="flex align-center"> 
+                    <span class="map-tools__span">نقشه حرارتی</span>
+                    <div class="map-tools__circle"></div>
+                </div>
+            </div>
+            <div class="flex align-center">
+                <div class="map-tools__main-circle">
+                    <i class="fas fa-marker map-tools__icon"></i>
+                    <div class="map-tools__gray-circle"></div>
+                    <div class="map-tools__red-circle"></div>
+                </div>
+                <div class="flex align-center"> 
+                    <span class="map-tools__span">نقشه حرارتی</span>
+                    <div class="map-tools__circle"></div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
