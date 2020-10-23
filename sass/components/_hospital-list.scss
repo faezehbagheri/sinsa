@@ -1,8 +1,157 @@
 .hospital-list{
     height: 100%;
     width: 23%;
-    background-color: rgba($color: #000000, $alpha: .5);
-    position: fixed;
+    background-color: rgba($color: #000000, $alpha: .2);
+    border-left:2px solid $color-gray;
+    position: absolute;
     left: 100%;
     transform: translateX(-100%);
+    z-index: 99;
+
+    &__search{
+        height: 6vh;
+        width: 100%;  
+        padding: .5rem;
+    }
+
+    &__search-box{
+        height: 3.5vh;
+        width: 70%;
+        background-color: #ffffff;
+        border-radius: 3rem;
+        box-shadow: 1px 2px 5px $color-gray;
+    }
+
+    &__search-input{
+        border: none;
+        margin-right: 1rem;
+        font-size: 1.4rem;
+        text-align: right;
+        outline: none;
+    }
+
+    &__search-icon{
+        font-size: 1.8rem;
+        color: $color-gray;
+    }
+    
+    &__list{
+        width: 100%;
+        overflow-y: scroll;
+
+        
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            color: none;
+        }
+    }
+
+    &__row{
+        width: 100%;
+        transition: all .7s ease;
+    }
+
+    &__item{
+        height: 16rem;
+        width: 70%;
+        background-color: #fff;
+        border: 3px solid $color-gray;
+        border-radius: 1.5rem;
+        margin-top: 2rem;
+        transition: all .7s ease;
+        cursor: pointer;
+    }
+
+    &__img-container{
+        height: 12rem;
+        width:  10rem;
+        position: relative;
+        transition: all .7s ease;
+    }
+
+    &__img{
+        height: 9rem;
+        width: 9rem;
+        border-radius: 1rem;
+        @include centerABS();
+        transition: all .7s ease;
+    }
+
+
+    &__name{
+        font-size: 1.4rem;
+        color: $color-pink;
+    }
+
+    &__type{
+        font-size: 1.2rem;
+        color: $color-primary-dark;
+    }
+
+    &__phone{
+        font-size: 1rem;
+        color: $color-gray;
+    }
+
+    &__time{
+        font-size: 1rem;
+        color: $color-gray;
+    }
+
+    &__icon{
+        margin-left: .5rem;
+    }
+
+    &__location-icon{
+        font-size: 1.8rem;
+        color: $color-primary;
+        margin: .6rem;
+    }
+
+    &__address{
+        margin:0 1rem;
+        display: none;
+        transition: all .7s ease;
+    }
+
+    &__span{
+        text-align: right;
+        margin: .5rem;
+    }
+}
+
+.item-active{
+    height: 19rem;
+    border: 3px solid $color-primary-light;
+    margin-top: 3rem;
+
+    & > :first-child{
+        position: relative;
+        left: 10%;
+
+        & > :first-child{
+            height: 12rem;
+            width: 12rem;
+            border-radius: 100%;
+            position: relative;
+            background-color: #fff;
+            top: -20%;
+            margin: 0;
+
+            & > img{
+                height: 10rem;
+                width: 10rem;
+                border-radius: 100%;
+                @include centerABS()
+            }
+        }
+
+    }
+
+    & > :last-child{
+        display: flex;
+    }
 }

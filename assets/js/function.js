@@ -173,9 +173,7 @@ function openSuggestionBox(){
     }
 }
 
-// window.addEventListener("scroll", function(event) { 
-    
-//     if(this.scrollY > 700){
-//         console.log("lll");
-//     }
-// });
+function toggleActive(num){
+    document.querySelector('.item-active').classList.remove("item-active");
+    document.querySelector("#hospital-"+num).classList.add("item-active");
+}

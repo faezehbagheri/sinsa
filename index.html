@@ -29,28 +29,28 @@
             <div class="map-header__filter-main">
                 <div class="flex r-reverse align-center owl-carousel" id="filter">
                     <div class="item  flex column align-center">
-                        <div class="filter__icon-box">
-                            <i class="fas fa-hospital filter__icon"></i>
+                        <div class="map-header__icon-box">
+                            <i class="fas fa-hospital map-header__icon"></i>
                         </div>
-                        <span class="filter__span">بیمارستان</span>
+                        <span class="map-header__span">بیمارستان</span>
                     </div>
                     <div class="item  flex column align-center">
-                        <div class="filter__icon-box">
-                            <i class="fas fa-plus-square filter__icon"></i>
+                        <div class="map-header__icon-box">
+                            <i class="fas fa-plus-square map-header__icon"></i>
                         </div>
-                        <span class="filter__span">داروخانه</span>
+                        <span class="map-header__span">داروخانه</span>
                     </div>
                     <div class="item  flex column align-center">
-                        <div class="filter__icon-box">
-                            <i class="fas fa-pills filter__icon"></i>
+                        <div class="map-header__icon-box">
+                            <i class="fas fa-pills map-header__icon"></i>
                         </div>
-                        <span class="filter__span">کلینیک</span>
+                        <span class="map-header__span">کلینیک</span>
                     </div>
                     <div class="item  flex column align-center">
-                        <div class="filter__icon-box">
-                            <i class="fas fa-microscope filter__icon"></i>
+                        <div class="map-header__icon-box">
+                            <i class="fas fa-microscope map-header__icon"></i>
                         </div>
-                        <span class="filter__span">مرکز تصویر برداری</span>
+                        <span class="map-header__span">مرکز تصویر برداری</span>
                     </div>
                 </div>
             </div>
@@ -368,13 +368,133 @@
             </div>
         </div>
         <!-- لیست بیمارستان ها -->
-        <div class="hospital-list">
-
+        <div class="hospital-list flex column align-center">
+            <div class="hospital-list__search flex align-center justi-center">
+                <div class="hospital-list__search-box flex align-center justi-center">
+                    <input class="hospital-list__search-input" type="text"> 
+                    <i class="fas fa-search hospital-list__search-icon"></i>
+                </div>
+            </div>
+            <div class="hospital-list__list flex column align-center">                
+                <div class="hospital-list__item item-active flex column align-center justi-center" id="hospital-1" onclick="toggleActive('1')">
+                    <div class="hospital-list__row flex  r-reverse align-center justi-around">
+                        <div class="hospital-list__img-container">
+                            <img class="hospital-list__img" src="./assets/img/HOS06_PIC_01@2x.png">
+                        </div>
+                        <div class="hospital-list__text flex column align-end">
+                            <h3 class="hospital-list__name">بیمارستان نیکان</h3>
+                            <p class="hospital-list__type">بیمارستان جامع</p>
+                            <p class="hospital-list__phone">225457325<i class="fas fa-phone hospital-list__icon"></i></p>
+                            <p class="hospital-list__time">7:00_19:00<i class="fas fa-clock hospital-list__icon"></i></p>
+                        </div>
+                    </div>
+                    <div class="hospital-list__address flex r-reverse align-start">
+                        <i class="fas fa-map-marker-alt hospital-list__location-icon"></i>
+                        <span class="hospital-list__span"> تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد
+                        </span>
+                    </div>
+                </div>
+                <div class="hospital-list__item flex column align-center justi-center" id="hospital-2"  onclick="toggleActive('2')">
+                    <div class="hospital-list__row flex  r-reverse align-center justi-around">
+                        <div class="hospital-list__img-container">
+                            <img class="hospital-list__img" src="./assets/img/unnamed 3@2x.png">
+                        </div>
+                        <div class="hospital-list__text flex column align-end">
+                            <h3 class="hospital-list__name">بیمارستان فجر</h3>
+                            <p class="hospital-list__type">داخلی-جراحی</p>
+                            <p class="hospital-list__phone">225457325<i class="fas fa-phone hospital-list__icon"></i></p>
+                            <p class="hospital-list__time">7:00_19:00<i class="fas fa-clock hospital-list__icon"></i></p>
+                        </div>
+                    </div>
+                    <div class="hospital-list__address flex r-reverse align-start">
+                        <i class="fas fa-map-marker-alt hospital-list__location-icon"></i>
+                        <span class="hospital-list__span"> تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد
+                        </span>
+                    </div>
+                </div>
+                <div class="hospital-list__item flex column align-center justi-center" id="hospital-3" onclick="toggleActive('3')">
+                    <div class="hospital-list__row flex  r-reverse align-center justi-around">
+                        <div class="hospital-list__img-container">
+                            <img class="hospital-list__img" src="./assets/img/HOS06_PIC_01@2x.png">
+                        </div>
+                        <div class="hospital-list__text flex column align-end">
+                            <h3 class="hospital-list__name">بیمارستان نیکان</h3>
+                            <p class="hospital-list__type">بیمارستان جامع</p>
+                            <p class="hospital-list__phone">225457325<i class="fas fa-phone hospital-list__icon"></i></p>
+                            <p class="hospital-list__time">7:00_19:00<i class="fas fa-clock hospital-list__icon"></i></p>
+                        </div>
+                    </div>
+                    <div class="hospital-list__address flex r-reverse align-start">
+                        <i class="fas fa-map-marker-alt hospital-list__location-icon"></i>
+                        <span class="hospital-list__span"> تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="hospital-list__item flex column align-center justi-center" id="hospital-4" onclick="toggleActive('4')">
+                    <div class="hospital-list__row flex  r-reverse align-center justi-around">
+                        <div class="hospital-list__img-container">
+                            <img class="hospital-list__img" src="./assets/img/unnamed@2x.png">
+                        </div>
+                        <div class="hospital-list__text flex column align-end">
+                            <h3 class="hospital-list__name">بیمارستان اختر</h3>
+                            <p class="hospital-list__type">داخلی-جراحی</p>
+                            <p class="hospital-list__phone">225457325<i class="fas fa-phone hospital-list__icon"></i></p>
+                            <p class="hospital-list__time">7:00_19:00<i class="fas fa-clock hospital-list__icon"></i></p>
+                        </div>
+                    </div>
+                    <div class="hospital-list__address flex r-reverse align-start">
+                        <i class="fas fa-map-marker-alt hospital-list__location-icon"></i>
+                        <span class="hospital-list__span"> تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="hospital-list__item flex column align-center justi-center" id="hospital-5" onclick="toggleActive('5')">
+                    <div class="hospital-list__row flex  r-reverse align-center justi-around">
+                        <div class="hospital-list__img-container">
+                            <img class="hospital-list__img" src="./assets/img/unnamed (2)@2x.png">
+                        </div>
+                        <div class="hospital-list__text flex column align-end">
+                            <h3 class="hospital-list__name">بیمارستان هاجر</h3>
+                            <p class="hospital-list__type">عفونی-پوست</p>
+                            <p class="hospital-list__phone">225457325<i class="fas fa-phone hospital-list__icon"></i></p>
+                            <p class="hospital-list__time">7:00_19:00<i class="fas fa-clock hospital-list__icon"></i></p>
+                        </div>
+                    </div>
+                    <div class="hospital-list__address flex r-reverse align-start">
+                        <i class="fas fa-map-marker-alt hospital-list__location-icon"></i>
+                        <span class="hospital-list__span"> تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد
+                        </span>
+                    </div>
+                </div>                
+                <div class="hospital-list__item flex column align-center justi-center" id="hospital-6" onclick="toggleActive('6')">
+                    <div class="hospital-list__row flex  r-reverse align-center justi-around">                        
+                        <div class="hospital-list__img-container">
+                            <img class="hospital-list__img" src="./assets/img/unnamed@2x.png">
+                        </div>
+                        <div class="hospital-list__text flex column align-end">
+                            <h3 class="hospital-list__name">بیمارستان ارنش</h3>
+                            <p class="hospital-list__type">روانپزشکی</p>
+                            <p class="hospital-list__phone">225457325<i class="fas fa-phone hospital-list__icon"></i></p>
+                            <p class="hospital-list__time">7:00_19:00<i class="fas fa-clock hospital-list__icon"></i></p>
+                        </div>
+                    </div>
+                    <div class="hospital-list__address flex r-reverse align-start">
+                        <i class="fas fa-map-marker-alt hospital-list__location-icon"></i>
+                        <span class="hospital-list__span"> تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
         </div>
         <!-- نقشه -->
         <div class="map"></div>
         <!-- اطلاعات بیمارستان ها -->
-        <div class="hospital-details"></div>
+        <div class="hospital-details">
+            
+        </div>
     </main>
 </body>
 <script>
