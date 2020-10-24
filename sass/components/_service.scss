@@ -2,7 +2,7 @@
     height: 50vh;
     width: 15vw;
     position: fixed;
-    left: 1%;
+    // left: 0%;
     top: 25%;
 
     &__left-border{
@@ -10,6 +10,10 @@
         width: 4vw;
         @include centerABS;
         border-left: 2px solid $color-gray-light;
+
+        @include respond(big-desktop){
+            height: 35vh
+        }
     }
 
     &__logo-box{
@@ -23,9 +27,10 @@
         left: -55%;
         
         @include respond(big-desktop){
-            height: 8rem;
-            width: 8rem;
+            height: 6.5rem;
+            width:  6.5rem;
             margin-top: 3rem;
+            left: -50%;
         }
     }
 
@@ -50,6 +55,6 @@
         color: $color-gray;
         @include centerABS;
         
-        @include respond(big-desktop){font-size: 4rem;}
+        @include respond(big-desktop){font-size: 3.5rem;}
     }
 }

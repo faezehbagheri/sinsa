@@ -137,9 +137,36 @@ function openOption(num){
 }
 
 var showOption_map = [false ,false ,false ,false ,false ,false ];
-var filterType_map = ["","ostan" , "shahr" , "mahale" , "bime" , "takhasos" ];
+var filterType_map = ["", "mahale-map" , "shahr-map" , "ostan-map" , "takhasos-map"  , "bime-map" ];
 function openFilterOption_map(num){
+    var checkboxes = document.getElementsByName(filterType_map[num]);
+    var html=[];
+    var newHtml=[];
 
+    if(!showOption_map[num]){
+        document.querySelector(".map-header__filter-optios-" + num).style.display = "block";
+    }else{
+        for(var i = 0; i < checkboxes.length; i++)  
+        {  
+            
+            if(checkboxes[i].checked)  {
+                document.querySelector(".picked-" + num).innerHTML = '';
+                html[i]= "<div class='filter__item flex r-reverse align-center' id='item-%id%' onclick='removeItem(this.id)'><i class='fas fa-times-circle filter__close-icon'></i><span class='filter__text'>%text%</span></div>"
+                newHtml[i] = html[i].replace('%text%' , checkboxes[i].value);
+                newHtml[i] = newHtml[i].replace('%id%' , id);
+                id++;
+            }
+        } 
+        
+        for(var i = 0; i < html.length; i++)  
+        {  
+            document.querySelector(".picked-" + num).insertAdjacentHTML('beforeend' , newHtml[i]);
+        }
+
+        document.querySelector(".map-header__filter-optios-" + num).style.display = "none";
+        // document.querySelector(".picked-" + num).style.display = "block";
+    }
+    showOption_map[num] = ! showOption_map[num];
 }
 function removeItem(id){
     var el = document.getElementById(id);

@@ -243,7 +243,7 @@ body {
     cursor: pointer; }
     @media only screen and (min-width: 112.5em) {
       .about-illness__box {
-        height: 112%; } }
+        width: 112%; } }
   .about-illness__header {
     height: 8vh; }
   .about-illness__title {
@@ -306,7 +306,12 @@ body {
     transition: all 1s ease; }
 
 .activate > :last-child {
-  height: 48vh; }
+  height: 48vh;
+  overflow-y: scroll; }
+  .activate > :last-child::-webkit-scrollbar {
+    width: 1rem; }
+  .activate > :last-child::-webkit-scrollbar-thumb {
+    color: none; }
   @media only screen and (min-width: 112.5em) {
     .activate > :last-child {
       height: 40vh; } }
@@ -333,7 +338,7 @@ body {
   line-height: 5rem; }
   @media only screen and (min-width: 112.5em) {
     .activate p {
-      font-size: 2rem; } }
+      font-size: 1.8rem; } }
 
 .activate i:first-child {
   display: none; }
@@ -628,9 +633,6 @@ body {
 .filter {
   width: 15vw;
   margin-left: 2rem; }
-  @media only screen and (min-width: 112.5em) {
-    .filter {
-      margin-left: 0; } }
   .filter__main-box {
     height: 17vh;
     width: 90%;
@@ -696,13 +698,17 @@ body {
     display: none; }
     .filter__picked::-webkit-scrollbar {
       width: 1rem; }
+    .filter__picked::-webkit-scrollbar-thumb {
+      color: none; }
   .filter__optios {
     height: 15vh;
-    overflow-y: scroll;
     overflow-x: hidden;
-    border-top: 1px solid #707070; }
+    border-top: 1px solid #707070;
+    overflow-y: scroll; }
     .filter__optios::-webkit-scrollbar {
       width: 1rem; }
+    .filter__optios::-webkit-scrollbar-thumb {
+      color: none; }
   .filter__lable {
     font-size: 1.5rem;
     padding-right: .5rem;
@@ -1266,7 +1272,6 @@ body {
 
 .map-tools {
   height: 13rem;
-  width: 13rem;
   position: fixed;
   top: 95%;
   transform: translateY(-95%); }
@@ -1987,7 +1992,6 @@ body {
   height: 50vh;
   width: 15vw;
   position: fixed;
-  left: 1%;
   top: 25%; }
   .service__left-border {
     height: 40vh;
@@ -1997,6 +2001,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-left: 2px solid #A0A0A0; }
+    @media only screen and (min-width: 112.5em) {
+      .service__left-border {
+        height: 35vh; } }
   .service__logo-box {
     height: 6rem;
     width: 6rem;
@@ -2008,9 +2015,10 @@ body {
     left: -55%; }
     @media only screen and (min-width: 112.5em) {
       .service__logo-box {
-        height: 8rem;
-        width: 8rem;
-        margin-top: 3rem; } }
+        height: 6.5rem;
+        width: 6.5rem;
+        margin-top: 3rem;
+        left: -50%; } }
   .service__circle {
     height: 3rem;
     width: 3rem;
@@ -2033,7 +2041,7 @@ body {
     transform: translate(-50%, -50%); }
     @media only screen and (min-width: 112.5em) {
       .service__icon {
-        font-size: 4rem; } }
+        font-size: 3.5rem; } }
 
 .suggestion {
   height: 35vh;
@@ -2432,6 +2440,9 @@ body {
   height: 90vh;
   background-color: #dfe7ff;
   position: relative; }
+  @media only screen and (min-width: 112.5em) {
+    .map-main {
+      height: 87vh; } }
 
 .mobile-bottom-menu {
   display: none; }

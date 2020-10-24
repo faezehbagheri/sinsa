@@ -62,28 +62,28 @@
                         <i class="fas fa-angle-down filter__arrow-icon"></i>محله
                     </h3>
                 </div>
-                <div class="map-header__filter-optios2 map-header__optios-1">
+                <div class="map-header__filter-optios2 map-header__filter-optios-1">
                     <div class="filter__search-box">
                         <i class="fas fa-search  filter__right-icon"></i>
                         <input type="text" class="filter__input">
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="mahale" value="تجریش">
+                            <input type="checkbox" name="mahale-map" value="تجریش">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">تجریش</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="mahale" value="قلهک">
+                            <input type="checkbox" name="mahale-map" value="تهران">
                             <span class="checkbox-custom"></span>
                         </label>
-                        <span class="filter__lable">قلهک</span>
+                        <span class="filter__lable">تهران</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="mahale" value="صادقیه">
+                            <input type="checkbox" name="mahale-map" value="صادقیه">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">صادقیه</span>
@@ -91,56 +91,61 @@
 
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="mahale" value="پونک">
+                            <input type="checkbox" name="mahale-map" value="پونک">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">پونک</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="mahale" value="تهرانپارس">
+                            <input type="checkbox" name="mahale-map" value="تهرانپارس">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">تهرانپارس</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="mahale" value="اسلامشهر">
+                            <input type="checkbox" name="mahale-map" value="اسلامشهر">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">اسلامشهر</span>
                     </div>
                 </div>
-                <div class="map-header__picked filter__picked-2 flex r-reverse align-center wrap"></div>
+                <div class="map-header__picked picked-1 flex r-reverse align-center wrap">
+                    <div class='filter__item flex r-reverse align-center' id='item-1' onclick="removeItem(this.id)">
+                        <i class='fas fa-times-circle filter__close-icon'></i>
+                        <span class='filter__text'>تهران</span>
+                    </div>
+                </div>
             </div>
             <div class="map-header__filter-box2">
-                <div class="map-header__filter-header" onclick="">
-                    <h3 class="map-header__filter-title flex align-center justi-center">
+                <div class="map-header__filter-header">
+                    <h3 class="map-header__filter-title flex align-center justi-center" onclick="openFilterOption_map('2')">
                         <i class="fas fa-angle-down filter__arrow-icon"></i>شهر
                     </h3>
                 </div>
-                <div class="map-header__filter-optios2 filter__optios-2">
+                <div class="map-header__filter-optios2 map-header__filter-optios-2">
                     <div class="filter__search-box">
                         <i class="fas fa-search  filter__right-icon"></i>
                         <input type="text" class="filter__input">
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="تهران">
+                            <input type="checkbox" name="shahr-map" value="تهران">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">تهران</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="کرج">
+                            <input type="checkbox" name="shahr-map" value="کرج">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">کرج</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="مشهد">
+                            <input type="checkbox" name="shahr-map" value="مشهد">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">مشهد</span>
@@ -148,58 +153,61 @@
 
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="تبریز">
+                            <input type="checkbox" name="shahr-map" value="تبریز">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">تبریز</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="شیراز">
+                            <input type="checkbox" name="shahr-map" value="شیراز">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">شیراز</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="اراک">
+                            <input type="checkbox" name="shahr-map" value="اراک">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">اراک</span>
                     </div>
                 </div>
-                <div class="map-header__picked filter__picked-2 flex r-reverse align-center wrap">
-
+                <div class="map-header__picked picked-2 flex r-reverse align-center wrap">
+                    <div class='filter__item flex r-reverse align-center' id='item-1' onclick="removeItem(this.id)">
+                        <i class='fas fa-times-circle filter__close-icon'></i>
+                        <span class='filter__text'>تهران</span>
+                    </div>
                 </div>
             </div>
             <div class="map-header__filter-box2">
-                <div class="map-header__filter-header" onclick="">
-                    <h3 class="map-header__filter-title flex align-center justi-center">
+                <div class="map-header__filter-header">
+                    <h3 class="map-header__filter-title flex align-center justi-center" onclick="openFilterOption_map('3')">
                         <i class="fas fa-angle-down filter__arrow-icon"></i>استان
                     </h3>
                 </div>
-                <div class="map-header__filter-optios2 filter__optios-2">
+                <div class="map-header__filter-optios2 map-header__filter-optios-3">
                     <div class="filter__search-box">
                         <i class="fas fa-search  filter__right-icon"></i>
                         <input type="text" class="filter__input">
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="تهران">
+                            <input type="checkbox" name="ostan-map" value="تهران">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">تهران</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="کرج">
+                            <input type="checkbox" name="ostan-map" value="کرج">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">کرج</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="خراسان رضوی">
+                            <input type="checkbox" name="ostan-map" value="خراسان رضوی">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">خراسان رضوی</span>
@@ -207,60 +215,63 @@
 
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="اصفهان">
+                            <input type="checkbox" name="ostan-map" value="اصفهان">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">اصفهان</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="فارس">
+                            <input type="checkbox" name="ostan-map" value="فارس">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">فارس</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="shahr" value="مرکزی">
+                            <input type="checkbox" name="ostan-map" value="مرکزی">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">مرکزی</span>
                     </div>
                 </div>
-                <div class="map-header__picked filter__picked-2 flex r-reverse align-center wrap">
-
+                <div class="map-header__picked picked-3 flex r-reverse align-center wrap">
+                    <div class='filter__item flex r-reverse align-center' id='item-1' onclick="removeItem(this.id)">
+                        <i class='fas fa-times-circle filter__close-icon'></i>
+                        <span class='filter__text'>تهران</span>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="flex justi-center align-center map-header__box3">
             <div class="map-header__filter-box3">
-                <div class="map-header__filter-header" onclick="">
-                    <h3 class="map-header__filter-title flex align-center justi-center">
+                <div class="map-header__filter-header">
+                    <h3 class="map-header__filter-title flex align-center justi-center" onclick="openFilterOption_map('4')">
                         <i class="fas fa-angle-down filter__arrow-icon"></i>دسته بندی تخصص ها
                     </h3>
                 </div>
-                <div class="map-header__filter-optios3 filter__optios-1">
+                <div class="map-header__filter-optios3 map-header__filter-optios-4">
                     <div class="filter__search-box">
                         <i class="fas fa-search  filter__right-icon"></i>
                         <input type="text" class="filter__input">
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="takhasos" value="قلب و عروق">
+                            <input type="checkbox" name="takhasos-map" value="قلب و عروق">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">قلب و عروق</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="takhasos" value="مغز و استخوان">
+                            <input type="checkbox" name="takhasos-map" value="مغز و استخوان">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">مغز و استخوان</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="takhasos" value="خون و سرطان">
+                            <input type="checkbox" name="takhasos-map" value="خون و سرطان">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">خون و سرطان</span>
@@ -268,56 +279,61 @@
     
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="takhasos" value="گوارشی و کبد">
+                            <input type="checkbox" name="takhasos-map" value="گوارشی و کبد">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">گوارشی و کبد</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="takhasos" value="کودکان">
+                            <input type="checkbox" name="takhasos-map" value="کودکان">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">کودکان</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="takhasos" value="همه ی بیماری ها">
+                            <input type="checkbox" name="takhasos-map" value="همه ی بیماری ها">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">همه ی بیماری ها</span>
                     </div>
                 </div>
-                <div class="map-header__picked filter__picked-1 flex r-reverse align-center wrap"></div>
+                <div class="map-header__picked picked-4 flex r-reverse align-center wrap">
+                    <div class='filter__item flex r-reverse align-center' id='item-1' onclick="removeItem(this.id)">
+                        <i class='fas fa-times-circle filter__close-icon'></i>
+                        <span class='filter__text'>همه ی بیماری ها</span>
+                    </div>
+                </div>
             </div>
             <div class="map-header__filter-box3">
-                <div class="map-header__filter-header" onclick="">
-                    <h3 class="map-header__filter-title flex align-center justi-center">
+                <div class="map-header__filter-header">
+                    <h3 class="map-header__filter-title flex align-center justi-center" onclick="openFilterOption_map('5')">
                         <i class="fas fa-angle-down filter__arrow-icon"></i>بیمه
                     </h3>
                 </div>
-                <div class="map-header__filter-optios3 filter__optios-4">
+                <div class="map-header__filter-optios3 map-header__filter-optios-5">
                     <div class="filter__search-box">
                         <i class="fas fa-search  filter__right-icon"></i>
                         <input type="text" class="filter__input">
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="bime" value="بیمه تامین اجتماعی">
+                            <input type="checkbox" name="bime-map" value="بیمه تامین اجتماعی">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">بیمه تامین اجتماعی</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="bime" value="بیمه آتش سوزی">
+                            <input type="checkbox" name="bime-map" value="بیمه آتش سوزی">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">بیمه آتش سوزی</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="bime" value="بیمه تکمیلی">
+                            <input type="checkbox" name="bime-map" value="بیمه تکمیلی">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">بیمه تکمیلی</span>
@@ -325,27 +341,32 @@
 
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="bime" value="بیمه اتومبیل">
+                            <input type="checkbox" name="bime-map" value="بیمه اتومبیل">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">بیمه اتومبیل</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="bime" value="بیمه شخص ثالث">
+                            <input type="checkbox" name="bime-map" value="بیمه شخص ثالث">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">بیمه شخص ثالث</span>
                     </div>
                     <div class="filter__checkbox flex r-reverse align-center">
                         <label class="checkbox-label flex r-reverse">
-                            <input type="checkbox" name="bime" value="بیمه حوادث">
+                            <input type="checkbox" name="bime-map" value="بیمه حوادث">
                             <span class="checkbox-custom"></span>
                         </label>
                         <span class="filter__lable">بیمه حوادث</span>
                     </div>
                 </div>
-                <div class="map-header__picked filter__picked-1 flex r-reverse align-center wrap"></div>
+                <div class="map-header__picked picked-5 flex r-reverse align-center wrap">
+                    <div class='filter__item flex r-reverse align-center' id='item-1' onclick="removeItem(this.id)">
+                        <i class='fas fa-times-circle filter__close-icon'></i>
+                        <span class='filter__text'>همه ی بیمه ها</span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -494,7 +515,7 @@
         <!-- اطلاعات بیمارستان ها -->
         <div class="hospital-details"></div>
         <!-- ابزارهای پایین نقشه -->
-        <div class="map-tools flex column align-center justi-around">
+        <div class="map-tools flex column align-start justi-around">
             <div class="flex align-center">
                 <div class="map-tools__main-circle">
                     <i class="fas fa-map-marker-alt map-tools__icon"></i>
