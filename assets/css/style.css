@@ -1961,6 +1961,16 @@ body {
         .amodi-tab__multipleTabs a.active {
           font-size: 2rem;
           display: block; } }
+  .amodi-tab__item {
+    font-size: 2.5rem;
+    color: #707070;
+    text-align: center;
+    display: inline-block !important;
+    width: 16rem !important;
+    height: 6rem;
+    border: 1px solid #6DC2BE;
+    border-radius: 3rem;
+    line-height: 5rem; }
   .amodi-tab__prev-control {
     display: none; }
     @media only screen and (max-width: 30em) {
