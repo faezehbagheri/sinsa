@@ -233,7 +233,7 @@ body {
     border-radius: 2rem;
     box-shadow: -1px 0 5px #A0A0A0;
     position: relative;
-    height: 80vh; }
+    height: auto; }
   .about-illness__box {
     width: 110%;
     background-color: #fff;
@@ -245,7 +245,7 @@ body {
       .about-illness__box {
         width: 112%; } }
   .about-illness__header {
-    height: 8vh; }
+    height: 7.5rem; }
   .about-illness__title {
     text-align: right;
     padding-right: 1.8rem;
@@ -2355,7 +2355,7 @@ body {
       display: none; } }
 
 .illness-main {
-  height: 170vh;
+  height: auto;
   width: 100%;
   margin-top: 10rem; }
   @media only screen and (max-width: 30em) {
@@ -2363,7 +2363,7 @@ body {
       display: none; } }
   @media only screen and (min-width: 112.5em) {
     .illness-main {
-      height: 150vh; } }
+      height: auto; } }
 
 .main {
   height: 440vh;

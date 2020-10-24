@@ -88,9 +88,8 @@ function showButton(){
     }
 }
 
-function openIllnessText(num){
-    document.querySelector(".activate").classList.remove("activate");
-    document.querySelector("#box-"+num).classList.add("activate");
+function toggleTab(selector){
+    document.querySelector(selector).classList.toggle("activate");
 }
 
 function openIllnessTextMobile(num){

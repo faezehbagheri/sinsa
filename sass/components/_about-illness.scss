@@ -8,7 +8,7 @@
         border-radius: 2rem;
         box-shadow: -1px 0 5px $color-gray-light;
         position: relative;
-        height: 80vh;
+        height: auto;
     }
 
     &__box{
@@ -23,7 +23,7 @@
     }
 
     &__header{
-        height: 8vh;
+        height: 7.5rem;
     }
 
     &__title{
