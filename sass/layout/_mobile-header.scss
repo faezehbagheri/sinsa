@@ -67,7 +67,7 @@
     }
 
     &__search{
-        height: 9vh;
+        height: 8vh;
         width: 100%;
         background-color: #fff;
         position: fixed;
@@ -100,6 +100,7 @@
         outline: none;
         background-color: #EEF1EF;
         font-size: 4rem;
+        text-align: right;
 
         @include respond(phone-small){
             width: 70%;

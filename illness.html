@@ -189,17 +189,23 @@
         <div class="mobile-header__suggestion flex r-reverse align-center">       
             <i class="fas fa-bars mobile-header__category--icon"></i>
             <div class="mobile-header__category flex r-reverse align-center owl-carousel" id="dastebansi">
-                <span class="mobile-header__category--item active-item">معرفی</span>
-                <span class="mobile-header__category--item">علایم</span>
-                <span class="mobile-header__category--item">داروها</span>
-                <span class="mobile-header__category--item">درمان</span>
-                <span class="mobile-header__category--item">عوارض</span>
-                <span class="mobile-header__category--item">کلینیک</span>
+                <nav class="tabs">
+                    <a class="mobile-header__category--item" data-trigger="content01" class="active">توضیحات</a>
+                    <a class="mobile-header__category--item" data-trigger="content02">بیماری های مرتبط</a>
+                    <a class="mobile-header__category--item" data-trigger="content03">داروها</a>
+                    <a class="mobile-header__category--item" data-trigger="content04">تجهیزات</a>
+                    <a class="mobile-header__category--item" data-trigger="content05">علائم بیماری</a>
+                </nav>
+                <!-- <a class="mobile-header__category--item active-item" data-trigger="content01">توضیحات</a>
+                <a class="mobile-header__category--item" data-trigger="content02">بیماری های مرتبط</a>
+                <a class="mobile-header__category--item" data-trigger="content03">داروها</a>
+                <a class="mobile-header__category--item" data-trigger="content04">تجهیزات</a>
+                <a class="mobile-header__category--item" data-trigger="content05">علائم بیماری</a> -->
             </div>
         </div>
     </header>
 
-    <!-- Desktop Main -->
+    <!-- Main -->
     <main class="illness-main">
         <!-- Right Side Fixed -->
         <div class="right-side flex column">
@@ -242,7 +248,7 @@
         </div>
         <div class="flex r-reverse align-start justi-center">
             <!-- فیلترها -->
-            <div class="filter flex column align-center">
+            <!-- <div class="filter flex column align-center">
                 <div class="filter__main-box">
                     <div class="flex r-reverse align-center owl-carousel" id="filter">
                         <div class="item  flex column align-center">
@@ -586,215 +592,234 @@
                         <i class="fas fa-undo filter__reset-icon"></i>
                     </button>
                 </div>
-            </div>
+            </div> -->
             <!-- درباره بیماری ها -->
-            <div class="about-illness flex column align-end">            
-                <div class="tabs">
-                    <!-- تب اول -->
-                    <div class="tab">
-                        <input class="tab-radio" type="radio" id="tab-1" name="tab-group-1" checked>
-                        <label class="tab-label" for="tab-1"><span>عنوان</span> 1</label>
-                        <!-- محتوای تب اول  -->
-                        <div class="tab-panel">
-                            <div class="tab-content">
-                                <div class="tab-content">
-                                    <div class="about-illness__tab flex column align-end"> </div>
+            <div class="amodi-tab flex column align-end">   
+                <h1>بیماری ذات الریه</h1>         
+                <div class="amodi-tab__container">
+                    <nav class="amodi-tab__multipleTabs tabs">
+                        <a data-trigger="content01" class="active">توضیحات</a>
+                        <a data-trigger="content02">بیماری های مرتبط</a>
+                        <a data-trigger="content03">داروها</a>
+                        <a data-trigger="content04">تجهیزات</a>
+                        <a data-trigger="content05">علائم بیماری</a>
+                        <div class="amodi-tab__prev-control"><i class="fas fa-angle-left"></i></div>
+                        <div class="amodi-tab__next-control"><i class="fas fa-angle-right"></i></div>
+                    </nav>
+                    <div id="content01" class="amodi-tab__tabcontent">
+                        <div class="ofoghi-tab__tab">
+                            <div class="ofoghi-tab__container activate flex column align-end" id="box-1">
+                                <div class="ofoghi-tab__box" onclick="toggleTab('#box-1')">
+                                    <div class="ofoghi-tab__header flex r-reverse justi-between align-center">
+                                        <h2 class="ofoghi-tab__title">تغییرات ظاهری در بدن فرد مبتلا به سرطان
+                                        </h2>
+                                        <button class="ofoghi-tab__btn ofoghi-tab__btn-1">
+                                            <i class="fas fa-angle-right ofoghi-tab__logo"></i>
+                                            <i class="fas fa-angle-down ofoghi-tab__logo-active"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- تب دوم -->
-                    <div class="tab">
-                        <input class="tab-radio" type="radio" id="tab-2" name="tab-group-1">
-                        <label class="tab-label" for="tab-2"><span>عنوان</span> 2</label>
-                        <!-- محتوای تب دوم  -->
-                        <div class="tab-panel">
-                            <div class="tab-content">                                    
-                                <div class="tab-content">
-                                    <div class="about-illness__tab flex column align-end"> </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- تب سوم  -->
-                    <div class="tab">
-                        <input class="tab-radio" type="radio" id="tab-3" name="tab-group-1">
-                        <label class="tab-label" for="tab-3"><span>عنوان</span> 3</label>
-                        <!-- محتوای تب سوم -->
-                        <div class="tab-panel">
-                            <div class="tab-content">
-                                <div class="about-illness__tab flex column align-end">
-                                    
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- تب چهارم -->
-                    <div class="tab">
-                        <input class="tab-radio" type="radio" id="tab-4" name="tab-group-1" checked>
-                        <label class="tab-label" for="tab-4"><span>عنوان</span> 4</label>
-                        <!-- محتوای تب چهارم -->
-                        <div class="tab-panel">
-                            <div class="tab-content">
-                                <div class="about-illness__tab flex column align-end">
-                                    <div class="activate box flex column align-end" id="box-1">
-                                        <div class="about-illness__box" onclick="toggleTab('#box-1')">
-                                            <div class="about-illness__header flex r-reverse justi-between align-center">
-                                                <h2 class="about-illness__title">تغییرات ظاهری در بدن فرد مبتلا به سرطان
-                                                </h2>
-                                                <button class="about-illness__btn about-illness__btn-1">
-                                                    <i class="fas fa-angle-right about-illness__logo"></i>
-                                                    <i class="fas fa-angle-down about-illness__logo-active"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="about-illness__text">
-                                            <p class="about-illness__pragraph">
-                                                سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                                                می‌توان به علائمی
-                                                مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                                                مشاهدۀ این لائم به
-                                                صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                                                علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                                                سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                                                می‌توان به علائمی
-                                                مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                                                مشاهدۀ این است
-                                                سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                                                می‌توان به علائمی
-                                                مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                                                مشاهدۀ این لائم به
-                                                صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                                                علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                                                سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                                                می‌توان به علائمی
-                                                مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                                                مشاهدۀ این است
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex column align-end" id="box-2">
-                                        <div class="about-illness__box" onclick="toggleTab('#box-2')">
-                                            <div class="about-illness__header flex r-reverse justi-between align-center">
-                                                <h2 class="about-illness__title">تغییرات ظاهری 2</h2>
-                                                <button class="about-illness__btn">
-                                                    <i class="fas fa-angle-right about-illness__logo"></i>
-                                                    <i class="fas fa-angle-down about-illness__logo-active"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="about-illness__text">
-                                            <p class="about-illness__pragraph">
-                                                سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                                                می‌توان به علائمی
-                                                مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                                                مشاهدۀ این لائم به صورت
-                                                دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                                                علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                                                سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                                                می‌توان به علائمی
-                                                مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                                                مشاهدۀ این است
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex column align-end" id="box-3">
-                                        <div class="about-illness__box" onclick="toggleTab('#box-3')">
-                                            <div class="about-illness__header flex r-reverse justi-between align-center">
-                                                <h2 class="about-illness__title">تغییرات ظاهری 3</h2>
-                                                <button class="about-illness__btn">
-                                                    <i class="fas fa-angle-right about-illness__logo"></i>
-                                                    <i class="fas fa-angle-down about-illness__logo-active"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="about-illness__text">
-                                            <p class="about-illness__pragraph">
-                                                سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                                                می‌توان به علائمی
-                                                مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                                                مشاهدۀ این لائم به صورت
-                                                دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                                                علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                                                سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                                                می‌توان به علائمی
-                                                مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                                                مشاهدۀ این است
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex column align-end" id="box-4">
-                                        <div class="about-illness__box" onclick="toggleTab('#box-4')">
-                                            <div class="about-illness__header flex r-reverse justi-between align-center">
-                                                <h2 class="about-illness__title">تغییرات ظاهری 4</h2>
-                                                <button class="about-illness__btn">
-                                                    <i class="fas fa-angle-right about-illness__logo"></i>
-                                                    <i class="fas fa-angle-down about-illness__logo-active"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="about-illness__text">
-                                            <p class="about-illness__pragraph">
-                                                سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                                                می‌توان به علائمی
-                                                مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                                                مشاهدۀ این لائم به صورت
-                                                دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                                                علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                                                سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                                                می‌توان به علائمی
-                                                مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                                                مشاهدۀ این است
-
-                                            </p>
-                                        </div>
+                                <div class="ofoghi-tab__text">
+                                    <div class="ofoghi-tab__pragraph">
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به
+                                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به
+                                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به
+                                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به
+                                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به
+                                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به
+                                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به
+                                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به
+                                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به
+                                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به
+                                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- تب پنجم -->
-                    <div class="tab">
-                        <input class="tab-radio" type="radio" id="tab-5" name="tab-group-1">
-                        <label class="tab-label" for="tab-5"><span>عنوان</span> 5</label>
-                        <!-- محتوای تب پنجم -->
-                        <div class="tab-panel">
-                            <div class="tab-content">                                                                      
-                                <div class="tab-content">
-                                    <div class="about-illness__tab flex column align-end"> </div>
+                            <div class="ofoghi-tab__container flex column align-end" id="box-2">
+                                <div class="ofoghi-tab__box" onclick="toggleTab('#box-2')">
+                                    <div class="ofoghi-tab__header flex r-reverse justi-between align-center">
+                                        <h2 class="ofoghi-tab__title">تغییرات ظاهری 2</h2>
+                                        <button class="ofoghi-tab__btn">
+                                            <i class="fas fa-angle-right ofoghi-tab__logo"></i>
+                                            <i class="fas fa-angle-down ofoghi-tab__logo-active"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="ofoghi-tab__text">
+                                    <div class="ofoghi-tab__pragraph">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ofoghi-tab__container flex column align-end" id="box-3">
+                                <div class="ofoghi-tab__box" onclick="toggleTab('#box-3')">
+                                    <div class="ofoghi-tab__header flex r-reverse justi-between align-center">
+                                        <h2 class="ofoghi-tab__title">تغییرات ظاهری 3</h2>
+                                        <button class="ofoghi-tab__btn">
+                                            <i class="fas fa-angle-right ofoghi-tab__logo"></i>
+                                            <i class="fas fa-angle-down ofoghi-tab__logo-active"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="ofoghi-tab__text">
+                                    <div class="ofoghi-tab__pragraph">
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به صورت
+                                        دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
+        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ofoghi-tab__container flex column align-end" id="box-4">
+                                <div class="ofoghi-tab__box" onclick="toggleTab('#box-4')">
+                                    <div class="ofoghi-tab__header flex r-reverse justi-between align-center">
+                                        <h2 class="ofoghi-tab__title">تغییرات ظاهری 4</h2>
+                                        <button class="ofoghi-tab__btn">
+                                            <i class="fas fa-angle-right ofoghi-tab__logo"></i>
+                                            <i class="fas fa-angle-down ofoghi-tab__logo-active"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="ofoghi-tab__text">
+                                    <div class="ofoghi-tab__pragraph">
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این لائم به صورت
+                                        دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
+                                        می‌توان به علائمی
+                                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
+                                        مشاهدۀ این است
+        
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- تب ششم -->
-                    <div class="tab">
-                        <input class="tab-radio" type="radio" id="tab-6" name="tab-group-1">
-                        <label class="tab-label" for="tab-6"><span>عنوان</span> 6</label>
-                        <!-- محتوای تب ششم -->
-                        <div class="tab-panel">
-                            <div class="tab-content">                                  
-                                <div class="tab-content">
-                                    <div class="about-illness__tab flex column align-end"> </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="content02" class="amodi-tab__tabcontent">
+                        <h2>Tab content 2</h2>
+                        <ul>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                            <li>بیماری شماره 1</li>
+                        </ul>
                     </div>
-                    <!-- تب هفتم  -->
-                    <div class="tab">
-                        <input class="tab-radio" type="radio" id="tab-7" name="tab-group-1">
-                        <label class="tab-label" for="tab-7"><span>عنوان</span> 7</label>
-                        <!-- محتوای تب هفتم -->
-                        <div class="tab-panel">
-                            <div class="tab-content">                                  
-                                <div class="tab-content">
-                                    <div class="about-illness__tab flex column align-end"> </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="content03" class="amodi-tab__tabcontent">
+                        <h2>Tab content 3</h2>
                     </div>
-                  
+                    <div id="content04" class="amodi-tab__tabcontent">
+                        <h2>Tab content 4</h2>
+                    </div>
+                    <div id="content05" class="amodi-tab__tabcontent">
+                        <h2>Tab content 5</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -813,119 +838,6 @@
                 <div class="service__circle"></div>
             </div>
         </div>
-    </main>
-
-    <!-- Mobile Main -->
-    <main class="about-illness-mobile">
-        <div class="flex column align-end">
-            <div class="flex column align-end" id="mobile-box-1">
-                <div class="about-illness-mobile__box">
-                    <div class="about-illness-mobile__header flex r-reverse justi-between align-center">
-                        <h2 class="about-illness-mobile__title">تغییرات ظاهری در بدن فرد مبتلا به سرطان
-                        </h2>
-                        <button class="about-illness-mobile__btn about-illness-mobile__btn-1" onclick="toggleTabTextMobile('1')">
-                            <i class="fas fa-angle-right about-illness-mobile__logo"></i>
-                            <i class="fas fa-angle-down about-illness-mobile__logo-active"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="about-illness-mobile__text">
-                    <p class="about-illness-mobile__pragraph">
-                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                        می‌توان به علائمی
-                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                        مشاهدۀ این لائم به
-                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                        می‌توان به علائمی
-                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                        مشاهدۀ این است
-                    </p>
-                </div>
-            </div>
-            <div class="activate-mobile flex column align-end" id="mobile-box-2">
-                <div class="about-illness-mobile__box">
-                    <div class="about-illness-mobile__header flex r-reverse justi-between align-center">
-                        <h2 class="about-illness-mobile__title">تغییرات ظاهری 2
-                        </h2>
-                        <button class="about-illness-mobile__btn" onclick="toggleTabTextMobile('2')">
-                            <i class="fas fa-angle-right about-illness-mobile__logo"></i>
-                            <i class="fas fa-angle-down about-illness-mobile__logo-active"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="about-illness-mobile__text">
-                    <p class="about-illness-mobile__pragraph">
-                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                        می‌توان به علائمی
-                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                        مشاهدۀ این لائم به
-                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                        می‌توان به علائمی
-                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                        مشاهدۀ این است
-                    </p>
-                </div>
-            </div>
-            <div class="flex column align-end" id="mobile-box-3">
-                <div class="about-illness-mobile__box">
-                    <div class="about-illness-mobile__header flex r-reverse justi-between align-center">
-                        <h2 class="about-illness-mobile__title">تغییرات ظاهری 3
-                        </h2>
-                        <button class="about-illness-mobile__btn about-illness-mobile__btn-1" onclick="toggleTabTextMobile('3')">
-                            <i class="fas fa-angle-right about-illness-mobile__logo"></i>
-                            <i class="fas fa-angle-down about-illness-mobile__logo-active"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="about-illness-mobile__text">
-                    <p class="about-illness-mobile__pragraph">
-                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                        می‌توان به علائمی
-                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                        مشاهدۀ این لائم به
-                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                        می‌توان به علائمی
-                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                        مشاهدۀ این است
-                    </p>
-                </div>
-            </div>
-            <div class="box flex column align-end" id="mobile-box-4">
-                <div class="about-illness-mobile__box">
-                    <div class="about-illness-mobile__header flex r-reverse justi-between align-center">
-                        <h2 class="about-illness-mobile__title">تغییرات ظاهری 4
-                        </h2>
-                        <button class="about-illness-mobile__btn about-illness-mobile__btn-1" onclick="toggleTabTextMobile('4')">
-                            <i class="fas fa-angle-right about-illness-mobile__logo"></i>
-                            <i class="fas fa-angle-down about-illness-mobile__logo-active"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="about-illness-mobile__text">
-                    <p class="about-illness-mobile__pragraph">
-                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                        می‌توان به علائمی
-                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                        مشاهدۀ این لائم به
-                        صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                        علائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
-                        سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان
-                        می‌توان به علائمی
-                        مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌هایمداوم اشاره کرد. در صورت
-                        مشاهدۀ این است
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
     </main>
 
     
@@ -1016,6 +928,46 @@
 <script>
 
     $(document).ready(function () {
+        var activeTab = $(".tabs").find('a.active').data('trigger');
+        $('#' + activeTab).show();
+
+        $('.tabs>a').on('click', function () {
+            var tabId = $(this).data('trigger');
+            $('#' + tabId).show();
+            $('.amodi-tab__tabcontent:not(#' + tabId + ')').hide();
+            $(this).addClass('active');
+            $(this).siblings('a').removeClass('active');
+        });
+
+        $('.amodi-tab__prev-control').on('click', function () {
+            var tabslen = $('.tabs>a').length - 1;
+            var activetablen = $('.tabs>a.active').index();
+            var activetabs = $('.tabs>a.active');
+            var activeTab = $('.tabs>a.active').data('trigger');
+            if (activetablen == tabslen) {
+                return false;
+            } else {
+                $(activetabs).removeClass('active');
+                $(activetabs).next().addClass('active');
+                $('#' + activeTab).hide();
+                $('#' + activeTab).next().show();
+            }
+        });
+
+        $('.amodi-tab__next-control').on('click', function () {
+            var tabslen = $('.tabs>a').length - 1;
+            var activetablen = $('.tabs>a.active').index();
+            var activetabs = $('.tabs>a.active');
+            var activeTab = $('.tabs>a.active').data('trigger');
+            if (activetablen == 0) {
+                return false;
+            } else {
+                $(activetabs).removeClass('active');
+                $(activetabs).prev().addClass('active');
+                $('#' + activeTab).hide();
+                $('#' + activeTab).prev().show();
+            }
+        });
 
         var $filter = $("#filter");        
         var $category = $("#category");

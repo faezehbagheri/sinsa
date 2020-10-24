@@ -70,7 +70,11 @@
 
     &__item{
         margin: 4rem 2.5rem;
-        direction: ltr;        
+        direction: ltr; 
+        
+        &::marker{
+            content: '';
+        }
     }
 
     &__icon{

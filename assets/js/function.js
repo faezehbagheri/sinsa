@@ -49,17 +49,23 @@ function showSearchAdvanced(){
     }
 }
 
+var showSearchAdvanced = true;
 function openSearchAdvanced(){
-    var searchBox = document.querySelector(".mobile-header__search");
-    searchBox.style.height = "60rem";
-    searchBox.style.overflow = "visible";
-    searchBox.style.backgroundColor = "#EEF1EF"
-    document.querySelector(".mobile-category__icon").style.display= "block";
-    document.querySelector(".box-1").style.backgroundColor = "#fff";
-    document.querySelector(".input-1").style.backgroundColor = "#fff";
-    document.querySelector(".box-2").style.backgroundColor = "#fff";
-    document.querySelector(".input-2").style.backgroundColor = "#fff";
-    document.querySelector(".mobile-header__suggestion").style.marginTop = "76rem";
+    if(showSearchAdvanced){
+        var searchBox = document.querySelector(".mobile-header__search");
+        searchBox.style.height = "60rem";
+        searchBox.style.overflow = "visible";
+        searchBox.style.backgroundColor = "#EEF1EF"
+        document.querySelector(".mobile-category__icon").style.display= "block";
+        document.querySelector(".box-1").style.backgroundColor = "#fff";
+        document.querySelector(".input-1").style.backgroundColor = "#fff";
+        document.querySelector(".box-2").style.backgroundColor = "#fff";
+        document.querySelector(".input-2").style.backgroundColor = "#fff";
+        document.querySelector(".mobile-header__suggestion").style.marginTop = "76rem";
+    }else{
+        colseSearchAdvanced();
+    }
+    showSearchAdvanced = !showSearchAdvanced;
 }
 
 function colseSearchAdvanced(){
@@ -92,10 +98,8 @@ function toggleTab(selector){
     document.querySelector(selector).classList.toggle("activate");
 }
 
-function openIllnessTextMobile(num){
-    console.log('ss');
-    document.querySelector(".activate-mobile").classList.remove("activate-mobile");
-    document.querySelector("#mobile-box-"+num).classList.add("activate-mobile");
+function openIllnessTextMobile(selector){
+    document.querySelector(selector).classList.toggle("activate-mobile");
 }
 
 
@@ -175,7 +179,7 @@ function removeItem(id){
 var showSubMenu=['',true,true,true,true,true,true,true];
 function openSubMenu(num){
     if(showSubMenu[num]){
-        document.querySelector("#sub-menu-"+num).style = "transform: translate(0); height: 30vh";
+        document.querySelector("#sub-menu-"+num).style = "transform: translate(0); height: 35rem";
         document.querySelector("#left-icon-"+num).style.display= "none";
         document.querySelector("#down-icon-"+num).style= "padding-left: 3rem; display: inline-block; ";
     }else{

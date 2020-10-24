@@ -4,6 +4,10 @@
     position: fixed;
     // left: 0%;
     top: 25%;
+    
+    @include respond(phone){
+        display: none;
+    }
 
     &__left-border{
         height: 40vh;

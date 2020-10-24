@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="./assets/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/function.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <title>Sinsa</title>
+</head>
+
+<body>
+
+    
+    <!-- منو موبایل -->
+    <nav class="mobile-menu flex column justi-around align-end " id="menu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__header">
+                <a href="#"><img src="./assets/img/Logo Icon@2x.png" class="mobile-menu__logo"></a>
+            </div>
+            <div class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item flex r-reverse justi-start align-center">                        
+                        <a class="mobile-menu__link mobile-menu__margin" href="#">صفحه اصلی</a>
+                    </li>
+                    <li class="mobile-menu__item" onclick="openSubMenu('2')">
+                        <span class="mobile-menu__link">بیماری ها<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-2"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-2"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-2">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item" onclick="openSubMenu('3')">
+                        <span class="mobile-menu__link">داروها<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-3"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-3"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-3">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item" onclick="openSubMenu('4')">
+                        <span class="mobile-menu__link">زندگی سالم<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-4"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-4"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-4">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>                    
+                    <li class="mobile-menu__item" onclick="openSubMenu('5')">
+                        <span class="mobile-menu__link">خانواده<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-5"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-5"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-5">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item flex r-reverse justi-start align-center">
+                        <span class="mobile-menu__link mobile-menu__margin">اخبار</a>
+                    </li>
+                    <li class="mobile-menu__item" onclick="openSubMenu('6')">
+                        <span class="mobile-menu__link">مقالات<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-6"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-6"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-6">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Desktop Nav -->
+    <nav class="navigation flex r-reverse justi-around">
+        <ul class="navigation__list flex r-reverse justi-between">
+            <img src="./assets/img/Logo Icon@2x.png" class="navigation__logo">
+            <li class="navigation__item"><a href="#" class="navigation__link active">صفحه اصلی</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">مشاوره‌ی آنلاین</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">مشاوره‌ی تلفنی</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">نوبت دهی</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">مقالات</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">بانک سلامت</a></li>
+        </ul>
+        <div>
+            <button class="navigation__btn">ورود / ثبت نام</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <!-- هدر -->
+        <div class="mobile-header__head flex r-reverse justi-between align-center">
+            <a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a>
+            <h2 class="heading-primary">بیماری ها</h2>
+            <i class="fas fa-ellipsis-v mobile-header__icon"></i>
+        </div>
+        <!-- سرچ -->
+        <div class="mobile-header__search" id="mobile-search">
+            <div class="mobile-header__search-box box-1">
+                <i class="fas fa-search mobile-header__right-icon"></i> 
+                <input type="text" class="mobile-header__input input-1">
+                <i class="fas fa-bars mobile-header__left-icon" onclick="openSearchAdvanced()"></i>
+            </div>
+            <div class="mobile-header__search-box box-2">
+                <i class="fas fa-map-marker-alt  mobile-header__right-icon"></i>
+                <input type="text" class="mobile-header__input input-2">
+                <i class="fas fa-angle-down mobile-header__left-icon"></i>
+            </div>
+            <div class="mobile-category">
+                <div>
+                    <h2 class="mobile-category__header">دسته بندی</h2>
+                    <div class="mobile-category__main flex r-reverse justi-around align-center owl-carousel" id="category">
+                        <div class="mobile-category__item item">سلامت</div>
+                        <div class="mobile-category__item item">خانواده</div>
+                        <div class="mobile-category__item item">بیمارستان</div>
+                        <div class="mobile-category__item item">بیماری</div>
+                        <div class="mobile-category__item item">پزشک</div>
+                        <div class="mobile-category__item item">کلینیک</div>
+                        <div class="mobile-category__item item">دارو</div>
+                    </div>
+                    <button class="mobile-category__btn">جستجو کن</button>
+                    <i class="fas fa-times-circle mobile-category__icon" onclick="colseSearchAdvanced()"></i>
+                </div>
+            </div>
+        </div>
+        <!-- دسته بندی  -->
+        <div class="mobile-header__suggestion flex r-reverse align-center">       
+            
+        </div>
+    </header>
+
+  
+    
+    <!-- Mobile Bottom Menu -->
+    <nav class="mobile-bottom-menu flex r-reverse justi-around align-center">
+        <div class="flex column justi-around align-center">
+            <i class="fas fa-folder mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">آرشیو</span>
+        </div>
+        <div class="flex column justi-around align-center">
+            <i class="fas fa-globe-americas mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">اخبار</span>
+        </div>
+        <div>
+            <img src="./assets/img/Group 38108@2x.png" class="mobile-bottom-menu__photo">
+        </div>
+        <div class="flex column justi-around align-center">
+            <i class="fas fa-bell mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">تقویم</span>
+        </div>
+        <div class="flex column justi-around align-center">
+            <i class="fas fa-home mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">خانه</span>
+        </div>
+    </nav>
+
+    <!-- Mobile Left Side -->
+    <div class="left-side flex column justi-end">
+        <div class="left-side__box flex column-reverse">
+            <button class="left-side__btn ">
+                <i class="fas fa-newspaper left-side__icon left-side__icon-1"></i>
+            </button>        
+            <button class="left-side__btn ">
+                <i class="fas fa-phone-alt left-side__icon left-side__icon-2"></i>
+            </button>        
+            <button class="left-side__btn ">
+                <i class="fas fa-pen-alt left-side__icon left-side__icon-3"></i>
+            </button>        
+            <button class="left-side__btn ">
+                <i class="fas fa-comment-dots left-side__icon left-side__icon-4"></i>
+            </button>    
+        </div>
+        <button class="left-side__btn left-side__z-index" onclick="showButton()">
+            <i class="fas fa-ellipsis-v"></i>
+        </button>   
+    </div>
+
+    <!-- Desktop Footer -->
+    <footer class="footer">
+        <img src="./assets/img/footer.png" class="footer__background">
+        <div class="footer__main flex r-reverse align-center justi-around">
+            <div class="footer__about-us">
+                <h2 class="footer__header" onclick="openOption()">درباره ما</h2>
+                <p class="footer__pragraph">
+                    مشاوره تلفنی چیست؟<br>
+                    به زودی پزشک با شما تماس خواهد گرفت. به جای اینکه از کار خود مرخصی بگیرید، در ترافیک بمانید و زمان
+                    زیادی را برای پیدا کردن جای پارک هدر بدهید، یا اگر در محل زندگی خود به دکتر متخصص دسترسی ندارید
+                </p>
+                <div>
+                    <h3 class="footer__header-secondary">آدرس</h3><span class="footer__span">
+                        تهران - خیابان شریعتی - بالاتر از دوراهی قلهک - پلاک 1423</span>
+                </div>
+                <h3 class="footer__header-secondary">تلفن</h3><span class="footer__span">021 - 22601162</span>
+            </div>
+            <div class="footer__app flex column align-center justi-around">
+                <div class="footer__img flex r-reverse justi-center align-center">
+                    <img src="./assets/img/apple androide.png" class="footer__photo">
+                    <img src="./assets/img/pic footer.png" class="footer__photo">
+                </div>
+                <button class="footer__btn">دانلود اپلیکیشن</button>
+            </div>
+            <div class="footer__map">
+                <img src="./assets/img/Subtraction 2.png" class="footer__map-photo">
+            </div>
+        </div>
+        <div class="footer__bottom flex r-reverse">
+            <img src="./assets/img/footer-background.png" class="footer__bottom-background">
+            <img src="./assets/img/Logo Icon@2x.png" class="footer__logo">
+            <div class="footer__social">
+                <i class="fab fa-instagram footer__icon"></i>
+                <i class="fab fa-twitter footer__icon"></i>
+                <i class="fab fa-facebook-f footer__icon"></i>
+                <i class="fas fa-globe-americas footer__icon"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+
+    $(document).ready(function () {       
+        var $category = $("#category");
+
+
+        /// category ///
+        $category.children().each(function (index) {
+            $(this).attr('data-position', index);
+        });
+
+        $category.owlCarousel({
+            items: 4,
+            rtl: true
+        });
+
+        $(document).on('click', '.owl-item>div', function () {
+            var $speed = 300;  // in ms
+            $category.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+        });
+
+    });
+</script>
+</html>

@@ -225,213 +225,6 @@ body {
       height: 19rem;
       width: 19rem; } }
 
-.about-illness {
-  width: 52vw; }
-  .about-illness__tab {
-    width: 100%;
-    background-color: #fff;
-    border-radius: 2rem;
-    box-shadow: -1px 0 5px #A0A0A0;
-    position: relative;
-    height: auto; }
-  .about-illness__box {
-    width: 110%;
-    background-color: #fff;
-    margin-top: 2rem;
-    border-radius: 1rem 0 0 1rem;
-    box-shadow: -2px 2px 8px #A0A0A0;
-    cursor: pointer; }
-    @media only screen and (min-width: 112.5em) {
-      .about-illness__box {
-        width: 112%; } }
-  .about-illness__header {
-    height: 7.5rem; }
-  .about-illness__title {
-    text-align: right;
-    padding-right: 1.8rem;
-    font-size: 1.7rem;
-    font-weight: 200;
-    color: #A0A0A0;
-    transition: all .5s; }
-    @media only screen and (min-width: 112.5em) {
-      .about-illness__title {
-        font-size: 2rem; } }
-  .about-illness__btn {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 100%;
-    background-color: #d9d9d9;
-    left: 6.5%;
-    position: relative;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: all .5s; }
-    @media only screen and (min-width: 112.5em) {
-      .about-illness__btn {
-        height: 5rem;
-        width: 5rem;
-        left: 8%; } }
-  .about-illness__logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5rem;
-    color: #fff; }
-    @media only screen and (min-width: 112.5em) {
-      .about-illness__logo {
-        font-size: 3rem; } }
-  .about-illness__logo-active {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5rem;
-    color: #fff;
-    display: none; }
-    @media only screen and (min-width: 112.5em) {
-      .about-illness__logo-active {
-        font-size: 3rem; } }
-  .about-illness__text {
-    height: 0;
-    overflow: hidden;
-    transition: all 1s ease; }
-  .about-illness__pragraph {
-    text-align: right;
-    font-size: 1.5rem;
-    padding: 2.5rem;
-    color: #707070;
-    line-height: 5rem;
-    transition: all 1s ease; }
-
-.activate > :last-child {
-  height: 48vh;
-  overflow-y: scroll; }
-  .activate > :last-child::-webkit-scrollbar {
-    width: 1rem; }
-  .activate > :last-child::-webkit-scrollbar-thumb {
-    color: none; }
-  @media only screen and (min-width: 112.5em) {
-    .activate > :last-child {
-      height: 40vh; } }
-
-.activate button {
-  background-color: #90C73D !important; }
-
-.activate h2 {
-  width: 50%;
-  font-size: 2rem;
-  color: #6DC2BE;
-  padding: 1rem;
-  border-bottom: 3px solid #6DC2BE; }
-  @media only screen and (min-width: 112.5em) {
-    .activate h2 {
-      font-size: 2.2rem;
-      padding: 2rem; } }
-
-.activate p {
-  text-align: right;
-  font-size: 1.7rem;
-  padding: 2.5rem;
-  color: #707070;
-  line-height: 5rem; }
-  @media only screen and (min-width: 112.5em) {
-    .activate p {
-      font-size: 1.8rem; } }
-
-.activate i:first-child {
-  display: none; }
-
-.activate i:last-child {
-  display: inline-block; }
-
-.about-illness-mobile {
-  height: 80vh;
-  display: none; }
-  @media only screen and (max-width: 30em) {
-    .about-illness-mobile {
-      display: flex; } }
-  .about-illness-mobile__box {
-    width: 100%;
-    background-color: #fff;
-    margin-top: 1rem;
-    border-radius: 1rem 0 0 1rem;
-    box-shadow: -2px 2px 8px #A0A0A0; }
-  .about-illness-mobile__header {
-    height: 6vh; }
-  .about-illness-mobile__title {
-    text-align: right;
-    padding-right: 1.8rem;
-    font-size: 2.5rem;
-    font-weight: 200;
-    color: #6DC2BE;
-    transition: all .5s; }
-  .about-illness-mobile__btn {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 100%;
-    background-color: #d9d9d9;
-    left: 8%;
-    position: relative;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: all .5s; }
-  .about-illness-mobile__logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    color: #fff; }
-  .about-illness-mobile__logo-active {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    color: #fff;
-    display: none; }
-  .about-illness-mobile__text {
-    height: 0;
-    overflow: hidden;
-    transition: all 1s ease; }
-  .about-illness-mobile__pragraph {
-    text-align: right;
-    font-size: 1.5rem;
-    padding: 2.5rem;
-    color: #707070;
-    line-height: 5rem;
-    transition: all 1s ease; }
-
-.activate-mobile > :first-child {
-  background-color: #6DC2BE !important; }
-
-.activate-mobile > :last-child {
-  height: 30vh !important; }
-
-.activate-mobile button {
-  background-color: #90C73D !important; }
-
-.activate-mobile h2 {
-  font-size: 2.8rem !important;
-  color: #fff !important;
-  padding: 2rem; }
-
-.activate-mobile p {
-  text-align: right;
-  font-size: 2.2rem;
-  padding: 2.5rem;
-  color: #707070;
-  line-height: 5rem; }
-
-.activate-mobile i:first-child {
-  display: none; }
-
-.activate-mobile i:last-child {
-  display: inline-block; }
-
 .article {
   width: 99vw;
   transition: all .2s; }
@@ -1993,6 +1786,9 @@ body {
   width: 15vw;
   position: fixed;
   top: 25%; }
+  @media only screen and (max-width: 30em) {
+    .service {
+      display: none; } }
   .service__left-border {
     height: 40vh;
     width: 4vw;
@@ -2127,126 +1923,266 @@ body {
       color: #90C73D;
       margin: 0  5%; }
 
-.tabs {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center; }
+.amodi-tab {
+  width: 52vw; }
+  @media only screen and (max-width: 30em) {
+    .amodi-tab {
+      width: 100%; } }
+  .amodi-tab h1 {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #90C73D;
+    color: #6DC2BE; }
+  .amodi-tab__container {
+    width: 100%; }
+  .amodi-tab__multipleTabs {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    position: relative; }
+    @media only screen and (max-width: 30em) {
+      .amodi-tab__multipleTabs {
+        display: none; } }
+    .amodi-tab__multipleTabs a {
+      flex: 1 0 0;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+      background-color: #6DC2BE;
+      border-radius: 25px 25px 0 0;
+      margin-left: 1px;
+      color: #ffff;
+      font-size: 1.5rem; }
+    .amodi-tab__multipleTabs a.active {
+      background: #fdfdfd;
+      border: 3px solid #6DC2BE;
+      border-bottom: none;
+      color: #fff; }
+      @media only screen and (max-width: 30em) {
+        .amodi-tab__multipleTabs a.active {
+          font-size: 2rem;
+          display: block; } }
+  .amodi-tab__prev-control {
+    display: none; }
+    @media only screen and (max-width: 30em) {
+      .amodi-tab__prev-control {
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: #E43F6F;
+        font-size: 3rem;
+        cursor: pointer; } }
+  .amodi-tab__next-control {
+    display: none; }
+    @media only screen and (max-width: 30em) {
+      .amodi-tab__next-control {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #E43F6F;
+        font-size: 3rem;
+        cursor: pointer; } }
+  .amodi-tab__tabcontent {
+    display: none;
+    width: 100%; }
 
-.tabs:after {
-  clear: both;
-  content: '';
-  display: table; }
-
-.tabs .tab {
-  display: inline; }
-
-.tabs .tab-label {
-  font-size: 15px;
-  vertical-align: bottom;
-  padding: 15px 25px 8px;
-  background-color: #6DC2BE;
-  margin-right: -9px;
-  display: inline-block;
+.ofoghi-tab__tab {
+  width: 105%;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: -1px 0 5px #A0A0A0;
   position: relative;
-  z-index: 0;
+  height: auto; }
+  @media only screen and (max-width: 30em) {
+    .ofoghi-tab__tab {
+      width: 100%; } }
+
+.ofoghi-tab__container {
+  width: 100%; }
+
+.ofoghi-tab__box {
+  width: 110%;
+  background-color: #fff;
+  margin-top: 2rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: -2px 2px 8px #A0A0A0;
+  cursor: pointer; }
+  @media only screen and (min-width: 112.5em) {
+    .ofoghi-tab__box {
+      width: 112%; } }
+  @media only screen and (max-width: 30em) {
+    .ofoghi-tab__box {
+      width: 100%;
+      background-color: #fff;
+      margin-top: 1rem;
+      border-radius: 1rem;
+      box-shadow: -2px 2px 8px #A0A0A0; } }
+
+.ofoghi-tab__header {
+  height: 7.5rem; }
+
+.ofoghi-tab__title {
+  text-align: right;
+  padding-right: 1.8rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: #A0A0A0;
+  transition: all .5s; }
+  @media only screen and (min-width: 112.5em) {
+    .ofoghi-tab__title {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 30em) {
+    .ofoghi-tab__title {
+      text-align: right;
+      padding-right: 1.8rem;
+      font-size: 2.5rem;
+      font-weight: 200;
+      color: #6DC2BE;
+      transition: all .5s; } }
+
+.ofoghi-tab__btn {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+  left: 6.5%;
+  position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .5s; }
+  @media only screen and (min-width: 112.5em) {
+    .ofoghi-tab__btn {
+      height: 5rem;
+      width: 5rem;
+      left: 8%; } }
+  @media only screen and (max-width: 30em) {
+    .ofoghi-tab__btn {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 100%;
+      background-color: #d9d9d9;
+      left: 8%;
+      position: relative;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: all .5s; } }
+
+.ofoghi-tab__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
   color: #fff; }
   @media only screen and (min-width: 112.5em) {
-    .tabs .tab-label {
-      font-size: 18px; } }
+    .ofoghi-tab__logo {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 30em) {
+    .ofoghi-tab__logo {
+      font-size: 3rem; } }
 
-.tabs .tab-label:before,
-.tabs .tab-label:after {
-  display: block;
-  content: " ";
+.ofoghi-tab__logo-active {
   position: absolute;
-  top: 0;
-  height: 100%;
-  width: 33px;
-  background-color: #6DC2BE; }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #fff;
+  display: none; }
+  @media only screen and (min-width: 112.5em) {
+    .ofoghi-tab__logo-active {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 30em) {
+    .ofoghi-tab__logo-active {
+      font-size: 3rem; } }
 
-.tabs .tab-label:before {
-  left: -17px;
-  transform: skew(-30deg, 0deg);
-  border-left: 1px solid #6DC2BE; }
-
-.tabs .tab-label:after {
-  right: -17px;
-  transform: skew(30deg, 0deg);
-  border-right: 1px solid #6DC2BE; }
-
-.tabs .tab-label:before {
-  border-radius: 10px 0 0 0; }
-
-.tabs .tab-label:after {
-  border-radius: 0 10px 0 0; }
-
-.recipe-tab li.selected:before,
-.recipe-tab li.selected:after {
-  background: #6DC2BE;
-  border-bottom: 3px solid #ffffff; }
-
-.tabs .tab [type="radio"]:hover:checked + .tab-label,
-.tabs .tab-label:hover,
-.tabs .tab-label:hover:before,
-.tabs .tab-label:hover:after {
-  cursor: pointer; }
-
-.tabs .tab > [type="radio"] {
-  clip: rect(0 0 0 0);
-  height: 1px;
-  opacity: 0;
-  position: fixed;
-  width: 1px;
-  z-index: -1; }
-
-.tabs .tab-panel {
-  display: inline;
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
+.ofoghi-tab__text {
   height: 0;
-  width: 0; }
+  overflow: hidden;
+  transition: all 1s ease; }
 
-.tabs .tab-content {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: block;
-  background: white;
-  border-radius: 15px;
-  float: left;
-  width: 100%;
-  text-align: left; }
+.ofoghi-tab__pragraph {
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  color: #707070;
+  line-height: 5rem;
+  transition: all 1s ease; }
 
-.tabs .tab [type="radio"]:checked + .tab-label {
-  background: white;
-  border-bottom-width: 0;
-  padding-bottom: 11px;
-  z-index: 1;
+@media only screen and (max-width: 30em) {
+  .activate > :first-child {
+    background-color: #6DC2BE !important; } }
+
+.activate > :last-child {
+  height: 48vh;
+  overflow-y: scroll; }
+  .activate > :last-child div {
+    text-align: right;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    color: #707070;
+    line-height: 5rem; }
+    @media only screen and (max-width: 30em) {
+      .activate > :last-child div {
+        text-align: right;
+        font-size: 2.2rem;
+        padding: 2.5rem;
+        color: #707070;
+        line-height: 5rem; } }
+  .activate > :last-child::-webkit-scrollbar {
+    width: 1rem; }
+  .activate > :last-child::-webkit-scrollbar-thumb {
+    color: none; }
+  @media only screen and (min-width: 112.5em) {
+    .activate > :last-child {
+      height: 40vh; } }
+  @media only screen and (max-width: 30em) {
+    .activate > :last-child {
+      height: 40rem; } }
+
+.activate button {
+  background-color: #90C73D !important; }
+
+.activate h2 {
+  width: 50%;
+  font-size: 2rem;
   color: #6DC2BE;
-  border-top: 1px solid #6DC2BE;
-  border-radius: 8px 8px 0 0; }
+  padding: 2rem;
+  border-bottom: 3px solid #6DC2BE; }
+  @media only screen and (min-width: 112.5em) {
+    .activate h2 {
+      font-size: 2.2rem;
+      padding: 2rem; } }
+  @media only screen and (max-width: 30em) {
+    .activate h2 {
+      font-size: 2.8rem !important;
+      border-bottom: none;
+      color: #fff !important;
+      padding: 2rem;
+      width: 70%; } }
 
-.tabs .tab [type="radio"]:checked + .tab-label::after {
-  background: white;
-  border-bottom-width: 0;
-  padding-bottom: 11px;
-  z-index: 1; }
+.activate p {
+  text-align: right;
+  font-size: 1.7rem;
+  padding: 2.5rem;
+  color: #707070;
+  line-height: 5rem; }
+  @media only screen and (max-width: 30em) {
+    .activate p {
+      text-align: right;
+      font-size: 2.2rem;
+      padding: 2.5rem;
+      color: #6DC2BE;
+      line-height: 5rem; } }
 
-.tabs .tab [type="radio"]:checked + .tab-label::before {
-  background: white;
-  border-bottom-width: 0;
-  padding-bottom: 11px;
-  z-index: 1; }
-
-.tabs .tab .tab-label .word-recipe {
+.activate i:first-child {
   display: none; }
 
-.tabs .tab [type="radio"]:checked + .tab-label .word-recipe {
-  display: inline; }
-
-.tabs .tab [type="radio"]:checked ~ .tab-panel {
-  display: inline; }
+.activate i:last-child {
+  display: inline-block; }
 
 .footer {
   height: 60vh;
@@ -2357,10 +2293,8 @@ body {
 .illness-main {
   height: auto;
   width: 100%;
-  margin-top: 10rem; }
-  @media only screen and (max-width: 30em) {
-    .illness-main {
-      display: none; } }
+  margin-top: 5rem;
+  margin-bottom: 25rem; }
   @media only screen and (min-width: 112.5em) {
     .illness-main {
       height: auto; } }
@@ -2522,7 +2456,7 @@ body {
       .mobile-header__span {
         font-size: 2rem; } }
   .mobile-header__search {
-    height: 9vh;
+    height: 8vh;
     width: 100%;
     background-color: #fff;
     position: fixed;
@@ -2551,7 +2485,8 @@ body {
     border: none;
     outline: none;
     background-color: #EEF1EF;
-    font-size: 4rem; }
+    font-size: 4rem;
+    text-align: right; }
     @media only screen and (max-width: 22.5em) {
       .mobile-header__input {
         width: 70%; } }
@@ -2664,6 +2599,8 @@ body {
   .mobile-menu__item {
     margin: 4rem 2.5rem;
     direction: ltr; }
+    .mobile-menu__item::marker {
+      content: ''; }
   .mobile-menu__icon {
     height: 5.5rem;
     width: 5.5rem; }

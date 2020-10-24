@@ -1,0 +1,91 @@
+.amodi-tab{
+    width: 52vw;
+
+    
+    @include respond(phone){
+        width: 100%;
+    }
+
+    & h1{
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $color-primary-light;
+        color: $color-primary;
+    }
+
+    &__container{
+        width: 100%;
+
+    }
+
+    &__multipleTabs {
+        display:flex;
+        flex-flow: row-reverse wrap;
+        // border-bottom:1px solid #ccc;
+        position: relative;
+        
+        @include respond(phone){display: none;}
+
+        & a{
+            flex:1 0 0; 
+            padding:10px 0; 
+            text-align: center; 
+            text-decoration:none;
+            background-color: $color-primary;
+            border-radius: 25px 25px 0 0;
+            margin-left: 1px;
+            color: #ffff;
+            font-size: 1.5rem;
+
+            // @include respond(phone){display:none;}
+        }
+
+        & a.active {
+            background:rgb(253, 253, 253); 
+            border: 3px solid $color-primary;
+            border-bottom: none;
+            color:#fff;
+
+            @include respond(phone){
+                font-size: 2rem;
+                display:block;
+            }
+        }
+    }
+    
+
+    &__prev-control {
+        display:none;
+
+        @include respond(phone){
+            display:inline-block; 
+            position:absolute; 
+            left:10px; top:10px; 
+            color: $color-pink;
+            font-size: 3rem; 
+            cursor:pointer;
+        }
+    }
+
+    &__next-control {
+        display:none;
+
+        @include respond(phone){
+            display:inline-block; 
+            position:absolute; 
+            right:10px; 
+            top:10px;   
+            color: $color-pink;
+            font-size: 3rem; 
+            cursor:pointer;
+        }
+    }
+
+    &__tabcontent {
+        display: none; 
+       width: 100%;
+    }
+
+    
+}
+

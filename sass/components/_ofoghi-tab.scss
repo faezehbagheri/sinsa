@@ -1,14 +1,16 @@
-.about-illness{
-    width: 52vw;
-    // margin-right: 5rem;
-
+.ofoghi-tab{
     &__tab{
-        width: 100%;
+        width: 105%;
         background-color: #fff;
         border-radius: 2rem;
         box-shadow: -1px 0 5px $color-gray-light;
         position: relative;
         height: auto;
+
+        @include respond(phone){width: 100%;}
+    }
+    &__container{
+        width: 100%;
     }
 
     &__box{
@@ -20,6 +22,13 @@
         cursor: pointer;
         
         @include respond(big-desktop){width: 112%;}
+        @include respond(phone){
+            width: 100%;
+            background-color: #fff;
+            margin-top: 1rem;
+            border-radius: 1rem;
+            box-shadow: -2px 2px 8px $color-gray-light;
+        }
     }
 
     &__header{
@@ -37,6 +46,14 @@
         
         @include respond(big-desktop){
             font-size: 2rem;
+        }
+        @include respond(phone){
+            text-align: right;
+            padding-right: 1.8rem;
+            font-size: 2.5rem;
+            font-weight: 200;
+            color: $color-primary;
+            transition: all .5s;
         }
     }
 
@@ -57,6 +74,19 @@
             width: 5rem;
             left: 8%;
         }
+
+        @include respond(phone){
+            height: 5rem;
+            width:  5rem;
+            border-radius: 100%;
+            background-color: #d9d9d9;
+            left: 8%;
+            position: relative;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: all .5s;
+        }
     }
 
     &__logo{
@@ -65,6 +95,7 @@
         color: #fff;
         
         @include respond(big-desktop){font-size: 3rem;}
+        @include respond(phone){font-size: 3rem;}
     }
 
     &__logo-active{
@@ -74,6 +105,7 @@
         display: none;
         
         @include respond(big-desktop){font-size: 3rem;}
+        @include respond(phone){font-size: 3rem;}
     }
 
     &__text{
@@ -97,9 +129,31 @@
 
 .activate{
 
+    &>:first-child{
+        @include respond(phone){
+            background-color: $color-primary !important;  
+        }      
+    }
+
     &>:last-child{
         height: 48vh;        
         overflow-y: scroll;
+
+        & div{
+            text-align: right;
+            font-size: 1.5rem;
+            padding: 2.5rem;
+            color: $color-gray;
+            line-height: 5rem;
+
+            @include respond(phone){
+                text-align: right;
+                font-size: 2.2rem;
+                padding: 2.5rem;
+                color: $color-gray;
+                line-height: 5rem;
+            }
+        }
         
         &::-webkit-scrollbar {
             width: 1rem;
@@ -110,6 +164,8 @@
         }
         
         @include respond(big-desktop){height: 40vh;}
+        @include respond(phone){height: 40rem;}
+
     }
 
     & button{
@@ -120,12 +176,20 @@
         width: 50%;
         font-size: 2rem;
         color: $color-primary;
-        padding: 1rem;
+        padding: 2rem;
         border-bottom: 3px solid $color-primary;
         
         @include respond(big-desktop){
             font-size: 2.2rem;
             padding: 2rem;
+        }
+
+        @include respond(phone){
+            font-size: 2.8rem !important;
+            border-bottom: none;
+            color: #fff !important;
+            padding: 2rem;
+            width: 70%;
         }
     }
 
@@ -137,7 +201,13 @@
         color: $color-gray;
         line-height: 5rem;
         
-        @include respond(big-desktop){font-size: 1.8rem;}
+        @include respond(phone){
+            text-align: right;
+            font-size: 2.2rem;
+            padding: 2.5rem;
+            color: $color-primary;
+            line-height: 5rem;
+        }
     }
 
     & i{
