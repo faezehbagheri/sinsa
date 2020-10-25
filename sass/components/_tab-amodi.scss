@@ -1,4 +1,4 @@
-.amodi-tab{
+.tab-amodi{
     width: 52vw;
 
     
@@ -21,8 +21,8 @@
     &__multipleTabs {
         display:flex;
         flex-flow: row-reverse wrap;
-        // border-bottom:1px solid #ccc;
         position: relative;
+        cursor: pointer;
         
         @include respond(phone){display: none;}
 
