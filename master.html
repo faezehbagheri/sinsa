@@ -142,25 +142,45 @@
     <nav class="navigation flex r-reverse justi-around">
         <div class="navigation__list flex r-reverse justi-between">
             <img src="./assets/img/Logo Icon@2x.png" class="navigation__logo">
-            <div class="navigation__item"><a href="#" class="navigation__link active">بیماری ها</a></div>
-            <div class="navigation__item"><a href="#" class="navigation__link">داروها</a></div>
-            <div class="navigation__item"><a href="#" class="navigation__link">زندگی سالم</a></div>
-            <div class="navigation__item">
-                <a href="#" class="navigation__link">خانواده</a>
-                <div class="navigation__submenu flex align-center">
+            <div>
+                <button class="navigation__item">بیماری ها</button>
+            </div>
+            <div>
+                <button class="navigation__item">داروها</button>
+            </div>
+            <div>
+                <button class="navigation__item">زندگی سالم</a>
+            </div>
+            <div>
+                <button class="navigation__item" onclick="showSubmenu('#submenu-4')">خانواده</button>
+                <div class="navigation__submenu navigation__openSubmenu flex align-center justi-center" id="submenu-4">
                     <div class="navigation__sub-list flex r-reverse justi-around align-center owl-carousel submenu" >
-                        <div class="navigation__sub-item item">سلامت</div>
-                        <div class="navigation__sub-item item">خانواده</div>
-                        <div class="navigation__sub-item item">بیمارستان</div>
-                        <div class="navigation__sub-item item">بیماری</div>
-                        <div class="navigation__sub-item item">پزشک</div>
-                        <div class="navigation__sub-item item">کلینیک</div>
-                        <div class="navigation__sub-item item">دارو</div>
+                        <div class="navigation__sub-item item">رژیم غذایی</div>
+                        <div class="navigation__sub-item item">زیبایی</div>
+                        <div class="item">
+                            <button class="navigation__sub-item">سلامت روان </button>
+                        </div>
+                        <div class="navigation__sub-item item">عادت سلامت</div>
+                        <div class="navigation__sub-item item">منابع</div>
+                        <div class="navigation__sub-item item">کتاب سلامت</div>
+                        <div class="navigation__sub-item item">پادکست سلامت</div>
                     </div>
+                    <!-- <div class="navigation__zirmenu flex column align-end justi-end">
+                        <div class="navigation__zirmenu-list flex column justi-around">
+                            <button class="navigation__button">سلامت فردی</button>
+                            <button class="navigation__button">ورزشی</button>
+                            <button class="navigation__button">انگیزشی</button>
+                        </div>
+                        <img src="./assets/img/submenu2.png" class="navigation__img">
+                    </div> -->
                 </div>
             </div>
-            <div class="navigation__item"><a href="#" class="navigation__link">اخبار</a></div>
-            <div class="navigation__item"><a href="#" class="navigation__link">مقالات</a></div>
+            <div>
+                <button class="navigation__item">اخبار</button>
+            </div>
+            <div>
+                <button class="navigation__item">مقالات</button>
+            </div>
         </div>
         <div>
             <button class="navigation__btn">ورود / ثبت نام</button>
@@ -250,7 +270,8 @@
     </div>
 </div>
     
-    <main class="main"></main>
+    <main class="main">
+    </main>
     <!-- Mobile Bottom Menu -->
     <nav class="mobile-bottom-menu flex r-reverse justi-around align-center">
         <div class="flex column justi-around align-center">
@@ -357,20 +378,25 @@
             $category.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
         });
 
-        /// submenu ///
+    
+
+        ///submenu///
         $submenu.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
+                $(this).attr('data-position', index);
+            });
 
-        $submenu.owlCarousel({
-            items: 4,
-            rtl: true
-        });
+            $submenu.owlCarousel({
+                // autoplay: true,
+                // autoplayTimeout: 10000,
+                // autoplayHoverPause: true,
+                // loop: true,
+                items: 4,
+            });
 
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $submenu.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
+            $(document).on('click', '.owl-item>div', function () {
+                var $speed = 300;  // in ms
+                $submenu.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+            });
 
     });
 </script>

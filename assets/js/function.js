@@ -249,3 +249,6 @@ function toggleActive(num){
     document.querySelector(".hospital-details").insertAdjacentHTML('beforeend',html);
     firstTime= false;
 }
+function showSubmenu(selector){
+    document.querySelector(selector).classList.toggle('navigation__openSubmenu');
+}
