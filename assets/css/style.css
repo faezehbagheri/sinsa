@@ -2116,6 +2116,7 @@ body {
   transition: all 1s ease; }
 
 .ofoghi-tab__pragraph {
+  direction: rtl;
   text-align: right;
   font-size: 1.5rem;
   padding: 2.5rem;
