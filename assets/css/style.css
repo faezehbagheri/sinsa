@@ -2698,7 +2698,8 @@ body {
     width: 7rem;
     margin-top: -1.5rem; }
   .navigation__list {
-    flex: 0 0 50%; }
+    flex: 0 0 50%;
+    position: relative; }
   .navigation__item {
     list-style-type: none;
     height: 3rem;
@@ -2722,3 +2723,21 @@ body {
     background-color: transparent;
     outline: none;
     cursor: pointer; }
+  .navigation__submenu {
+    height: 19rem;
+    width: 120%;
+    position: absolute;
+    left: -28%;
+    top: 30%;
+    background-image: url(../../assets/img/submenu1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -9; }
+  .navigation__sub-list {
+    width: 10rem;
+    background-color: rebeccapurple; }
+  .navigation__sub-item {
+    background-color: pink;
+    width: 10rem;
+    font-size: 1.5rem;
+    color: #6DC2BE; }

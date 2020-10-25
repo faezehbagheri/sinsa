@@ -19,6 +19,7 @@
 
     &__list{
         flex: 0 0 50%;
+        position: relative;
         // margin-left: 20rem;
     }
 
@@ -54,6 +55,30 @@
         background-color: transparent;
         outline: none;
         cursor: pointer;
+    }
+
+    &__submenu{
+        height: 19rem;
+        width: 120%;
+        position: absolute;
+        left: -28%;
+        top: 30%;
+        background-image: url(../../assets/img/submenu1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -9;
+    }
+
+    &__sub-list{
+        width: 10rem;
+        background-color: rebeccapurple;
+    }
+
+    &__sub-item{
+        background-color: pink;
+        width: 10rem;
+        font-size: 1.5rem;
+        color: $color-primary;
     }
 
 }
