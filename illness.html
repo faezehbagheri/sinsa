@@ -794,23 +794,40 @@
                         </div>
                     </div>
                     <div id="content02" class="amodi-tab__tabcontent">
-                        <h2>Tab content 2</h2>
-                        <ul>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                            <li>بیماری شماره 1</li>
-                        </ul>
+                        <div class="ofoghi-tab__tab">
+                            <div class="ofoghi-tab__container activate flex column align-end" id="box-1">
+                                <div class="ofoghi-tab__box" onclick="toggleTab('#box-1')">
+                                    <div class="ofoghi-tab__header flex r-reverse justi-between align-center">
+                                        <h2 class="ofoghi-tab__title">علائم بیماری
+                                        </h2>
+                                        <button class="ofoghi-tab__btn ofoghi-tab__btn-1">
+                                            <i class="fas fa-angle-right ofoghi-tab__logo"></i>
+                                            <i class="fas fa-angle-down ofoghi-tab__logo-active"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="ofoghi-tab__text">
+                                    <div class="ofoghi-tab__pragraph">
+                                       <ul class="steps">
+                                           <li><a href="">توضیحات شماره 1</a></li>
+                                           <li><a href="">توضیحات شماره 1</a></li>
+                                           <li><a href="">توضیحات شماره 1</a></li>
+                                           <li><a href="">توضیحات شماره 1</a></li>
+                                           <li><a href="">توضیحات شماره 1</a></li>
+                                           <li><a href="">توضیحات شماره 1</a></li>
+                                           <li><a href="">توضیحات شماره 1</a></li>
+                                           <li><a href="">توضیحات شماره 1</a></li>
+                                           <li><a href="">توضیحات شماره 1</a></li>
+                                       </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                           
+                        </div>
                     </div>
+                    
                     <div id="content03" class="amodi-tab__tabcontent">
                         <h2>Tab content 3</h2>
                     </div>
@@ -1021,4 +1038,41 @@
 
     });
 </script>
+
+<style>
+    .steps a{
+        /* list-style-type: none; */
+        text-decoration: none;
+    }
+    .steps{
+        list-style: none;
+        counter-reset: li;
+        padding-right: 20px; }
+
+    .steps li{
+        counter-increment: step;
+        position: relative;
+        margin-bottom: 15px; }
+
+        .steps li:before{
+        content: counter(step);
+        display: inline-block;
+        background: #35b872;
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #35b872;
+        -moz-box-shadow: 0 0 0 3px #fff,0 0 0 4px #35b872;
+        -ms-box-shadow: 0 0 0 3px #fff,0 0 0 4px #35b872;
+        -o-box-shadow: 0 0 0 3px #fff,0 0 0 4px #35b872;
+        box-shadow: 0 0 0 3px #fff, 0 0 0 4px #35b872;
+        margin-bottom: 5px; }
+</style>
 </html>

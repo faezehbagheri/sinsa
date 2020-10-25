@@ -109,6 +109,7 @@
     }
 
     &__text{
+        direction: rtl;
         height: 0;
         overflow: hidden;
         transition: all 1s ease;
