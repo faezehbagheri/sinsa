@@ -25,6 +25,11 @@
         margin-top: 25rem;
         box-shadow: 0 4px 7px -2px #dbd9d9;
         transition: all .5s;
+        display: none;
+
+        @include respond(phone){
+            display: flex;
+        }
     }
     
 
@@ -130,7 +135,7 @@
 
 
     &__category{
-        margin-top: 2rem;
+        margin: 2rem 0;
         
         @include respond(phone-small) {margin-top: 1rem;}
 

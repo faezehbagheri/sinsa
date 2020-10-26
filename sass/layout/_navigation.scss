@@ -6,8 +6,9 @@
     background-size: cover;
     background-position: center;
     padding-top: 2.8rem;
-    position: absolute;
-    z-index: 9;
+    // position: absolute;
+    // top: 0%;
+    z-index: 99;
 
     @include respond(phone){
         display: none;
@@ -41,6 +42,11 @@
         
     }
 
+    &__item:hover + &__submenu{
+        height: 40rem;
+        top: -1%;
+    }
+
     &__btn{
         height: 4.5rem;
         width: 14rem;
@@ -55,81 +61,63 @@
 
     &__submenu{
         height: 0;
-        width: 120%;
+        width: 120rem;
         position: absolute;
-        left: -28%;
-        top: -100%;
-        background-image: url(../../assets/img/submenu1.png);
-        background-repeat: no-repeat;
-        background-size: contain;
+        left: -50%;
+        top: -150%;
         z-index: -9;
         transition: all .5s ease;
-    }
-
-    &__openSubmenu{
-        height: 19rem;
-        top: 30%;
-        // left: -30%;
+        border-right: 2px solid #dbdbdb;
+        border-left: 2px solid #dbdbdb;
+        background-color: #f8f8f8;
+        @include respond(big-desktop){
+            left: -30%;
+        }
     }
 
     &__sub-list{
-        width: 61rem !important;
+        width: 90rem !important;
+        margin-bottom: -3rem;
     }
 
-    &__sub-item{
+    &__sub-title{
         font-size: 1.5rem;
         background-color: inherit;
         border: none;
         outline: none;
-        color: $color-primary;
+        background-image: linear-gradient(to right bottom, #3FAF2C, #4f73eb);
+        -webkit-background-clip: text;
+        color: transparent;
         cursor: pointer;
     }
 
-    &__zirmenu{
-        position: absolute;
-        width: 100%;
-        height: 0;
-        background-color: rgba($color: #ffffff, $alpha: .5);
-        border-right: 1px solid $color-gray;
-        border-left: 1px solid $color-gray;
-        transition: all .8s ease;
-        // z-index: -9;
-    }
-
-    &__zirmenu-buttonslist{
-        margin-bottom: -3rem;
-        width: 25rem;
-        z-index: 9;
-    }
-
-    &__button{
-        width: 15rem;
-        height: 4.2rem;
-        margin: 1rem 2rem;
-        border-radius: 3rem 1rem 3rem 1rem;
-        background-color: #ffffff;
-        border: none;
-        outline: none;
-        box-shadow: 1px 2px 5px $color-gray-light;
-    }
-
-    &__zirmenu-list{
-        width: 55rem;
-        list-style-type: none;
-    }
-
-    &__zirmenu-item{
-        font-size: 1.4rem;
-        color: $color-primary-dark;
-    }
-
     &__img{
-        width: 101.5%;
+        width: 102.5%;
         // height: 10rem;
-        height: 0;
+        height: 10rem;
         position: absolute;
         top: 100%;
-        left: -.6%;
+        left: -1.9%;
+    }
+
+    &__icon{
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    &__sub-item{
+        list-style-type: none;
+        margin-top: 1.5rem;
+        text-align: right;
+    }
+
+    &__sub-link,
+    &__sub-link:link,
+    &__sub-link:visited{
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $color-gray;
+        cursor: pointer;
     }
 
 }

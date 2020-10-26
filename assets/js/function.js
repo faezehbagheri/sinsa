@@ -249,8 +249,13 @@ function toggleActive(num){
     document.querySelector(".hospital-details").insertAdjacentHTML('beforeend',html);
     firstTime= false;
 }
-function showSubmenu(selector){
-    document.querySelector(selector).classList.toggle('navigation__openSubmenu');
+function createSubMenu(selector){
+    // var activeElement = document.querySelector(".navigation__openSubmenu");
+    // if(activeElement){
+    //     activeElement.classList.remove('navigation__openSubmenu');
+    // }
+    // document.querySelector(selector).classList.add('navigation__openSubmenu');
+    
 }
 
 var data= [
@@ -331,18 +336,3 @@ var data= [
     },
 
 ]
-function newItem(){
-    // var itemHtml=[];
-    // var newHtml=[];
-    // i=0
-    // data[3].data[4].data[1].data.forEach(item => {
-    //     itemHtml[i] = `
-    //     <li class="navigation__zirmenu-item">%data%</li>
-    //     `
-    //     newHtml[i] = itemHtml[i].replace('%data%' , item);
-    //     document.querySelector(".navigation__zirmenu-list").insertAdjacentHTML=("beforeend" , newHtml[i]);
-    //     i++;
-    // });
-    
-}
-newItem();

@@ -3,6 +3,7 @@
     width: 100%;
     position: relative;
     // background-color: rgb(230, 212, 248);
+    z-index: -99;
         
     @include respond(big-desktop){ height: 380vh; }
     @include respond(phone){

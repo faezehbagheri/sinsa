@@ -1,8 +1,11 @@
 .filter{
-    width: 15vw;
-    margin-left: 2rem;
-    // background-color: salmon;
-    
+    width: 13vw;
+    margin-left: 10rem;
+    // display: none !important;
+
+     @include respond(phone){
+         display: none !important;
+     }
 
     &__main-box{
         height: 17vh;
@@ -110,7 +113,7 @@
     }
 
     &__optios{
-        height: 15vh;
+        height: 15.5rem;
         overflow-x: hidden;
         border-top: 1px solid $color-gray;
         overflow-y: scroll;
@@ -141,9 +144,10 @@
         width: 90%;
         border-radius: 5rem;
         position: relative;
-        border: 2px solid $color-gray;
+        border: 1px solid $color-gray-light;
+        box-shadow: 1px 1px 4px rgb(209, 209, 209);
         margin: 1rem auto;
-        background-color: #EEF1EF;
+        background-color: #fff;
     }
 
     &__input{
@@ -155,7 +159,7 @@
         width: 65%;
         border: none;
         outline: none;
-        background-color: #EEF1EF;
+        background-color: #fff;
         font-size: 1.5rem;
         text-align: right;
         padding-right: 1rem;
@@ -175,8 +179,8 @@
     }
 
     &__filter-btn{
-        height: 4.5rem;
-        width: 13rem;
+        height: 4rem;
+        width: 12rem;
         border-radius: 3rem;
         background-color: $color-gray;
         border: none;
@@ -187,14 +191,14 @@
     }
 
     &__filter-icon{
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         color: #fff;
         margin-left: 1rem;
     }
 
     &__reset-btn{
-        height: 4.5rem;
-        width: 13rem;
+        height: 4rem;
+        width: 12rem;
         border-radius: 3rem;
         background-color: #fff;
         border: 1px solid $color-gray;
@@ -205,7 +209,7 @@
     }
 
     &__reset-icon{
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         color: $color-gray;
         margin-left: 1rem;
     }
@@ -235,8 +239,8 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
     background-color: transparent;
     border-radius: 5px;
     transition: all 0.3s ease-out;
@@ -244,7 +248,7 @@
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
-    border: 2px solid $color-gray;
+    border: 1px solid $color-gray;
 }
 
 
