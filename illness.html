@@ -185,24 +185,7 @@
                 </div>
             </div>
         </div>
-        <!-- دسته بندی  -->
-        <div class="mobile-header__suggestion flex r-reverse align-center"> 
-            <div class="mobile-header__category flex r-reverse align-center owl-carousel" id="dastebansi">
-                <nav class="tabs flex">
-                    <a data-trigger="content01" class="active"><span class="tab-amodi__item">توضیحات</span></a>
-                    <a data-trigger="content02"><span class="tab-amodi__item">بیماری های مرتبط</span></a>
-                    <a data-trigger="content03"><span class="tab-amodi__item">داروها</span></a>
-                    <a data-trigger="content04"><span class="tab-amodi__item">تجهیزات</span></a>
-                    <a data-trigger="content05"><span class="tab-amodi__item">علائم بیماری</span>
-                    </a>
-                </nav>
-                <!-- <a class="mobile-header__category--item active-item" data-trigger="content01">توضیحات</a>
-                <a class="mobile-header__category--item" data-trigger="content02">بیماری های مرتبط</a>
-                <a class="mobile-header__category--item" data-trigger="content03">داروها</a>
-                <a class="mobile-header__category--item" data-trigger="content04">تجهیزات</a>
-                <a class="mobile-header__category--item" data-trigger="content05">علائم بیماری</a> -->
-            </div>
-        </div>
+        
     </header>
  <!-- Right Side Fixed -->
  <div class="right-side flex column">
@@ -243,6 +226,27 @@
         </div>
     </div>
 </div>
+
+<header>
+    <!-- دسته بندی  -->
+    <div class="mobile-header__suggestion flex r-reverse align-center"> 
+        <div class="mobile-header__category flex r-reverse align-center owl-carousel" id="dastebansi">
+            <nav class="tabs flex">
+                <a data-trigger="content01" class="active"><span class="tab-amodi__item">توضیحات</span></a>
+                <a data-trigger="content02"><span class="tab-amodi__item">بیماری های مرتبط</span></a>
+                <a data-trigger="content03"><span class="tab-amodi__item">داروها</span></a>
+                <a data-trigger="content04"><span class="tab-amodi__item">تجهیزات</span></a>
+                <a data-trigger="content05"><span class="tab-amodi__item">علائم بیماری</span>
+                </a>
+            </nav>
+            <!-- <a class="mobile-header__category--item active-item" data-trigger="content01">توضیحات</a>
+            <a class="mobile-header__category--item" data-trigger="content02">بیماری های مرتبط</a>
+            <a class="mobile-header__category--item" data-trigger="content03">داروها</a>
+            <a class="mobile-header__category--item" data-trigger="content04">تجهیزات</a>
+            <a class="mobile-header__category--item" data-trigger="content05">علائم بیماری</a> -->
+        </div>
+    </div>
+</header>
     <!-- Main -->
     <main class="illness-main">
        
@@ -1039,5 +1043,40 @@
     });
 </script>
 
+<style>
+    .steps a{
+        /* list-style-type: none; */
+        text-decoration: none;
+    }
+    .steps{
+        list-style: none;
+        counter-reset: li;
+        padding-right: 20px; }
 
+    .steps li{
+        counter-increment: step;
+        position: relative;
+        margin-bottom: 15px; }
+
+        .steps li:before{
+        content: counter(step);
+        display: inline-block;
+        background: #35b872;
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #35b872;
+        -moz-box-shadow: 0 0 0 3px #fff,0 0 0 4px #35b872;
+        -ms-box-shadow: 0 0 0 3px #fff,0 0 0 4px #35b872;
+        -o-box-shadow: 0 0 0 3px #fff,0 0 0 4px #35b872;
+        box-shadow: 0 0 0 3px #fff, 0 0 0 4px #35b872;
+        margin-bottom: 5px; }
+</style>
 </html>
