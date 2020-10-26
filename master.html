@@ -137,56 +137,6 @@
         </div>
     </nav>
 
-
-    <!-- Desktop Nav -->
-    <nav class="navigation flex r-reverse justi-around">
-        <div class="navigation__list flex r-reverse justi-between">
-            <img src="./assets/img/Logo Icon@2x.png" class="navigation__logo">
-            <div>
-                <button class="navigation__item">بیماری ها</button>
-            </div>
-            <div>
-                <button class="navigation__item">داروها</button>
-            </div>
-            <div>
-                <button class="navigation__item">زندگی سالم</a>
-            </div>
-            <div>
-                <button class="navigation__item" onclick="showSubmenu('#submenu-4')">خانواده</button>
-                <div class="navigation__submenu navigation__openSubmenu flex align-center justi-center" id="submenu-4">
-                    <div class="navigation__sub-list flex r-reverse justi-around align-center owl-carousel submenu" >
-                        <div class="navigation__sub-item item">رژیم غذایی</div>
-                        <div class="navigation__sub-item item">زیبایی</div>
-                        <div class="item">
-                            <button class="navigation__sub-item">سلامت روان </button>
-                        </div>
-                        <div class="navigation__sub-item item">عادت سلامت</div>
-                        <div class="navigation__sub-item item">منابع</div>
-                        <div class="navigation__sub-item item">کتاب سلامت</div>
-                        <div class="navigation__sub-item item">پادکست سلامت</div>
-                    </div>
-                    <!-- <div class="navigation__zirmenu flex column align-end justi-end">
-                        <div class="navigation__zirmenu-list flex column justi-around">
-                            <button class="navigation__button">سلامت فردی</button>
-                            <button class="navigation__button">ورزشی</button>
-                            <button class="navigation__button">انگیزشی</button>
-                        </div>
-                        <img src="./assets/img/submenu2.png" class="navigation__img">
-                    </div> -->
-                </div>
-            </div>
-            <div>
-                <button class="navigation__item">اخبار</button>
-            </div>
-            <div>
-                <button class="navigation__item">مقالات</button>
-            </div>
-        </div>
-        <div>
-            <button class="navigation__btn">ورود / ثبت نام</button>
-        </div>
-    </nav>
-
     <!-- Mobile Header -->
     <header class="mobile-header">
         <!-- هدر -->
@@ -229,6 +179,62 @@
             
         </div>
     </header>
+
+    
+        <!-- Desktop Nav -->
+        <nav class="navigation flex r-reverse justi-around">
+            <div class="navigation__list flex r-reverse justi-between">
+                <img src="./assets/img/Logo Icon@2x.png" class="navigation__logo">
+                <div>
+                    <button class="navigation__item" onclick="createSubMenu('0')">بیماری ها</button>
+                </div>
+                <div>
+                    <button class="navigation__item" onclick="createSubMenu('1')">داروها</button>
+                </div>
+                <div>
+                    <button class="navigation__item" onclick="createSubMenu('2')">زندگی سالم</a>
+                </div>
+                <div>
+                    <button class="navigation__item" onclick="createSubMenu('3')">خانواده</button>                    
+                </div>
+                <div>
+                    <button class="navigation__item" onclick="createSubMenu('4')">اخبار</button>
+                </div>
+                <div>
+                    <button class="navigation__item" onclick="createSubMenu('5')">مقالات</button>
+                </div>
+                <div class="navigation__submenu flex align-center justi-center">
+                    <div class="navigation__sub-list flex r-reverse justi-around align-center owl-carousel submenu">
+                        <!-- <div class="navigation__sub-item item">رژیم غذایی</div>
+                        <div class="navigation__sub-item item">زیبایی</div>
+                        <div class="item">
+                            <button class="navigation__sub-item">سلامت روان </button>
+                        </div>
+                        <div class="navigation__sub-item item">عادت سلامت</div>
+                        <div class="navigation__sub-item item">منابع</div>
+                        <div class="navigation__sub-item item">کتاب سلامت</div>
+                        <div class="navigation__sub-item item">پادکست سلامت</div> -->
+                    </div>
+                    <div class="navigation__zirmenu flex column align-end justi-end">
+                        <div class="flex r-reverse align-center">
+                            <div class="navigation__zirmenu-buttonslist flex column justi-around align-end">
+                                <!-- <button class="navigation__button">سلامت فردی</button>
+                                <button class="navigation__button">ورزشی</button>
+                                <button class="navigation__button">انگیزشی</button> -->
+                            </div>
+                            <div>
+                                <ul class="navigation__zirmenu-list flex r-reverse justi-around">
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="./assets/img/submenu2.png" class="navigation__img">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="navigation__btn">ورود / ثبت نام</button>
+            </div>
+        </nav>
 
    <!-- Right Side Fixed -->
    <div class="right-side flex column">
@@ -355,8 +361,61 @@
             </div>
         </div>
     </footer>
+
 </body>
 <script>
+    
+    function createItem(id){
+        var num = id.split('-');
+        var itemHtml=[];
+        var el =document.querySelector(".navigation__zirmenu-list");
+        el.innerHTML='';
+        var i=0
+        data[num[1]].data[num[2]].data[num[3]].data.forEach(item => {
+            itemHtml[i] = '<li class="navigation__zirmenu-item">%data%</li>';
+            itemHtml[i] = itemHtml[i].replace('%data%' , item);
+            el.insertAdjacentHTML('beforeend', itemHtml[i]);
+            i++;
+        });
+    }
+
+    function createButton(id){
+        var num = id.split('-');
+        var buttonHtml=[];
+        var el = document.querySelector(".navigation__zirmenu-buttonslist");
+        el.innerHTML='';
+        document.querySelector(".navigation__zirmenu-list").innerHTML = '';
+        var i=0;
+        data[num[1]].data[num[2]].data.forEach(item=>{
+            buttonHtml[i] = '<button class="navigation__button" id="btn-%num1%-%num2%-%id%" onclick="createItem(this.id)">%data%</button>';
+            buttonHtml[i] = buttonHtml[i].replace("%data%" , item.title);
+            buttonHtml[i] = buttonHtml[i].replace("%num1%" , num[1]);
+            buttonHtml[i] = buttonHtml[i].replace("%num2%" , num[2]);
+            buttonHtml[i] = buttonHtml[i].replace("%id%" , i);
+            el.insertAdjacentHTML('beforeend', buttonHtml[i]);
+            i++;
+        })
+        document.querySelector('.navigation__zirmenu').style = (data[num[1]].data[num[2]].data.length < 3) ?'height:25rem; top : 0' : 'height:35rem; top : 0';        
+        document.querySelector('.navigation__img').style= 'height: 10rem;';
+    }
+
+    function createSubMenu(num){
+        document.querySelector('.navigation__submenu').style= 'height: 19rem; top: 30%;';
+        var subMenuHtml = [];
+        var el = document.querySelector(".navigation__sub-list");
+        el.innerHTML='';
+        var i = 0;
+        data[num].data.forEach(item => {
+            subMenuHtml[i]= '<div class="item"><button class="navigation__sub-item" id="sub-%num%-%id%" onclick="createButton(this.id)">%data%</button></div>';
+            subMenuHtml[i] = subMenuHtml[i].replace("%data%" , item.title);
+            subMenuHtml[i] = subMenuHtml[i].replace("%num%" , num);
+            subMenuHtml[i] = subMenuHtml[i].replace("%id%" , i);
+            el.insertAdjacentHTML('beforeend', subMenuHtml[i]);
+            i++;
+        });
+    }
+
+    // createSubMenu(2);
 
     $(document).ready(function () {       
         var $category = $("#category");
@@ -391,6 +450,7 @@
                 // autoplayHoverPause: true,
                 // loop: true,
                 items: 4,
+                rtl:true
             });
 
             $(document).on('click', '.owl-item>div', function () {
