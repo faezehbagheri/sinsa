@@ -249,3 +249,100 @@ function toggleActive(num){
     document.querySelector(".hospital-details").insertAdjacentHTML('beforeend',html);
     firstTime= false;
 }
+function showSubmenu(selector){
+    document.querySelector(selector).classList.toggle('navigation__openSubmenu');
+}
+
+var data= [
+    {
+        title: 'بیماری ها',
+        data:[]
+    },
+    {
+        title: 'داروها',
+        data:[]
+    },
+    {
+        title: 'زندگی سالم',
+        data:[
+            {
+                title: 'عادت های سلامت',
+                data: []
+            },
+            {
+                title: 'سلامت روان',
+                data:[]
+            },
+            {
+                title: 'زیبایی و تعادل',
+                data:[
+                    {
+                        title : 'سلامت فردی',
+                        data:["سلامت و بهداشت" , "سلامت خواب" , "سلامت سنی" , "سلامت زنان" , "سلامت مردان"]
+                    },
+                    {
+                        title : 'ورزشی',
+                        data:[]
+                    },
+                ]
+            },
+            {
+                title: 'رژیم غذایی',
+                data:[
+                    {
+                        title : 'سلامت فردی',
+                        data:["سلامت و بهداشت" , "سلامت خواب" , "سلامت سنی" , "سلامت زنان" , "سلامت مردان"]
+                    },
+                    {
+                        title : 'ورزشی',
+                        data:[]
+                    },
+                    {
+                        title : 'انگیزشی',
+                        data:[]
+                    },
+                ]
+            },
+            {
+                title: 'کتاب سلامت',
+                data:[]
+            },
+            {
+                title: 'پادکست سلامت',
+                data:[]
+            },
+            {
+                title: 'منابع',
+                data:[]
+            }
+        ]
+    },
+    {
+        title: 'خانواده',
+        data:[]
+    },
+    {
+        title: 'اخبار',
+        data:[]
+    },
+    {
+        title: 'مقالات',
+        data:[]
+    },
+
+]
+function newItem(){
+    // var itemHtml=[];
+    // var newHtml=[];
+    // i=0
+    // data[3].data[4].data[1].data.forEach(item => {
+    //     itemHtml[i] = `
+    //     <li class="navigation__zirmenu-item">%data%</li>
+    //     `
+    //     newHtml[i] = itemHtml[i].replace('%data%' , item);
+    //     document.querySelector(".navigation__zirmenu-list").insertAdjacentHTML=("beforeend" , newHtml[i]);
+    //     i++;
+    // });
+    
+}
+newItem();

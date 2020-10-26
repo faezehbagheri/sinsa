@@ -6,6 +6,8 @@
     background-size: cover;
     background-position: center;
     padding-top: 2.8rem;
+    position: absolute;
+    z-index: 9;
 
     @include respond(phone){
         display: none;
@@ -19,29 +21,24 @@
 
     &__list{
         flex: 0 0 50%;
+        position: relative;
         // margin-left: 20rem;
     }
 
     &__item{
         list-style-type: none;
         height: 3rem;
+        background-color: inherit;
+        border: none;
+        outline: none;
+        font-size: 1.6rem;
         transition: all .2s;
 
         &:hover{
             transform: scale(1.1);
-        }
-        
-    }
-
-    &__link{
-        text-decoration: none;
-        font-size: 1.8rem;
-        color: #000;
-        transition: all .2s;
-
-        &:hover{
             color: $color-primary-light;
         }
+        
     }
 
     &__btn{
@@ -54,6 +51,85 @@
         background-color: transparent;
         outline: none;
         cursor: pointer;
+    }
+
+    &__submenu{
+        height: 0;
+        width: 120%;
+        position: absolute;
+        left: -28%;
+        top: -100%;
+        background-image: url(../../assets/img/submenu1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -9;
+        transition: all .5s ease;
+    }
+
+    &__openSubmenu{
+        height: 19rem;
+        top: 30%;
+        // left: -30%;
+    }
+
+    &__sub-list{
+        width: 61rem !important;
+    }
+
+    &__sub-item{
+        font-size: 1.5rem;
+        background-color: inherit;
+        border: none;
+        outline: none;
+        color: $color-primary;
+        cursor: pointer;
+    }
+
+    &__zirmenu{
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-color: rgba($color: #ffffff, $alpha: .5);
+        border-right: 1px solid $color-gray;
+        border-left: 1px solid $color-gray;
+        transition: all .8s ease;
+        // z-index: -9;
+    }
+
+    &__zirmenu-buttonslist{
+        margin-bottom: -3rem;
+        width: 25rem;
+        z-index: 9;
+    }
+
+    &__button{
+        width: 15rem;
+        height: 4.2rem;
+        margin: 1rem 2rem;
+        border-radius: 3rem 1rem 3rem 1rem;
+        background-color: #ffffff;
+        border: none;
+        outline: none;
+        box-shadow: 1px 2px 5px $color-gray-light;
+    }
+
+    &__zirmenu-list{
+        width: 55rem;
+        list-style-type: none;
+    }
+
+    &__zirmenu-item{
+        font-size: 1.4rem;
+        color: $color-primary-dark;
+    }
+
+    &__img{
+        width: 101.5%;
+        // height: 10rem;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        left: -.6%;
     }
 
 }
