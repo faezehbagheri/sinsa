@@ -1,0 +1,16 @@
+.card{
+    width: 43%;
+    height: 50rem;
+    background-color: #B4D3D1;
+    position: relative;
+    border-radius: 2rem;
+    // border-radius: 0 0 2rem 2rem;
+
+    &__container{
+        width: 94%;
+        height: 93%;
+        background-color: #fff;
+        border-radius: 2rem;
+        @include centerABS();
+    }
+}

@@ -91,16 +91,16 @@
     }
 
     &__text{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: $color-primary;
         padding-right: 1rem;
     }
 
     &__picked{
-        height: 10vh;
+        // height: 10vh;
         overflow-y: scroll;
         border-top: 1px solid $color-gray;
-        display: none;
+        // display: none;
 
         
         &::-webkit-scrollbar {
@@ -115,7 +115,6 @@
     &__optios{
         height: 15.5rem;
         overflow-x: hidden;
-        border-top: 1px solid $color-gray;
         overflow-y: scroll;
         // display: none;
 
@@ -163,6 +162,7 @@
         &::placeholder{
             font-size: 1.2rem;
             color: rgb(196, 193, 193);
+            text-align: right;
         }
     }
 

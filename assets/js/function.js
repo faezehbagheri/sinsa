@@ -111,11 +111,6 @@ function openOption(num){
     var html=[];
     var newHtml=[];
 
-
-    if(showOption[num]){
-        document.querySelector(".filter__optios-" + num).style.display = "block";
-        document.querySelector(".filter__picked-" + num).style.display = "none";
-    }else{
         document.querySelector(".filter__picked-" + num).innerHTML = '';
         for(var i = 0; i < checkboxes.length; i++)  
         {  
@@ -133,10 +128,6 @@ function openOption(num){
             document.querySelector(".filter__picked-" + num).insertAdjacentHTML('beforeend' , newHtml[i]);
         }
 
-        document.querySelector(".filter__optios-" + num).style.display = "none";
-        document.querySelector(".filter__picked-" + num).style.display = "block";
-    }
-    showOption[num] = ! showOption[num];
 }
 
 var showOption_map = [false ,false ,false ,false ,false ,false ];
@@ -249,14 +240,7 @@ function toggleActive(num){
     document.querySelector(".hospital-details").insertAdjacentHTML('beforeend',html);
     firstTime= false;
 }
-function createSubMenu(selector){
-    // var activeElement = document.querySelector(".navigation__openSubmenu");
-    // if(activeElement){
-    //     activeElement.classList.remove('navigation__openSubmenu');
-    // }
-    // document.querySelector(selector).classList.add('navigation__openSubmenu');
-    
-}
+
 
 var data= [
     {

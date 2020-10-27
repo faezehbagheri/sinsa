@@ -296,6 +296,25 @@ body {
       font-size: 1.7rem;
       margin-top: 1rem; }
 
+.card {
+  width: 43%;
+  height: 50rem;
+  background-color: #B4D3D1;
+  position: relative;
+  border-radius: 2rem; }
+  .card__container {
+    width: 94%;
+    height: 93%;
+    background-color: #fff;
+    border-radius: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.category {
+  width: 50%; }
+
 .comment {
   height: 50vh;
   width: 90%; }
@@ -484,14 +503,12 @@ body {
     font-size: 1.8rem;
     color: #6DC2BE; }
   .filter__text {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #6DC2BE;
     padding-right: 1rem; }
   .filter__picked {
-    height: 10vh;
     overflow-y: scroll;
-    border-top: 1px solid #707070;
-    display: none; }
+    border-top: 1px solid #707070; }
     .filter__picked::-webkit-scrollbar {
       width: 1rem; }
     .filter__picked::-webkit-scrollbar-thumb {
@@ -499,7 +516,6 @@ body {
   .filter__optios {
     height: 15.5rem;
     overflow-x: hidden;
-    border-top: 1px solid #707070;
     overflow-y: scroll; }
     .filter__optios::-webkit-scrollbar {
       width: 1rem; }
@@ -530,7 +546,8 @@ body {
     padding-right: 1rem; }
     .filter__input::placeholder {
       font-size: 1.2rem;
-      color: #c4c1c1; }
+      color: #c4c1c1;
+      text-align: right; }
   .filter__search-btn {
     background-color: #6DC2BE;
     width: 20%;
@@ -1550,7 +1567,7 @@ body {
     font-weight: normal;
     font-style: normal; } }
   .question__qa {
-    height: 48vh;
+    height: 48rem;
     width: 45%;
     margin: 2rem;
     border-radius: 1rem;
