@@ -434,7 +434,7 @@ body {
     width: 90%;
     background-color: #fff;
     border-radius: 2.5rem;
-    box-shadow: 0 2px 5px #A0A0A0;
+    box-shadow: 1px 1px 5px #A0A0A0;
     margin-bottom: 2rem; }
     @media only screen and (min-width: 112.5em) {
       .filter__main-box {
@@ -512,64 +512,111 @@ body {
   .filter__checkbox {
     margin: 1rem 1.5rem; }
   .filter__search-box {
-    height: 3.2rem;
+    height: 4rem;
     width: 90%;
     border-radius: 5rem;
     position: relative;
-    border: 1px solid #A0A0A0;
-    box-shadow: 1px 1px 4px #d1d1d1;
+    box-shadow: 1px 1px 4px #A0A0A0;
     margin: 1rem auto;
     background-color: #fff; }
   .filter__input {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     height: 96%;
-    width: 65%;
+    width: 72%;
     border: none;
     outline: none;
     background-color: #fff;
     font-size: 1.5rem;
     text-align: right;
     padding-right: 1rem; }
-  .filter__right-icon {
+    .filter__input::placeholder {
+      font-size: 1.2rem;
+      color: #c4c1c1; }
+  .filter__search-btn {
+    background-color: #6DC2BE;
+    width: 20%;
+    height: 100%;
+    border-radius: 0 5rem 5rem 0;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer; }
+  .filter__search-icon {
     font-size: 2rem;
     position: absolute;
     top: 50%;
-    left: 95%;
-    transform: translate(-95%, -50%);
-    color: #707070; }
-  .filter__buttons {
-    width: 100%; }
-  .filter__filter-btn {
-    height: 4rem;
-    width: 12rem;
-    border-radius: 3rem;
-    background-color: #707070;
-    border: none;
-    outline: none;
-    font-size: 1.5rem;
-    color: #fff;
-    font-family: 'irsans'; }
-  .filter__filter-icon {
-    font-size: 2.1rem;
-    color: #fff;
-    margin-left: 1rem; }
-  .filter__reset-btn {
-    height: 4rem;
-    width: 12rem;
-    border-radius: 3rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; }
+  .filter__alphba-search {
+    height: 59rem;
+    width: 90%;
+    overflow: hidden;
     background-color: #fff;
-    border: 1px solid #707070;
-    outline: none;
-    font-size: 1.5rem;
-    color: #707070;
-    font-family: 'irsans'; }
-  .filter__reset-icon {
-    font-size: 2.1rem;
-    color: #707070;
-    margin-left: 1rem; }
+    border-radius: 2rem;
+    box-shadow: 1px 1px 5px #A0A0A0; }
+    .filter__alphba-search h3 {
+      color: #707070;
+      padding: 1.5rem;
+      font-size: 1.3rem; }
+  .filter__tabs {
+    width: 100%;
+    list-style: none;
+    position: relative; }
+    .filter__tabs li {
+      float: right;
+      display: block;
+      width: 50%; }
+    .filter__tabs input[type="radio"] {
+      position: absolute;
+      top: 0;
+      left: -9999px;
+      outline: none; }
+    .filter__tabs label {
+      display: block;
+      height: 4rem;
+      padding: 1rem;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: normal;
+      background: #fff;
+      cursor: pointer;
+      transition: all .2s ease;
+      color: #707070;
+      outline: none; }
+    .filter__tabs [id^="tab"]:checked + label {
+      background: #EEF1EF;
+      font-size: 1.3rem; }
+    .filter__tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+      display: flex; }
+  .filter__tab-content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 46rem;
+    position: absolute;
+    left: 0;
+    background: #EEF1EF; }
+    .filter__tab-content a,
+    .filter__tab-content a:link,
+    .filter__tab-content a:visited {
+      width: 20%;
+      margin: 5px;
+      height: 4.3rem;
+      background-color: #fff;
+      box-shadow: 1px 3px 5px #A0A0A0;
+      border-radius: 1rem;
+      border: 1px solid #6DC2BE;
+      outline: none;
+      cursor: pointer;
+      font-size: 1.6rem;
+      color: #707070;
+      text-decoration: none;
+      text-align: center; }
+  .filter__btn {
+    position: absolute;
+    top: 99%;
+    transform: translateY(-40%); }
 
 /* Styling Checkbox Starts */
 .checkbox-label {
@@ -716,6 +763,12 @@ body {
 
 .align-baseline {
   align-items: baseline; }
+
+.align-content-center {
+  align-content: center; }
+
+.align-content-around {
+  align-content: space-around; }
 
 .wrap {
   flex-wrap: wrap; }
@@ -1933,7 +1986,8 @@ body {
       margin: 0  5%; }
 
 .tab-amodi {
-  width: 50%; }
+  width: 50%;
+  margin-bottom: 25rem; }
   @media only screen and (max-width: 30em) {
     .tab-amodi {
       width: 100%; } }

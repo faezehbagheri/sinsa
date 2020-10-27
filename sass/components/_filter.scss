@@ -12,7 +12,7 @@
         width: 90%;
         background-color: #fff;
         border-radius: 2.5rem;
-        box-shadow: 0 2px 5px $color-gray-light;
+        box-shadow: 1px 1px 5px $color-gray-light;
         margin-bottom: 2rem;
 
         @include respond(big-desktop){height: 13vh;}
@@ -140,81 +140,142 @@
     }
 
     &__search-box{
-        height: 3.2rem;
+        height: 4rem;
         width: 90%;
         border-radius: 5rem;
         position: relative;
-        border: 1px solid $color-gray-light;
-        box-shadow: 1px 1px 4px rgb(209, 209, 209);
+        box-shadow: 1px 1px 4px $color-gray-light;
         margin: 1rem auto;
         background-color: #fff;
+        // overflow: hidden;
     }
 
     &__input{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50% , -50%);
         height: 96%;
-        width: 65%;
+        width: 72%;
         border: none;
         outline: none;
         background-color: #fff;
         font-size: 1.5rem;
         text-align: right;
         padding-right: 1rem;
+
+        &::placeholder{
+            font-size: 1.2rem;
+            color: rgb(196, 193, 193);
+        }
     }
 
-    &__right-icon{
-        font-size: 2rem;
-        position: absolute;
-        top: 50%;
-        left: 95%;
-        transform: translate(-95% , -50%);
-        color: $color-gray;
-    }
-
-    &__buttons{
-        width: 100%;
-    }
-
-    &__filter-btn{
-        height: 4rem;
-        width: 12rem;
-        border-radius: 3rem;
-        background-color: $color-gray;
+    &__search-btn{
+        background-color: $color-primary;
+        width: 20%;
+        height: 100%;
+        border-radius: 0 5rem 5rem 0;
+        position: relative;
         border: none;
         outline: none;
-        font-size: 1.5rem;
-        color: #fff;
-        font-family: 'irsans';
+        cursor: pointer;
     }
 
-    &__filter-icon{
-        font-size: 2.1rem;
+    &__search-icon{
+        font-size: 2rem;
+        @include centerABS();
         color: #fff;
-        margin-left: 1rem;
     }
 
-    &__reset-btn{
-        height: 4rem;
-        width: 12rem;
-        border-radius: 3rem;
+    &__alphba-search{
+        height: 59rem;
+        width: 90%;
+        overflow: hidden;
         background-color: #fff;
-        border: 1px solid $color-gray;
-        outline: none;
-        font-size: 1.5rem;
-        color: $color-gray;
-        font-family: 'irsans';
+        border-radius: 2rem;
+        box-shadow: 1px 1px 5px $color-gray-light;
+
+        & h3{
+            color: $color-gray;
+            padding: 1.5rem;
+            font-size: 1.3rem;
+        }
     }
 
-    &__reset-icon{
-        font-size: 2.1rem;
-        color: $color-gray;
-        margin-left: 1rem;
+    &__tabs {
+        width: 100%;  
+        list-style: none;
+        position: relative;
+
+        li{
+            float: right;
+            display: block;
+            width: 50%;
+        }
+
+        input[type="radio"] {
+            position: absolute;
+            top: 0;
+            left: -9999px;
+            outline: none;
+        }
+
+        label {
+            display: block;
+            height: 4rem;
+            padding: 1rem;
+            font-size: 1.2rem;
+            text-align: center;
+            font-weight: normal;
+            background: #fff;
+            cursor: pointer;
+            transition: all .2s ease;
+            color: $color-gray;
+            outline: none;
+            // position: relative;
+        } 
+        
+        [id^="tab"]:checked + label { 
+            background: $color-gray-lighter;
+            font-size: 1.3rem;
+        }
+        
+        [id^="tab"]:checked ~ [id^="tab-content"] {
+            display: flex;
+        }
+    }
+
+    &__tab-content{
+        z-index: 2;
+        display: none; 
+        overflow: hidden;
+        width: 100%;
+        height: 46rem;
+        position: absolute;
+        left: 0; 
+        background: $color-gray-lighter;
+
+        a,
+        a:link,
+        a:visited{
+            width: 20%;
+            margin: 5px;
+            height: 4.3rem;
+            background-color: #fff;
+            box-shadow: 1px 3px 5px $color-gray-light;
+            border-radius: 1rem;
+            border: 1px solid $color-primary;
+            outline: none;
+            cursor: pointer;
+            font-size: 1.6rem;
+            color: $color-gray;
+            text-decoration: none;
+            text-align: center;
+        }
+    } 
+
+    &__btn{
+        position: absolute;
+        top: 99%;
+        transform: translateY(-40%);
     }
 }
-
 
 /* Styling Checkbox Starts */
 .checkbox-label {
