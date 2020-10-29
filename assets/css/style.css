@@ -2070,8 +2070,7 @@ body {
       margin: 0  5%; }
 
 .tab-amodi {
-  width: 50%;
-  margin-bottom: 25rem; }
+  width: 50%; }
   @media only screen and (max-width: 30em) {
     .tab-amodi {
       width: 100%; } }
