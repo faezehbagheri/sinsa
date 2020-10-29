@@ -1633,9 +1633,8 @@ body {
     font-weight: normal;
     font-style: normal; } }
   .question__qa {
-    height: 48rem;
-    width: 45%;
-    margin: 2rem;
+    height: 35rem;
+    width: 58%;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 2px 5px #707070; }
@@ -1644,32 +1643,34 @@ body {
         height: 40vh; } }
   .question__form {
     height: 50vh;
-    width: 30%;
-    margin: 1rem; }
+    width: 35%;
+    margin-right: 3rem; }
   .question__que {
     height: 5rem;
     background-color: #6DC2BE; }
   .question__header {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #fff;
     text-align: right;
     padding: 1rem; }
   .question__icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fff;
     margin-right: 1rem; }
   .question__ans {
     background-color: #fff; }
   .question__pragraph {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #707070;
     text-align: right;
-    padding: 3rem 6rem; }
+    padding: 3rem; }
   .question__link, .question__link:link, .question__link:active {
     font-size: 1.5rem;
     color: #90C73D;
     text-decoration: none;
-    padding: 0 6rem; }
+    padding: 0 3rem; }
+    .question__link i, .question__link:link i, .question__link:active i {
+      margin-left: 1rem; }
   .question__fullName {
     height: 3.5rem;
     width: 100%;

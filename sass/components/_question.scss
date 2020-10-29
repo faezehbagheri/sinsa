@@ -1,6 +1,7 @@
 .question{
     position: relative;
     width: 100%;
+    
     @font-face {
         font-family: 'Icons';
         src: url("../../assets/css/open-iconic.woff");
@@ -9,9 +10,9 @@
         font-style: normal
     }
     &__qa{
-        height: 48rem;
-        width: 45%;
-        margin: 2rem;
+        height: 35rem;
+        width: 58%;
+        // margin-left: 2rem;
         border-radius: 1rem;
         overflow: hidden;
         box-shadow: 0 2px 5px $color-gray;
@@ -22,9 +23,8 @@
 
     &__form{
         height: 50vh;
-        width: 30%;
-        // background-color: royalblue;
-        margin: 1rem;
+        width: 35%;
+        margin-right: 3rem;
     }
 
     &__que{
@@ -33,14 +33,14 @@
     }
 
     &__header{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         color: #fff;
         text-align: right;
         padding: 1rem;
     }
 
     &__icon{
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: #fff;
         margin-right: 1rem;
     }
@@ -50,10 +50,10 @@
     }
 
     &__pragraph{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         color: $color-gray;
         text-align: right;
-        padding:3rem 6rem;
+        padding:3rem;
     }
 
     &__link,
@@ -62,7 +62,11 @@
         font-size: 1.5rem;
         color: $color-primary-light;
         text-decoration: none;
-        padding:0 6rem;
+        padding:0 3rem;
+
+        i{
+            margin-left: 1rem;
+        }
     }
 
     &__fullName{
