@@ -1788,7 +1788,7 @@ body {
   position: relative; }
   @media only screen and (min-width: 112.5em) {
     .search {
-      margin-top: 8rem; } }
+      margin-top: 30vh; } }
   .search__form {
     position: relative; }
   .search__label {
@@ -2377,7 +2377,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
   .header.homepage {
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/img/PICc.png); }
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/img/PICc.png);
+    position: absolute;
+    top: 60px;
+    z-index: -10; }
   .header__main {
     margin: 0 3rem; }
   @media only screen and (max-width: 30em) {
