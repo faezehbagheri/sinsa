@@ -132,23 +132,25 @@ function openOption(num){
 
 var showOption_map = [false ,false ,false ,false ,false ,false ];
 var filterType_map = ["", "mahale-map" , "shahr-map" , "ostan-map" , "takhasos-map"  , "bime-map" ];
+var id = [1,1,1,1,1,1];
 function openFilterOption_map(num){
     var checkboxes = document.getElementsByName(filterType_map[num]);
     var html=[];
     var newHtml=[];
 
     if(!showOption_map[num]){
-        document.querySelector(".map-header__filter-optios-" + num).style.display = "block";
+        document.querySelector("#map-optios-" + num).style = "top: 100%; height: 19vh; opacity: 1;";
     }else{
         for(var i = 0; i < checkboxes.length; i++)  
         {  
             
             if(checkboxes[i].checked)  {
                 document.querySelector(".picked-" + num).innerHTML = '';
-                html[i]= "<div class='filter__item flex r-reverse align-center' id='item-%id%' onclick='removeItem(this.id)'><i class='fas fa-times-circle filter__close-icon'></i><span class='filter__text'>%text%</span></div>"
+                html[i]= "<div class='filter__item flex r-reverse align-center' id='item-%num%-%id%' onclick='removeItem(this.id)'><i class='fas fa-times-circle filter__close-icon'></i><span class='filter__text'>%text%</span></div>"
                 newHtml[i] = html[i].replace('%text%' , checkboxes[i].value);
-                newHtml[i] = newHtml[i].replace('%id%' , id);
-                id++;
+                newHtml[i] = newHtml[i].replace('%num%' , num);
+                newHtml[i] = newHtml[i].replace('%id%' , id[num]);
+                id[num]++;
             }
         } 
         
@@ -156,9 +158,7 @@ function openFilterOption_map(num){
         {  
             document.querySelector(".picked-" + num).insertAdjacentHTML('beforeend' , newHtml[i]);
         }
-
-        document.querySelector(".map-header__filter-optios-" + num).style.display = "none";
-        // document.querySelector(".picked-" + num).style.display = "block";
+        document.querySelector("#map-optios-" + num).style = "top: 0%; height: 0; opacity: 0;";
     }
     showOption_map[num] = ! showOption_map[num];
 }
@@ -201,6 +201,7 @@ function toggleActive(num){
     }
     document.querySelector("#hospital-"+num).classList.add("item-active");
     document.querySelector(".hospital-details").style.display= "flex";
+    document.querySelector(".map-tools").style.top= "75%";
 
     document.querySelector(".hospital-details").innerHTML= '';
     var html = `
@@ -240,7 +241,9 @@ function toggleActive(num){
     document.querySelector(".hospital-details").insertAdjacentHTML('beforeend',html);
     firstTime= false;
 }
-
+function toggleSearchBox(){
+    document.querySelector(".map-toolbar__search-box").classList.toggle("map-toolbar__show-searchBox")
+}
 
 var data= [
     {

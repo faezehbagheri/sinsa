@@ -15,6 +15,17 @@
         font-family: 'irsans';
         color: $color-gray;
         margin:0 3rem;
+        transition: all .3s ease;
+
+        &:hover{
+            background-color: $color-primary-light;
+            border: none;
+            color: #fff;
+
+            i{
+                color: #fff;
+            }
+        }
 
         @include respond(big-desktop){
             height: 4rem;
@@ -25,6 +36,7 @@
     &__reset-icon{
         color: $color-gray;
         margin-left: 1rem;
+        transition: all .3s ease;
     }
 
     &__search{
@@ -39,6 +51,8 @@
     &__search-icon{
         font-size: 2.5rem;
         color: $color-primary-light;
+        margin-left: 5rem;
+        cursor: pointer;
     }
 
     &__search-box{
@@ -47,12 +61,22 @@
         background-color: #ffffff;
         border: 1px solid $color-gray;
         border-radius: 2rem;
-        margin: 3rem;
+        margin: 3rem;     
+        width: 0;
+        opacity: 0;
+        transition: all .4s ease-in;
+        // display: none;
 
         @include respond(big-desktop){
             height: 3.5rem
         }
     }
+
+    &__show-searchBox{
+        opacity: 1;
+        width: 70%;
+    }
+
     &__search-input{
         width:85%;
         margin: 2rem;
@@ -82,6 +106,7 @@
     &__filter-icon{
         font-size: 2.2rem;
         color: $color-gray;
+        cursor: pointer;
 
         @include respond(big-desktop){
             font-size: 2.5rem;
