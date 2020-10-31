@@ -2822,10 +2822,12 @@ body {
     transition: all .2s; }
     .navigation__item:hover {
       transform: scale(1.1);
-      color: #90C73D; }
+      color: #90C73D;
+      z-index: -10; }
   .navigation__item:hover + .navigation__submenu {
     height: 40rem;
-    top: -1%; }
+    top: -1%;
+    z-index: -10; }
   .navigation__btn {
     height: 4.5rem;
     width: 14rem;

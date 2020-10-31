@@ -38,6 +38,7 @@
         &:hover{
             transform: scale(1.1);
             color: $color-primary-light;
+            z-index: -10;
         }
         
     }
@@ -45,6 +46,7 @@
     &__item:hover + &__submenu{
         height: 40rem;
         top: -1%;
+        z-index: -10;
     }
 
     &__btn{
