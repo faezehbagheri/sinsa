@@ -1,11 +1,16 @@
 .filter{
-    width: 13vw;
+    width: 24rem;
     margin-left: 10rem;
     // display: none !important;
 
      @include respond(phone){
          display: none !important;
      }
+
+    @include respond(big-desktop){
+        margin-left: 10rem;
+        width: 13vw;
+    }
 
     &__main-box{
         height: 17vh;

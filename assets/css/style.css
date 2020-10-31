@@ -297,11 +297,14 @@ body {
       margin-top: 1rem; }
 
 .card {
-  width: 43%;
-  height: 50rem;
-  background-color: #B4D3D1;
-  position: relative;
-  border-radius: 2rem; }
+  width: 43%; }
+  .card__main {
+    width: 100%;
+    height: 50rem;
+    background-color: #B4D3D1;
+    position: relative;
+    border-radius: 2rem;
+    margin-bottom: 5rem; }
   .card__container {
     width: 94%;
     height: 93%;
@@ -310,7 +313,66 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    overflow-y: scroll; }
+    .card__container::-webkit-scrollbar {
+      width: 1rem; }
+    .card__container::-webkit-scrollbar-thumb {
+      color: none; }
+  .card__label {
+    font-size: 1.4rem;
+    vertical-align: bottom;
+    padding: 15px 25px 8px;
+    background-color: #6DC2BE;
+    margin-right: -9px;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    color: #fff; }
+  .card__label:before, .card__label:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 3rem;
+    background-color: #6DC2BE; }
+  .card__label:before {
+    left: -17px;
+    transform: skew(-30deg, 0deg);
+    border-left: 1px solid #6DC2BE; }
+  .card__label:after {
+    right: -17px;
+    transform: skew(30deg, 0deg);
+    border-right: 1px solid #6DC2BE; }
+  .card__label:before {
+    border-radius: 10px 0 0 0; }
+  .card__label:after {
+    border-radius: 0 10px 0 0; }
+  .card__item {
+    height: 5.9rem;
+    border-bottom: 1px solid #6DC2BE;
+    margin-left: 6px; }
+    .card__item:last-of-type {
+      border-bottom: none; }
+    .card__item div {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 100%;
+      background-color: #EEF1EF;
+      margin: 1.5rem;
+      position: relative; }
+    .card__item i {
+      color: #6DC2BE;
+      font-size: 1.5rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .card__item span {
+      color: #707070;
+      font-size: 1.4rem;
+      margin: 1.5rem; }
 
 .category {
   width: 50%; }
@@ -443,11 +505,15 @@ body {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 2px #e6e6e6; }
 
 .filter {
-  width: 13vw;
+  width: 24rem;
   margin-left: 10rem; }
   @media only screen and (max-width: 30em) {
     .filter {
       display: none !important; } }
+  @media only screen and (min-width: 112.5em) {
+    .filter {
+      margin-left: 10rem;
+      width: 13vw; } }
   .filter__main-box {
     height: 17vh;
     width: 90%;
@@ -1567,9 +1633,8 @@ body {
     font-weight: normal;
     font-style: normal; } }
   .question__qa {
-    height: 48rem;
-    width: 45%;
-    margin: 2rem;
+    height: 35rem;
+    width: 58%;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 2px 5px #707070; }
@@ -1578,32 +1643,34 @@ body {
         height: 40vh; } }
   .question__form {
     height: 50vh;
-    width: 30%;
-    margin: 1rem; }
+    width: 35%;
+    margin-right: 3rem; }
   .question__que {
     height: 5rem;
     background-color: #6DC2BE; }
   .question__header {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #fff;
     text-align: right;
     padding: 1rem; }
   .question__icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fff;
     margin-right: 1rem; }
   .question__ans {
     background-color: #fff; }
   .question__pragraph {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #707070;
     text-align: right;
-    padding: 3rem 6rem; }
+    padding: 3rem; }
   .question__link, .question__link:link, .question__link:active {
     font-size: 1.5rem;
     color: #90C73D;
     text-decoration: none;
-    padding: 0 6rem; }
+    padding: 0 3rem; }
+    .question__link i, .question__link:link i, .question__link:active i {
+      margin-left: 1rem; }
   .question__fullName {
     height: 3.5rem;
     width: 100%;
@@ -2003,8 +2070,7 @@ body {
       margin: 0  5%; }
 
 .tab-amodi {
-  width: 50%;
-  margin-bottom: 25rem; }
+  width: 50%; }
   @media only screen and (max-width: 30em) {
     .tab-amodi {
       width: 100%; } }
