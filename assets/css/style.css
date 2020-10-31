@@ -2426,7 +2426,6 @@ body {
   background-size: cover; }
   .header.homepage {
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/img/PICc.png);
-    position: absolute;
     top: 60px;
     z-index: -10; }
   .header__main {
@@ -2444,18 +2443,17 @@ body {
     .illness-main {
       height: auto; } }
 
-main {
+.main {
   height: 440vh;
   width: 100%;
-  position: relative;
-  z-index: -99; }
+  position: relative; }
   @media only screen and (min-width: 112.5em) {
-    main {
+    .main {
       height: 380vh; } }
   @media only screen and (max-width: 30em) {
-    main {
+    .main {
       display: none; } }
-  main__half-circle {
+  .main__half-circle {
     height: 105vh;
     width: 100%;
     background-color: #fff;
@@ -2463,54 +2461,54 @@ main {
     clip-path: circle(50% at 50% 100%);
     position: absolute; }
     @media only screen and (min-width: 112.5em) {
-      main__half-circle {
+      .main__half-circle {
         top: -10%; } }
-  main__icon {
+  .main__icon {
     font-size: 3rem;
     color: #707070;
     margin-top: -10rem;
     margin-bottom: 15rem; }
     @media only screen and (min-width: 112.5em) {
-      main__icon {
+      .main__icon {
         margin-top: -10rem; } }
-  main__main-section {
+  .main__main-section {
     height: 420vh;
     width: 75%;
     position: absolute;
     z-index: 999; }
     @media only screen and (min-width: 112.5em) {
-      main__main-section {
+      .main__main-section {
         height: 340vh; } }
-  main__section-specialty {
+  .main__section-specialty {
     width: 100%; }
-  main__description {
+  .main__description {
     width: 25%;
     text-align: center; }
-    main__description--paraghraph {
+    .main__description--paraghraph {
       font-size: 1.5rem;
       padding-top: 1rem;
       border-top: 4px solid #707070; }
-  main__section-doctors {
+  .main__section-doctors {
     height: 60vh;
     width: 85vw;
     margin-top: 8rem; }
-  main__background {
+  .main__background {
     width: 99vw;
     margin-top: -5rem;
     margin-bottom: -30rem; }
-  main__section-article {
+  .main__section-article {
     height: 80vh;
     margin-top: 10rem; }
-  main__section-database {
+  .main__section-database {
     height: 40vh; }
-  main__section-comment {
+  .main__section-comment {
     height: 60vh;
     width: 100%;
     margin-top: 8rem; }
-  main__section-question {
+  .main__section-question {
     height: 70vh;
     width: 100%; }
-  main__bg {
+  .main__bg {
     width: 99vw;
     margin-top: -13rem;
     margin-bottom: -25rem; }
@@ -2794,6 +2792,7 @@ main {
   background-size: cover;
   background-position: center;
   padding-top: 2.8rem;
+  position: absolute;
   z-index: 99; }
   @media only screen and (max-width: 30em) {
     .navigation {
