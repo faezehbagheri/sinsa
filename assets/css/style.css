@@ -675,7 +675,14 @@ body {
       font-size: 1.6rem;
       color: #707070;
       text-decoration: none;
-      text-align: center; }
+      text-align: center;
+      transition: all .3s ease; }
+      .filter__tab-content a:hover,
+      .filter__tab-content a:link:hover,
+      .filter__tab-content a:visited:hover {
+        transform: scale(1.1);
+        background-color: whitesmoke;
+        color: #6DC2BE; }
   .filter__btn {
     position: absolute;
     top: 99%;
