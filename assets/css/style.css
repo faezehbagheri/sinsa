@@ -1108,7 +1108,8 @@ body {
   height: 5vh;
   width: 100%;
   background-color: #ffffff;
-  position: absolute; }
+  position: absolute;
+  z-index: 9; }
   .map-toolbar__btn {
     height: 3rem;
     width: 10rem;
@@ -1262,6 +1263,41 @@ body {
     color: #707070;
     text-align: center;
     margin-top: -1.6rem; }
+
+.map {
+  height: 84rem;
+  background-color: pink; }
+  .map__container {
+    margin: auto;
+    position: relative;
+    border: solid 1px grey;
+    height: 100%; }
+    @media only screen and (max-width: 30em) {
+      .map__container {
+        overflow: hidden; } }
+  .map__overview {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    background: white;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; }
+  .map__overview.hidden {
+    display: none; }
+  .map__canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: height 0.4s ease-in-out; }
 
 .mobile-article__item {
   height: 38rem;

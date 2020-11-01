@@ -19,10 +19,14 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
-
+        
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+      
     <title>Sinsa</title>
+        
 </head>
 <body>
+    
     <!-- Header -->
     <header class="map-header flex r-reverse justi-center">
         <div class="flex justi-center map-header__box1">
@@ -405,7 +409,7 @@
                 </div>
             </div>
             <div class="hospital-list__list flex column align-center">                
-                <div class="hospital-list__item flex column align-center justi-center" id="hospital-1" onclick="toggleActive('1')">
+                <div class="hospital-list__item flex column align-center justi-center" id="hospital-0" onclick="toggleActive('0')">
                     <div class="hospital-list__row flex  r-reverse align-center justi-around">
                         <div class="hospital-list__img-container">
                             <img class="hospital-list__img" src="./assets/img/HOS06_PIC_01@2x.png">
@@ -423,7 +427,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="hospital-list__item flex column align-center justi-center" id="hospital-2"  onclick="toggleActive('2')">
+                <div class="hospital-list__item flex column align-center justi-center" id="hospital-1"  onclick="toggleActive('1')">
                     <div class="hospital-list__row flex  r-reverse align-center justi-around">
                         <div class="hospital-list__img-container">
                             <img class="hospital-list__img" src="./assets/img/unnamed 3@2x.png">
@@ -440,27 +444,8 @@
                         <span class="hospital-list__span"> تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد
                         </span>
                     </div>
-                </div>
-                <div class="hospital-list__item flex column align-center justi-center" id="hospital-3" onclick="toggleActive('3')">
-                    <div class="hospital-list__row flex  r-reverse align-center justi-around">
-                        <div class="hospital-list__img-container">
-                            <img class="hospital-list__img" src="./assets/img/HOS06_PIC_01@2x.png">
-                        </div>
-                        <div class="hospital-list__text flex column align-end">
-                            <h3 class="hospital-list__name">بیمارستان نیکان</h3>
-                            <p class="hospital-list__type">بیمارستان جامع</p>
-                            <p class="hospital-list__phone">225457325<i class="fas fa-phone hospital-list__icon"></i></p>
-                            <p class="hospital-list__time">7:00_19:00<i class="fas fa-clock hospital-list__icon"></i></p>
-                        </div>
-                    </div>
-                    <div class="hospital-list__address flex r-reverse align-start">
-                        <i class="fas fa-map-marker-alt hospital-list__location-icon"></i>
-                        <span class="hospital-list__span"> تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="hospital-list__item flex column align-center justi-center" id="hospital-4" onclick="toggleActive('4')">
+                </div>                
+                <div class="hospital-list__item flex column align-center justi-center" id="hospital-2" onclick="toggleActive('2')">
                     <div class="hospital-list__row flex  r-reverse align-center justi-around">
                         <div class="hospital-list__img-container">
                             <img class="hospital-list__img" src="./assets/img/unnamed@2x.png">
@@ -479,7 +464,7 @@
                     </div>
                 </div>
                 
-                <div class="hospital-list__item flex column align-center justi-center" id="hospital-5" onclick="toggleActive('5')">
+                <div class="hospital-list__item flex column align-center justi-center" id="hospital-3" onclick="toggleActive('3')">
                     <div class="hospital-list__row flex  r-reverse align-center justi-around">
                         <div class="hospital-list__img-container">
                             <img class="hospital-list__img" src="./assets/img/unnamed (2)@2x.png">
@@ -497,13 +482,13 @@
                         </span>
                     </div>
                 </div>                
-                <div class="hospital-list__item flex column align-center justi-center" id="hospital-6" onclick="toggleActive('6')">
+                <div class="hospital-list__item flex column align-center justi-center" id="hospital-4" onclick="toggleActive('4')">
                     <div class="hospital-list__row flex  r-reverse align-center justi-around">                        
                         <div class="hospital-list__img-container">
                             <img class="hospital-list__img" src="./assets/img/unnamed@2x.png">
                         </div>
                         <div class="hospital-list__text flex column align-end">
-                            <h3 class="hospital-list__name">بیمارستان ارنش</h3>
+                            <h3 class="hospital-list__name">بیمارستان امام رضا</h3>
                             <p class="hospital-list__type">روانپزشکی</p>
                             <p class="hospital-list__phone">225457325<i class="fas fa-phone hospital-list__icon"></i></p>
                             <p class="hospital-list__time">7:00_19:00<i class="fas fa-clock hospital-list__icon"></i></p>
@@ -519,8 +504,11 @@
             </div>
         </div>
         <!-- نقشه -->
-        <div class="map">                
-            <iframe src="https://www.atlistmaps.com/map/5d7f539a-3faf-40c2-a66f-66b9b55d92e4?share=true" allow="geolocation" width="100%" height="800px" frameborder="0" scrolling="no" allowfullscreen></iframe>    
+        <div class="map">
+            <div id="map-container" class="map__container">
+                <div id="map-overview" class="hidden map__overview">Get back to map overview</div>            
+                <div id="map-canvas" class="map__canvas"></div>
+            </div>
         </div>
         <!-- اطلاعات بیمارستان ها -->
         <div class="hospital-details"></div>
