@@ -290,6 +290,7 @@ body {
     height: 94%;
     background-color: #fff;
     border-radius: 2rem;
+    box-shadow: 0 0 6px #A0A0A0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2133,7 +2134,7 @@ body {
     flex-flow: row-reverse wrap;
     position: relative;
     cursor: pointer;
-    margin-right: 1.5rem; }
+    margin-right: 2rem; }
     @media only screen and (max-width: 30em) {
       .tab-amodi__multipleTabs {
         display: none; } }
@@ -2143,7 +2144,7 @@ body {
     font-size: 1.4rem;
     text-align: center;
     vertical-align: bottom;
-    background-color: #6DC2BE;
+    background-color: #49838B;
     margin-right: 3rem;
     display: inline-block;
     position: relative;
@@ -2167,17 +2168,17 @@ body {
     top: 0;
     height: 100%;
     width: 3rem;
-    background-color: #6DC2BE; }
+    background-color: #49838B; }
   .tab-amodi__label:before {
     left: -17px;
     transform: skew(-30deg, 0deg);
-    border-left: 1px solid #6DC2BE;
-    box-shadow: -6px 0 5px 0px #a6a6a665; }
+    border-left: 1px solid #49838B;
+    box-shadow: -6px -1px 5px 0px #c5c5c528; }
   .tab-amodi__label:after {
     right: -17px;
     transform: skew(30deg, 0deg);
-    border-right: 1px solid #6DC2BE;
-    box-shadow: 6px 0 5px 0px #a6a6a665; }
+    border-right: 1px solid #49838B;
+    box-shadow: 6px -1px 8px 0px #c5c5c528; }
   .tab-amodi__label:before {
     border-radius: 10px 0 0 0; }
   .tab-amodi__label:after {
@@ -2418,6 +2419,58 @@ body {
 
 .activate i:last-child {
   display: inline-block; }
+
+.visit {
+  width: 100%;
+  height: 60rem;
+  background-color: #B4D3D1;
+  position: relative;
+  border-radius: 2rem;
+  margin-bottom: 5rem; }
+  .visit__main {
+    width: 96%;
+    height: 94%;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 6px #A0A0A0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll; }
+    .visit__main::-webkit-scrollbar {
+      width: 1rem; }
+    .visit__main::-webkit-scrollbar-thumb {
+      color: none; }
+  .visit__header {
+    width: 80%;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 2px solid #A0A0A0; }
+  .visit_buttons {
+    width: 80%; }
+    .visit_buttons button {
+      width: 14rem;
+      height: 5rem;
+      border-radius: 3rem;
+      border: none;
+      font-size: 1.5rem; }
+  .visit__nxt-btn {
+    background-color: #90C73D;
+    color: white;
+    box-shadow: 1px 2px 5px #90C73D; }
+    .visit__nxt-btn i {
+      font-size: 2.5rem;
+      margin-right: 1rem; }
+  .visit__prev-btn {
+    background-color: #EEF1EF;
+    color: #707070;
+    box-shadow: 1px 2px 5px #A0A0A0; }
+    .visit__prev-btn i {
+      font-size: 2rem;
+      margin-left: 1rem; }
 
 .footer {
   height: 60vh;
