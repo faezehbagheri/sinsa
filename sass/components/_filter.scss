@@ -64,6 +64,11 @@
         box-shadow: 0 2px 5px $color-gray-light;
         margin-bottom: 2rem;
         
+        h2{
+            text-align: center;
+            color: $color-gray;
+            margin: 1rem;
+        }
     }
 
     &__title{
@@ -242,13 +247,13 @@
         }
         
         [id^="tab"]:checked ~ [id^="tab-content"] {
-            display: flex;
+            display: flex !important;
         }
     }
 
     &__tab-content{
         z-index: 2;
-        display: none; 
+        display: none !important; 
         overflow: hidden;
         width: 100%;
         height: 46rem;
@@ -275,9 +280,10 @@
             transition: all .3s ease;
 
             &:hover{
-                transform: scale(1.1);
-                background-color: rgb(245, 245, 245);
-                color: $color-primary;
+                transform: scale(1.2);
+                background-color: rgb(165, 165, 165);
+                color: white;
+                border: 1px solid white;
             }
         }
     } 
@@ -287,6 +293,38 @@
         top: 99%;
         transform: translateY(-40%);
     }
+
+    &__list{
+        list-style-type: none;
+        height: 15.5rem;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        
+        &::-webkit-scrollbar {
+            width: 1rem;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            color: none;
+        }
+
+        li{
+            margin: 6px;
+        }
+
+        a,
+        a:link,
+        a:visited{
+            text-decoration: none;
+            font-size: 1.4rem;
+
+            &:hover{
+                color: $color-primary;
+            }
+        }
+    }
+
 }
 
 /* Styling Checkbox Starts */

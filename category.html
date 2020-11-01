@@ -546,24 +546,23 @@
 
                 <!-- فیلتر دسته بندی ها -->
                 <div class="filter__box">
-                    <div class="filter__header" onclick="openOption('1')">
-                        <h3 class="filter__title flex align-center justi-center">
-                            <i class="fas fa-angle-down filter__arrow-icon"></i>دسته بندی تخصص ها
-                        </h3>
+                    <h2>دسته بندی تخصص ها</h2>
+                    <div class="filter__search-box flex r-reverse align-center justi-start" style="height: 3rem;">
+                        <button class="filter__search-btn" style="background-color: inherit;">
+                            <i class="fas fa-search filter__search-icon" style="color: #000000; font-size: 1.4rem;"></i>
+                        </button>
+                        <input type="text" class="filter__input" placeholder="جستجو">
                     </div>
-                    <div class="filter__picked filter__picked-1">
-                        <div class='filter__item flex r-reverse align-center' id='item-1' onclick="removeItem(this.id)">
-                            <i class='fas fa-times-circle filter__close-icon'></i>
-                            <span class='filter__text'>همه ی بیماری ها</span>
-                        </div>
-                    </div>
-                    <div class="filter__optios filter__optios-1">
-                        <div class="filter__search-box flex r-reverse align-center justi-start" style="height: 3rem;">
-                            <button class="filter__search-btn" style="background-color: inherit;">
-                                <i class="fas fa-search filter__search-icon" style="color: #000000; font-size: 1.4rem;"></i>
-                            </button>
-                            <input type="text" class="filter__input" placeholder="جستجو">
-                        </div>
+                    <ul class="filter__list flex column align-end">
+                        <li><a href="#">قلب و عروق</a></li>
+                        <li><a href="#">مغز و استخوان</a></li>
+                        <li><a href="#">خون و سرطان</a></li>
+                        <li><a href="#">گوارشی و کبد</a></li>
+                        <li><a href="#">کودکان</a></li>
+                        <li><a href="#">همه ی بیماری ها</a></li>
+                    </ul>
+                    <!-- <div class="filter__optios filter__optios-1">
+
                         <div class="filter__checkbox flex r-reverse align-center">
                             <label class="checkbox-label flex r-reverse">
                                 <input type="checkbox" name="takhasos" value="قلب و عروق">
@@ -585,7 +584,6 @@
                             </label>
                             <span class="filter__lable">خون و سرطان</span>
                         </div>
-
                         <div class="filter__checkbox flex r-reverse align-center">
                             <label class="checkbox-label flex r-reverse">
                                 <input type="checkbox" name="takhasos" value="گوارشی و کبد">
@@ -606,8 +604,8 @@
                                 <span class="checkbox-custom"></span>
                             </label>
                             <span class="filter__lable">همه ی بیماری ها</span>
-                        </div>
-                    </div>
+                        </div> 
+                    </div> -->
                 </div>
 
                 <!-- سرچ باکس -->
@@ -640,8 +638,14 @@
                         <li>
                             <input type="radio" name="tabs" id="tab2" />
                             <label for="tab2"role="tab" aria-selected="false" aria-controls="panel2" tabindex="0">حروف انگلیسی</label>
-                            <div id="tab-content2" class="filter__tab-content" role="tabpanel" aria-labelledby="specification" aria-hidden="true">
-                                <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                            <div id="tab-content2" class="filter__tab-content flex r-reverse align-center justi-center align-content-center wrap" role="tabpanel" aria-labelledby="specification" aria-hidden="true">
+                                <a class="flex align-center justi-center" href="#">A</a><a class="flex align-center justi-center" href="#">B</a><a class="flex align-center justi-center" href="#">C</a><a class="flex align-center justi-center" href="#">D</a>
+                                <a class="flex align-center justi-center" href="#">E</a><a class="flex align-center justi-center" href="#">F</a><a class="flex align-center justi-center" href="#">G</a><a class="flex align-center justi-center" href="#">H</a>
+                                <a class="flex align-center justi-center" href="#">I</a><a class="flex align-center justi-center" href="#">J</a><a class="flex align-center justi-center" href="#">K</a><a class="flex align-center justi-center" href="#">L</a>
+                                <a class="flex align-center justi-center" href="#">M</a><a class="flex align-center justi-center" href="#">N</a><a class="flex align-center justi-center" href="#">O</a><a class="flex align-center justi-center" href="#">P</a>
+                                <a class="flex align-center justi-center" href="#">Q</a><a class="flex align-center justi-center" href="#">R</a><a class="flex align-center justi-center" href="#">S</a><a class="flex align-center justi-center" href="#">T</a>
+                                <a class="flex align-center justi-center" href="#">U</a><a class="flex align-center justi-center" href="#">V</a><a class="flex align-center justi-center" href="#">W</a><a class="flex align-center justi-center" href="#">X</a>
+                                <a class="flex align-center justi-center" href="#">Y</a><a class="flex align-center justi-center" href="#">Z</a>
                             </div>
                         </li>
                     </ul>
@@ -714,42 +718,42 @@
                         </div>
                         <div class="card__main">
                             <div class="card__container">
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آپروتیئین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتراکوریوم</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتروپین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتورواستاتین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتنولول</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آزاتیوپرین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آزیتروماسین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آسیکلوویر</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتنولول</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -759,50 +763,50 @@
                         </div>
                         <div class="card__main">
                             <div class="card__container">
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتورواستاتین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتنولول</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آزاتیوپرین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آزیتروماسین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آسیکلوویر</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آستمیزول</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آکاربوز</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آزاتیوپرین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آکسار</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آستمیزول</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آسیکلوویر</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
+                                </a>
                             </div>
                         </div> 
                     </div>                   
@@ -815,42 +819,42 @@
                         </div>
                         <div class="card__main">
                             <div class="card__container">
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آپروتیئین</span>
                                     <div><i class="fas fa-angle-left"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتراکوریوم</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتروپین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتورواستاتین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتنولول</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آزاتیوپرین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آزیتروماسین</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آسیکلوویر</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
-                                <div class="card__item flex r-reverse align-center justi-between">
+                                </a>
+                                <a href="#" class="card__item flex r-reverse align-center justi-between">
                                     <span>آتنولول</span>
                                     <div><i class="fas fa-angle-right"></i></div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>                
@@ -993,6 +997,24 @@
 
 </body>
 <script>
+    $(function(){
+
+        $('input.filter__input').keyup(function(){
+
+            var searchText = $(this).val();
+
+            $('ul.filter__list > li').each(function(){
+
+                var currentLiText = $(this).text(),
+                    showCurrentLi = currentLiText.indexOf(searchText) !== -1;
+
+                $(this).toggle(showCurrentLi);
+
+            });     
+        });
+
+    });
+
     $(document).ready(function () {  
         var activeTab = $(".tabs").find('a.active').data('trigger');
         $('#' + activeTab).show();

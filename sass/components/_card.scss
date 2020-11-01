@@ -77,10 +77,12 @@
         height: 5.9rem;
         border-bottom: 1px solid $color-primary;
         margin-left: 6px;
-
+        text-decoration: none;
+        
         &:last-of-type{
             border-bottom: none;
         }
+
 
         div{
             width:  3.5rem;
