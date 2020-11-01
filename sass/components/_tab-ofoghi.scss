@@ -1,11 +1,12 @@
 .tab-ofoghi{
     &__tab{
-        width: 105%;
+        width: 100%;
         background-color: #fff;
         border-radius: 2rem;
         box-shadow: -1px 0 5px $color-gray-light;
         position: relative;
         height: auto;
+        z-index: 99;
 
         @include respond(phone){width: 100%;}
     }
@@ -14,14 +15,14 @@
     }
 
     &__box{
-        width: 110%;
+        width: 106%;
         background-color: #fff;
         margin-top: 2rem;
         border-radius: 1rem 0 0 1rem;
         box-shadow: -2px 2px 8px $color-gray-light;
         cursor: pointer;
         
-        @include respond(big-desktop){width: 112%;}
+        @include respond(big-desktop){width: 108%;}
         @include respond(phone){
             width: 100%;
             background-color: #fff;
@@ -62,7 +63,7 @@
         width:  4rem;
         border-radius: 100%;
         background-color: #d9d9d9;
-        left: 6.5%;
+        left: 4.5%;
         position: relative;
         border: none;
         outline: none;
@@ -72,7 +73,7 @@
         @include respond(big-desktop){
             height: 5rem;
             width: 5rem;
-            left: 8%;
+            left: 5%;
         }
 
         @include respond(phone){

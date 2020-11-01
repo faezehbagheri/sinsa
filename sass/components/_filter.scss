@@ -281,7 +281,7 @@
 
             &:hover{
                 transform: scale(1.2);
-                background-color: rgb(165, 165, 165);
+                background-color: $color-primary-light;
                 color: white;
                 border: 1px solid white;
             }
@@ -319,9 +319,6 @@
             text-decoration: none;
             font-size: 1.4rem;
 
-            &:hover{
-                color: $color-primary;
-            }
         }
     }
 

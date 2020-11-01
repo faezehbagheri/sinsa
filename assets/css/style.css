@@ -686,7 +686,7 @@ body {
       .filter__tab-content a:link:hover,
       .filter__tab-content a:visited:hover {
         transform: scale(1.2);
-        background-color: #a5a5a5;
+        background-color: #90C73D;
         color: white;
         border: 1px solid white; }
   .filter__btn {
@@ -709,10 +709,6 @@ body {
     .filter__list a:visited {
       text-decoration: none;
       font-size: 1.4rem; }
-      .filter__list a:hover,
-      .filter__list a:link:hover,
-      .filter__list a:visited:hover {
-        color: #6DC2BE; }
 
 /* Styling Checkbox Starts */
 .checkbox-label {
@@ -2121,7 +2117,7 @@ body {
       margin: 0  5%; }
 
 .tab-amodi {
-  width: 50%; }
+  width: 52%; }
   @media only screen and (max-width: 30em) {
     .tab-amodi {
       width: 100%; } }
@@ -2136,29 +2132,56 @@ body {
     display: flex;
     flex-flow: row-reverse wrap;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-right: 1.5rem; }
     @media only screen and (max-width: 30em) {
       .tab-amodi__multipleTabs {
         display: none; } }
-    .tab-amodi__multipleTabs a {
-      flex: 1 0 0;
-      padding: 10px 0;
-      text-align: center;
-      text-decoration: none;
-      background-color: #6DC2BE;
-      border-radius: 25px 25px 0 0;
-      margin-left: 1px;
-      color: #ffff;
-      font-size: 1.5rem; }
-    .tab-amodi__multipleTabs a.active {
-      background: #fdfdfd;
-      border: 3px solid #6DC2BE;
-      border-bottom: none;
-      color: #fff; }
-      @media only screen and (max-width: 30em) {
-        .tab-amodi__multipleTabs a.active {
-          font-size: 2rem;
-          display: block; } }
+  .tab-amodi__label {
+    width: 13rem;
+    padding: 1.1rem 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    vertical-align: bottom;
+    background-color: #6DC2BE;
+    margin-right: 3rem;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+    box-shadow: 0px -2px 6px #a6a6a665; }
+  .tab-amodi__label.active {
+    background-color: #B4D3D1;
+    z-index: 9;
+    color: #fff !important; }
+    .tab-amodi__label.active::before {
+      background-color: #B4D3D1;
+      border-left: 1px solid #B4D3D1; }
+    .tab-amodi__label.active::after {
+      background-color: #B4D3D1;
+      border-right: 1px solid #B4D3D1; }
+  .tab-amodi__label:before, .tab-amodi__label:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 3rem;
+    background-color: #6DC2BE; }
+  .tab-amodi__label:before {
+    left: -17px;
+    transform: skew(-30deg, 0deg);
+    border-left: 1px solid #6DC2BE;
+    box-shadow: -6px 0 5px 0px #a6a6a665; }
+  .tab-amodi__label:after {
+    right: -17px;
+    transform: skew(30deg, 0deg);
+    border-right: 1px solid #6DC2BE;
+    box-shadow: 6px 0 5px 0px #a6a6a665; }
+  .tab-amodi__label:before {
+    border-radius: 10px 0 0 0; }
+  .tab-amodi__label:after {
+    border-radius: 0 10px 0 0; }
   .tab-amodi__item {
     font-size: 2.3rem;
     color: #707070;
@@ -2197,12 +2220,13 @@ body {
     width: 100%; }
 
 .tab-ofoghi__tab {
-  width: 105%;
+  width: 100%;
   background-color: #fff;
   border-radius: 2rem;
   box-shadow: -1px 0 5px #A0A0A0;
   position: relative;
-  height: auto; }
+  height: auto;
+  z-index: 99; }
   @media only screen and (max-width: 30em) {
     .tab-ofoghi__tab {
       width: 100%; } }
@@ -2211,7 +2235,7 @@ body {
   width: 100%; }
 
 .tab-ofoghi__box {
-  width: 110%;
+  width: 106%;
   background-color: #fff;
   margin-top: 2rem;
   border-radius: 1rem 0 0 1rem;
@@ -2219,7 +2243,7 @@ body {
   cursor: pointer; }
   @media only screen and (min-width: 112.5em) {
     .tab-ofoghi__box {
-      width: 112%; } }
+      width: 108%; } }
   @media only screen and (max-width: 30em) {
     .tab-ofoghi__box {
       width: 100%;
@@ -2255,7 +2279,7 @@ body {
   width: 4rem;
   border-radius: 100%;
   background-color: #d9d9d9;
-  left: 6.5%;
+  left: 4.5%;
   position: relative;
   border: none;
   outline: none;
@@ -2265,7 +2289,7 @@ body {
     .tab-ofoghi__btn {
       height: 5rem;
       width: 5rem;
-      left: 8%; } }
+      left: 5%; } }
   @media only screen and (max-width: 30em) {
     .tab-ofoghi__btn {
       height: 5rem;
