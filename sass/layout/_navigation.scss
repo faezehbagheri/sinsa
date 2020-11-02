@@ -34,11 +34,16 @@
         outline: none;
         font-size: 1.6rem;
         transition: all .2s;
+        text-decoration: none;
+        color:black;
+        
 
         &:hover{
             transform: scale(1.1);
             color: $color-primary-light;
             z-index: -10;
+            cursor: pointer;
+
         }
         
     }
