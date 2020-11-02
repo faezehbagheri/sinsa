@@ -1,10 +1,10 @@
-.doctors{
+.personal-card{
     width: 100%;
     margin-top: -4rem;
-    
+
 
     &__main{
-        height: 23rem;
+        height: 26rem;
         width: 22rem;
         background-color: #ffffff;
         border-radius: 3rem;
@@ -29,6 +29,7 @@
         shape-outside: circle(50% at 50% 50%);
         margin-bottom: -10rem;
         background-color: #ffffff;
+        box-shadow: 0 -1px 5px #d9d9d9;
 
         @include respond(big-desktop){
             height: 13rem;
@@ -61,6 +62,13 @@
         font-size: 1.3rem;
         font-weight: 700;
         color: $color-primary;
+
+        i{
+            font-size: 3rem;
+            color: $color-primary-light;
+            position: absolute;
+            left: 15%;
+        }
     }
 
     &__percentage{
@@ -101,7 +109,26 @@
         cursor: pointer;
     }
 
+    &__address{
+        margin: 1rem;
+        
+        i{
+            font-size: 1.8rem;
+            color:  $color-primary-dark;
+            margin-left: 1rem;
+        }
+        span{
+            font-size: 1.8rem;
+            font-weight: 100;
+            color: $color-gray;
+        }
 
+        p{
+            font-size: 1.3rem;
+            font-weight: 100;
+            color: $color-gray;
+        }
+    }
 
 }
 
@@ -110,7 +137,7 @@
     margin: 6% 4%;
     transition: margin 0.4s ease;
   }
-.owl-item.center  .doctors__main {
+.owl-item.center  .personal-card__main {
     height: 28rem;
     width: 25rem;
     background-color: #ffffff;
@@ -125,7 +152,7 @@
     }  
 }
 
-.owl-item.center  .doctors__photo {
+.owl-item.center  .personal-card__photo {
     height: 14rem;
     width: 14rem !important;
     border-radius: 100%;
@@ -142,7 +169,7 @@
     }  
 }
 
-.owl-item.center .doctors__photo-box{
+.owl-item.center .personal-card__photo-box{
     height: 17rem;
     width: 17rem;
     border-radius: 100%;
@@ -150,7 +177,7 @@
     top: -10%;
     transform: translateY(-50%);
     shape-outside: circle(50% at 50% 50%);
-    margin-bottom: -10rem;
+    margin-bottom: -13rem;
     background-color: #ffffff;
 
     

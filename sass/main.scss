@@ -7,13 +7,13 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/about-doctors";
 @import "components/article";
 @import "components/card";
 @import "components/category";
 @import "components/comment";
 @import "components/database";
 @import "components/date-box";
+@import "components/doctors";
 @import "components/filter";
 @import "components/grid";
 @import "components/hospital-details";
@@ -27,6 +27,8 @@
 @import "components/mobile-left-side";
 @import "components/mobile-specialty";
 @import "components/orbit";
+@import "components/personal-card-large";
+@import "components/personal-card";
 @import "components/question";
 @import "components/right-side";
 @import "components/search-advanced";

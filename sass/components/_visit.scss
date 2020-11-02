@@ -1,12 +1,12 @@
 .visit{
     width: 100%;    
-    height: 60rem;
+    height: 65rem;
     background-color: #B4D3D1;
     position: relative;
     border-radius: 2rem;
     margin-bottom: 5rem;
 
-    &__main{
+    &__container{
         width: 96%;
         height: 94%;
         background-color: #fff;
@@ -32,6 +32,62 @@
         text-align: center;
         padding: 2rem;
         border-bottom: 2px solid $color-gray-light;
+    }
+
+    &__main{
+        width: 80%;
+        height: 30rem;
+    }
+
+    &__search{
+        width: 23rem;
+        height: 4rem;
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 0 1px 5px $color-gray-light;
+
+        input{
+            height: 3rem;
+            width: 80%;
+            border: none;
+            outline: none;
+            text-align: right;
+
+            &::placeholder{
+                color: $color-gray-light;
+            }
+        }
+
+        i{
+            font-size: 2rem;
+            color: $color-primary;
+            margin-left: 1rem;
+        }
+    }
+
+    &__selected{
+        height: 25rem;
+    }
+
+    &__circle{
+        width:  16rem;
+        height: 16rem;
+        border-radius: 100%;
+        background-color: white;
+        box-shadow: 0 1px 5px $color-gray-light;
+        
+        a,
+        a:link,
+        a:visited{
+            text-decoration: none;
+            font-size: 1.7rem;
+            color: $color-gray;
+        }
+        
+        i{
+            font-size: 4rem;
+            color: $color-primary;
+        }
     }
 
     &_buttons{

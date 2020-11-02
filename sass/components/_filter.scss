@@ -1,6 +1,6 @@
 .filter{
     width: 24rem;
-    margin-left: 10rem;
+    margin-left: 5rem;
     // display: none !important;
 
      @include respond(phone){
@@ -8,7 +8,6 @@
      }
 
     @include respond(big-desktop){
-        margin-left: 10rem;
         width: 13vw;
     }
 
@@ -123,7 +122,7 @@
     }
 
     &__optios{
-        height: 15.5rem;
+        height: 15rem;
         overflow-x: hidden;
         overflow-y: scroll;
         // display: none;
@@ -287,6 +286,47 @@
             }
         }
     } 
+
+    
+    &__buttons{
+        width: 100%;
+    }
+
+    &__filter-btn{
+        height: 4rem;
+        width: 12rem;
+        border-radius: 3rem;
+        background-color: $color-gray;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        color: #fff;
+        font-family: 'irsans';
+    }
+
+    &__filter-icon{
+        font-size: 2.1rem;
+        color: #fff;
+        margin-left: 1rem;
+    }
+
+    &__reset-btn{
+        height: 4rem;
+        width: 12rem;
+        border-radius: 3rem;
+        background-color: #fff;
+        border: 1px solid $color-gray;
+        outline: none;
+        font-size: 1.5rem;
+        color: $color-gray;
+        font-family: 'irsans';
+    }
+
+    &__reset-icon{
+        font-size: 2.1rem;
+        color: $color-gray;
+        margin-left: 1rem;
+    }
 
     &__btn{
         position: absolute;

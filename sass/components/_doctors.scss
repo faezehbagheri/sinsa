@@ -1,0 +1,112 @@
+.doctors{
+
+    
+    &__main{
+        width: 60%;
+    }
+
+    &__filter-header{
+        width: 100%;
+        height: 8rem;
+        border-bottom: 2px solid $color-gray-light;
+
+        span{
+            font-size: 1.2rem;
+            color: $color-gray-light;
+            i{
+                font-size: 8px;
+                color: $color-primary-light;
+                margin: 1rem;
+            }
+        }
+    }
+
+    &__filter-icon{
+        font-size: 1.8rem;
+        margin: 1rem;
+        color: $color-gray-light;
+    }
+
+    &__search{
+        height: 4rem;
+        width: 35rem;
+        border-radius: 3rem;
+        background-color: white;
+        box-shadow: 0 1px 5px $color-gray-light;
+
+        input{
+            width: 80%;
+            border: none;
+            outline: none;
+            text-align: right;
+
+            &::placeholder{
+                color: $color-gray-light;
+            }
+        }
+
+        i{
+            font-size: 2rem;
+            color: $color-gray-light;
+            margin: 1rem;
+        }
+    }
+
+    &__type-list{
+
+        i{
+            font-size: 2.5rem;
+            margin: 5px;
+            color: $color-gray;
+        }
+    }
+
+    &__header{
+        width: 75%;
+    }
+
+    &__header-container{
+        height: 16vh;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 2.5rem;
+        box-shadow: 1px 1px 5px $color-gray-light;
+        margin-bottom: 3rem;
+    }
+
+    &__icon-box{
+        height: 8rem;
+        width:  8rem;
+        border-radius: 100%;
+        background-color: #fff;
+        border: 2px solid $color-gray-light;
+        position: relative;
+    }
+
+    &__icon{
+        font-size: 4rem;
+        color: $color-gray;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__span{
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    &__active{
+        div{            
+            border: 2px solid $color-primary-light;
+        }
+        i{
+            color: $color-primary-light;
+        }
+        span{
+            color: $color-primary-light;
+        }
+    }
+
+}

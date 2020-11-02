@@ -457,109 +457,6 @@
             <button class="navigation__btn">ورود / ثبت نام</button>
         </div>
     </nav>
-    
-    <!-- Desktop Header -->
-    <header class="header homepage">
-            
-        <div class="header__main flex r-reverse justi-center align-center">            
-            <!-- Search Box -->
-            <div class="search">
-                <form class="search__form flex column justi-center align-center">
-                    <label class="search__label u-margin-bottom-medium ">چطوری مشاوره آنلاین بگیریم؟</label>
-                    <div class="search__box flex justi-center align-center u-margin-bottom-medium ">
-                        <div class="search__search-container">
-                            <i class="fas fa-search search__right-icon"></i> 
-                            <input type="text" class="search__input" onkeydown="openSuggestionBox()">
-                            <i class="fas fa-map-marker-alt search__left-icon"></i>
-                        </div>
-                        <button class="search__btn" type="submit">جستجو</button>
-                    </div>
-                    <!-- search suggestion -->
-                    <div class="suggestion">
-                        <div class="suggestion__box">
-                            <div class="suggestion__recent-search flex column justi-around align-end">
-                                <h3 class="suggestion__header">جستجوهای اخیر</h3>
-                                <div class="flex r-reverse justi-start align-center">
-                                    <span class="suggestion__recent-search--item">آزمایشگاه مهر</span>
-                                    <span class="suggestion__recent-search--item">آزمایشگاه مهر</span>
-                                    <span class="suggestion__recent-search--item">آزمایشگاه مهر</span>
-                                    <span class="suggestion__recent-search--item">آزمایشگاه مهر</span>
-                                </div>
-                            </div>
-                            <div class="suggestion__related-words flex column align-end">
-                                <h3 class="suggestion__header">کلمات مرتبط</h3>
-                                <div class="suggestion__related-words--items flex column align-end">
-                                    <span class="suggestion__item">مهرگان</span>
-                                    <span class="suggestion__item">مهر طلبی</span>
-                                    <span class="suggestion__item">مهر ورزی</span>
-                                </div>
-                                <button class="suggestion__related-words--btn"><i class="fas fa-angle-down suggestion__icon"></i>مشاهده همه</button>
-                            </div>
-                            <div class="suggestion__article flex r-reverse align-center">
-                                <i class="fas fa-book suggestion__article--icon"></i>
-                                <div class="suggestion__article--items flex column align-end">
-                                    <span class="suggestion__item">مهرورزی در رابطه چگونه است؟</span>
-                                </div>
-                            </div>
-                            <div class="suggestion__hospital flex r-reverse align-center">
-                                <i class="fas fa-hospital suggestion__hospital--icon"></i>
-                                <div class="suggestion__hospital--items flex column align-end">
-                                    <span class="suggestion__item">بیمارستان مهر_ تهران</span>
-                                    <span class="suggestion__item">بیمارستان مهر_ اصفهان</span>
-                                </div>
-                            </div>
-                            <div class="suggestion__chat flex r-reverse align-center">
-                                <i class="fas fa-comment suggestion__chat--icon"></i>
-                                <div class="suggestion__chat--items flex column align-end">
-                                    <span class="suggestion__item">بیمارستان مهرگان _ یزد</span>
-                                    <span class="suggestion__item">بیمارستان مهر در مقایسه با </span>
-                                    <span class="suggestion__item">به نظرم اینکه توی همه ی بیمارستان به خصوص بیمارستان مهر </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- جستجو پیشرفته -->
-                    <div class="search__advanced flex column justi-center align-center">
-                        <div class="search-advanced flex justi-center align-center u-margin-bottom-medium ">
-                            <div class="search-advanced__list flex align-center justi-between owl-carousel owl-theme"
-                                id="search">
-                                <div class="search-advanced__item item"><a href="#"
-                                        class="search-advanced__link">آزمایشگاه</a></div>
-                                <div class="search-advanced__item item"><a href="#"
-                                        class="search-advanced__link">داروخانه</a></div>
-                                <div class="search-advanced__item item"><a href="#"
-                                        class="search-advanced__link">دارو</a></div>
-                                <div class="search-advanced__item item"><a href="#"
-                                        class="search-advanced__link">بیمارستان</a></div>
-                                <div class="search-advanced__item item"><a href="#"
-                                        class="search-advanced__link">کلینیک</a></div>
-                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
-                                        تصویربرداری</a></div>
-                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
-                                        تصویربرداری</a></div>
-                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
-                                        تصویربرداری</a></div>
-                            </div>
-                        </div>
-                        <div class="flex r-reverse align-center justi-center">
-                            <div class="search__advanced-btn" id="btn-1" onclick="showSearchAdvanced()"></div>
-                            <span class="search__advanced-label" id="label">جستجوی پیشرفته</span>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            
-        </div>
-        <!-- Date Box -->
-        <div class="date-box">
-            <div class="date-box__top-center-circle"></div>
-            <div class="date-box__top-right-circle"></div>
-            <div class="date-box__main-circle"></div>
-            <div class="date-box__bottom-left-circle"></div>
-            <div class="date-box__bottom-center-circle"></div>
-            <div class="date-box__bottom-right-circle"></div>
-        </div>
-    </header>
 
    <!-- Right Side Fixed -->
    <div class="right-side flex column">
@@ -601,509 +498,673 @@
     </div>
     </div>
     
-
-    <!-- Desktop Main -->
-    <main class="main flex column align-center justi-start">
-        <div class="main__half-circle"></div>
-        <div class="main__main-section flex column align-center">
-            <i class="fas fa-angle-down main__icon"></i>
-            <!-- تخصص ها -->
-            <div class="main__section-specialty flex column align-center">
-                <h2 class="heading-primary">تخصص های سینسا</h2>
-                <div class="orbit">
-                    <div class="orbit__main">
-                        <img class="orbit__circle-background" src="./assets/img/orbit.png">
-                        <div class="orbit__main--center-circle">
-                            <img src="assets/img/Mask Group 21@2x.png" class="orbit__main--img">
-                        </div>
+    <!-- Main -->
+    <main class="illness-main flex column align-center justi-center">       
+        <div class="doctors__header">
+            <div class="doctors__header-container flex r-reverse align-center justi-around">
+                <div class="flex column align-center doctors__active">
+                    <div class="doctors__icon-box">
+                        <i class="fas fa-user-md doctors__icon"></i>
                     </div>
-                    <div class="orbit__position-1 flex align-end">
-                        <div class="orbit__circle orbit__circle-1">
-                            <img src="./assets/img/Component 32 – 4@2x.png" class="orbit__img">
-                        </div>
-                        <div class="orbit__tips-right orbit__tips-right-1 flex r-reverse align-end">
-                            <span class="orbit__span">کلیه</span>
-                            <div class="orbit__small-circle"></div>
-                        </div>
-
+                    <span class="doctors__span">پزشک</span>
+                </div>
+                <div class="flex column align-center">
+                    <div class="doctors__icon-box">
+                        <i class="fas fa-pills doctors__icon"></i>
                     </div>
-                    <div class="orbit__position-2 flex align-end">
-                        <div class="orbit__circle orbit__circle-2">
-                            <img src="./assets/img/Mask Group 26@2x.png" class="orbit__img">
-                        </div>
-                        <div class="orbit__tips-right orbit__tips-right-2 flex r-reverse align-end">
-                            <span class="orbit__span">دهان و دندان</span>
-                            <div class="orbit__small-circle"></div>
-                        </div>
+                    <span class="doctors__span">دارو</span>
+                </div>
+                <div class="flex column align-center">
+                    <div class="doctors__icon-box">
+                        <i class="fas fa-hospital doctors__icon"></i>
                     </div>
-                    <div class="orbit__position-3 flex align-end">
-                        <div class="orbit__circle orbit__circle-3">
-                            <img src="./assets/img/Component 34 – 4@2x.png" class="orbit__img">
-                        </div>
-                        <div class="orbit__tips-right orbit__tips-right-3 flex r-reverse align-end">
-                            <span class="orbit__span">مغز و اعصاب</span>
-                            <div class="orbit__small-circle"></div>
-                        </div>
+                    <span class="doctors__span">بیمارستان</span>
+                </div>
+                <div class="flex column align-center">
+                    <div class="doctors__icon-box">
+                        <i class="fas fa-plus-square doctors__icon"></i>
                     </div>
-                    <div class="orbit__position-4 flex align-end">
-                        <div class="orbit__circle orbit__circle-4">
-                            <img src="./assets/img/Mask Group 28.png" class="orbit__img">
-                        </div>
-                        <div class="orbit__tips-right orbit__tips-right-4 flex r-reverse align-end">
-                            <span class="orbit__span">آزمایشگاه</span>
-                            <div class="orbit__small-circle"></div>
-                        </div>
+                    <span class="doctors__span">داروخانه</span>
+                </div>
+                <div class="flex column align-center">
+                    <div class="doctors__icon-box">
+                        <i class="fas fa-pills doctors__icon"></i>
                     </div>
-                    <div class="orbit__position-5 flex r-reverse align-end">
-                        <div class="orbit__circle orbit__circle-5">
-                            <img src="./assets/img/Mask Group 24@2x.png" class="orbit__img">
-                        </div>
-                        <div class="orbit__tips-left orbit__tips-left-5 flex align-end">
-                            <span class="orbit__span">نوار قلب</span>
-                            <div class="orbit__small-circle"></div>
-                        </div>
+                    <span class="doctors__span">کلینیک</span>
+                </div>
+                <div class="flex column align-center">
+                    <div class="doctors__icon-box">
+                        <i class="fas fa-microscope doctors__icon"></i>
                     </div>
-                    <div class="orbit__position-6 flex r-reverse align-end">
-                        <div class="orbit__circle orbit__circle-6">
-                            <img src="./assets/img/Mask Group 23@2x.png" class="orbit__img">
+                    <span class="doctors__span">مرکز تصویر برداری</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex r-reverse align-start justi-center">
+            <!-- فیلترها -->
+            <div class="filter flex column align-center">
+                <div class="filter__main-box">
+                    <div class="flex r-reverse align-center owl-carousel" id="filter">
+                        <div class="item  flex column align-center">
+                            <div class="filter__icon-box">
+                                <i class="fas fa-user-md filter__icon"></i>
+                            </div>
+                            <span class="filter__span">پزشک</span>
                         </div>
-                        <div class="orbit__tips-left orbit__tips-left-6 flex align-end">
-                            <span class="orbit__span">دارو</span>
-                            <div class="orbit__small-circle"></div>
+                        <div class="item  flex column align-center">
+                            <div class="filter__icon-box">
+                                <i class="fas fa-pills filter__icon"></i>
+                            </div>
+                            <span class="filter__span">دارو</span>
                         </div>
-                    </div>
-                    <div class="orbit__position-7 flex r-reverse align-end">
-                        <div class="orbit__circle orbit__circle-7">
-                            <img src="./assets/img/Mask Group 22@2x.png" class="orbit__img">
+                        <div class="item  flex column align-center">
+                            <div class="filter__icon-box">
+                                <i class="fas fa-hospital filter__icon"></i>
+                            </div>
+                            <span class="filter__span">بیمارستان</span>
                         </div>
-                        <div class="orbit__tips-left orbit__tips-left-7 flex align-end">
-                            <span class="orbit__span">ارتوپدی</span>
-                            <div class="orbit__small-circle"></div>
+                        <div class="item  flex column align-center">
+                            <div class="filter__icon-box">
+                                <i class="fas fa-plus-square filter__icon"></i>
+                            </div>
+                            <span class="filter__span">داروخانه</span>
                         </div>
-                    </div>
-                    <div class="orbit__position-8 flex r-reverse align-end">
-                        <div class="orbit__circle orbit__circle-8">
-                            <img src="./assets/img/Component 35 – 4@2x.png" class="orbit__img">
+                        <div class="item  flex column align-center">
+                            <div class="filter__icon-box">
+                                <i class="fas fa-pills filter__icon"></i>
+                            </div>
+                            <span class="filter__span">کلینیک</span>
                         </div>
-                        <div class="orbit__tips-left orbit__tips-left-8 flex align-end">
-                            <span class="orbit__span">قلب و عروق</span>
-                            <div class="orbit__small-circle"></div>
+                        <div class="item  flex column align-center">
+                            <div class="filter__icon-box">
+                                <i class="fas fa-microscope filter__icon"></i>
+                            </div>
+                            <span class="filter__span">مرکز تصویر برداری</span>
                         </div>
                     </div>
                 </div>
-                <div class="main__description">
-                    <h2 class="heading-secondary">گوش و حلق و بینی</h2>
-                    <p class="main__description--paraghraph">به زودی پزشک با شما تماس خواهد گرفت. به جای اینکه از کار
-                        خود مرخصی بگیرید، در ترافیک بمانید و زمان زیادی را برای پیدا کردن جای پارک هدر بدهید</p>
+                <div class="filter__box">
+                    <div class="filter__header" onclick="openOption('1')">
+                        <h3 class="filter__title flex align-center justi-center">
+                            <i class="fas fa-angle-down filter__arrow-icon"></i>دسته بندی تخصص ها
+                        </h3>
+                    </div>
+                    <div class="filter__picked filter__picked-1"></div>
+                    <div class="filter__search-box flex r-reverse align-center justi-start" style="height: 3rem;">
+                        <button class="filter__search-btn" style="background-color: inherit;">
+                            <i class="fas fa-search filter__search-icon" style="color: #000000; font-size: 1.4rem;"></i>
+                        </button>
+                        <input type="text" class="filter__input" placeholder="جستجو">
+                    </div>
+                    <div class="filter__optios filter__optios-1">
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="takhasos" value="قلب و عروق">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">قلب و عروق</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="takhasos" value="مغز و استخوان">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">مغز و استخوان</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="takhasos" value="خون و سرطان">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">خون و سرطان</span>
+                        </div>
+
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="takhasos" value="گوارشی و کبد">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">گوارشی و کبد</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="takhasos" value="کودکان">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">کودکان</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="takhasos" value="همه ی بیماری ها">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">همه ی بیماری ها</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__box">
+                    <div class="filter__header" onclick="openOption('2')">
+                        <h3 class="filter__title flex align-center justi-center">
+                            <i class="fas fa-angle-down filter__arrow-icon"></i>شهر
+                        </h3>
+                    </div>
+                    <div class="filter__picked filter__picked-2"></div>
+                    <div class="filter__search-box flex r-reverse align-center justi-start" style="height: 3rem;">
+                        <button class="filter__search-btn" style="background-color: inherit;">
+                            <i class="fas fa-search filter__search-icon" style="color: #000000; font-size: 1.4rem;"></i>
+                        </button>
+                        <input type="text" class="filter__input" placeholder="جستجو">
+                    </div>
+                    <div class="filter__optios filter__optios-2">
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="shahr" value="تهران">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">تهران</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="shahr" value="کرج">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">کرج</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="shahr" value="مشهد">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">مشهد</span>
+                        </div>
+
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="shahr" value="تبریز">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">تبریز</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="shahr" value="شیراز">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">شیراز</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="shahr" value="اراک">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">اراک</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__box">
+                    <div class="filter__header" onclick="openOption('3')">
+                        <h3 class="filter__title flex align-center justi-center">
+                            <i class="fas fa-angle-down filter__arrow-icon"></i>محله
+                        </h3>
+                    </div>
+                    <div class="filter__picked filter__picked-3"></div>
+                    <div class="filter__search-box flex r-reverse align-center justi-start" style="height: 3rem;">
+                        <button class="filter__search-btn" style="background-color: inherit;">
+                            <i class="fas fa-search filter__search-icon" style="color: #000000; font-size: 1.4rem;"></i>
+                        </button>
+                        <input type="text" class="filter__input" placeholder="جستجو">
+                    </div>
+                    <div class="filter__optios filter__optios-3">
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="mahale" value="تجریش">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">تجریش</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="mahale" value="قلهک">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">قلهک</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="mahale" value="صادقیه">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">صادقیه</span>
+                        </div>
+
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="mahale" value="پونک">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">پونک</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="mahale" value="تهرانپارس">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">تهرانپارس</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="mahale" value="اسلامشهر">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">اسلامشهر</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__box">
+                    <div class="filter__header" onclick="openOption('4')">
+                        <h3 class="filter__title flex align-center justi-center">
+                            <i class="fas fa-angle-down filter__arrow-icon"></i>بیمه
+                        </h3>
+                    </div>
+                    <div class="filter__picked filter__picked-4"></div>
+                    <div class="filter__search-box flex r-reverse align-center justi-start" style="height: 3rem;">
+                        <button class="filter__search-btn" style="background-color: inherit;">
+                            <i class="fas fa-search filter__search-icon" style="color: #000000; font-size: 1.4rem;"></i>
+                        </button>
+                        <input type="text" class="filter__input" placeholder="جستجو">
+                    </div>
+                    <div class="filter__optios filter__optios-4">
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="bime" value="بیمه تامین اجتماعی">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">بیمه تامین اجتماعی</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="bime" value="بیمه آتش سوزی">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">بیمه آتش سوزی</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="bime" value="بیمه تکمیلی">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">بیمه تکمیلی</span>
+                        </div>
+
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="bime" value="بیمه اتومبیل">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">بیمه اتومبیل</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="bime" value="بیمه شخص ثالث">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">بیمه شخص ثالث</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="bime" value="بیمه حوادث">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">بیمه حوادث</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__box">
+                    <div class="filter__header" onclick="openOption('5')">
+                        <h3 class="filter__title flex align-center justi-center">
+                            <i class="fas fa-angle-down filter__arrow-icon"></i>جنسیت
+                        </h3>
+                    </div>
+                    <div class="filter__picked filter__picked-5"></div>
+                    <div class="filter__optios filter__optios-5">
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="jensiat" value="زن">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">زن</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="jensiat" value="مرد">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">مرد</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__box">
+                    <div class="filter__header" onclick="openOption('6')">
+                        <h3 class="filter__title flex align-center justi-center"><i
+                                class="fas fa-angle-down filter__arrow-icon"></i>نوع مشاوره
+                        </h3>
+                    </div>
+                    <div class="filter__picked filter__picked-6"></div>
+                    <div class="filter__optios filter__optios-6">
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="moshavere" value="حضوری">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">حضوری</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="moshavere" value="تلفنی">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">تلفنی</span>
+                        </div>
+                        <div class="filter__checkbox flex r-reverse align-center">
+                            <label class="checkbox-label flex r-reverse">
+                                <input type="checkbox" name="moshavere" value="آنلاین">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <span class="filter__lable">آنلاین</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__buttons flex r-reverse align-center justi-around">
+                    <button class="filter__filter-btn flex align-center justi-center">فیلتر
+                        <i class="fas fa-filter filter__filter-icon"></i>
+                    </button>
+                    <button class="filter__reset-btn flex align-center justi-center">پاکسازی
+                        <i class="fas fa-undo filter__reset-icon"></i>
+                    </button>
                 </div>
             </div>
             <!-- پزشکان -->
-            <div class="main__section-doctors flex column align-center">
-                <h2 class="heading-primary">پزشکان آماده همراهی شما</h2>
-                <img src="./assets/img/Artboard-2.png" class="main__background">
-                <div class="personal-card flex r-reverse justi-between align-center owl-carousel" id="doctors">
-                    <div class="personal-card__doctor-1 item">
-                        <div class="personal-card__main flex column justi-around align-center">
-                            <div class="personal-card__photo-box">
-                                <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
-                            </div>
-                            <h2 class="personal-card__name">سارا رحیمی</h2>
-                            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
-                            <div class="personal-card__address flex column r-reverse align-center">                                
-                                <span>تهران<i class="fas fa-map-marker-alt"></i></span>
-                                <p>قلهک</p>
-                            </div>
-                            <div class="flex r-reverse">
-                                <span class="personal-card__percentage">89%</span>
-                                <span class="personal-card__comment">715 نظر</span>
-                            </div>
-                            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
-                            <button class="personal-card__btn">دریافت مشاوره</button>
+            <div class="doctors__main flex column align-start">  
+                <div class="doctors__filter-header flex r-reverse align-center justi-around">
+                    <span>آنلاین<i class="fas fa-circle"></i> </span>
+                    <div class="flex r-reverse align-center justi-center">
+                        <i class="fas fa-filter doctors__filter-icon"></i>
+                        <div class="doctors__search flex r-reverse align-center justi-center">
+                            <input type="text" placeholder="مرتب سازی بر اساس آخرین">
+                            <i class="fas fa-angle-down"></i>
                         </div>
                     </div>
-                    <div class="personal-card__doctor-2 item">
-                        <div class="personal-card__main flex column justi-around align-center">
-                            <div class="personal-card__photo-box">
-                                <img class="personal-card__photo" src="./assets/img/Mask Group16@2x.png">
+                    <div class="doctors__type-list">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-th-list"></i>
+                    </div>
+                </div>   
+                <div class="flex r-reverse wrap justi-around" style="width: 100%;">
+                    <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
+                        <div class="personal-card__photo-box">
+                            <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+                        </div>
+                        <h2 class="personal-card__name">سارا رحیمی</h2>
+                        <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                        <div class="personal-card__address flex column r-reverse align-center">                                
+                            <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                            <p>قلهک</p>
+                        </div>
+                        <div class="flex r-reverse">
+                            <span class="personal-card__percentage">89%</span>
+                            <span class="personal-card__comment">715 نظر</span>
+                        </div>
+                        <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <button class="personal-card__btn">دریافت مشاوره</button>
+                    </div>
+                    <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
+                        <div class="personal-card__photo-box">
+                            <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+                        </div>
+                        <h2 class="personal-card__name">سارا رحیمی</h2>
+                        <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                        <div class="personal-card__address flex column r-reverse align-center">                                
+                            <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                            <p>قلهک</p>
+                        </div>
+                        <div class="flex r-reverse">
+                            <span class="personal-card__percentage">89%</span>
+                            <span class="personal-card__comment">715 نظر</span>
+                        </div>
+                        <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <button class="personal-card__btn">دریافت مشاوره</button>
+                    </div>
+                    <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
+                        <div class="personal-card__photo-box">
+                            <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+                        </div>
+                        <h2 class="personal-card__name">سارا رحیمی</h2>
+                        <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                        <div class="personal-card__address flex column r-reverse align-center">                                
+                            <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                            <p>قلهک</p>
+                        </div>
+                        <div class="flex r-reverse">
+                            <span class="personal-card__percentage">89%</span>
+                            <span class="personal-card__comment">715 نظر</span>
+                        </div>
+                        <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <button class="personal-card__btn">دریافت مشاوره</button>
+                    </div>
+                    <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
+                        <div class="personal-card__photo-box">
+                            <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+                        </div>
+                        <h2 class="personal-card__name">سارا رحیمی</h2>
+                        <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                        <div class="personal-card__address flex column r-reverse align-center">                                
+                            <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                            <p>قلهک</p>
+                        </div>
+                        <div class="flex r-reverse">
+                            <span class="personal-card__percentage">89%</span>
+                            <span class="personal-card__comment">715 نظر</span>
+                        </div>
+                        <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <button class="personal-card__btn">دریافت مشاوره</button>
+                    </div>
+                    <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
+                        <div class="personal-card__photo-box">
+                            <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+                        </div>
+                        <h2 class="personal-card__name">سارا رحیمی</h2>
+                        <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                        <div class="personal-card__address flex column r-reverse align-center">                                
+                            <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                            <p>قلهک</p>
+                        </div>
+                        <div class="flex r-reverse">
+                            <span class="personal-card__percentage">89%</span>
+                            <span class="personal-card__comment">715 نظر</span>
+                        </div>
+                        <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <button class="personal-card__btn">دریافت مشاوره</button>
+                    </div>
+                    <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
+                        <div class="personal-card__photo-box">
+                            <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+                        </div>
+                        <h2 class="personal-card__name">سارا رحیمی</h2>
+                        <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                        <div class="personal-card__address flex column r-reverse align-center">                                
+                            <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                            <p>قلهک</p>
+                        </div>
+                        <div class="flex r-reverse">
+                            <span class="personal-card__percentage">89%</span>
+                            <span class="personal-card__comment">715 نظر</span>
+                        </div>
+                        <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <button class="personal-card__btn">دریافت مشاوره</button>
+                    </div>
+                    <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
+                        <div class="personal-card__photo-box">
+                            <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+                        </div>
+                        <h2 class="personal-card__name">سارا رحیمی</h2>
+                        <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                        <div class="personal-card__address flex column r-reverse align-center">                                
+                            <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                            <p>قلهک</p>
+                        </div>
+                        <div class="flex r-reverse">
+                            <span class="personal-card__percentage">89%</span>
+                            <span class="personal-card__comment">715 نظر</span>
+                        </div>
+                        <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <button class="personal-card__btn">دریافت مشاوره</button>
+                    </div>
+                    <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
+                        <div class="personal-card__photo-box">
+                            <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+                        </div>
+                        <h2 class="personal-card__name">سارا رحیمی</h2>
+                        <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                        <div class="personal-card__address flex column r-reverse align-center">                                
+                            <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                            <p>قلهک</p>
+                        </div>
+                        <div class="flex r-reverse">
+                            <span class="personal-card__percentage">89%</span>
+                            <span class="personal-card__comment">715 نظر</span>
+                        </div>
+                        <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <button class="personal-card__btn">دریافت مشاوره</button>
+                    </div>
+                    <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
+                        <div class="personal-card__photo-box">
+                            <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+                        </div>
+                        <h2 class="personal-card__name">سارا رحیمی</h2>
+                        <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                        <div class="personal-card__address flex column r-reverse align-center">                                
+                            <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                            <p>قلهک</p>
+                        </div>
+                        <div class="flex r-reverse">
+                            <span class="personal-card__percentage">89%</span>
+                            <span class="personal-card__comment">715 نظر</span>
+                        </div>
+                        <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <button class="personal-card__btn">دریافت مشاوره</button>
+                    </div>
+                </div>  
+                <div class="personal-card-large flex r-reverse wrap justi-around">
+                    <div class="personal-card-large__main flex r-reverse align-center justi-start">
+                        <div class="personal-card-large__photo">
+                            <img src="./assets/img/happy-nurses-doctors-hospital_13339-6305.png">
+                        </div>
+                        <div class="personal-card-large__primary-info flex column align-end justi-around">
+                            <div class="flex r-reverse align-baseline">
+                                <h2>کیان علافر</h2>
+                                <h3>پزشک زیبایی</h3>
                             </div>
-                            <h2 class="personal-card__name">سارا رحیمی</h2>
-                            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
-                            <div class="personal-card__address flex column r-reverse align-center">                                
-                                <span>تهران<i class="fas fa-map-marker-alt"></i></span>
-                                <p>قلهک</p>
+                            <span>مشاوره 100 (در مدت 3 سال و 6 ماه)</span>
+                            <span> تهران (قلهک)  <i class="fas fa-map-marker-alt"></i> </span>
+                            <span>خیابان شریعتی - بالاتر از دوراهی قلهک - پلاک22 - طبقه ی اول</span>
+                        </div>
+                        <div class="personal-card-large__secondary-info flex column align-center justi-start">
+                            <div class="flex align-baseline">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p>915 نظر</p>
+                                <span>67%</span>
                             </div>
-                            <div class="flex r-reverse">
-                                <span class="personal-card__percentage">89%</span>
-                                <span class="personal-card__comment">715 نظر</span>
+                            <div class="personal-card-large__contact">
+                                <p class="personal-card-large__parag flex align-center">2235563 <i class="fas fa-phone-alt"></i></p>
+                                <p class="personal-card-large__parag">2235563 <i class="fas fa-comments"></i></p>
                             </div>
-                            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
-                            <button class="personal-card__btn">دریافت مشاوره</button>
+                            <button class="personal-card-large__btn">اطلاعات تماس</button>
                         </div>
                     </div>
-                    <div class="personal-card__doctor-3 item">
-                        <div class="personal-card__main flex column justi-around align-center">
-                            <div class="personal-card__photo-box">
-                                <img class="personal-card__photo" src="./assets/img/a.jpg">
+                    <div class="personal-card-large__main flex r-reverse align-center justi-start">
+                        <div class="personal-card-large__photo">
+                            <img src="./assets/img/happy-nurses-doctors-hospital_13339-6305.png">
+                        </div>
+                        <div class="personal-card-large__primary-info flex column align-end justi-around">
+                            <div class="flex r-reverse align-baseline">
+                                <h2>کیان علافر</h2>
+                                <h3>پزشک زیبایی</h3>
                             </div>
-                            <h2 class="personal-card__name">سارا رحیمی</h2>
-                            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
-                            <div class="personal-card__address flex column r-reverse align-center">                                
-                                <span>تهران<i class="fas fa-map-marker-alt"></i></span>
-                                <p>قلهک</p>
+                            <span>مشاوره 100 (در مدت 3 سال و 6 ماه)</span>
+                            <span> تهران (قلهک)  <i class="fas fa-map-marker-alt"></i> </span>
+                            <span>خیابان شریعتی - بالاتر از دوراهی قلهک - پلاک22 - طبقه ی اول</span>
+                        </div>
+                        <div class="personal-card-large__secondary-info flex column align-center justi-start">
+                            <div class="flex align-baseline">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p>915 نظر</p>
+                                <span>67%</span>
                             </div>
-                            <div class="flex r-reverse">
-                                <span class="personal-card__percentage">89%</span>
-                                <span class="personal-card__comment">715 نظر</span>
+                            <div class="personal-card-large__contact">
+                                <p class="personal-card-large__parag flex align-center">2235563 <i class="fas fa-phone-alt"></i></p>
+                                <p class="personal-card-large__parag">2235563 <i class="fas fa-comments"></i></p>
                             </div>
-                            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
-                            <button class="personal-card__btn">دریافت مشاوره</button>
+                            <button class="personal-card-large__btn">اطلاعات تماس</button>
                         </div>
                     </div>
-                    <div class="personal-card__doctor-4 item">
-                        <div class="personal-card__main flex column justi-around align-center">
-                            <div class="personal-card__photo-box">
-                                <img class="personal-card__photo" src="./assets/img/Mask Group31@2x.png">
+                    <div class="personal-card-large__main flex r-reverse align-center justi-start">
+                        <div class="personal-card-large__photo">
+                            <img src="./assets/img/happy-nurses-doctors-hospital_13339-6305.png">
+                        </div>
+                        <div class="personal-card-large__primary-info flex column align-end justi-around">
+                            <div class="flex r-reverse align-baseline">
+                                <h2>کیان علافر</h2>
+                                <h3>پزشک زیبایی</h3>
                             </div>
-                            <h2 class="personal-card__name">سارا رحیمی</h2>
-                            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
-                            <div class="personal-card__address flex column r-reverse align-center">                                
-                                <span>تهران<i class="fas fa-map-marker-alt"></i></span>
-                                <p>قلهک</p>
+                            <span>مشاوره 100 (در مدت 3 سال و 6 ماه)</span>
+                            <span> تهران (قلهک)  <i class="fas fa-map-marker-alt"></i> </span>
+                            <span>خیابان شریعتی - بالاتر از دوراهی قلهک - پلاک22 - طبقه ی اول</span>
+                        </div>
+                        <div class="personal-card-large__secondary-info flex column align-center justi-start">
+                            <div class="flex align-baseline">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <p>915 نظر</p>
+                                <span>67%</span>
                             </div>
-                            <div class="flex r-reverse">
-                                <span class="personal-card__percentage">89%</span>
-                                <span class="personal-card__comment">715 نظر</span>
+                            <div class="personal-card-large__contact">
+                                <p class="personal-card-large__parag flex align-center">2235563 <i class="fas fa-phone-alt"></i></p>
+                                <p class="personal-card-large__parag">2235563 <i class="fas fa-comments"></i></p>
                             </div>
-                            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
-                            <button class="personal-card__btn">دریافت مشاوره</button>
+                            <button class="personal-card-large__btn">اطلاعات تماس</button>
                         </div>
                     </div>
-                    <div class="personal-card__doctor-5 item">
-                        <div class="personal-card__main flex column justi-around align-center">
-                            <div class="personal-card__photo-box">
-                                <img class="personal-card__photo" src="./assets/img/Mask Group 15@2x.png">
-                            </div>
-                            <h2 class="personal-card__name">سارا رحیمی</h2>
-                            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
-                            <div class="personal-card__address flex column r-reverse align-center">                                
-                                <span>تهران<i class="fas fa-map-marker-alt"></i></span>
-                                <p>قلهک</p>
-                            </div>
-                            <div class="flex r-reverse">
-                                <span class="personal-card__percentage">89%</span>
-                                <span class="personal-card__comment">715 نظر</span>
-                            </div>
-                            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
-                            <button class="personal-card__btn">دریافت مشاوره</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- مقالات -->
-            <div class="main__section-article flex column align-center">
-                <h2 class="heading-primary">مقالات</h2>
-                <div class="article flex r-reverse">
-                    <div class="article__main-inactive flex column  align-center" id="article-1" onclick="clicked1()">
-                        <img src="./assets/img/zananVaZayeman4.png">
-                        <div class="flex column justi-center align-center">
-                            <h2>موسیقی در دوران بارداری</h2>
-                            <p>به زودی پزشک با شما تماس خواهد گرفت. به جای اینکه از کار خود مرخصی بگیرید، در ترافیک
-                                بمانید و زمان زیادی را برای پیدا کردن جای پارک هدر بدهید، یا اگر در محل زندگی خود به
-                                دکتر متخصص دسترسی ندارید و مجبور هستید برای یک ملاقات 10 دقیقه ای با دکتر به نزدیکترین
-                                شهر بزرگ اطرافتان مسافرت کنید</p>
-                            <span>زمان مطالعه7 دقیقه</span>
-                        </div>
-                        <button>می ‌خونم</button>
-                    </div>
-                    <div class="article__main-inactive flex column  align-center" id="article-2" onclick="clicked2()">
-                        <img src="./assets/img/a7f436d2-5dbf-4a10-bbbe-e2c747928dff840.png">
-                        <div class="flex column justi-center align-center">
-                            <h2>عزت نفس در روابط</h2>
-                            <p>به زودی پزشک با شما تماس خواهد گرفت. به جای اینکه از کار خود مرخصی بگیرید، در ترافیک
-                                بمانید و زمان زیادی را برای پیدا کردن جای پارک هدر بدهید، یا اگر در محل زندگی خود به
-                                دکتر متخصص دسترسی ندارید و مجبور هستید برای یک ملاقات 10 دقیقه ای با دکتر به نزدیکترین
-                                شهر بزرگ اطرافتان مسافرت کنید</p>
-                            <span>زمان مطالعه 2 دقیقه</span>
-                        </div>
-                        <button>می ‌خونم</button>
-                    </div>
-                    <div class="article__main-active flex column  align-center" id="article-3" onclick="clicked3()">
-                        <img src="./assets/img/postVaMo8.png">
-                        <div class="flex column justi-center align-center">
-                            <h2>کدام کرم مناسب پوست های خشک است؟</h2>
-                            <p>به زودی پزشک با شما تماس خواهد گرفت. به جای اینکه از کار خود مرخصی بگیرید، در ترافیک
-                                بمانید و زمان زیادی را برای پیدا کردن جای پارک هدر بدهید، یا اگر در محل زندگی خود به
-                                دکتر متخصص دسترسی ندارید و مجبور هستید برای یک ملاقات 10 دقیقه ای با دکتر به نزدیکترین
-                                شهر بزرگ اطرافتان مسافرت کنید</p>
-                            <span>زمان مطالعه 5 دقیقه</span>
-                        </div>
-                        <button>می ‌خونم</button>
-                    </div>
-                    <div class="article__main-inactive flex column  align-center" id="article-4" onclick="clicked4()">
-                        <img src='./assets/img/happy-nurses-doctors-hospital_13339-6305.png'>
-                        <div class="flex column justi-center align-center">
-                            <h2>برترین پزشکان ایران</h2>
-                            <p>به زودی پزشک با شما تماس خواهد گرفت. به جای اینکه از کار خود مرخصی بگیرید، در ترافیک
-                                بمانید و زمان زیادی را برای پیدا کردن جای پارک هدر بدهید، یا اگر در محل زندگی خود به
-                                دکتر متخصص دسترسی ندارید و مجبور هستید برای یک ملاقات 10 دقیقه ای با دکتر به نزدیکترین
-                                شهر بزرگ اطرافتان مسافرت کنید</p>
-                            <span>زمان مطالعه 5 دقیقه</span>
-                        </div>
-                        <button>می ‌خونم</button>
-                    </div>
-                    <div class="article__main-inactive flex column  align-center" id="article-5" onclick="clicked5()">
-                        <img src="./assets/img/doctor-checking-female-patient-blood-pressure_107420-74197.png">
-                        <div class="flex column justi-center align-center">
-                            <h2>علل فشار خون بالا</h2>
-                            <p>به زودی پزشک با شما تماس خواهد گرفت. به جای اینکه از کار خود مرخصی بگیرید، در ترافیک
-                                بمانید و زمان زیادی را برای پیدا کردن جای پارک هدر بدهید، یا اگر در محل زندگی خود به
-                                دکتر متخصص دسترسی ندارید و مجبور هستید برای یک ملاقات 10 دقیقه ای با دکتر به نزدیکترین
-                                شهر بزرگ اطرافتان مسافرت کنید</p>
-                            <span>زمان مطالعه 3 دقیقه</span>
-                        </div>
-                        <button>می ‌خونم</button>
-                    </div>
-                </div>
-            </div>
-            <!-- بانک اطلاعات -->
-            <!-- <div class="main__section-database flex column align-center">
-                <h2 class="heading-primary">بانک اطلاعات</h2>
-                <div class="database">
-
-                </div>
-            </div> -->
-            <!-- نظرات -->
-            <div class="main__section-comment flex column align-center">
-                <h2 class="heading-primary">نظرات کاربران</h2>
-                <div class="comment flex r-reverse justi-center align-center">
-                    <div class="comment__box flex r-reverse justi-center align-center  owl-carousel" id="comment">
-                        <!-- <i class="fas fa-angle-right comment__arrow-icon"></i> -->
-                        <div class="item">
-                            <div class="comment__main flex column justi-around align-center">
-                                <div class="comment__photo-box">
-                                    <img class="comment__photo" src="./assets/img/Mask Group17@2x.png">
-                                </div>
-                                <h2 class="comment__name">سارا رحیمی</h2>
-                                <p class="comment__comment">من مدت ها بود
-                                    می خواستم مشاوره بگیرم. عالیه</p>
-                                <div class="comment__icons-box flex">
-                                    <i class="far fa-heart comment__icon"></i>
-                                    <i class="far fa-comment comment__icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="comment__main flex column justi-around align-center">
-                                <div class="comment__photo-box">
-                                    <img class="comment__photo" src="./assets/img/Mask Group17@2x.png">
-                                </div>
-                                <h2 class="comment__name">سارا رحیمی</h2>
-                                <p class="comment__comment">من مدت ها بود
-                                    می خواستم مشاوره بگیرم. عالیه</p>
-                                <div class="comment__icons-box flex">
-                                    <i class="far fa-heart comment__icon"></i>
-                                    <i class="far fa-comment comment__icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="comment__main flex column justi-around align-center">
-                                <div class="comment__photo-box">
-                                    <img class="comment__photo" src="./assets/img/Mask Group17@2x.png">
-                                </div>
-                                <h2 class="comment__name">سارا رحیمی</h2>
-                                <p class="comment__comment">من مدت ها بود
-                                    می خواستم مشاوره بگیرم. عالیه</p>
-                                <div class="comment__icons-box flex">
-                                    <i class="far fa-heart comment__icon"></i>
-                                    <i class="far fa-comment comment__icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="comment__main flex column justi-around align-center">
-                                <div class="comment__photo-box">
-                                    <img class="comment__photo" src="./assets/img/Mask Group17@2x.png">
-                                </div>
-                                <h2 class="comment__name">سارا رحیمی</h2>
-                                <p class="comment__comment">من مدت ها بود
-                                    می خواستم مشاوره بگیرم. عالیه</p>
-                                <div class="comment__icons-box flex">
-                                    <i class="far fa-heart comment__icon"></i>
-                                    <i class="far fa-comment comment__icon"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="./assets/img/نظرات.png" class="comment__img">
-                </div>
-
-            </div>
-            <!-- پرسش و پاسخ -->
-            <div class="main__section-question flex column align-center">
-                <img src="./assets/img/Artboard-2.png" class="main__bg">
-                <h2 class="heading-primary">پرسش و پاسخ</h2>
-                <div class="question flex r-reverse align-center justi-center">
-                    <div class="question__qa">
-                        <div class="question__que flex r-reverse align-center">
-                            <i class="far fa-times-circle question__icon"></i>
-                            <h3 class="question__header">مناسب ترین سن برای شروع ارتودنسی چه سنی است؟</h3>
-                        </div>
-                        <div class="question__ans flex column align-end">
-                            <p class="question__pragraph">:پرسش<br>
-                                مناسب ترین سن برای شروع ارتودنسی چه سنی است؟<br>
-                                :پاسخ<br>
-                                اکثرا لازم است که بیمار قابلیت دسترسی مجدد به محل درمان چه به صورت حضوری و چه غیر حضوری
-                                داشته باشد تا در صورت بروز هر نوع مشکل احتمالی
-                                بتواند جهت حل مشکل خود اقدام کند، برای مثال بیمار پس از درمان جراحی و با مراجعه به منزل
-                                خود پس از چند ساعت با خونریزی مواجه می‌شود
-                            </p>
-                            <a href="#" class="question__link flex align-center">مشاهده ی کامل<i
-                                    class="fas fa-caret-left"></i></a>
-                        </div>
-                    </div>
-                    <form class="question__form flex column justi-center align-center">
-                        <input type="text" name="full name" class="question__fullName" placeholder="نام و نام خانوادگی">
-                        <input type="text" name="question" class="question__question" placeholder="سوال / پیام">
-                        <input type="text" name="email" class="question__email" placeholder=" ایمیل">
-                        <input type="text" name="phone" class="question__phone" placeholder="شماره تماس">
-                        <button type="submit" class="question__btn">ارسال</button>
-                    </form>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Mobile Main -->
-    <main class="mobile-main">
-        <!-- تخصص ها -->
-        <div class="mobile-specialty flex column align-center">
-            <h2 class="heading-secondary">تخصص ها</h2>
-            <div class="flex r-reverse justi-around align-center  owl-carousel" id="specialty">
-                <div class="flex column justi-around align-center item">
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-heartbeat mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">قلب</span>
-                    </div>
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-bacteria mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">گوارشی داخلی</span>
-                    </div>
-                </div>
-                <div class="flex column justi-around align-center item">
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-brain mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">مغز و اعصاب</span>
-                    </div>
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-eye mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">چشم</span>
-                    </div>
-                </div>
-                <div class="flex column justi-around align-center item">
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-assistive-listening-systems mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">گوش و شنوایی</span>
-                    </div>
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-file-medical-alt mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">قلب و عروق</span>
-                    </div>
-                </div>
-                <div class="flex column justi-around align-center item">
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-bone mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">ارتوپدی</span>
-                    </div>
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-capsules mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">عمومی</span>
-                    </div>
-                </div>
-                <div class="flex column justi-around align-center item">
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-baby mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">کودکان</span>
-                    </div>
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-microscope mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">رادیولوژی</span>
-                    </div>
-                </div>
-                <div class="flex column justi-around align-center item">
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-briefcase-medical mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">سرطان</span>
-                    </div>
-                    <div class="mobile-specialty__item flex column justi-around align-center">
-                        <i class="fas fa-tooth mobile-specialty__icon"></i>
-                        <span class="mobile-specialty__span">دندان</span>
-                    </div>
-                </div>
+    <!-- دسته بندی سرویس ها -->
+    <div class="service">
+        <div class="service__left-border">
+            <div class="service__logo-box">
+                <i class="fas fa-pills service__icon"></i>
             </div>
-            <span class="mobile-specialty__text"><i class="fas fa-angle-down mobile-specialty__arrow"></i>دیدن همه</span>
-        </div>
-        <!-- مقالات -->
-        <div class="mobile-article flex column align-center">
-            <h2 class="heading-secondary">مقالات</h2>
-            <div class="flex r-reverse justi-around align-center owl-carousel" id="article">
-                <div class="mobile-article__item item">
-                    <div class="mobile-article__header flex justi-start align-center">
-                        <h3 class="mobile-article__heading-primary">تاثیر تنهایی</h3>
-                        <h4 class="mobile-article__heading-secondary">لازمه‌ی تنهایی برای عزت نفس</h4>
-                    </div>
-                    <div class="mobile-article__main flex column justi-end align-end">
-                        <img src="./assets/img/493ss_getty_rf_woman_relaxing_with_book@2x.png" class="mobile-article__photo">
-                            <div class="mobile-article__icon-box flex r-reverse justi-start">
-                            <i class="fas fa-star mobile-article__icon yellow"></i>
-                            <i class="fas fa-star mobile-article__icon yellow"></i>
-                            <i class="fas fa-star mobile-article__icon yellow"></i>
-                            <i class="fas fa-star mobile-article__icon"></i>
-                            <i class="fas fa-star mobile-article__icon"></i>
-                        </div>
-                        <span class="mobile-article__text">در رابطه با شیوه های  صحیح زندگی سالم و نگاه های متاوت به مسایل و مشکلات در رابطه با شیوه های  صحیح زندگی سالم است.
-                        </span>
-                    </div>
-                </div>
-                <div class="mobile-article__item item">
-                    <div class="mobile-article__header flex justi-start align-center">
-                        <h3 class="mobile-article__heading-primary">فواید خوردن آب</h3>
-                        <h4 class="mobile-article__heading-secondary">سلامتی و عادت به خوردن آب در روز</h4>
-                    </div>
-                    <div class="mobile-article__main flex column justi-end align-end">
-                        <img src="./assets/img/493ss_getty_rf_woman_outside_driniking_water@2x.png" class="mobile-article__photo">
-                            <div class="mobile-article__icon-box flex r-reverse justi-star">
-                            <i class="fas fa-star mobile-article__icon yellow"></i>
-                            <i class="fas fa-star mobile-article__icon yellow"></i>
-                            <i class="fas fa-star mobile-article__icon yellow"></i>
-                            <i class="fas fa-star mobile-article__icon yellow"></i>
-                            <i class="fas fa-star mobile-article__icon"></i>
-                        </div>
-                        <span class="mobile-article__text">در رابطه با شیوه های  صحیح زندگی سالم و نگاه های متاوت به مسایل و مشکلات در رابطه با شیوه های  صحیح زندگی سالم است.
-                        </span>
-                    </div>
-                </div>
-                <div class="mobile-article__item item">
-                    <div class="mobile-article__header flex justi-start align-center">
-                        <h3 class="mobile-article__heading-primary">پیاده روی</h3>
-                        <h4 class="mobile-article__heading-secondary">تاثیر راه رفتن بر سلامتی</h4>
-                    </div>
-                    <div class="mobile-article__main flex column justi-end align-end">
-                        <img src="./assets/img/405rmq_thinkstock_woman_walking_sneakers@2x.png" class="mobile-article__photo">
-                            <div class="mobile-article__icon-box flex r-reverse justi-star">
-                            <i class="fas fa-star mobile-article__icon yellow"></i>
-                            <i class="fas fa-star mobile-article__icon yellow"></i>
-                            <i class="fas fa-star mobile-article__icon"></i>
-                            <i class="fas fa-star mobile-article__icon"></i>
-                            <i class="fas fa-star mobile-article__icon"></i>
-                        </div>
-                        <span class="mobile-article__text">در رابطه با شیوه های  صحیح زندگی سالم و نگاه های متاوت به مسایل و مشکلات در رابطه با شیوه های  صحیح زندگی سالم است.
-                        </span>
-                    </div>
-                </div>
+            <div class="service__logo-box">
+                <i class="fas fa-hospital service__icon"></i>
             </div>
+            <div class="service__logo-box">
+                <i class="fas fa-briefcase-medical service__icon"></i>
+            </div>
+            <div class="service__circle"></div>
         </div>
-    </main>
+    </div>
 
     <!-- Mobile Bottom Menu -->
     <nav class="mobile-bottom-menu flex r-reverse justi-around align-center">
@@ -1191,137 +1252,47 @@
 
 </body>
 <script>
-
-    $(document).ready(function () {    
-        
-        var search = $("#search");
-        var $doctors = $("#doctors");
-        var $comment = $("#comment");
-        var $suggestion = $("#suggestion");
-        var $specialty = $('#specialty');
-        var $article = $('#article');
-        var $category = $('#category');
+    $(document).ready(function () {       
+        var $filter = $("#filter");
+        var $filter_main = $("#filter-main");
+        var $category = $("#category");
         var $submenu = $(".submenu");
 
-
-        /// submenu ///
-        $submenu.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $submenu.owlCarousel({
-            loop: true,
-            items: 1,
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $submenu.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-
-        search.owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            navText: [
-                "<i class='fa fa-angle-left' style='font-size: 2rem; color: #fff; margin 5rem;'></i>",
-                "<i class='fa fa-angle-right' style='font-size: 2rem; color: #fff; margin 5rem;'></i>"
-            ],
-            responsive: {
-                0: {
-                    items: 5
-                },
-                600: {
-                    items: 5
-                },
-                1000: {
-                    items: 6
-                }
-            }
-        });
-
-
-        $comment.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $comment.owlCarousel({
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            items: 4,
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $comment.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-
-        /// doctors ///
-        $doctors.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $doctors.owlCarousel({
-            center: true,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            items: 5,
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $doctors.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-
-        /// suggestion ///
-        $suggestion.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $suggestion.owlCarousel({
-            items: 4,
-            rtl: true
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $suggestion.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-
-        /// specialty ///
-        $specialty.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $specialty.owlCarousel({
-            items: 4,
-            rtl: true
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $specialty.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-
-        /// article ///
-        $article.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $article.owlCarousel({
-            items: 1,
-            rtl: true
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $article.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
         
+        /// filter ///
+        $filter.children().each(function (index) {
+            $(this).attr('data-position', index);
+        });
+
+        $filter.owlCarousel({
+            loop: true,
+            items: 1,
+        });
+
+        $(document).on('click', '.owl-item>div', function () {
+            var $speed = 300;  // in ms
+            $filter.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+        });
+
+        /// filter_main ///
+        $filter_main.children().each(function (index) {
+            $(this).attr('data-position', index);
+        });
+
+        $filter_main.owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            autoplayHoverPause: true,
+            loop: true,
+            items: 6,
+        });
+
+        $(document).on('click', '.owl-item>div', function () {
+            var $speed = 300;  // in ms
+            $filter_main.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+        });
+
         /// category ///
         $category.children().each(function (index) {
             $(this).attr('data-position', index);
@@ -1335,6 +1306,21 @@
         $(document).on('click', '.owl-item>div', function () {
             var $speed = 300;  // in ms
             $category.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+        });
+
+        /// submenu ///
+        $submenu.children().each(function (index) {
+            $(this).attr('data-position', index);
+        });
+
+        $submenu.owlCarousel({
+            items: 4,
+            rtl: true
+        });
+
+        $(document).on('click', '.owl-item>div', function () {
+            var $speed = 300;  // in ms
+            $submenu.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
         });
 
     });

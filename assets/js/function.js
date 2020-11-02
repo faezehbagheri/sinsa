@@ -578,3 +578,9 @@ function hideInfo() {
   document.querySelector("#map-canvas").classList.remove("zoomed");
   document.querySelector("#map-overview").classList.add("hidden");
 }
+
+function showContactInfo(id , selector){
+  document.querySelector(".personal-card-large__contact").style.top= '45%';
+  document.querySelector(".personal-card-large__contact p").style= 'margin-bottom: 0;';
+  document.querySelector(".personal-card-large__secondary-info button").style.top = '90%'
+}
