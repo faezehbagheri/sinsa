@@ -2958,11 +2958,14 @@ body {
     border: none;
     outline: none;
     font-size: 1.6rem;
-    transition: all .2s; }
+    transition: all .2s;
+    text-decoration: none;
+    color: black; }
     .navigation__item:hover {
       transform: scale(1.1);
       color: #90C73D;
-      z-index: -10; }
+      z-index: -10;
+      cursor: pointer; }
   .navigation__item:hover + .navigation__submenu {
     height: 40rem;
     top: -1%;
