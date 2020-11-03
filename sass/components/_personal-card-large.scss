@@ -1,6 +1,7 @@
 .personal-card-large{
     width: 100%;
     margin-top: 4rem;
+    display: none;
     
     &__main{
         width: 95%;
@@ -15,21 +16,31 @@
         height: 90%;
         width: 15%;
         margin: 1.5rem;
+        float: right;
         position: relative;
         shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50%);
 
         img{
-            height: 15rem;
-            width:  15rem;
+            height: 12rem;
+            width:  12rem;
             border-radius: 100%;
             border: 1px solid $color-gray;
             @include centerABS();
+
+            @include respond(big-desktop){
+                height: 15rem;
+                width: 15rem;
+            }
         }
     }
 
     &__primary-info{
-        width: 55%;
+        width: 50%;
         height: 18rem;
+        float: right;
+        
+        @include respond(big-desktop){width: 55%;}
 
         h2{
             font-size: 2.3rem;
@@ -57,22 +68,30 @@
     &__secondary-info{
         position: relative;
         height: 18rem;
+        float: left;
 
         i{
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: rgb(233, 201, 21);
             margin-top: 1rem;
+
+            @include respond(big-desktop){font-size: 2.5rem;}
         }
 
         span{
             display: inline-block;
             width: 4rem;
-            height: 2.5rem;
+            height: 2rem;
             border-radius: 3rem;
             text-align: center;
             background-color: $color-primary;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             color: white;
+            
+            @include respond(big-desktop){
+                height: 2.5rem;
+                font-size: 1.4rem;
+            }
         }
         p{
             font-size: 1.3rem;
@@ -84,7 +103,7 @@
     }
     
     &__btn{
-        width: 18rem;
+        width: 15rem;
         height: 5rem;
         border-radius: 3rem;
         border: none;
@@ -98,10 +117,24 @@
         cursor: pointer;
         transition: all .5s ease;
 
-        &:hover{
-            top: 90%;
+        
+        @include respond(big-desktop){ width: 18rem;}
+
+    }
+
+    &__btn-pos-bottom{
+        top: 90% !important;
+    }
+
+
+    &__contact-open{
+        top: 45% !important;
+
+        p{
+            margin-bottom: 0 !important;
         }
     }
+    
 
     &__contact{
         position: absolute;

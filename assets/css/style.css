@@ -360,6 +360,59 @@ body {
     border: 1px solid #ffffff;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 2px #e6e6e6; }
 
+.doctors-page {
+  width: 60%;
+  margin-top: -17rem;
+  position: relative; }
+  .doctors-page__img-header {
+    width: 100%; }
+    .doctors-page__img-header img {
+      width: 100%;
+      height: 35rem; }
+  .doctors-page__main {
+    position: relative;
+    background-color: white;
+    margin-top: -5rem;
+    border-radius: 2rem 2rem 0 0;
+    width: 100%;
+    height: auto; }
+  .doctors-page__photo {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 100%;
+    background-color: white;
+    position: relative;
+    top: -10rem; }
+    .doctors-page__photo img {
+      height: 17rem;
+      width: 17rem;
+      border-radius: 100%;
+      border: 1px solid #707070;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .doctors-page__name {
+    width: 40%;
+    text-align: right;
+    margin-right: 2rem; }
+    .doctors-page__name h2 {
+      font-size: 2.5rem;
+      color: #E43F6F; }
+    .doctors-page__name h3 {
+      font-size: 1.7rem;
+      color: #6DC2BE; }
+  .doctors-page__score {
+    margin: 1rem 3rem; }
+    .doctors-page__score span {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #49838B;
+      margin-left: 1rem; }
+    .doctors-page__score i {
+      font-size: 2rem;
+      color: #e9c915; }
+
 .doctors__main {
   width: 60%; }
 
@@ -401,18 +454,25 @@ body {
 .doctors__type-list i {
   font-size: 2.5rem;
   margin: 5px;
-  color: #707070; }
+  color: #707070;
+  cursor: pointer; }
+
+.doctors__type-active {
+  color: #90C73D !important; }
 
 .doctors__header {
   width: 75%; }
 
 .doctors__header-container {
-  height: 16vh;
+  height: 20vh;
   width: 100%;
   background-color: #fff;
   border-radius: 2.5rem;
   box-shadow: 1px 1px 5px #A0A0A0;
   margin-bottom: 3rem; }
+  @media only screen and (min-width: 112.5em) {
+    .doctors__header-container {
+      height: 16rem; } }
 
 .doctors__icon-box {
   height: 8rem;
@@ -445,7 +505,8 @@ body {
 
 .filter {
   width: 24rem;
-  margin-left: 5rem; }
+  margin-left: 5rem;
+  background-color: palevioletred; }
   @media only screen and (max-width: 30em) {
     .filter {
       display: none !important; } }
@@ -853,11 +914,7 @@ body {
   flex-wrap: wrap; }
 
 .hospital-details {
-<<<<<<< HEAD
-  height: 20rem;
-=======
   height: 24vh;
->>>>>>> e752576ff429a6300687e7707ec76d97b34c9f74
   width: 100%;
   background-color: #fff;
   position: absolute;
@@ -1204,11 +1261,6 @@ body {
 .map-tools {
   height: 13rem;
   position: fixed;
-<<<<<<< HEAD
-  top: 90%;
-  transform: translateY(-95%);
-  transition: all .5s ease; }
-=======
   left: 1%;
   top: 95%;
   transform: translate(-20%, -95%);
@@ -1219,7 +1271,6 @@ body {
   .map-tools__bottom-pos {
     position: absolute;
     top: 50%; }
->>>>>>> e752576ff429a6300687e7707ec76d97b34c9f74
   .map-tools__main-circle {
     height: 5rem;
     width: 5rem;
@@ -1259,11 +1310,7 @@ body {
     border: 1px solid #E43F6F;
     border-radius: 100%;
     position: absolute;
-<<<<<<< HEAD
-    top: 750%;
-=======
     top: 800%;
->>>>>>> e752576ff429a6300687e7707ec76d97b34c9f74
     left: 500%;
     transition: all .5s ease; }
   .map-tools__icon {
@@ -1671,7 +1718,8 @@ body {
 
 .personal-card-large {
   width: 100%;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  display: none; }
   .personal-card-large__main {
     width: 95%;
     height: 20rem;
@@ -1683,20 +1731,30 @@ body {
     height: 90%;
     width: 15%;
     margin: 1.5rem;
+    float: right;
     position: relative;
-    shape-outside: circle(50% at 50% 50%); }
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50%); }
     .personal-card-large__photo img {
-      height: 15rem;
-      width: 15rem;
+      height: 12rem;
+      width: 12rem;
       border-radius: 100%;
       border: 1px solid #707070;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+      @media only screen and (min-width: 112.5em) {
+        .personal-card-large__photo img {
+          height: 15rem;
+          width: 15rem; } }
   .personal-card-large__primary-info {
-    width: 55%;
-    height: 18rem; }
+    width: 50%;
+    height: 18rem;
+    float: right; }
+    @media only screen and (min-width: 112.5em) {
+      .personal-card-large__primary-info {
+        width: 55%; } }
     .personal-card-large__primary-info h2 {
       font-size: 2.3rem;
       color: #E43F6F;
@@ -1713,27 +1771,35 @@ body {
       color: #6DC2BE; }
   .personal-card-large__secondary-info {
     position: relative;
-    height: 18rem; }
+    height: 18rem;
+    float: left; }
     .personal-card-large__secondary-info i {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: #e9c915;
       margin-top: 1rem; }
+      @media only screen and (min-width: 112.5em) {
+        .personal-card-large__secondary-info i {
+          font-size: 2.5rem; } }
     .personal-card-large__secondary-info span {
       display: inline-block;
       width: 4rem;
-      height: 2.5rem;
+      height: 2rem;
       border-radius: 3rem;
       text-align: center;
       background-color: #6DC2BE;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       color: white; }
+      @media only screen and (min-width: 112.5em) {
+        .personal-card-large__secondary-info span {
+          height: 2.5rem;
+          font-size: 1.4rem; } }
     .personal-card-large__secondary-info p {
       font-size: 1.3rem;
       color: #707070;
       margin-left: 1.5rem;
       margin-right: 5px; }
   .personal-card-large__btn {
-    width: 18rem;
+    width: 15rem;
     height: 5rem;
     border-radius: 3rem;
     border: none;
@@ -1746,8 +1812,15 @@ body {
     top: 65%;
     cursor: pointer;
     transition: all .5s ease; }
-    .personal-card-large__btn:hover {
-      top: 90%; }
+    @media only screen and (min-width: 112.5em) {
+      .personal-card-large__btn {
+        width: 18rem; } }
+  .personal-card-large__btn-pos-bottom {
+    top: 90% !important; }
+  .personal-card-large__contact-open {
+    top: 45% !important; }
+    .personal-card-large__contact-open p {
+      margin-bottom: 0 !important; }
   .personal-card-large__contact {
     position: absolute;
     top: 65%;
@@ -1763,8 +1836,7 @@ body {
       transition: all .5s ease; }
 
 .personal-card {
-  width: 100%;
-  margin-top: -4rem; }
+  width: 100%; }
   .personal-card__main {
     height: 26rem;
     width: 22rem;

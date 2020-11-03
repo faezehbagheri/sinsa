@@ -194,57 +194,8 @@ function openSuggestionBox(){
     }
 }
 
-<<<<<<< HEAD
-var firstTime= true;
-function toggleActive(num){
-    if(!firstTime){
-        document.querySelector('.item-active').classList.remove("item-active");
-    }
-    document.querySelector("#hospital-"+num).classList.add("item-active");
-    document.querySelector(".hospital-details").style.display= "flex";
-    document.querySelector(".map-tools").style.top = "70%";
-
-    document.querySelector(".hospital-details").innerHTML= '';
-    var html = `
-    <div class="hospital-details__container flex r-reverse align-center justi-around">
-                <div class="hospital-details__col-1 flex column align-end justi-around">
-                    <p class="hospital-details__name">بیمارستان</p>
-                    <div class="hospital-details__full-width flex r-reverse align-center justi-between">
-                        <span class="hospital-details__type">بیمارستان</span>
-                        <div class=" flex r-reverse align-center ">
-                            <i class="fas fa-clock hospital-details__clock-icon"></i>
-                            <span class="hospital-details__time">7.00</span>
-                            <span class="hospital-details__time">10.00</span>
-                        </div>
-                    </div>
-                    <div class="flex r-reverse align-start">
-                        <i class="fas fa-map-marker-alt hospital-details__location-icon"></i>
-                        <span class="hospital-details__address">استان تهران - تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد، خیابان هشتم
-                        </span>
-                    </div>
-                </div>
-                <div class="hospital-details__col-2 flex column align-center justi-around">
-                    <div>
-                        <i class="far fa-star hospital-details__star-icon"></i>
-                        <i class="far fa-star hospital-details__star-icon"></i>
-                        <i class="far fa-star hospital-details__star-icon"></i>
-                        <i class="far fa-star hospital-details__star-icon"></i>
-                        <i class="far fa-star hospital-details__star-icon"></i>
-                    </div>
-                    <div>
-                        <span class="hospital-details__phone">2235563</span>
-                        <i class="fas fa-phone hospital-details__phone-icon"></i>
-                    </div>
-                    <button class="hospital-details__btn">دریافت مشاوره</button>
-                </div>
-            </div>
-    `
-    document.querySelector(".hospital-details").insertAdjacentHTML('beforeend',html);
-    firstTime= false;
-=======
 function toggleSearchBox(){
     document.querySelector(".map-toolbar__search-box").classList.toggle("map-toolbar__show-searchBox")
->>>>>>> e752576ff429a6300687e7707ec76d97b34c9f74
 }
 
 var data = [
@@ -628,8 +579,23 @@ function hideInfo() {
   document.querySelector("#map-overview").classList.add("hidden");
 }
 
-function showContactInfo(id , selector){
-  document.querySelector(".personal-card-large__contact").style.top= '45%';
-  document.querySelector(".personal-card-large__contact p").style= 'margin-bottom: 0;';
-  document.querySelector(".personal-card-large__secondary-info button").style.top = '90%'
+function showContactInfo(num){
+  document.querySelector("#div-" + num).classList.toggle('personal-card-large__contact-open');
+  document.querySelector("#btn-" + num).classList.toggle("personal-card-large__btn-pos-bottom");
+}
+
+var largeType = true;
+function changeListType(id){
+  document.querySelector('.doctors__type-active').classList.remove('doctors__type-active');
+  document.querySelector(id).classList.add('doctors__type-active');
+
+  if(largeType){
+    document.querySelector('.personal-card').style.display = 'none';
+    document.querySelector('.personal-card-large').style.display = 'flex';
+  }else{
+    document.querySelector('.personal-card-large').style.display = 'none';
+    document.querySelector('.personal-card').style.display = 'flex';
+  }
+
+  largeType = !largeType;
 }

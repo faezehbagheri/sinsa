@@ -58,7 +58,12 @@
             font-size: 2.5rem;
             margin: 5px;
             color: $color-gray;
+            cursor: pointer;
         }
+    }
+
+    &__type-active{
+        color: $color-primary-light !important;
     }
 
     &__header{
@@ -66,12 +71,14 @@
     }
 
     &__header-container{
-        height: 16vh;
+        height: 20vh;
         width: 100%;
         background-color: #fff;
         border-radius: 2.5rem;
         box-shadow: 1px 1px 5px $color-gray-light;
         margin-bottom: 3rem;
+
+        @include respond(big-desktop){height: 16rem;}
     }
 
     &__icon-box{
