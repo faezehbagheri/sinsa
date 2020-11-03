@@ -201,6 +201,7 @@ function toggleActive(num){
     }
     document.querySelector("#hospital-"+num).classList.add("item-active");
     document.querySelector(".hospital-details").style.display= "flex";
+    document.querySelector(".map-tools").style.top = "70%";
 
     document.querySelector(".hospital-details").innerHTML= '';
     var html = `

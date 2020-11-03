@@ -857,7 +857,7 @@ body {
   flex-wrap: wrap; }
 
 .hospital-details {
-  height: 20vh;
+  height: 20rem;
   width: 100%;
   background-color: #fff;
   position: absolute;
@@ -1209,8 +1209,9 @@ body {
 .map-tools {
   height: 13rem;
   position: fixed;
-  top: 95%;
-  transform: translateY(-95%); }
+  top: 90%;
+  transform: translateY(-95%);
+  transition: all .5s ease; }
   .map-tools__main-circle {
     height: 5rem;
     width: 5rem;
@@ -1250,7 +1251,7 @@ body {
     border: 1px solid #E43F6F;
     border-radius: 100%;
     position: absolute;
-    top: 400%;
+    top: 750%;
     left: 500%;
     transition: all .4s; }
   .map-tools__icon {
