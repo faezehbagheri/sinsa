@@ -102,7 +102,6 @@ function openIllnessTextMobile(selector){
     document.querySelector(selector).classList.toggle("activate-mobile");
 }
 
-
 var showOption = [false ,false ,false ,false ,false ,false ];
 var filterType = ["","takhasos" , "shahr" , "mahale" , "bime" , "jensiat" , "moshavere"];
 var id = 1;
@@ -132,23 +131,25 @@ function openOption(num){
 
 var showOption_map = [false ,false ,false ,false ,false ,false ];
 var filterType_map = ["", "mahale-map" , "shahr-map" , "ostan-map" , "takhasos-map"  , "bime-map" ];
+var id = [1,1,1,1,1,1];
 function openFilterOption_map(num){
     var checkboxes = document.getElementsByName(filterType_map[num]);
     var html=[];
     var newHtml=[];
 
     if(!showOption_map[num]){
-        document.querySelector(".map-header__filter-optios-" + num).style.display = "block";
+        document.querySelector("#map-optios-" + num).style = "top: 100%; height: 19vh; opacity: 1;";
     }else{
         for(var i = 0; i < checkboxes.length; i++)  
         {  
             
             if(checkboxes[i].checked)  {
                 document.querySelector(".picked-" + num).innerHTML = '';
-                html[i]= "<div class='filter__item flex r-reverse align-center' id='item-%id%' onclick='removeItem(this.id)'><i class='fas fa-times-circle filter__close-icon'></i><span class='filter__text'>%text%</span></div>"
+                html[i]= "<div class='filter__item flex r-reverse align-center' id='item-%num%-%id%' onclick='removeItem(this.id)'><i class='fas fa-times-circle filter__close-icon'></i><span class='filter__text'>%text%</span></div>"
                 newHtml[i] = html[i].replace('%text%' , checkboxes[i].value);
-                newHtml[i] = newHtml[i].replace('%id%' , id);
-                id++;
+                newHtml[i] = newHtml[i].replace('%num%' , num);
+                newHtml[i] = newHtml[i].replace('%id%' , id[num]);
+                id[num]++;
             }
         } 
         
@@ -156,12 +157,11 @@ function openFilterOption_map(num){
         {  
             document.querySelector(".picked-" + num).insertAdjacentHTML('beforeend' , newHtml[i]);
         }
-
-        document.querySelector(".map-header__filter-optios-" + num).style.display = "none";
-        // document.querySelector(".picked-" + num).style.display = "block";
+        document.querySelector("#map-optios-" + num).style = "top: 0%; height: 0; opacity: 0;";
     }
     showOption_map[num] = ! showOption_map[num];
 }
+
 function removeItem(id){
     var el = document.getElementById(id);
     el.parentElement.removeChild(el);
@@ -194,6 +194,7 @@ function openSuggestionBox(){
     }
 }
 
+<<<<<<< HEAD
 var firstTime= true;
 function toggleActive(num){
     if(!firstTime){
@@ -240,84 +241,395 @@ function toggleActive(num){
     `
     document.querySelector(".hospital-details").insertAdjacentHTML('beforeend',html);
     firstTime= false;
+=======
+function toggleSearchBox(){
+    document.querySelector(".map-toolbar__search-box").classList.toggle("map-toolbar__show-searchBox")
+>>>>>>> e752576ff429a6300687e7707ec76d97b34c9f74
 }
 
-
-var data= [
+var data = [
     {
-        title: 'بیماری ها',
-        data:[]
+        name: "بیمارستان نیکان",
+        type: "بیمارستان جامع",
+        address: " تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد",
+        time1: 7.00,
+        time2: 10.00,
+        phone: 225457325,
+        star: 5
     },
     {
-        title: 'داروها',
-        data:[]
+        name: "بیمارستان فجر",
+        type: "داخلی - جراحی",
+        address: " تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد",
+        time1: 7.00,
+        time2: 10.00,
+        phone: 22338765,
+        star: 5
     },
     {
-        title: 'زندگی سالم',
-        data:[
-            {
-                title: 'عادت های سلامت',
-                data: []
-            },
-            {
-                title: 'سلامت روان',
-                data:[]
-            },
-            {
-                title: 'زیبایی و تعادل',
-                data:[
-                    {
-                        title : 'سلامت فردی',
-                        data:["سلامت و بهداشت" , "سلامت خواب" , "سلامت سنی" , "سلامت زنان" , "سلامت مردان"]
-                    },
-                    {
-                        title : 'ورزشی',
-                        data:[]
-                    },
-                ]
-            },
-            {
-                title: 'رژیم غذایی',
-                data:[
-                    {
-                        title : 'سلامت فردی',
-                        data:["سلامت و بهداشت" , "سلامت خواب" , "سلامت سنی" , "سلامت زنان" , "سلامت مردان"]
-                    },
-                    {
-                        title : 'ورزشی',
-                        data:[]
-                    },
-                    {
-                        title : 'انگیزشی',
-                        data:[]
-                    },
-                ]
-            },
-            {
-                title: 'کتاب سلامت',
-                data:[]
-            },
-            {
-                title: 'پادکست سلامت',
-                data:[]
-            },
-            {
-                title: 'منابع',
-                data:[]
-            }
-        ]
+        name: "بیمارستان اختر",
+        type: "داخلی - جراحی",
+        address: " تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد",
+        time1: 7.00,
+        time2: 10.00,
+        phone: 22338765,
+        star: 5
     },
     {
-        title: 'خانواده',
-        data:[]
+        name: "بیمارستان هاجر",
+        type: "عفونی - پوست",
+        address: " تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد",
+        time1: 7.00,
+        time2: 10.00,
+        phone: 22338765,
+        star: 5
     },
     {
-        title: 'اخبار',
-        data:[]
+        name: "بیمارستان امام رضا",
+        type: "روانشناسی",
+        address: " تهران - بلوار کشاورز - بین خیابان کارگر و جمالزاده - جنب آزمایشگاه نور - پلاک ۹۵ - طبقه پنجم - واحد",
+        time1: 7.00,
+        time2: 10.00,
+        phone: 22338765,
+        star: 5
     },
-    {
-        title: 'مقالات',
-        data:[]
-    },
-
 ]
+
+var responsiveZoom = (window.innerWidth < 768) ? 6.75 : 12;
+
+function initMap() {
+    var firstTime= true;
+    toggleActive = (num)  => {
+        
+        switch (num){
+            case '0' :
+                console.log("niikaaan");
+                map.panTo(nikanHos.getPosition());
+                map.setZoom(14);
+                break;
+            case '1' :
+                map.panTo(fajrHos.getPosition());
+                map.setZoom(14);
+                break;
+            case '2' :
+                map.panTo(akhtarHos.getPosition());
+                map.setZoom(14);
+                break;
+            case '3' :
+                map.panTo(hajarHos.getPosition());
+                map.setZoom(14);
+                break;
+            case '4' :
+                map.panTo(emamRezaHos.getPosition());
+                map.setZoom(14);
+                break;
+        }
+        
+        if(!firstTime){
+            document.querySelector('.item-active').classList.remove("item-active");
+        }
+        document.querySelector("#hospital-"+num).classList.add("item-active");
+        document.querySelector(".hospital-details").style.display= "flex";
+        document.querySelector(".map-tools").style.top= "75%";
+
+        document.querySelector(".hospital-details").innerHTML= '';
+        var html = `
+        <div class="hospital-details__container flex r-reverse align-center justi-around">
+                    <div class="hospital-details__col-1 flex column align-end justi-around">
+                        <p class="hospital-details__name">بیمارستان %name%</p>
+                        <div class="hospital-details__full-width flex r-reverse align-center justi-between">
+                            <span class="hospital-details__type">بیمارستان %type%</span>
+                            <div class=" flex r-reverse align-center ">
+                                <i class="fas fa-clock hospital-details__clock-icon"></i>
+                                <span class="hospital-details__time">%time1%</span>
+                                <span class="hospital-details__time">%time2%</span>
+                            </div>
+                        </div>
+                        <div class="flex r-reverse align-start">
+                            <i class="fas fa-map-marker-alt hospital-details__location-icon"></i>
+                            <span class="hospital-details__address">%address%</span>
+                        </div>
+                    </div>
+                    <div class="hospital-details__col-2 flex column align-center justi-around">
+                        <div>
+                            <i class="far fa-star hospital-details__star-icon"></i>
+                            <i class="far fa-star hospital-details__star-icon"></i>
+                            <i class="far fa-star hospital-details__star-icon"></i>
+                            <i class="far fa-star hospital-details__star-icon"></i>
+                            <i class="far fa-star hospital-details__star-icon"></i>
+                        </div>
+                        <div>
+                            <span class="hospital-details__phone">%phone%</span>
+                            <i class="fas fa-phone hospital-details__phone-icon"></i>
+                        </div>
+                        <button class="hospital-details__btn">دریافت مشاوره</button>
+                    </div>
+                </div>
+        `
+        html = html.replace('%name%' , data[num].name);
+        html = html.replace('%type%' , data[num].type);
+        html = html.replace('%time1%' , data[num].time1);
+        html = html.replace('%time2%' , data[num].time2);
+        html = html.replace('%address%' , data[num].address);
+        html = html.replace('%phone%' , data[num].phone);
+        document.querySelector(".hospital-details").insertAdjacentHTML('beforeend',html);
+        firstTime= false;
+    }
+  var myLatlng = new google.maps.LatLng(35.69439, 51.42151);
+  var mapOptions = {
+    styles: [
+      {
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#f5f5f5"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.icon",
+        "stylers": [
+          {
+            "color": "#f5f5f5"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#616161"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#f5f5f5"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.country",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          {
+            "color": "#00338D"
+          },
+          {
+            "visibility": "on"
+          },
+          {
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.land_parcel",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+           "color": "#bdbdbd"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#ffffff"
+          }
+        ]
+      },
+      {
+        "featureType": "road.arterial",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#dadada"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#616161"
+          }
+        ]
+      },
+      {
+        "featureType": "road.local",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#9e9e9e"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#bbdefb"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#9e9e9e"
+          }
+        ]
+      }
+    ],
+    zoom: responsiveZoom,
+    minZoom: 6,
+    maxZoom: 17,
+    zoomControl: true,
+    zoomControlOptions: {
+      style: google.maps.ZoomControlStyle.DEFAULT
+    },
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false,
+    panControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    overviewMapControl: false,
+    rotateControl: false
+  };
+  var map = new google.maps.Map(
+    document.getElementById("map-canvas"),
+    mapOptions
+  );
+
+  // بیمارستان نیکان  
+  var nikanHos = new google.maps.Marker({
+    position: new google.maps.LatLng(35.803514, 51.489504),
+    map: map,
+    title: "بیماستان نیکان",
+    icon: "/assets/img/hospital.png"
+  });
+  google.maps.event.addListener(nikanHos, "click", function() {
+    hideInfo();
+    showInfo(0);
+    map.panTo(this.getPosition());
+    map.setZoom(14);
+  });
+
+  // بیمارستان فجر
+  var fajrHos = new google.maps.Marker({
+    position: new google.maps.LatLng(35.692758, 51.464980),
+    map: map,
+    title: "بیمارستان فجر ",
+    icon: "/assets/img/hospital.png"
+  });
+  google.maps.event.addListener(fajrHos, "click", function() {
+    hideInfo();
+    showInfo(1);
+    map.panTo(this.getPosition());
+    map.setZoom(14);
+  });
+
+   // بیماستان اختر
+   var akhtarHos = new google.maps.Marker({
+    position: new google.maps.LatLng(35.789252, 51.431101),
+    map: map,
+    title: "بیمارستان اختر",
+    icon: "/assets/img/hospital.png"
+  });
+  google.maps.event.addListener(akhtarHos, "click", function() {
+    hideInfo();
+    showInfo(2);
+    map.panTo(this.getPosition());
+    map.setZoom(14);
+  });
+
+   // بیمارستان هاجر
+   var hajarHos = new google.maps.Marker({
+    position: new google.maps.LatLng(35.733988, 51.403742),
+    map: map,
+    title: "بیمارستان هاجر",
+    icon: "/assets/img/hospital.png"
+  });
+  google.maps.event.addListener(hajarHos, "click", function() {
+    hideInfo();
+    showInfo(3);
+    map.panTo(this.getPosition());
+    map.setZoom(14);
+  });
+
+    // بیمارستان امام رضا
+    var emamRezaHos = new google.maps.Marker({
+    position: new google.maps.LatLng(35.720969, 51.382468),
+    map: map,
+    title: "بیمارستان امام رضا",
+    icon: "/assets/img/hospital.png"
+    });
+    google.maps.event.addListener(emamRezaHos, "click", function() {
+    hideInfo();
+    showInfo(4);
+    map.panTo(this.getPosition());
+    map.setZoom(14);
+    });
+
+  // back to offices overview
+  document.querySelector("#map-overview").addEventListener("click", function() {
+    map.panTo(myLatlng);
+    map.setZoom(responsiveZoom);
+    hideInfo();
+  });
+  
+  window.addEventListener("resize", function() {
+    if (window.innerWidth < 768) responsiveZoom = 6.75
+    else if (window.innerWidth > 768) responsiveZoom = 7.75
+    map.setZoom(responsiveZoom);
+  });
+  
+}
+
+function showInfo(num) {  
+  toggleActive(num);
+  document.querySelector("#map-canvas").classList.add("zoomed");
+  document.querySelector("#map-overview").classList.remove("hidden");
+}
+
+function hideInfo() {
+  if (document.querySelector(".shown")) {
+    document.querySelector(".shown").classList.remove("shown");
+  }
+  document.querySelector("#map-canvas").classList.remove("zoomed");
+  document.querySelector("#map-overview").classList.add("hidden");
+}
+
+function showContactInfo(id , selector){
+  document.querySelector(".personal-card-large__contact").style.top= '45%';
+  document.querySelector(".personal-card-large__contact p").style= 'margin-bottom: 0;';
+  document.querySelector(".personal-card-large__secondary-info button").style.top = '90%'
+}

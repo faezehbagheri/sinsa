@@ -8,15 +8,11 @@
     }
     
     &__box1{
-        width:15%;
+        width:20%;
     }
 
     &__box2{
-        width:30%;
-    }
-
-    &__box3{
-        width:40%;
+        width:75%;
     }
 
     &__filter-main{
@@ -52,14 +48,9 @@
         font-size: 1.3rem;
     }
 
-    &__filter-box2{
-        width: 15rem;
-        margin-right: 1.5rem;
-        position: relative;
-    }
 
-    &__filter-box3{
-        width: 24rem;
+    &__filter-box{
+        width: 22rem;
         margin-right: 1.5rem;
         position: relative;
     }
@@ -89,20 +80,21 @@
         cursor: pointer;
     }
 
-    &__filter-optios2{
+    &__filter-optios{
         height: 19vh;
-        width: 25vh;
+        width: 22vh;
         position: absolute;
         top: 100%;
-        left: -50%;
-        left: 5;
         z-index: 99;
         background-color: #ffff;
         border-radius: 2rem;
         box-shadow: 2px 3px 5px $color-gray-light;
         overflow-y: scroll;
         overflow-x: hidden;
-        display: none;
+        top: 0%;
+        height: 0;
+        opacity: 0;
+        transition: all .8s;
 
         &::-webkit-scrollbar {
             width: 1rem;
@@ -112,30 +104,5 @@
             color: none;
         }
     }
-
-    &__filter-optios3{
-        height: 19vh;
-        width: 25vh;
-        position: absolute;
-        top: 100%;
-        left: 5;
-        z-index: 99;
-        background-color: #ffff;
-        border-radius: 2rem;
-        box-shadow: 2px 3px 5px $color-gray-light;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        display: none;
-        // animation: openFilter .5s;
-
-        &::-webkit-scrollbar {
-            width: 1rem;
-        }
-        
-        &::-webkit-scrollbar-thumb {
-            color: none;
-        }
-    }
-
 
 }

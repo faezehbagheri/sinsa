@@ -9,7 +9,7 @@
     <link href="./assets/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/function.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous"></script>
@@ -19,19 +19,131 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" />
+        crossorigin="anonymous" /> -->
+
+        <script src="/assets/js/jquery.js"></script>
+        <script src="/assets/js/owl.carousel.min.js"></script>
+
+        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
 
     <title>Sinsa</title>
 </head>
 
 <body>
+
+    
+    <!-- منو موبایل -->
+    <nav class="mobile-menu flex column justi-around align-end " id="menu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__header">
+                <a href="#"><img src="./assets/img/Logo Icon@2x.png" class="mobile-menu__logo"></a>
+            </div>
+            <div class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item flex r-reverse justi-start align-center">                        
+                        <a class="mobile-menu__link mobile-menu__margin" href="#">صفحه اصلی</a>
+                    </li>
+                    <li class="mobile-menu__item" onclick="openSubMenu('2')">
+                        <span class="mobile-menu__link">بیماری ها<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-2"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-2"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-2">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item" onclick="openSubMenu('3')">
+                        <span class="mobile-menu__link">داروها<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-3"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-3"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-3">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item" onclick="openSubMenu('4')">
+                        <span class="mobile-menu__link">زندگی سالم<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-4"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-4"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-4">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>                    
+                    <li class="mobile-menu__item" onclick="openSubMenu('5')">
+                        <span class="mobile-menu__link">خانواده<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-5"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-5"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-5">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item flex r-reverse justi-start align-center">
+                        <span class="mobile-menu__link mobile-menu__margin">اخبار</a>
+                    </li>
+                    <li class="mobile-menu__item" onclick="openSubMenu('6')">
+                        <span class="mobile-menu__link">مقالات<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-6"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-6"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-6">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Mobile Header -->
     <header class="mobile-header">
         <!-- هدر -->
         <div class="mobile-header__head flex r-reverse justi-between align-center">
-            <a href="#menu"><i class="fas fa-ellipsis-v mobile-header__icon"></i></a>
-            <h2 class="heading-primary">جستجو</h2>
-            <i class="fas fa-bars mobile-header__icon"></i>
+            <a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a>
+            <h2 class="heading-primary">بیماری ها</h2>
+            <i class="fas fa-ellipsis-v mobile-header__icon"></i>
         </div>
         <!-- سرچ -->
         <div class="mobile-header__search" id="mobile-search">
@@ -46,7 +158,7 @@
                 <i class="fas fa-angle-down mobile-header__left-icon"></i>
             </div>
             <div class="mobile-category">
-                <div class="mobile-header__category">
+                <div>
                     <h2 class="mobile-category__header">دسته بندی</h2>
                     <div class="mobile-category__main flex r-reverse justi-around align-center owl-carousel" id="category">
                         <div class="mobile-category__item item">سلامت</div>
@@ -63,49 +175,13 @@
             </div>
         </div>
         <!-- دسته بندی  -->
-        <div class="mobile-header__suggestion">
-            <div class="flex r-reverse justi-around align-center owl-carousel" id="suggestion">
-                <div class="item flex column align-center justi-around">
-                    <div class="mobile-header__circle">
-                        <i class="fas fa-user-md mobile-header__circle--icon"></i>
-                    </div>
-                    <span class="mobile-header__span">پزشک</span>
-                </div>
-                <div class="item flex column align-center justi-around">
-                    <div class="mobile-header__circle">
-                        <i class="fas fa-pills mobile-header__circle--icon"></i>
-                    </div>
-                    <span class="mobile-header__span">دارو</span>
-                </div>
-                <div class="item flex column align-center justi-around">
-                    <div class="mobile-header__circle">
-                        <i class="fas fa-hospital mobile-header__circle--icon"></i>
-                    </div>
-                    <span class="mobile-header__span">بیمارستان</span>
-                </div>
-                <div class="item flex column align-center justi-around">
-                    <div class="mobile-header__circle">
-                        <i class="fas fa-plus-square mobile-header__circle--icon"></i>
-                    </div>
-                    <span class="mobile-header__span">سلامت</span>
-                </div>
-                <div class="item flex column align-center justi-around">
-                    <div class="mobile-header__circle">
-                        <i class="fas fa-user-md mobile-header__circle--icon"></i>
-                    </div>
-                    <span class="mobile-header__span">پزشک</span>
-                </div>
-                <div class="item flex column align-center justi-around">
-                    <div class="mobile-header__circle">
-                        <i class="fas fa-pills mobile-header__circle--icon"></i>
-                    </div>
-                    <span class="mobile-header__span">دارو</span>
-                </div>
-            </div>
+        <div class="mobile-header__suggestion flex r-reverse align-center">       
+            
         </div>
     </header>
 
-            <!-- Desktop Nav -->
+    
+    <!-- Desktop Nav -->
     <nav class="navigation flex r-reverse justi-around">
         <div class="navigation__list flex r-reverse justi-between">
             <img src="./assets/img/Logo Icon@2x.png" class="navigation__logo">
@@ -381,50 +457,10 @@
             <button class="navigation__btn">ورود / ثبت نام</button>
         </div>
     </nav>
-
-    <!-- Right Side Fixed -->
-        <div class="right-side flex column">
-            <div class="flex r-reverse justi-around align-center">
-                <button class="right-side__btn right-side__btn-1">
-                    <img class="right-side__photo" src="./assets/img/chat@2x.png">
-                </button>
-                <div class="right-side__tips right-side__tips-1 flex r-reverse align-center">
-                    <span class="right-side__span">مشاوره‌ی آنلاین</span>
-                    <div class="right-side__circle"></div>
-                </div>
-            </div>
-            <div class="flex r-reverse justi-around align-center">
-                <button class="right-side__btn right-side__btn-2">
-                    <img class="right-side__photo" src="./assets/img/call@2x.png">
-                </button>
-                <div class="right-side__tips right-side__tips-2 flex r-reverse align-center">
-                    <span class="right-side__span">مشاوره‌ی تلفنی</span>
-                    <div class="right-side__circle"></div>
-                </div>
-            </div>
-            <div class="flex r-reverse justi-around align-center">
-                <button class="right-side__btn right-side__btn-3">
-                    <img class="right-side__photo" src="./assets/img/pen@2x.png">
-                </button>
-                <div class="right-side__tips right-side__tips-3 flex r-reverse align-center">
-                    <span class="right-side__span">نوبت دهی آنلاین</span>
-                    <div class="right-side__circle"></div>
-                </div>
-            </div>
-            <div class="flex r-reverse justi-around align-center">
-                <button class="right-side__btn right-side__btn-4">
-                    <img class="right-side__photo" src="./assets/img/newspaper@2x.png">
-                </button>
-                <div class="right-side__tips right-side__tips-4 flex r-reverse align-center">
-                    <span class="right-side__span">نوبت دهی حضوری</span>
-                    <div class="right-side__circle"></div>
-                </div>
-            </div>
-        </div>
-
+    
     <!-- Desktop Header -->
     <header class="header homepage">
-             
+            
         <div class="header__main flex r-reverse justi-center align-center">            
             <!-- Search Box -->
             <div class="search">
@@ -525,53 +561,46 @@
         </div>
     </header>
 
-
-     <!-- منو موبایل -->
-     <nav class="mobile-menu flex column justi-around align-end " id="menu">
-        <div class="mobile-menu__content">
-            <div class="mobile-menu__header">
-                <img src="./assets/img/Logo Icon@2x.png" class="mobile-menu__logo">
-            </div>
-            <div class="mobile-menu__nav">
-                <ul class="mobile-menu__list">
-                    <li class="mobile-menu__item flex r-reverse justi-start align-center">                        
-                        <span class="mobile-menu__link">صفحه اصلی<i class="fas fa-angle-left mobile-menu__icon"></i><i class="fas fa-angle-down mobile-menu__down-icon"></i></span>
-                    </li>
-                    <li class="mobile-menu__item flex r-reverse justi-start align-center">
-                        <span class="mobile-menu__link">بیماری ها<i class="fas fa-angle-left mobile-menu__icon"></i><i class="fas fa-angle-down mobile-menu__down-icon"></i></span></li>
-                    <li class="mobile-menu__item flex r-reverse justi-start align-center">
-                        <span class="mobile-menu__link">داروها<i class="fas fa-angle-left mobile-menu__icon"></i><i class="fas fa-angle-down mobile-menu__down-icon"></i></span>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <span class="mobile-menu__link" onclick="openSubMenu('4')">زندگی سالم<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-4"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-4"></i></span>
-                        <ul class="mobile-menu__sub-list" id="sub-menu-4">
-                            <li class="mobile-menu__sub-item sub-item-4 flex r-reverse justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت<i class="fas fa-angle-left mobile-menu__icon"></i><i class="fas fa-angle-down mobile-menu__down-icon"></i></a>
-                            </li>
-                            <li class="mobile-menu__sub-item sub-item-4 flex r-reverse justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">سلامت روان<i class="fas fa-angle-left mobile-menu__icon"></i><i class="fas fa-angle-down mobile-menu__down-icon"></i></a>
-                            </li>
-                            <li class="mobile-menu__sub-item sub-item-4 flex r-reverse justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل<i class="fas fa-angle-left mobile-menu__icon"></i><i class="fas fa-angle-down mobile-menu__down-icon"></i></a>
-                            </li>
-                            <li class="mobile-menu__sub-item sub-item-4 flex r-reverse justi-start align-center">                        
-                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی<i class="fas fa-angle-left mobile-menu__icon"></i><i class="fas fa-angle-down mobile-menu__down-icon"></i></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="mobile-menu__item flex r-reverse justi-start align-center">
-                        <span class="mobile-menu__link">خانواده<i class="fas fa-angle-left mobile-menu__icon"></i><i class="fas fa-angle-down mobile-menu__down-icon"></i></span>
-                    </li>
-                    <li class="mobile-menu__item flex r-reverse justi-start align-center">
-                        <span class="mobile-menu__link">اخبار<i class="fas fa-angle-left mobile-menu__icon"></i><i class="fas fa-angle-down mobile-menu__down-icon"></i></span>
-                    </li>
-                    <li class="mobile-menu__item flex r-reverse justi-start align-center">
-                        <span class="mobile-menu__link">مقالات<i class="fas fa-angle-left mobile-menu__icon"></i><i class="fas fa-angle-down mobile-menu__down-icon"></i></span>
-                    </li>
-                </ul>
-            </div>
+   <!-- Right Side Fixed -->
+   <div class="right-side flex column">
+    <div class="flex r-reverse justi-around align-center">
+        <button class="right-side__btn right-side__btn-1">
+            <img class="right-side__photo" src="./assets/img/chat@2x.png">
+        </button>
+        <div class="right-side__tips right-side__tips-1 flex r-reverse align-center">
+            <span class="right-side__span">مشاوره‌ی آنلاین</span>
+            <div class="right-side__circle"></div>
         </div>
-    </nav>
+    </div>
+    <div class="flex r-reverse justi-around align-center">
+        <button class="right-side__btn right-side__btn-2">
+            <img class="right-side__photo" src="./assets/img/call@2x.png">
+        </button>
+        <div class="right-side__tips right-side__tips-2 flex r-reverse align-center">
+            <span class="right-side__span">مشاوره‌ی تلفنی</span>
+            <div class="right-side__circle"></div>
+        </div>
+    </div>
+    <div class="flex r-reverse justi-around align-center">
+        <button class="right-side__btn right-side__btn-3">
+            <img class="right-side__photo" src="./assets/img/pen@2x.png">
+        </button>
+        <div class="right-side__tips right-side__tips-3 flex r-reverse align-center">
+            <span class="right-side__span">نوبت دهی آنلاین</span>
+            <div class="right-side__circle"></div>
+        </div>
+    </div>
+    <div class="flex r-reverse justi-around align-center">
+        <button class="right-side__btn right-side__btn-4">
+            <img class="right-side__photo" src="./assets/img/newspaper@2x.png">
+        </button>
+        <div class="right-side__tips right-side__tips-4 flex r-reverse align-center">
+            <span class="right-side__span">نوبت دهی حضوری</span>
+            <div class="right-side__circle"></div>
+        </div>
+    </div>
+    </div>
+    
 
     <!-- Desktop Main -->
     <main class="main flex column align-center justi-start">
@@ -672,80 +701,100 @@
             <div class="main__section-doctors flex column align-center">
                 <h2 class="heading-primary">پزشکان آماده همراهی شما</h2>
                 <img src="./assets/img/Artboard-2.png" class="main__background">
-                <div class="doctors flex r-reverse justi-between align-center owl-carousel" id="doctors">
-                    <div class="doctors__doctor-1 item">
-                        <div class="doctors__main flex column justi-around align-center">
-                            <div class="doctors__photo-box">
-                                <img class="doctors__photo" src="./assets/img/Mask Group15@2x.png">
+                <div class="personal-card flex r-reverse justi-between align-center owl-carousel" id="doctors">
+                    <div class="personal-card__doctor-1 item">
+                        <div class="personal-card__main flex column justi-around align-center">
+                            <div class="personal-card__photo-box">
+                                <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
                             </div>
-                            <h2 class="doctors__name">سارا رحیمی</h2>
-                            <h4 class="doctors__specialty">پزشک عمومی</h4>
+                            <h2 class="personal-card__name">سارا رحیمی</h2>
+                            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                            <div class="personal-card__address flex column r-reverse align-center">                                
+                                <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                                <p>قلهک</p>
+                            </div>
                             <div class="flex r-reverse">
-                                <span class="doctors__percentage">89%</span>
-                                <span class="doctors__comment">715 نظر</span>
+                                <span class="personal-card__percentage">89%</span>
+                                <span class="personal-card__comment">715 نظر</span>
                             </div>
-                            <p class="doctors__consulting">دویست مشاوره (درمدت یک سال و شیش ماه)</p>
-                            <button class="doctors__btn">دریافت مشاوره</button>
+                            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                            <button class="personal-card__btn">دریافت مشاوره</button>
                         </div>
                     </div>
-                    <div class="doctors__doctor-2 item">
-                        <div class="doctors__main flex column justi-around align-center">
-                            <div class="doctors__photo-box">
-                                <img class="doctors__photo" src="./assets/img/Mask Group16@2x.png">
+                    <div class="personal-card__doctor-2 item">
+                        <div class="personal-card__main flex column justi-around align-center">
+                            <div class="personal-card__photo-box">
+                                <img class="personal-card__photo" src="./assets/img/Mask Group16@2x.png">
                             </div>
-                            <h2 class="doctors__name">سارا رحیمی</h2>
-                            <h4 class="doctors__specialty">پزشک عمومی</h4>
+                            <h2 class="personal-card__name">سارا رحیمی</h2>
+                            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                            <div class="personal-card__address flex column r-reverse align-center">                                
+                                <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                                <p>قلهک</p>
+                            </div>
                             <div class="flex r-reverse">
-                                <span class="doctors__percentage">89%</span>
-                                <span class="doctors__comment">715 نظر</span>
+                                <span class="personal-card__percentage">89%</span>
+                                <span class="personal-card__comment">715 نظر</span>
                             </div>
-                            <p class="doctors__consulting">دویست مشاوره (درمدت یک سال و شیش ماه)</p>
-                            <button class="doctors__btn">دریافت مشاوره</button>
+                            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                            <button class="personal-card__btn">دریافت مشاوره</button>
                         </div>
                     </div>
-                    <div class="doctors__doctor-3 item">
-                        <div class="doctors__main flex column justi-around align-center">
-                            <div class="doctors__photo-box">
-                                <img class="doctors__photo" src="./assets/img/a.jpg">
+                    <div class="personal-card__doctor-3 item">
+                        <div class="personal-card__main flex column justi-around align-center">
+                            <div class="personal-card__photo-box">
+                                <img class="personal-card__photo" src="./assets/img/a.jpg">
                             </div>
-                            <h2 class="doctors__name">سارا رحیمی</h2>
-                            <h4 class="doctors__specialty">پزشک عمومی</h4>
+                            <h2 class="personal-card__name">سارا رحیمی</h2>
+                            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                            <div class="personal-card__address flex column r-reverse align-center">                                
+                                <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                                <p>قلهک</p>
+                            </div>
                             <div class="flex r-reverse">
-                                <span class="doctors__percentage">89%</span>
-                                <span class="doctors__comment">715 نظر</span>
+                                <span class="personal-card__percentage">89%</span>
+                                <span class="personal-card__comment">715 نظر</span>
                             </div>
-                            <p class="doctors__consulting">دویست مشاوره (درمدت یک سال و شیش ماه)</p>
-                            <button class="doctors__btn">دریافت مشاوره</button>
+                            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                            <button class="personal-card__btn">دریافت مشاوره</button>
                         </div>
                     </div>
-                    <div class="doctors__doctor-4 item">
-                        <div class="doctors__main flex column justi-around align-center">
-                            <div class="doctors__photo-box">
-                                <img class="doctors__photo" src="./assets/img/Mask Group31@2x.png">
+                    <div class="personal-card__doctor-4 item">
+                        <div class="personal-card__main flex column justi-around align-center">
+                            <div class="personal-card__photo-box">
+                                <img class="personal-card__photo" src="./assets/img/Mask Group31@2x.png">
                             </div>
-                            <h2 class="doctors__name">سارا رحیمی</h2>
-                            <h4 class="doctors__specialty">پزشک عمومی</h4>
+                            <h2 class="personal-card__name">سارا رحیمی</h2>
+                            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                            <div class="personal-card__address flex column r-reverse align-center">                                
+                                <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                                <p>قلهک</p>
+                            </div>
                             <div class="flex r-reverse">
-                                <span class="doctors__percentage">89%</span>
-                                <span class="doctors__comment">715 نظر</span>
+                                <span class="personal-card__percentage">89%</span>
+                                <span class="personal-card__comment">715 نظر</span>
                             </div>
-                            <p class="doctors__consulting">دویست مشاوره (درمدت یک سال و شیش ماه)</p>
-                            <button class="doctors__btn">دریافت مشاوره</button>
+                            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                            <button class="personal-card__btn">دریافت مشاوره</button>
                         </div>
                     </div>
-                    <div class="doctors__doctor-5 item">
-                        <div class="doctors__main flex column justi-around align-center">
-                            <div class="doctors__photo-box">
-                                <img class="doctors__photo" src="./assets/img/Mask Group 15@2x.png">
+                    <div class="personal-card__doctor-5 item">
+                        <div class="personal-card__main flex column justi-around align-center">
+                            <div class="personal-card__photo-box">
+                                <img class="personal-card__photo" src="./assets/img/Mask Group 15@2x.png">
                             </div>
-                            <h2 class="doctors__name">سارا رحیمی</h2>
-                            <h4 class="doctors__specialty">پزشک عمومی</h4>
+                            <h2 class="personal-card__name">سارا رحیمی</h2>
+                            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
+                            <div class="personal-card__address flex column r-reverse align-center">                                
+                                <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                                <p>قلهک</p>
+                            </div>
                             <div class="flex r-reverse">
-                                <span class="doctors__percentage">89%</span>
-                                <span class="doctors__comment">715 نظر</span>
+                                <span class="personal-card__percentage">89%</span>
+                                <span class="personal-card__comment">715 نظر</span>
                             </div>
-                            <p class="doctors__consulting">دویست مشاوره (درمدت یک سال و شیش ماه)</p>
-                            <button class="doctors__btn">دریافت مشاوره</button>
+                            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                            <button class="personal-card__btn">دریافت مشاوره</button>
                         </div>
                     </div>
                 </div>
@@ -1005,7 +1054,7 @@
                     </div>
                     <div class="mobile-article__main flex column justi-end align-end">
                         <img src="./assets/img/493ss_getty_rf_woman_relaxing_with_book@2x.png" class="mobile-article__photo">
-                         <div class="mobile-article__icon-box flex r-reverse justi-start">
+                            <div class="mobile-article__icon-box flex r-reverse justi-start">
                             <i class="fas fa-star mobile-article__icon yellow"></i>
                             <i class="fas fa-star mobile-article__icon yellow"></i>
                             <i class="fas fa-star mobile-article__icon yellow"></i>
@@ -1023,7 +1072,7 @@
                     </div>
                     <div class="mobile-article__main flex column justi-end align-end">
                         <img src="./assets/img/493ss_getty_rf_woman_outside_driniking_water@2x.png" class="mobile-article__photo">
-                         <div class="mobile-article__icon-box flex r-reverse justi-star">
+                            <div class="mobile-article__icon-box flex r-reverse justi-star">
                             <i class="fas fa-star mobile-article__icon yellow"></i>
                             <i class="fas fa-star mobile-article__icon yellow"></i>
                             <i class="fas fa-star mobile-article__icon yellow"></i>
@@ -1041,7 +1090,7 @@
                     </div>
                     <div class="mobile-article__main flex column justi-end align-end">
                         <img src="./assets/img/405rmq_thinkstock_woman_walking_sneakers@2x.png" class="mobile-article__photo">
-                         <div class="mobile-article__icon-box flex r-reverse justi-star">
+                            <div class="mobile-article__icon-box flex r-reverse justi-star">
                             <i class="fas fa-star mobile-article__icon yellow"></i>
                             <i class="fas fa-star mobile-article__icon yellow"></i>
                             <i class="fas fa-star mobile-article__icon"></i>
@@ -1105,7 +1154,7 @@
         <img src="./assets/img/footer.png" class="footer__background">
         <div class="footer__main flex r-reverse align-center justi-around">
             <div class="footer__about-us">
-                <h2 class="footer__header">درباره ما</h2>
+                <h2 class="footer__header" onclick="openOption()">درباره ما</h2>
                 <p class="footer__pragraph">
                     مشاوره تلفنی چیست؟<br>
                     به زودی پزشک با شما تماس خواهد گرفت. به جای اینکه از کار خود مرخصی بگیرید، در ترافیک بمانید و زمان
@@ -1139,153 +1188,155 @@
             </div>
         </div>
     </footer>
-    <script>
 
-        $(document).ready(function () {
-            var search = $("#search");
-            var $doctors = $("#doctors");
-            var $comment = $("#comment");
-            var $suggestion = $("#suggestion");
-            var $specialty = $('#specialty');
-            var $article = $('#article');
-            var $category = $('#category');
-            var $submenu = $(".submenu");
-
-
-            /// submenu ///
-            $submenu.children().each(function (index) {
-                $(this).attr('data-position', index);
-            });
-
-            $submenu.owlCarousel({
-                loop: true,
-                items: 1,
-            });
-
-            $(document).on('click', '.owl-item>div', function () {
-                var $speed = 300;  // in ms
-                $submenu.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-            });
-
-            search.owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                navText: [
-                    "<i class='fa fa-angle-left' style='font-size: 2rem; color: #fff; margin 5rem;'></i>",
-                    "<i class='fa fa-angle-right' style='font-size: 2rem; color: #fff; margin 5rem;'></i>"
-                ],
-                responsive: {
-                    0: {
-                        items: 5
-                    },
-                    600: {
-                        items: 5
-                    },
-                    1000: {
-                        items: 6
-                    }
-                }
-            });
-
-
-            $comment.children().each(function (index) {
-                $(this).attr('data-position', index);
-            });
-
-            $comment.owlCarousel({
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                autoplayHoverPause: true,
-                items: 4,
-            });
-
-            $(document).on('click', '.owl-item>div', function () {
-                var $speed = 300;  // in ms
-                $comment.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-            });
-
-            /// doctors ///
-            $doctors.children().each(function (index) {
-                $(this).attr('data-position', index);
-            });
-
-            $doctors.owlCarousel({
-                center: true,
-                loop: true,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                autoplayHoverPause: true,
-                items: 5,
-            });
-
-            $(document).on('click', '.owl-item>div', function () {
-                var $speed = 300;  // in ms
-                $doctors.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-            });
-
-            /// suggestion ///
-            $suggestion.children().each(function (index) {
-                $(this).attr('data-position', index);
-            });
-
-            $suggestion.owlCarousel({
-                items: 4,
-                rtl: true
-            });
-
-            $(document).on('click', '.owl-item>div', function () {
-                var $speed = 300;  // in ms
-                $suggestion.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-            });
-
-            /// specialty ///
-            $specialty.children().each(function (index) {
-                $(this).attr('data-position', index);
-            });
-
-            $specialty.owlCarousel({
-                items: 4,
-                rtl: true
-            });
-
-            $(document).on('click', '.owl-item>div', function () {
-                var $speed = 300;  // in ms
-                $specialty.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-            });
-
-            /// article ///
-            $article.children().each(function (index) {
-                $(this).attr('data-position', index);
-            });
-
-            $article.owlCarousel({
-                items: 1,
-                rtl: true
-            });
-
-            $(document).on('click', '.owl-item>div', function () {
-                var $speed = 300;  // in ms
-                $article.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-            });
-            
-            /// category ///
-            $category.children().each(function (index) {
-                $(this).attr('data-position', index);
-            });
-
-            $category.owlCarousel({
-                items: 4,
-                rtl: true
-            });
-
-            $(document).on('click', '.owl-item>div', function () {
-                var $speed = 300;  // in ms
-                $category.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-            });
-
-        });
-    </script>
 </body>
+<script>
+
+    $(document).ready(function () {    
+        
+        var search = $("#search");
+        var $doctors = $("#doctors");
+        var $comment = $("#comment");
+        var $suggestion = $("#suggestion");
+        var $specialty = $('#specialty');
+        var $article = $('#article');
+        var $category = $('#category');
+        var $submenu = $(".submenu");
+
+
+        /// submenu ///
+        $submenu.children().each(function (index) {
+            $(this).attr('data-position', index);
+        });
+
+        $submenu.owlCarousel({
+            loop: true,
+            items: 1,
+        });
+
+        $(document).on('click', '.owl-item>div', function () {
+            var $speed = 300;  // in ms
+            $submenu.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+        });
+
+        search.owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            navText: [
+                "<i class='fa fa-angle-left' style='font-size: 2rem; color: #fff; margin 5rem;'></i>",
+                "<i class='fa fa-angle-right' style='font-size: 2rem; color: #fff; margin 5rem;'></i>"
+            ],
+            responsive: {
+                0: {
+                    items: 5
+                },
+                600: {
+                    items: 5
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        });
+
+
+        $comment.children().each(function (index) {
+            $(this).attr('data-position', index);
+        });
+
+        $comment.owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            items: 4,
+        });
+
+        $(document).on('click', '.owl-item>div', function () {
+            var $speed = 300;  // in ms
+            $comment.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+        });
+
+        /// doctors ///
+        $doctors.children().each(function (index) {
+            $(this).attr('data-position', index);
+        });
+
+        $doctors.owlCarousel({
+            center: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            items: 5,
+        });
+
+        $(document).on('click', '.owl-item>div', function () {
+            var $speed = 300;  // in ms
+            $doctors.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+        });
+
+        /// suggestion ///
+        $suggestion.children().each(function (index) {
+            $(this).attr('data-position', index);
+        });
+
+        $suggestion.owlCarousel({
+            items: 4,
+            rtl: true
+        });
+
+        $(document).on('click', '.owl-item>div', function () {
+            var $speed = 300;  // in ms
+            $suggestion.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+        });
+
+        /// specialty ///
+        $specialty.children().each(function (index) {
+            $(this).attr('data-position', index);
+        });
+
+        $specialty.owlCarousel({
+            items: 4,
+            rtl: true
+        });
+
+        $(document).on('click', '.owl-item>div', function () {
+            var $speed = 300;  // in ms
+            $specialty.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+        });
+
+        /// article ///
+        $article.children().each(function (index) {
+            $(this).attr('data-position', index);
+        });
+
+        $article.owlCarousel({
+            items: 1,
+            rtl: true
+        });
+
+        $(document).on('click', '.owl-item>div', function () {
+            var $speed = 300;  // in ms
+            $article.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+        });
+        
+        /// category ///
+        $category.children().each(function (index) {
+            $(this).attr('data-position', index);
+        });
+
+        $category.owlCarousel({
+            items: 4,
+            rtl: true
+        });
+
+        $(document).on('click', '.owl-item>div', function () {
+            var $speed = 300;  // in ms
+            $category.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+        });
+
+    });
+</script>
 </html>

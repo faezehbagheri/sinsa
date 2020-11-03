@@ -1,5 +1,5 @@
 .tab-amodi{
-    width: 50%;
+    width: 52%;
     // margin-bottom: 25rem;
 
     
@@ -23,34 +23,98 @@
         flex-flow: row-reverse wrap;
         position: relative;
         cursor: pointer;
+        margin-right: 2rem;
         
         @include respond(phone){display: none;}
 
-        & a{
-            flex:1 0 0; 
-            padding:10px 0; 
-            text-align: center; 
-            text-decoration:none;
-            background-color: $color-primary;
-            border-radius: 25px 25px 0 0;
-            margin-left: 1px;
-            color: #ffff;
-            font-size: 1.5rem;
+        // & a{
+        //     flex:1 0 0; 
+        //     padding:10px 0; 
+        //     text-align: center; 
+        //     text-decoration:none;
+        //     background-color: $color-primary;
+        //     border-radius: 25px 25px 0 0;
+        //     margin-left: 1px;
+        //     color: #ffff;
+        //     font-size: 1.5rem;
 
-            // @include respond(phone){display:none;}
+        //     // @include respond(phone){display:none;}
+        // }
+
+        // & a.active {
+        //     background:rgb(253, 253, 253); 
+        //     border: 3px solid $color-primary;
+        //     border-bottom: none;
+        //     color:#fff;
+
+        //     @include respond(phone){
+        //         font-size: 2rem;
+        //         display:block;
+        //     }
+        // }
+
+       
+    }
+    &__label{
+        width: 13rem;
+        padding:1.1rem 1rem;
+        font-size: 1.4rem;
+        text-align: center;
+        vertical-align: bottom;
+        background-color: $color-primary-dark;
+        margin-right: 3rem;
+        display: inline-block;
+        position: relative;
+        z-index: 0;
+        color: #fff;
+        box-shadow: 0px -2px 6px #a6a6a665;
+    }
+    &__label.active{
+        background-color: $color-secondary-light;
+        z-index: 9;
+        color: #fff !important;
+        
+        &::before{
+            background-color: $color-secondary-light;
+            border-left: 1px solid $color-secondary-light;
         }
 
-        & a.active {
-            background:rgb(253, 253, 253); 
-            border: 3px solid $color-primary;
-            border-bottom: none;
-            color:#fff;
-
-            @include respond(phone){
-                font-size: 2rem;
-                display:block;
-            }
+        &::after{
+            background-color: $color-secondary-light;
+            border-right: 1px solid $color-secondary-light;
         }
+    }
+
+
+    &__label:before,
+    &__label:after {
+        display: block;
+        content: " ";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 3rem;  
+        background-color: $color-primary-dark;
+    }
+
+    &__label:before {
+        left: -17px;
+        transform: skew(-30deg, 0deg);
+        border-left: 1px solid $color-primary-dark;
+        box-shadow: -6px -1px 5px 0px #c5c5c528;
+    }
+    &__label:after {
+        right: -17px;
+        transform: skew(30deg, 0deg);
+        border-right: 1px solid $color-primary-dark;
+        box-shadow: 6px -1px 8px 0px #c5c5c528;
+    }
+
+    &__label:before {
+        border-radius: 10px 0 0 0;
+    }
+    &__label:after {
+        border-radius: 0 10px 0 0;
     }
 
     &__item{

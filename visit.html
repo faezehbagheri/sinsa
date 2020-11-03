@@ -179,7 +179,8 @@
             
         </div>
     </header>
-   
+
+    
     <!-- Desktop Nav -->
     <nav class="navigation flex r-reverse justi-around">
         <div class="navigation__list flex r-reverse justi-between">
@@ -496,7 +497,6 @@
         </div>
     </div>
     </div>
-    
     <!-- Main -->
     <main class="illness-main">       
         <div class="flex r-reverse align-start justi-center">
@@ -602,214 +602,64 @@
                     </ul>
                 </div>
             </div>
-            <!-- دسته بندی داروها -->
-            <div class="category flex column ">
-                <!-- سرچ باکس -->
-                <div class="search" style="width: 100%; height: auto; margin-top: 1rem;">
-                    <form class="search__form flex column justi-center align-center">
-                        <div class="search__box flex justi-center align-center u-margin-bottom-medium " style="width: 100%;">
-                            <div class="search__search-container">
-                                <i class="fas fa-search search__right-icon"></i> 
-                                <input type="text" class="search__input" onkeydown="openSuggestionBox()">
-                                <i class="fas fa-map-marker-alt search__left-icon"></i>
-                            </div>
-                            <button class="search__btn" type="submit">جستجو</button>
-                        </div>
-                        <!-- search suggestion -->
-                        <div class="suggestion">
-                            <div class="suggestion__box">
-                                <div class="suggestion__recent-search flex column justi-around align-end">
-                                    <h3 class="suggestion__header">جستجوهای اخیر</h3>
-                                    <div class="flex r-reverse justi-start align-center">
-                                        <span class="suggestion__recent-search--item">آزمایشگاه مهر</span>
-                                        <span class="suggestion__recent-search--item">آزمایشگاه مهر</span>
-                                        <span class="suggestion__recent-search--item">آزمایشگاه مهر</span>
-                                        <span class="suggestion__recent-search--item">آزمایشگاه مهر</span>
-                                    </div>
-                                </div>
-                                <div class="suggestion__related-words flex column align-end">
-                                    <h3 class="suggestion__header">کلمات مرتبط</h3>
-                                    <div class="suggestion__related-words--items flex column align-end">
-                                        <span class="suggestion__item">مهرگان</span>
-                                        <span class="suggestion__item">مهر طلبی</span>
-                                        <span class="suggestion__item">مهر ورزی</span>
-                                    </div>
-                                    <button class="suggestion__related-words--btn"><i class="fas fa-angle-down suggestion__icon"></i>مشاهده همه</button>
-                                </div>
-                                <div class="suggestion__article flex r-reverse align-center">
-                                    <i class="fas fa-book suggestion__article--icon"></i>
-                                    <div class="suggestion__article--items flex column align-end">
-                                        <span class="suggestion__item">مهرورزی در رابطه چگونه است؟</span>
-                                    </div>
-                                </div>
-                                <div class="suggestion__hospital flex r-reverse align-center">
-                                    <i class="fas fa-hospital suggestion__hospital--icon"></i>
-                                    <div class="suggestion__hospital--items flex column align-end">
-                                        <span class="suggestion__item">بیمارستان مهر_ تهران</span>
-                                        <span class="suggestion__item">بیمارستان مهر_ اصفهان</span>
-                                    </div>
-                                </div>
-                                <div class="suggestion__chat flex r-reverse align-center">
-                                    <i class="fas fa-comment suggestion__chat--icon"></i>
-                                    <div class="suggestion__chat--items flex column align-end">
-                                        <span class="suggestion__item">بیمارستان مهرگان _ یزد</span>
-                                        <span class="suggestion__item">بیمارستان مهر در مقایسه با </span>
-                                        <span class="suggestion__item">به نظرم اینکه توی همه ی بیمارستان به خصوص بیمارستان مهر </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div> 
-                <!-- کاردهای 2 تایی-->
-                <div class="flex r-reverse justi-around" style="width: 100%;">
-                    <div class="card flex column align-center justi-start">
-                        <div class="card__label">
-                            پربازدیدترین ها
-                        </div>
-                        <div class="card__main">
-                            <div class="card__container">
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آپروتیئین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتراکوریوم</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتروپین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتورواستاتین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتنولول</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آزاتیوپرین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آزیتروماسین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آسیکلوویر</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتنولول</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card flex column align-center justi-start">
-                        <div class="card__label">
-                            پربازدیدترین ها
-                        </div>
-                        <div class="card__main">
-                            <div class="card__container">
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتورواستاتین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتنولول</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آزاتیوپرین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آزیتروماسین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آسیکلوویر</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آستمیزول</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آکاربوز</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آزاتیوپرین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آکسار</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آستمیزول</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آسیکلوویر</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
+            
+            <!-- علائم بیماری -->
+            <div class="tab-amodi flex column align-end">      
+                <div class="tab-amodi__container">
+                    <nav class="tab-amodi__multipleTabs tabs">
+                        <a data-trigger="content1" class="tab-amodi__label">مشخصات</a>
+                        <a data-trigger="content2" class="tab-amodi__label">سوالات</a>
+                        <a data-trigger="content3" class="tab-amodi__label active">علائم</a>
+                        <a data-trigger="content4" class="tab-amodi__label">نتیجه</a>
+                    </nav>
+                    <div id="content1" class="tab-amodi__tabcontent">
+                        <div class="visit">
+                            <div class="visit__main" style="width: 96%;">
+                                
                             </div>
                         </div> 
-                    </div>                   
-                </div>
-                <!-- کارد یکی -->
-                <div class="flex r-reverse justi-around" style="width: 100%;">
-                    <div class="card flex column align-center justi-start" style="width: 95%;">
-                        <div class="card__label">
-                            پربازدیدترین ها
-                        </div>
-                        <div class="card__main">
-                            <div class="card__container" style="width: 96%;">
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آپروتیئین</span>
-                                    <div><i class="fas fa-angle-left"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتراکوریوم</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتروپین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتورواستاتین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتنولول</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آزاتیوپرین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آزیتروماسین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آسیکلوویر</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتنولول</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
+                    </div>
+                    <div id="content2" class="tab-amodi__tabcontent">
+                        <div class="visit">
+                            <div class="visit__main" style="width: 96%;">
+                                
                             </div>
-                        </div>
-                    </div>                
-                </div>                  
+                        </div> 
+                    </div>                    
+                    <div id="content3" class="tab-amodi__tabcontent">
+                        <div class="visit">
+                            <div class="visit__container flex column align-center justi-around" style="width: 96%;">
+                                <h3 class="visit__header">علائم خود را برای تشخیص بهتر وارد کنید</h3>
+                                <div class="visit__main flex r-reverse align-center justi-between">
+                                    <div class="visit__search-box flex column">
+                                        <div class="visit__search flex align-center justi-center">
+                                            <input type="text" placeholder="علائم خود را جستجو کنید">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <div class="visit__selected">
+
+                                        </div>
+                                    </div>
+                                    <div class="visit__circle flex align-center justi-center">
+                                        <a href="#" class="flex column align-center"><i class="fas fa-plus"></i>علائم بیشتر</a>
+                                    </div>
+                                    <div class=""></div>
+                                </div>
+                                <div class="visit_buttons flex r-reverse align-center justi-between">
+                                    <button class="visit__prev-btn flex align-center justi-center">بازگشت<i class="fas fa-undo"></i></button>
+                                    <button class="visit__nxt-btn flex align-center justi-center"><i class="fas fa-angle-left"></i>بعدی</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div id="content4" class="tab-amodi__tabcontent">
+                        <div class="visit">
+                            <div class="visit__main" style="width: 96%;">
+                                
+                            </div>
+                        </div> 
+                    </div>
+                </div>                
                 <!-- پرسش و پاسخ -->
                 <div class="flex column align-center">
                     <h2 class="heading-primary">پرسش و پاسخ</h2>
@@ -841,7 +691,7 @@
                         </form>
                     </div>
                 </div>
-            </div>                 
+            </div>
         </div>       
         <img src="./assets/img/Artboard-2.png" class="main__bg">
 
@@ -948,7 +798,7 @@
 
 </body>
 <script>
-    $(function(){
+$(function(){
 
         $('input.filter__input').keyup(function(){
 
