@@ -625,6 +625,10 @@
                                     <p>قدرت درک بیمار</p>
                                 </div>
                                 <button>ثبت نظر</button>
+                                <div>
+                                    <span>79%</span>
+                                    <span></span>
+                                </div>
                             </div>
                         </div>
                         <div id="bazkhord" class="doctors-page__container">
@@ -748,6 +752,14 @@
 </body>
 <script>
     $(document).ready(function () {   
+
+        $('.far').hover(
+            function(){
+                $(this).toggleClass('fas');
+                $(this).toggleClass('doctors-page__icon-active');
+            }
+        )
+
         var activeTab = $(".tabs").find('a.active').data('trigger');
         $('#' + activeTab).show();
 
