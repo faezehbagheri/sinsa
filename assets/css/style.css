@@ -361,14 +361,14 @@ body {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 2px #e6e6e6; }
 
 .doctors-page {
-  width: 60%;
+  width: 63%;
   margin-top: -17rem;
   position: relative; }
   .doctors-page__img-header {
     width: 100%; }
     .doctors-page__img-header img {
       width: 100%;
-      height: 35rem; }
+      height: 40rem; }
   .doctors-page__main {
     position: relative;
     background-color: white;
@@ -412,6 +412,116 @@ body {
     .doctors-page__score i {
       font-size: 2rem;
       color: #e9c915; }
+  .doctors-page__box {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 -1px 5px #A0A0A0;
+    position: relative;
+    height: auto;
+    z-index: 99; }
+  .doctors-page__container {
+    padding: 2rem 0;
+    width: 96%;
+    border-radius: 2rem;
+    margin: 2.5rem auto 0;
+    box-shadow: 1px 1px 5px #A0A0A0; }
+  .doctors-page__title {
+    font-size: 2rem;
+    color: #49838B;
+    margin-bottom: 1rem; }
+  .doctors-page__about-me-1 {
+    text-align: right;
+    width: 70%;
+    padding-right: 2rem; }
+    .doctors-page__about-me-1 p {
+      font-size: 1.6rem;
+      color: #707070; }
+  .doctors-page__about-me-2 {
+    width: 25%; }
+    .doctors-page__about-me-2 button {
+      margin-bottom: 1rem;
+      width: 15rem;
+      height: 3rem;
+      border-radius: 3rem;
+      border: 1px solid #90C73D;
+      outline: none;
+      background-color: inherit;
+      color: #90C73D;
+      font-size: 1.4rem;
+      cursor: pointer; }
+    .doctors-page__about-me-2 span {
+      font-size: 1.8rem;
+      color: #A0A0A0;
+      margin-bottom: 3rem; }
+    .doctors-page__about-me-2 i {
+      font-size: 5rem;
+      color: #A0A0A0;
+      cursor: pointer; }
+  .doctors-page__address-1 {
+    width: 70%;
+    text-align: right;
+    padding-right: 2rem; }
+    .doctors-page__address-1 i {
+      font-size: 2.8rem;
+      color: #90C73D;
+      margin-bottom: 2rem; }
+      .doctors-page__address-1 i:first-of-type {
+        color: #6DC2BE; }
+    .doctors-page__address-1 p {
+      font-size: 1.6rem;
+      color: #707070;
+      margin: 0 1rem 2rem 7rem; }
+      .doctors-page__address-1 p i {
+        font-size: 1.7rem;
+        color: #6DC2BE; }
+  .doctors-page__address-2 {
+    width: 25%; }
+  .doctors-page__ax-1 {
+    width: 70%;
+    text-align: right;
+    padding-right: 2rem; }
+    .doctors-page__ax-1 img {
+      height: 30rem;
+      width: 45rem;
+      border-radius: 2rem;
+      margin-right: 3rem; }
+  .doctors-page__ax-2 {
+    width: 25%; }
+    .doctors-page__ax-2 i {
+      font-size: 2.3rem;
+      color: #A0A0A0; }
+    .doctors-page__ax-2 div {
+      margin-top: 2rem; }
+    .doctors-page__ax-2 p {
+      font-size: 1.4rem;
+      font-weight: 100;
+      margin-right: 2rem;
+      color: #49838B; }
+  .doctors-page__gallery {
+    margin-right: 1rem; }
+    .doctors-page__gallery img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 1.5rem; }
+    .doctors-page__gallery div {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 1.5rem;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.3);
+      cursor: pointer; }
+      .doctors-page__gallery div img {
+        height: 100%;
+        position: relative;
+        z-index: -1; }
+      .doctors-page__gallery div i {
+        font-size: 3rem;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
 
 .doctors__main {
   width: 60%; }
@@ -505,8 +615,7 @@ body {
 
 .filter {
   width: 24rem;
-  margin-left: 5rem;
-  background-color: palevioletred; }
+  margin-left: 5rem; }
   @media only screen and (max-width: 30em) {
     .filter {
       display: none !important; } }
@@ -2455,13 +2564,18 @@ body {
     font-size: 1.4rem;
     text-align: center;
     vertical-align: bottom;
-    background-color: #49838B;
+    background-color: white;
     margin-right: 3rem;
     display: inline-block;
     position: relative;
     z-index: 0;
-    color: #fff;
+    color: #6DC2BE;
     box-shadow: 0px -2px 6px #a6a6a665; }
+    .tab-amodi__label:hover {
+      background-color: #49838B;
+      color: white; }
+      .tab-amodi__label:hover::after, .tab-amodi__label:hover::before {
+        background-color: #49838B; }
   .tab-amodi__label.active {
     background-color: #B4D3D1;
     z-index: 9;
@@ -2479,17 +2593,17 @@ body {
     top: 0;
     height: 100%;
     width: 3rem;
-    background-color: #49838B; }
+    background-color: white; }
   .tab-amodi__label:before {
     left: -17px;
     transform: skew(-30deg, 0deg);
-    border-left: 1px solid #49838B;
-    box-shadow: -6px -1px 5px 0px #c5c5c528; }
+    border-left: 1px solid white;
+    box-shadow: -6px -1px 5px 0px #5c5c5c28; }
   .tab-amodi__label:after {
     right: -17px;
     transform: skew(30deg, 0deg);
-    border-right: 1px solid #49838B;
-    box-shadow: 6px -1px 8px 0px #c5c5c528; }
+    border-right: 1px solid white;
+    box-shadow: 6px -1px 8px 0px #5c5c5c28; }
   .tab-amodi__label:before {
     border-radius: 10px 0 0 0; }
   .tab-amodi__label:after {
@@ -2539,9 +2653,6 @@ body {
   position: relative;
   height: auto;
   z-index: 99; }
-  @media only screen and (max-width: 30em) {
-    .tab-ofoghi__tab {
-      width: 100%; } }
 
 .tab-ofoghi__container {
   width: 100%; }
