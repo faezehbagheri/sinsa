@@ -1,6 +1,6 @@
 .filter{
     width: 24rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
     // background-color: palevioletred;
     // display: none !important;
 
@@ -9,7 +9,7 @@
      }
 
     @include respond(big-desktop){
-        width: 13vw;
+        width: 29rem;
     }
 
     &__main-box{
@@ -63,11 +63,16 @@
         border-radius: 2.5rem;
         box-shadow: 0 2px 5px $color-gray-light;
         margin-bottom: 2rem;
+        overflow: hidden;
         
         h2{
             text-align: center;
             color: $color-gray;
-            margin: 1rem;
+            // margin: 1rem;
+            background-color: $color-secondary-light;
+            width: 100%;
+            padding: 1rem;
+            color: white;
         }
     }
 
@@ -337,9 +342,10 @@
 
     &__list{
         list-style-type: none;
-        height: 15.5rem;
+        height: 21rem;
         overflow-x: hidden;
         overflow-y: scroll;
+        margin-bottom: 3rem;
 
         
         &::-webkit-scrollbar {
@@ -347,11 +353,17 @@
         }
         
         &::-webkit-scrollbar-thumb {
-            color: none;
+            background-color: $color-secondary-light;
+            border-radius: 2rem 0 0 2rem;
+            
         }
 
         li{
             margin: 6px;
+            width: 75%;
+            border-bottom: 1px solid $color-secondary-light;
+            padding: 3px 1.5rem;
+            // background-color: pink;
         }
 
         a,
@@ -359,7 +371,17 @@
         a:visited{
             text-decoration: none;
             font-size: 1.4rem;
+            color: $color-gray;
 
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        
+
+        i{
+            font-size: 1.4rem;
+            color: $color-primary-dark;
         }
     }
 

@@ -364,6 +364,8 @@ body {
   width: 63%;
   margin-top: -17rem;
   position: relative; }
+  .doctors-page__margin-right {
+    margin-right: 3rem; }
   .doctors-page__img-header {
     width: 100%; }
     .doctors-page__img-header img {
@@ -395,7 +397,8 @@ body {
   .doctors-page__name {
     width: 40%;
     text-align: right;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    margin-top: 2rem; }
     .doctors-page__name h2 {
       font-size: 2.5rem;
       color: #E43F6F; }
@@ -403,7 +406,7 @@ body {
       font-size: 1.7rem;
       color: #6DC2BE; }
   .doctors-page__score {
-    margin: 1rem 3rem; }
+    margin: 3rem 5rem; }
     .doctors-page__score span {
       font-size: 1.8rem;
       font-weight: bold;
@@ -425,7 +428,10 @@ body {
     width: 96%;
     border-radius: 2rem;
     margin: 2.5rem auto 0;
-    box-shadow: 1px 1px 5px #A0A0A0; }
+    box-shadow: 1px 1px 5px #A0A0A0;
+    text-align: right; }
+    .doctors-page__container:last-of-type {
+      margin-bottom: 3rem; }
   .doctors-page__title {
     font-size: 2rem;
     color: #49838B;
@@ -482,7 +488,7 @@ body {
     text-align: right;
     padding-right: 2rem; }
     .doctors-page__ax-1 img {
-      height: 30rem;
+      height: 32rem;
       width: 45rem;
       border-radius: 2rem;
       margin-right: 3rem; }
@@ -513,6 +519,9 @@ body {
       color: white;
       font-size: 1.6rem;
       cursor: pointer; }
+    .doctors-page__ax-2 span {
+      font-size: 1.4rem;
+      color: #707070; }
   .doctors-page__gallery {
     margin-right: 1rem; }
     .doctors-page__gallery img {
@@ -537,6 +546,106 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
+  .doctors-page__percent {
+    display: inline-block;
+    text-align: center;
+    width: 5rem;
+    height: 2.5rem;
+    color: white !important;
+    background-color: #6DC2BE;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem; }
+  .doctors-page__article {
+    margin-right: 5rem; }
+  .doctors-page__article-main {
+    margin: 1rem; }
+  .doctors-page__article-item {
+    position: relative;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 5px #A0A0A0;
+    transition: all .4s ease; }
+    .doctors-page__article-item img {
+      height: 18rem;
+      width: 18rem;
+      position: relative;
+      z-index: -1; }
+    .doctors-page__article-item:hover {
+      transform: scale(1.04); }
+    .doctors-page__article-item:hover div > p {
+      opacity: 1; }
+  .doctors-page__article-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; }
+    .doctors-page__article-text div {
+      width: 100%; }
+      .doctors-page__article-text div:first-of-type {
+        height: 6rem;
+        background-color: rgba(0, 0, 0, 0.4); }
+    .doctors-page__article-text h3 {
+      font-size: 1.6rem;
+      color: white; }
+    .doctors-page__article-text span {
+      font-size: 1.1rem;
+      color: #6DC2BE; }
+    .doctors-page__article-text p {
+      color: white;
+      margin-top: 2rem;
+      opacity: 0;
+      transition: all .4s ease; }
+      .doctors-page__article-text p:first-of-type {
+        border: 1px solid white;
+        border-radius: 2rem;
+        padding: 0 1rem; }
+    .doctors-page__article-text i {
+      font-size: 1.3rem;
+      margin-left: 5px; }
+  .doctors-page__box-shadow {
+    box-shadow: none; }
+  .doctors-page__comments {
+    width: 98%;
+    margin: 1rem auto; }
+  .doctors-page__comments-item {
+    width: 48%;
+    height: 20rem;
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px #A0A0A0;
+    margin: 1rem; }
+    .doctors-page__comments-item p {
+      width: 60%;
+      font-size: 1.4rem;
+      color: #707070; }
+    .doctors-page__comments-item span {
+      font-size: 1.5rem;
+      color: white;
+      padding: 5px 1.5rem;
+      display: inline-block;
+      border-radius: 2rem;
+      background-color: #F4E36F;
+      text-align: center;
+      margin-top: -4rem; }
+    .doctors-page__comments-item i {
+      font-size: 1.2rem;
+      margin: 3px; }
+  .doctors-page__comments-photo {
+    margin-top: -4rem; }
+    .doctors-page__comments-photo img {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 100%; }
+    .doctors-page__comments-photo p {
+      font-size: 1.4rem;
+      color: #6DC2BE; }
 
 .doctors__main {
   width: 60%; }
@@ -630,13 +739,13 @@ body {
 
 .filter {
   width: 24rem;
-  margin-left: 5rem; }
+  margin-left: 3rem; }
   @media only screen and (max-width: 30em) {
     .filter {
       display: none !important; } }
   @media only screen and (min-width: 112.5em) {
     .filter {
-      width: 13vw; } }
+      width: 29rem; } }
   .filter__main-box {
     height: 17vh;
     width: 90%;
@@ -673,11 +782,15 @@ body {
     background-color: #fff;
     border-radius: 2.5rem;
     box-shadow: 0 2px 5px #A0A0A0;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    overflow: hidden; }
     .filter__box h2 {
       text-align: center;
       color: #707070;
-      margin: 1rem; }
+      background-color: #B4D3D1;
+      width: 100%;
+      padding: 1rem;
+      color: white; }
   .filter__title {
     font-size: 1.5rem;
     color: #707070;
@@ -867,20 +980,33 @@ body {
     transform: translateY(-40%); }
   .filter__list {
     list-style-type: none;
-    height: 15.5rem;
+    height: 21rem;
     overflow-x: hidden;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    margin-bottom: 3rem; }
     .filter__list::-webkit-scrollbar {
       width: 1rem; }
     .filter__list::-webkit-scrollbar-thumb {
-      color: none; }
+      background-color: #B4D3D1;
+      border-radius: 2rem 0 0 2rem; }
     .filter__list li {
-      margin: 6px; }
+      margin: 6px;
+      width: 75%;
+      border-bottom: 1px solid #B4D3D1;
+      padding: 3px 1.5rem; }
     .filter__list a,
     .filter__list a:link,
     .filter__list a:visited {
       text-decoration: none;
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      color: #707070; }
+      .filter__list a:hover,
+      .filter__list a:link:hover,
+      .filter__list a:visited:hover {
+        transform: scale(1.2); }
+    .filter__list i {
+      font-size: 1.4rem;
+      color: #49838B; }
 
 /* Styling Checkbox Starts */
 .checkbox-label {
@@ -2578,6 +2704,7 @@ body {
     padding: 1.1rem 1rem;
     font-size: 1.4rem;
     text-align: center;
+    text-decoration: none;
     vertical-align: bottom;
     background-color: white;
     margin-right: 3rem;
