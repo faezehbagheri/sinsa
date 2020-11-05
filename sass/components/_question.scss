@@ -1,6 +1,8 @@
 .question{
     position: relative;
     width: 100%;
+
+    @include respond(phone){display: none;}
     
     @font-face {
         font-family: 'Icons';

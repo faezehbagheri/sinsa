@@ -418,7 +418,7 @@
             <div class="mobile-header__search-box box-1">
                 <i class="fas fa-search mobile-header__right-icon"></i> 
                 <input type="text" class="mobile-header__input input-1">
-                <i class="fas fa-bars mobile-header__left-icon" onclick="openSearchAdvanced()"></i>
+                <i class="fas fa-bars mobile-header__left-icon" onclick="openSearchAdvanced('illness')"></i>
             </div>
             <div class="mobile-header__search-box box-2">
                 <i class="fas fa-map-marker-alt  mobile-header__right-icon"></i>
@@ -438,11 +438,10 @@
                         <div class="mobile-category__item item">دارو</div>
                     </div>
                     <button class="mobile-category__btn">جستجو کن</button>
-                    <i class="fas fa-times-circle mobile-category__icon" onclick="colseSearchAdvanced()"></i>
+                    <i class="fas fa-times-circle mobile-category__icon" onclick="colseSearchAdvanced('illness')"></i>
                 </div>
             </div>
         </div>
-        
     </header>
 
     <!-- Right Side Fixed -->
@@ -484,21 +483,6 @@
             </div>
         </div>
     </div>
-
-    <header>
-        <div class="mobile-header__suggestion flex r-reverse align-center"> 
-            <div class="mobile-header__category flex r-reverse align-center owl-carousel" id="dastebansi">
-                <nav class="tabs flex">
-                    <a data-trigger="content01" class="active"><span class="tab-amodi__item">توضیحات</span></a>
-                    <a data-trigger="content02"><span class="tab-amodi__item">بیماری های مرتبط</span></a>
-                    <a data-trigger="content03"><span class="tab-amodi__item">داروها</span></a>
-                    <a data-trigger="content04"><span class="tab-amodi__item">تجهیزات</span></a>
-                    <a data-trigger="content05"><span class="tab-amodi__item">علائم بیماری</span>
-                    </a>
-                </nav>
-            </div>
-        </div>
-    </header>
 
     <!-- Main -->
     <main class="illness-main">
@@ -1020,7 +1004,7 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/img/Artboard-2.png" class="main__bg">
+        <!-- <img src="./assets/img/Artboard-2.png" class="main__bg display"> -->
 
         <!-- دسته بندی سرویس ها -->
         <div class="service">

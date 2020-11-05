@@ -45,7 +45,7 @@ function showAdvancedSearch(){
 }
 
 var showSearchAdvanced = true;
-function openSearchAdvanced(){
+function openSearchAdvanced(page){
     if(showSearchAdvanced){
         var searchBox = document.querySelector(".mobile-header__search");
         searchBox.style.height = "60rem";
@@ -56,14 +56,18 @@ function openSearchAdvanced(){
         document.querySelector(".input-1").style.backgroundColor = "#fff";
         document.querySelector(".box-2").style.backgroundColor = "#fff";
         document.querySelector(".input-2").style.backgroundColor = "#fff";
-        document.querySelector(".mobile-header__suggestion").style.marginTop = "76rem";
+        if(page === 'home'){
+          document.querySelector(".mobile-header__suggestion").style.marginTop = "76rem";
+        }else{
+          document.querySelector(".tab-amodi").style.marginTop = "53rem";
+        }
     }else{
-        colseSearchAdvanced();
+        colseSearchAdvanced(page);
     }
     showSearchAdvanced = !showSearchAdvanced;
 }
 
-function colseSearchAdvanced(){
+function colseSearchAdvanced(page){
     var searchBox = document.querySelector(".mobile-header__search");
     searchBox.style.height = "10rem";
     searchBox.style.overflow = "hidden";
@@ -73,7 +77,11 @@ function colseSearchAdvanced(){
     document.querySelector(".input-2").style.backgroundColor = "#EEF1EF";
     document.querySelector(".box-1").style.backgroundColor = "#EEF1EF";
     document.querySelector(".input-1").style.backgroundColor = "#EEF1EF";
-    document.querySelector(".mobile-header__suggestion").style.marginTop = "25rem";
+    if(page === 'home'){
+      document.querySelector(".mobile-header__suggestion").style.marginTop = "25rem";
+    }else{
+      document.querySelector(".tab-amodi").style.marginTop = "3rem";
+    }
 }
 
 var show = true;

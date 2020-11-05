@@ -79,6 +79,10 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+@media only screen and (max-width: 30em) {
+  .display {
+    display: none; } }
+
 .article {
   width: 99vw;
   transition: all .2s; }
@@ -433,16 +437,22 @@ body {
     .doctors-page__container:last-of-type {
       margin-bottom: 3rem; }
   .doctors-page__title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #49838B;
     margin-bottom: 1rem; }
+    @media only screen and (min-width: 112.5em) {
+      .doctors-page__title {
+        font-size: 2rem; } }
   .doctors-page__about-me-1 {
     text-align: right;
     width: 70%;
     padding-right: 2rem; }
     .doctors-page__about-me-1 p {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       color: #707070; }
+      @media only screen and (min-width: 112.5em) {
+        .doctors-page__about-me-1 p {
+          font-size: 1.6rem; } }
   .doctors-page__about-me-2 {
     width: 25%; }
     .doctors-page__about-me-2 button {
@@ -475,9 +485,12 @@ body {
       .doctors-page__address-1 i:first-of-type {
         color: #6DC2BE; }
     .doctors-page__address-1 p {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       color: #707070;
       margin: 0 1rem 2rem 7rem; }
+      @media only screen and (min-width: 112.5em) {
+        .doctors-page__address-1 p {
+          font-size: 1.6rem; } }
       .doctors-page__address-1 p i {
         font-size: 1.7rem;
         color: #6DC2BE; }
@@ -488,18 +501,25 @@ body {
     text-align: right;
     padding-right: 2rem; }
     .doctors-page__ax-1 img {
-      height: 32rem;
-      width: 45rem;
+      height: 30rem;
+      width: 40rem;
       border-radius: 2rem;
       margin-right: 3rem; }
+      @media only screen and (min-width: 112.5em) {
+        .doctors-page__ax-1 img {
+          height: 32rem;
+          width: 45rem; } }
   .doctors-page__icon-active {
     color: #F4E36F !important; }
   .doctors-page__ax-2 {
     width: 25%; }
     .doctors-page__ax-2 i {
-      font-size: 2.3rem;
+      font-size: 1.8rem;
       color: #A0A0A0;
       cursor: pointer; }
+      @media only screen and (min-width: 112.5em) {
+        .doctors-page__ax-2 i {
+          font-size: 2.3rem; } }
     .doctors-page__ax-2 div {
       margin-top: 1.8rem; }
     .doctors-page__ax-2 p {
@@ -523,7 +543,7 @@ body {
       font-size: 1.4rem;
       color: #707070; }
   .doctors-page__gallery {
-    margin-right: 1rem; }
+    margin-right: 5px; }
     .doctors-page__gallery img {
       width: 8rem;
       height: 8rem;
@@ -549,8 +569,7 @@ body {
   .doctors-page__percent {
     display: inline-block;
     text-align: center;
-    width: 5rem;
-    height: 2.5rem;
+    padding: 2px 1rem;
     color: white !important;
     background-color: #6DC2BE;
     border-radius: 2rem;
@@ -614,7 +633,7 @@ body {
     width: 98%;
     margin: 1rem auto; }
   .doctors-page__comments-item {
-    width: 48%;
+    width: 47%;
     height: 20rem;
     background-color: white;
     border-radius: 2rem;
@@ -2234,6 +2253,9 @@ body {
 .question {
   position: relative;
   width: 100%; }
+  @media only screen and (max-width: 30em) {
+    .question {
+      display: none; } }
 
 @font-face {
   .question {
@@ -2729,9 +2751,9 @@ body {
       .tab-amodi__multipleTabs {
         display: none; } }
   .tab-amodi__label {
-    width: 13rem;
+    width: 11rem;
     padding: 1.1rem 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
     text-decoration: none;
     vertical-align: bottom;
@@ -2740,13 +2762,17 @@ body {
     display: inline-block;
     position: relative;
     z-index: 0;
-    color: #6DC2BE;
+    color: #49838B;
     box-shadow: 0px -2px 6px #a6a6a665; }
     .tab-amodi__label:hover {
       background-color: #49838B;
       color: white; }
       .tab-amodi__label:hover::after, .tab-amodi__label:hover::before {
         background-color: #49838B; }
+    @media only screen and (min-width: 112.5em) {
+      .tab-amodi__label {
+        width: 13rem;
+        font-size: 1.4rem; } }
   .tab-amodi__label.active {
     background-color: #B4D3D1;
     z-index: 9;

@@ -68,7 +68,7 @@ $(document).ready(function () {
 
     $articleDesktop.owlCarousel({
         loop: true,
-        items: 6,
+        items: 5,
     });
 
     $(document).on('click', '.owl-item>div', function () {
