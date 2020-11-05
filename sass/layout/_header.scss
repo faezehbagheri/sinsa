@@ -10,18 +10,20 @@
         top:60px;
         z-index: -10;
     }
-    height: 100vh;
+    height: 71rem;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     // background-position: center;
 
-    &__main{
-        margin: 0 3rem;
-    }
-
+    @include respond(big-desktop){height: 100vh;}
+    
     @include respond(phone){
         display: none;
+    }
+    
+    &__main{
+        margin: 0 3rem;
     }
 
 }

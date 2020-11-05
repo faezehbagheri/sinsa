@@ -1,5 +1,5 @@
 .suggestion{
-    height: 35vh;
+    height: 30rem;
     width: 65%;
     border-radius: 5rem;
     position: relative;
@@ -7,6 +7,7 @@
     left: -7%;
     margin-top: -2.5rem;
     overflow-y: scroll;
+    z-index: 999;
     display: none;
 
     &::-webkit-scrollbar {
@@ -14,10 +15,18 @@
     }
       
     &::-webkit-scrollbar-thumb {
+        color: none;
     }
 
     &__box{
         width: 100%;
+        padding: 1rem;
+    }
+
+    a,
+    a:link,a:visited{
+        text-decoration: none;
+        // color: white;
     }
 
     &__header{
@@ -38,48 +47,49 @@
     }
 
     &__recent-search{
-        height: 10vh;
         border-bottom: 1px solid #fff;
+        padding-bottom: 1rem;
         margin: 1.5rem 2.5rem;
 
         &--item{
-            display: inline-block;
             background-color: #fff;
-            width: 13rem;
-            height: 4rem;
+            padding: 5px 1.5rem;
             border-radius: 2rem;
             margin-left: 1rem;
             text-align: center;
             font-size: 1.6rem;
             color: $color-gray;
+            margin-bottom: 1rem;
         }
     }
 
     &__related-words{
-        height: 15vh;
-        margin: 1.5rem 2.5rem;
+        height: 15rem;
+        margin: 1rem 2.5rem;
         position: relative;
 
         &--items{
-            width: 80%;
+            width: 90%;
             border-bottom: 1px solid #fff;
             margin: 1rem 10%; 
+            padding-bottom: 1rem;
         }
 
         &--btn{
             position: absolute;
-            left: 15%;
+            left: 5%;
             top: 70%;
             background-color: transparent;
             border: none;
             outline: none;
             color: $color-primary-light;
             font-size: 1.7rem;
+            cursor: pointer;
         }
     }
 
     &__article{
-        height: 5vh;
+        // height: 5vh;
         position: relative;
 
         &--icon{
@@ -89,13 +99,13 @@
         }
 
         &--items{
-            width: 75%;
+            width: 82%;
             border-bottom: 1px solid #fff;
+            padding-bottom: 1rem;
         }
     }
 
     &__hospital{
-        height: 10vh;
         position: relative;
 
         &--icon{
@@ -105,14 +115,15 @@
         }
 
         &--items{
-            width: 75%;
+            width: 82%;
             border-bottom: 1px solid #fff;
+            padding-bottom: 1rem;
         }
     }
 
     &__chat{
-        height: 10vh;
         position: relative;
+        padding-bottom: 1rem;
 
         &--icon{
             font-size: 3rem;

@@ -2460,7 +2460,7 @@ body {
 .search {
   height: 50rem;
   width: 70%;
-  margin-top: 4rem;
+  margin-top: 12rem;
   position: relative; }
   @media only screen and (min-width: 112.5em) {
     .search {
@@ -2595,7 +2595,7 @@ body {
         font-size: 3.5rem; } }
 
 .suggestion {
-  height: 35vh;
+  height: 30rem;
   width: 65%;
   border-radius: 5rem;
   position: relative;
@@ -2603,11 +2603,18 @@ body {
   left: -7%;
   margin-top: -2.5rem;
   overflow-y: scroll;
+  z-index: 999;
   display: none; }
   .suggestion::-webkit-scrollbar {
     width: 1rem; }
+  .suggestion::-webkit-scrollbar-thumb {
+    color: none; }
   .suggestion__box {
-    width: 100%; }
+    width: 100%;
+    padding: 1rem; }
+  .suggestion a,
+  .suggestion a:link, .suggestion a:visited {
+    text-decoration: none; }
   .suggestion__header {
     font-size: 1.4rem;
     color: #fff;
@@ -2620,59 +2627,60 @@ body {
     color: #fff;
     margin: .3rem; }
   .suggestion__recent-search {
-    height: 10vh;
     border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
     margin: 1.5rem 2.5rem; }
     .suggestion__recent-search--item {
-      display: inline-block;
       background-color: #fff;
-      width: 13rem;
-      height: 4rem;
+      padding: 5px 1.5rem;
       border-radius: 2rem;
       margin-left: 1rem;
       text-align: center;
       font-size: 1.6rem;
-      color: #707070; }
+      color: #707070;
+      margin-bottom: 1rem; }
   .suggestion__related-words {
-    height: 15vh;
-    margin: 1.5rem 2.5rem;
+    height: 15rem;
+    margin: 1rem 2.5rem;
     position: relative; }
     .suggestion__related-words--items {
-      width: 80%;
+      width: 90%;
       border-bottom: 1px solid #fff;
-      margin: 1rem 10%; }
+      margin: 1rem 10%;
+      padding-bottom: 1rem; }
     .suggestion__related-words--btn {
       position: absolute;
-      left: 15%;
+      left: 5%;
       top: 70%;
       background-color: transparent;
       border: none;
       outline: none;
       color: #90C73D;
-      font-size: 1.7rem; }
+      font-size: 1.7rem;
+      cursor: pointer; }
   .suggestion__article {
-    height: 5vh;
     position: relative; }
     .suggestion__article--icon {
       font-size: 3rem;
       color: #6DC2BE;
       margin: 0  5%; }
     .suggestion__article--items {
-      width: 75%;
-      border-bottom: 1px solid #fff; }
+      width: 82%;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 1rem; }
   .suggestion__hospital {
-    height: 10vh;
     position: relative; }
     .suggestion__hospital--icon {
       font-size: 3rem;
       color: #E43F6F;
       margin: 0  5%; }
     .suggestion__hospital--items {
-      width: 75%;
-      border-bottom: 1px solid #fff; }
+      width: 82%;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 1rem; }
   .suggestion__chat {
-    height: 10vh;
-    position: relative; }
+    position: relative;
+    padding-bottom: 1rem; }
     .suggestion__chat--icon {
       font-size: 3rem;
       color: #90C73D;
@@ -3168,7 +3176,7 @@ body {
     z-index: 99999; }
 
 .header {
-  height: 100vh;
+  height: 71rem;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -3176,11 +3184,14 @@ body {
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/img/PICc.png);
     top: 60px;
     z-index: -10; }
-  .header__main {
-    margin: 0 3rem; }
+  @media only screen and (min-width: 112.5em) {
+    .header {
+      height: 100vh; } }
   @media only screen and (max-width: 30em) {
     .header {
       display: none; } }
+  .header__main {
+    margin: 0 3rem; }
 
 .illness-main {
   height: auto;
