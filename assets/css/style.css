@@ -2444,6 +2444,11 @@ body {
     border-radius: 4rem;
     text-align: center;
     transition: all 2s; }
+    .search-advanced__item a,
+    .search-advanced__item a:link,
+    .search-advanced__item a:visited {
+      text-decoration: none;
+      color: #707070; }
     @media only screen and (min-width: 112.5em) {
       .search-advanced__item {
         width: 15rem; } }
@@ -2603,16 +2608,31 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   left: -7%;
   margin-top: -2.5rem;
-  overflow-y: scroll;
-  z-index: 999;
-  display: none; }
-  .suggestion::-webkit-scrollbar {
-    width: 1rem; }
-  .suggestion::-webkit-scrollbar-thumb {
-    color: none; }
+  z-index: 99;
+  overflow: hidden; }
   .suggestion__box {
     width: 100%;
-    padding: 1rem; }
+    padding: 1rem;
+    height: 30rem;
+    position: relative;
+    overflow-y: scroll; }
+    .suggestion__box::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+      background-color: #F5F5F5;
+      border-radius: 10px; }
+    .suggestion__box::-webkit-scrollbar {
+      width: 10px;
+      background-color: #F5F5F5; }
+    .suggestion__box::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #FFF;
+      background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#6DC2BE), to(#49838B)); }
+  .suggestion__close {
+    font-size: 2.5rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    cursor: pointer; }
   .suggestion a,
   .suggestion a:link, .suggestion a:visited {
     text-decoration: none; }
@@ -2620,7 +2640,7 @@ body {
     font-size: 1.4rem;
     color: #fff;
     font-weight: 100;
-    margin-bottom: 1rem; }
+    margin-bottom: 5px; }
   .suggestion__icon {
     padding-right: 1rem; }
   .suggestion__item {
@@ -2630,7 +2650,7 @@ body {
   .suggestion__recent-search {
     border-bottom: 1px solid #fff;
     padding-bottom: 1rem;
-    margin: 1.5rem 2.5rem; }
+    margin: 2.5rem; }
     .suggestion__recent-search--item {
       background-color: #fff;
       padding: 5px 1.5rem;
@@ -2642,7 +2662,7 @@ body {
       margin-bottom: 1rem; }
   .suggestion__related-words {
     height: 15rem;
-    margin: 1rem 2.5rem;
+    margin: .7rem 2.5rem;
     position: relative; }
     .suggestion__related-words--items {
       width: 90%;
@@ -3177,7 +3197,7 @@ body {
     z-index: 99999; }
 
 .header {
-  height: 71rem;
+  height: 75rem;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover; }

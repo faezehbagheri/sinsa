@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
     <link href="./assets/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/function.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" />
+    <script src="./assets/js/jqueryFunction.js"></script>
         
     <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
       
@@ -60,17 +57,10 @@
             </div>
         </div>
         <div class="flex justi-center align-center map-header__box2">
-<<<<<<< HEAD
-            <div class="map-header__filter-box2">
-                <div class="map-header__filter-header">
-                    <h3 class="map-header__filter-title flex align-center justi-center" onclick="openFilterOption_map('1')">
-                        <i class="fas fa-angle-down filter__arrow-icon"></i>محله
-=======
             <div class="map-header__filter-box">
                 <div class="map-header__filter-header">
                     <h3 class="map-header__filter-title flex align-center justi-center" onclick="openFilterOption_map('4')">
                         <i class="fas fa-angle-down filter__arrow-icon"></i>دسته بندی تخصص ها
->>>>>>> e752576ff429a6300687e7707ec76d97b34c9f74
                     </h3>
                 </div>
                 <div class="map-header__filter-optios" id="map-optios-4">
@@ -546,27 +536,4 @@
         </div>
     </main>
 </body>
-<script>
-
-    $(document).ready(function () {
-
-        var $filter = $("#filter"); 
-
-
-        /// filter ///
-        $filter.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $filter.owlCarousel({
-            loop: true,
-            items: 1,
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $filter.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-    });
-</script>
 </html>

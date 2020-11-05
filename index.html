@@ -6,33 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
     <link href="./assets/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/function.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" /> -->
-
-        <script src="/assets/js/jquery.js"></script>
-        <script src="/assets/js/owl.carousel.min.js"></script>
-
-        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <script src="./assets/js/jqueryFunction.js"></script>
 
     <title>Sinsa</title>
 </head>
 
-<body>
-
-    
+<body>   
     <!-- منو موبایل -->
     <nav class="mobile-menu flex column justi-around align-end " id="menu">
         <div class="mobile-menu__content">
@@ -179,8 +168,7 @@
             
         </div>
     </header>
-
-    
+   
     <!-- Desktop Nav -->
     <nav class="navigation flex r-reverse justi-around">
         <div class="navigation__list flex r-reverse justi-between">
@@ -459,8 +447,7 @@
     </nav>
     
     <!-- Desktop Header -->
-    <header class="header homepage">
-            
+    <header class="header homepage">           
         <div class="header__main flex r-reverse justi-center align-center">            
             <!-- Search Box -->
             <div class="search">
@@ -477,6 +464,7 @@
                     <!-- search suggestion -->
                     <div class="suggestion">
                         <div class="suggestion__box">
+                            <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox()"></i>
                             <div class="suggestion__recent-search flex column justi-around align-end">
                                 <h3 class="suggestion__header">جستجوهای اخیر</h3>
                                 <div class="flex r-reverse justi-start align-center wrap">
@@ -543,7 +531,7 @@
                             </div>
                         </div>
                         <div class="flex r-reverse align-center justi-center">
-                            <div class="search__advanced-btn" id="btn-1" onclick="showSearchAdvanced()"></div>
+                            <div class="search__advanced-btn" id="btn-1" onclick="showAdvancedSearch()"></div>
                             <span class="search__advanced-label" id="label">جستجوی پیشرفته</span>
                         </div>
                     </div>
@@ -1192,152 +1180,5 @@
 
 </body>
 <script>
-
-    $(document).ready(function () {    
-        
-        var search = $("#search");
-        var $doctors = $("#doctors");
-        var $comment = $("#comment");
-        var $suggestion = $("#suggestion");
-        var $specialty = $('#specialty');
-        var $article = $('#article');
-        var $category = $('#category');
-        var $submenu = $(".submenu");
-
-
-        /// submenu ///
-        $submenu.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $submenu.owlCarousel({
-            loop: true,
-            items: 1,
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $submenu.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-
-        search.owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            navText: [
-                "<i class='fa fa-angle-left' style='font-size: 2rem; color: #fff; margin 5rem;'></i>",
-                "<i class='fa fa-angle-right' style='font-size: 2rem; color: #fff; margin 5rem;'></i>"
-            ],
-            responsive: {
-                0: {
-                    items: 5
-                },
-                600: {
-                    items: 5
-                },
-                1000: {
-                    items: 6
-                }
-            }
-        });
-
-
-        $comment.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $comment.owlCarousel({
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            items: 4,
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $comment.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-
-        /// doctors ///
-        $doctors.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $doctors.owlCarousel({
-            center: true,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            items: 5,
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $doctors.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-
-        /// suggestion ///
-        $suggestion.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $suggestion.owlCarousel({
-            items: 4,
-            rtl: true
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $suggestion.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-
-        /// specialty ///
-        $specialty.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $specialty.owlCarousel({
-            items: 4,
-            rtl: true
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $specialty.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-
-        /// article ///
-        $article.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $article.owlCarousel({
-            items: 1,
-            rtl: true
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $article.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-        
-        /// category ///
-        $category.children().each(function (index) {
-            $(this).attr('data-position', index);
-        });
-
-        $category.owlCarousel({
-            items: 4,
-            rtl: true
-        });
-
-        $(document).on('click', '.owl-item>div', function () {
-            var $speed = 300;  // in ms
-            $category.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-        });
-
-    });
 </script>
 </html>

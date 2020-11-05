@@ -29,24 +29,19 @@ function clicked5(){
     document.querySelector("#article-5").classList.remove("article__main-inactive");
 }
 
-function showSearchAdvanced(){
+var showAdvanced = true;
+function showAdvancedSearch(){
     var label = document.querySelector(".search__advanced-label");
     var searchAdvanced= document.querySelector(".search-advanced");
 
-    if( searchAdvanced.style.display === "none" ){
-        label.style.display = "none";
-    
-        searchAdvanced.style.display = "block";
-    
-        document.querySelector(".search__advanced-btn").style.backgroundImage = "url(../../img/iconic-ios-close-circle-outline@2x.png)";
-        document.querySelector(".search__advanced-btn").style.backgroundColor = "#E43F6F"; 
+    if( showAdvanced ){
+        label.style.display = "none";    
+        searchAdvanced.style.display = "block"; 
     }else{
         label.style.display = "block";
-    
         searchAdvanced.style.display = "none";
-    
-        document.querySelector(".search__advanced-btn").style.backgroundImage = "url(../../img/advanced@2x.png)";
     }
+    showAdvanced = !showAdvanced;
 }
 
 var showSearchAdvanced = true;
@@ -192,6 +187,12 @@ function openSuggestionBox(){
         document.querySelector(".suggestion").style.display= "none"; 
         document.querySelector(".search__advanced").style.display = "flex";
     }
+}
+
+function colseSuggestionBox(){
+  // document.querySelector(".search__input").value= '';
+  document.querySelector(".suggestion").style.display= "none"; 
+  document.querySelector(".search__advanced").style.display = "flex";
 }
 
 function toggleSearchBox(){
