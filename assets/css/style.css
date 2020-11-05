@@ -991,7 +991,7 @@ body {
       border-radius: 2rem 0 0 2rem; }
     .filter__list li {
       margin: 6px;
-      width: 75%;
+      width: 85%;
       border-bottom: 1px solid #B4D3D1;
       padding: 3px 1.5rem; }
     .filter__list a,
@@ -999,7 +999,8 @@ body {
     .filter__list a:visited {
       text-decoration: none;
       font-size: 1.4rem;
-      color: #707070; }
+      color: #707070;
+      text-align: right; }
       .filter__list a:hover,
       .filter__list a:link:hover,
       .filter__list a:visited:hover {

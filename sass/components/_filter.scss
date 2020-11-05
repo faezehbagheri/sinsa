@@ -360,7 +360,7 @@
 
         li{
             margin: 6px;
-            width: 75%;
+            width: 85%;
             border-bottom: 1px solid $color-secondary-light;
             padding: 3px 1.5rem;
             // background-color: pink;
@@ -372,6 +372,7 @@
             text-decoration: none;
             font-size: 1.4rem;
             color: $color-gray;
+            text-align: right;
 
             &:hover{
                 transform: scale(1.2);
