@@ -1,16 +1,23 @@
 .filter{
     width: 24rem;
     margin-left: 3rem;
-    // background-color: palevioletred;
-    // display: none !important;
+    transition: height 1s ease,
+                opacity .2s;
 
     @include respond(phone){
-    //  display: none !important;
+        // display: none !important;
+        height: 0;
+        opacity: 0;
         width: 95%;
     }
 
     @include respond(big-desktop){
         width: 29rem;
+    }
+
+    &__show{
+        height: 170rem;
+        opacity: 1;
     }
 
     &__main-box{
@@ -191,7 +198,8 @@
         background-color: #fff;
 
         @include respond(phone){
-            height: 8rem;
+            height: 5rem !important;
+            margin-top: 2rem;
         }
     }
 
@@ -209,6 +217,10 @@
             font-size: 1.2rem;
             color: rgb(196, 193, 193);
             text-align: right;
+
+            @include respond(phone){
+                font-size: 1.8rem;
+            }
         }
     }
 
@@ -225,8 +237,13 @@
 
     &__search-icon{
         font-size: 2rem;
+        color: $color-gray !important;
         @include centerABS();
         color: #fff;
+
+        @include respond(phone){
+            font-size: 2.8rem !important;
+        }
     }
 
     &__alphba-search{
@@ -236,11 +253,21 @@
         background-color: #fff;
         border-radius: 2rem;
         box-shadow: 1px 1px 5px $color-gray-light;
+        margin-bottom: 5rem;
+
+        @include respond(phone){
+            height: 85rem;
+        }
 
         & h3{
             color: $color-gray;
             padding: 1.5rem;
             font-size: 1.3rem;
+
+            @include respond(phone){
+                padding: 2rem;   
+                font-size: 2.3rem;
+            }
         }
     }
 
@@ -271,15 +298,23 @@
             font-weight: normal;
             background: #fff;
             cursor: pointer;
-            transition: all .2s ease;
+            transition: all .3s ease;
             color: $color-gray;
             outline: none;
-            // position: relative;
+
+            @include respond(phone){
+                height: 6rem;
+                font-size: 2rem;
+            }
         } 
         
         [id^="tab"]:checked + label { 
             background: $color-gray-lighter;
             font-size: 1.3rem;
+
+            @include respond(phone){
+                font-size: 2.2rem;
+            }
         }
         
         [id^="tab"]:checked ~ [id^="tab-content"] {
@@ -296,6 +331,10 @@
         position: absolute;
         left: 0; 
         background: $color-gray-lighter;
+
+        @include respond(phone){
+            height: 65rem;   
+        }
 
         a,
         a:link,
@@ -315,6 +354,11 @@
             text-align: center;
             transition: all .3s ease;
 
+            @include respond(phone){
+                height: 6rem;
+                font-size: 2.2rem;
+            }
+
             &:hover{
                 transform: scale(1.2);
                 background-color: $color-primary-light;
@@ -323,7 +367,6 @@
             }
         }
     } 
-
     
     &__buttons{
         width: 100%;
@@ -378,6 +421,10 @@
         overflow-y: scroll;
         margin-bottom: 3rem;
 
+        @include respond(phone){
+            height: 30rem;   
+        }
+
         
         &::-webkit-scrollbar {
             width: 1rem;
@@ -394,7 +441,10 @@
             width: 85%;
             border-bottom: 1px solid $color-secondary-light;
             padding: 3px 1.5rem;
-            // background-color: pink;
+
+            @include respond(phone){
+                padding: 1rem 1.5rem;
+            }
         }
 
         a,
@@ -408,12 +458,20 @@
             &:hover{
                 transform: scale(1.2);
             }
+
+            @include respond(phone){
+                font-size: 2rem;
+            }
         }
         
 
         i{
             font-size: 1.4rem;
             color: $color-primary-dark;
+
+            @include respond(phone){
+                font-size: 2rem;   
+            }
         }
     }
 

@@ -112,7 +112,17 @@ $(document).ready(function () {
 
     $articleDesktop.owlCarousel({
         loop: true,
-        items: 5,
+        responsive: {
+            0: {
+                items: 3
+            },
+            400: {
+                items: 4
+            },
+            1000: {
+                items: 6
+            }
+        }
     });
 
     $(document).on('click', '.owl-item>div', function () {

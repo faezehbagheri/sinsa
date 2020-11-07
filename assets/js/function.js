@@ -600,3 +600,7 @@ function changeListType(id){
 
   largeType = !largeType;
 }
+
+function openMobileFilter(){
+  document.querySelector('.filter').classList.toggle("filter__show");
+}

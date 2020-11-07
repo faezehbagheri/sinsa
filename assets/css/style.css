@@ -429,10 +429,18 @@ body {
   width: 63%;
   margin-top: -17rem;
   position: relative; }
+  @media only screen and (max-width: 30em) {
+    .doctors-page {
+      width: 99%;
+      margin-top: 4rem;
+      align-items: center !important; } }
   .doctors-page__margin-right {
     margin-right: 3rem; }
   .doctors-page__img-header {
     width: 100%; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__img-header {
+        display: none; } }
     .doctors-page__img-header img {
       width: 100%;
       height: 40rem; }
@@ -443,6 +451,9 @@ body {
     border-radius: 2rem 2rem 0 0;
     width: 100%;
     height: auto; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__main {
+        padding-top: 1rem; } }
   .doctors-page__photo {
     height: 20rem;
     width: 20rem;
@@ -450,6 +461,10 @@ body {
     background-color: white;
     position: relative;
     top: -10rem; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__photo {
+        top: 0;
+        margin-bottom: 1rem; } }
     .doctors-page__photo img {
       height: 17rem;
       width: 17rem;
@@ -464,14 +479,26 @@ body {
     text-align: right;
     margin-right: 2rem;
     margin-top: 2rem; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__name {
+        width: 60%; } }
     .doctors-page__name h2 {
       font-size: 2.5rem;
       color: #E43F6F; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__name h2 {
+          font-size: 3rem; } }
     .doctors-page__name h3 {
       font-size: 1.7rem;
       color: #6DC2BE; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__name h3 {
+          font-size: 2rem; } }
   .doctors-page__score {
     margin: 3rem 5rem; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__score {
+        display: none !important; } }
     .doctors-page__score span {
       font-size: 1.8rem;
       font-weight: bold;
@@ -488,6 +515,9 @@ body {
     position: relative;
     height: auto;
     z-index: 99; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__box {
+        box-shadow: none; } }
   .doctors-page__container {
     padding: 2rem 0;
     width: 96%;
@@ -497,6 +527,10 @@ body {
     text-align: right; }
     .doctors-page__container:last-of-type {
       margin-bottom: 3rem; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__container {
+        flex-direction: column !important;
+        align-items: center !important; } }
   .doctors-page__title {
     font-size: 1.8rem;
     color: #49838B;
@@ -504,18 +538,32 @@ body {
     @media only screen and (min-width: 112.5em) {
       .doctors-page__title {
         font-size: 2rem; } }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__title {
+        font-size: 2.2rem; } }
   .doctors-page__about-me-1 {
     text-align: right;
     width: 70%;
     padding-right: 2rem; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__about-me-1 {
+        width: 95%;
+        margin-bottom: 4rem; } }
     .doctors-page__about-me-1 p {
       font-size: 1.4rem;
       color: #707070; }
       @media only screen and (min-width: 112.5em) {
         .doctors-page__about-me-1 p {
           font-size: 1.6rem; } }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__about-me-1 p {
+          font-size: 1.8rem;
+          text-align: justify; } }
   .doctors-page__about-me-2 {
     width: 25%; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__about-me-2 {
+        width: 95%; } }
     .doctors-page__about-me-2 button {
       margin-bottom: 1rem;
       width: 15rem;
@@ -527,40 +575,73 @@ body {
       color: #90C73D;
       font-size: 1.4rem;
       cursor: pointer; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__about-me-2 button {
+          height: 5rem;
+          width: 18rem;
+          font-size: 1.8rem; } }
     .doctors-page__about-me-2 span {
       font-size: 1.8rem;
       color: #A0A0A0;
       margin-bottom: 3rem; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__about-me-2 span {
+          font-size: 2rem; } }
     .doctors-page__about-me-2 i {
       font-size: 5rem;
       color: #A0A0A0;
       cursor: pointer; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__about-me-2 i {
+          font-size: 6rem; } }
   .doctors-page__address-1 {
     width: 70%;
     text-align: right;
     padding-right: 2rem; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__address-1 {
+        width: 95%; } }
     .doctors-page__address-1 i {
       font-size: 2.8rem;
       color: #90C73D;
       margin-bottom: 2rem; }
       .doctors-page__address-1 i:first-of-type {
         color: #6DC2BE; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__address-1 i {
+          font-size: 3rem; } }
     .doctors-page__address-1 p {
       font-size: 1.4rem;
       color: #707070;
       margin: 0 1rem 2rem 7rem; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__address-1 p {
+          font-size: 1.8rem;
+          margin: 0 1rem 1rem 4rem; } }
       @media only screen and (min-width: 112.5em) {
         .doctors-page__address-1 p {
           font-size: 1.6rem; } }
       .doctors-page__address-1 p i {
         font-size: 1.7rem;
         color: #6DC2BE; }
+        @media only screen and (max-width: 30em) {
+          .doctors-page__address-1 p i {
+            font-size: 2rem; } }
   .doctors-page__address-2 {
     width: 25%; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__address-2 {
+        width: 95%;
+        margin-top: 4rem; } }
   .doctors-page__ax-1 {
     width: 70%;
     text-align: right;
     padding-right: 2rem; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__ax-1 {
+        width: 95%;
+        padding: 0;
+        margin: auto; } }
     .doctors-page__ax-1 img {
       height: 30rem;
       width: 40rem;
@@ -570,10 +651,17 @@ body {
         .doctors-page__ax-1 img {
           height: 32rem;
           width: 45rem; } }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__ax-1 img {
+          margin: 0; } }
   .doctors-page__icon-active {
     color: #F4E36F !important; }
   .doctors-page__ax-2 {
     width: 25%; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__ax-2 {
+        width: 95%;
+        margin-top: 3rem; } }
     .doctors-page__ax-2 i {
       font-size: 1.8rem;
       color: #A0A0A0;
@@ -581,6 +669,9 @@ body {
       @media only screen and (min-width: 112.5em) {
         .doctors-page__ax-2 i {
           font-size: 2.3rem; } }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__ax-2 i {
+          font-size: 2.5rem; } }
     .doctors-page__ax-2 div {
       margin-top: 1.8rem; }
     .doctors-page__ax-2 p {
@@ -588,6 +679,9 @@ body {
       font-weight: 100;
       margin-right: 2rem;
       color: #49838B; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__ax-2 p {
+          font-size: 1.8rem; } }
     .doctors-page__ax-2 button {
       margin-top: 2rem;
       width: 15rem;
@@ -600,9 +694,17 @@ body {
       color: white;
       font-size: 1.6rem;
       cursor: pointer; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__ax-2 button {
+          width: 18rem;
+          height: 5rem;
+          font-size: 2rem; } }
     .doctors-page__ax-2 span {
       font-size: 1.4rem;
       color: #707070; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__ax-2 span {
+          font-size: 1.8rem; } }
   .doctors-page__gallery {
     margin-right: 5px; }
     .doctors-page__gallery img {
@@ -640,6 +742,9 @@ body {
     margin-right: 5rem; }
   .doctors-page__article-main {
     margin: 1rem; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__article-main {
+        display: none; } }
   .doctors-page__article-item {
     position: relative;
     height: 15rem;
@@ -819,13 +924,19 @@ body {
 
 .filter {
   width: 24rem;
-  margin-left: 3rem; }
+  margin-left: 3rem;
+  transition: height 1s ease, opacity .2s; }
   @media only screen and (max-width: 30em) {
     .filter {
+      height: 0;
+      opacity: 0;
       width: 95%; } }
   @media only screen and (min-width: 112.5em) {
     .filter {
       width: 29rem; } }
+  .filter__show {
+    height: 170rem;
+    opacity: 1; }
   .filter__main-box {
     height: 17vh;
     width: 90%;
@@ -944,7 +1055,8 @@ body {
     background-color: #fff; }
     @media only screen and (max-width: 30em) {
       .filter__search-box {
-        height: 8rem; } }
+        height: 5rem !important;
+        margin-top: 2rem; } }
   .filter__input {
     height: 96%;
     width: 72%;
@@ -958,6 +1070,9 @@ body {
       font-size: 1.2rem;
       color: #c4c1c1;
       text-align: right; }
+      @media only screen and (max-width: 30em) {
+        .filter__input::placeholder {
+          font-size: 1.8rem; } }
   .filter__search-btn {
     background-color: #6DC2BE;
     width: 20%;
@@ -969,22 +1084,34 @@ body {
     cursor: pointer; }
   .filter__search-icon {
     font-size: 2rem;
+    color: #707070 !important;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff; }
+    @media only screen and (max-width: 30em) {
+      .filter__search-icon {
+        font-size: 2.8rem !important; } }
   .filter__alphba-search {
     height: 59rem;
     width: 90%;
     overflow: hidden;
     background-color: #fff;
     border-radius: 2rem;
-    box-shadow: 1px 1px 5px #A0A0A0; }
+    box-shadow: 1px 1px 5px #A0A0A0;
+    margin-bottom: 5rem; }
+    @media only screen and (max-width: 30em) {
+      .filter__alphba-search {
+        height: 85rem; } }
     .filter__alphba-search h3 {
       color: #707070;
       padding: 1.5rem;
       font-size: 1.3rem; }
+      @media only screen and (max-width: 30em) {
+        .filter__alphba-search h3 {
+          padding: 2rem;
+          font-size: 2.3rem; } }
   .filter__tabs {
     width: 100%;
     list-style: none;
@@ -1007,12 +1134,19 @@ body {
       font-weight: normal;
       background: #fff;
       cursor: pointer;
-      transition: all .2s ease;
+      transition: all .3s ease;
       color: #707070;
       outline: none; }
+      @media only screen and (max-width: 30em) {
+        .filter__tabs label {
+          height: 6rem;
+          font-size: 2rem; } }
     .filter__tabs [id^="tab"]:checked + label {
       background: #EEF1EF;
       font-size: 1.3rem; }
+      @media only screen and (max-width: 30em) {
+        .filter__tabs [id^="tab"]:checked + label {
+          font-size: 2.2rem; } }
     .filter__tabs [id^="tab"]:checked ~ [id^="tab-content"] {
       display: flex !important; }
   .filter__tab-content {
@@ -1024,6 +1158,9 @@ body {
     position: absolute;
     left: 0;
     background: #EEF1EF; }
+    @media only screen and (max-width: 30em) {
+      .filter__tab-content {
+        height: 65rem; } }
     .filter__tab-content a,
     .filter__tab-content a:link,
     .filter__tab-content a:visited {
@@ -1041,6 +1178,12 @@ body {
       text-decoration: none;
       text-align: center;
       transition: all .3s ease; }
+      @media only screen and (max-width: 30em) {
+        .filter__tab-content a,
+        .filter__tab-content a:link,
+        .filter__tab-content a:visited {
+          height: 6rem;
+          font-size: 2.2rem; } }
       .filter__tab-content a:hover,
       .filter__tab-content a:link:hover,
       .filter__tab-content a:visited:hover {
@@ -1088,6 +1231,9 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 30em) {
+      .filter__list {
+        height: 30rem; } }
     .filter__list::-webkit-scrollbar {
       width: 1rem; }
     .filter__list::-webkit-scrollbar-thumb {
@@ -1098,6 +1244,9 @@ body {
       width: 85%;
       border-bottom: 1px solid #B4D3D1;
       padding: 3px 1.5rem; }
+      @media only screen and (max-width: 30em) {
+        .filter__list li {
+          padding: 1rem 1.5rem; } }
     .filter__list a,
     .filter__list a:link,
     .filter__list a:visited {
@@ -1109,9 +1258,17 @@ body {
       .filter__list a:link:hover,
       .filter__list a:visited:hover {
         transform: scale(1.2); }
+      @media only screen and (max-width: 30em) {
+        .filter__list a,
+        .filter__list a:link,
+        .filter__list a:visited {
+          font-size: 2rem; } }
     .filter__list i {
       font-size: 1.4rem;
       color: #49838B; }
+      @media only screen and (max-width: 30em) {
+        .filter__list i {
+          font-size: 2rem; } }
 
 /* Styling Checkbox Starts */
 .checkbox-label {
@@ -3338,7 +3495,8 @@ body {
   @media only screen and (max-width: 30em) {
     .illness-main {
       margin-top: 2rem;
-      flex-direction: column !important; } }
+      flex-direction: column !important;
+      align-items: center !important; } }
   @media only screen and (min-width: 112.5em) {
     .illness-main {
       height: auto; } }
@@ -3467,6 +3625,9 @@ body {
     font-size: 3rem;
     color: #fff;
     margin: 1.5rem; }
+  .mobile-header__text {
+    font-size: 1.4rem;
+    color: white; }
   .mobile-header__filter {
     margin-top: 25rem;
     box-shadow: 0 4px 7px -2px #dbd9d9;
@@ -3516,7 +3677,8 @@ body {
       border-radius: 5rem;
       border: 1px solid #6DC2BE;
       text-align: center;
-      padding: 1.5rem; }
+      padding: 1.5rem;
+      text-decoration: none; }
       @media only screen and (max-width: 22.5em) {
         .mobile-header__multipleTabs a {
           width: 14rem; } }

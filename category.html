@@ -134,7 +134,10 @@
         <div class="mobile-header__head flex r-reverse justi-between align-center">
             <a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a>
             <h2 class="heading-primary">بیماری ها</h2>
-            <i class="fas fa-filter mobile-header__icon"></i>
+            <div class="flex column align-center">
+                <i class="fas fa-filter mobile-header__icon" onclick="openMobileFilter()"></i>
+                <span class="mobile-header__text">مشاهده فیلتر</span>
+            </div>
         </div>
         <!-- سرچ -->
         <div class="mobile-header__search" id="mobile-search">
@@ -167,14 +170,14 @@
         </div>        
         <!-- فیلتر  -->
         <div class="mobile-header__filter flex r-reverse align-center">       
-            <nav class="mobile-header__multipleTabs tabs-mobile flex r-reverse align-center owl-carousel" id="mobile-filter">
+            <!-- <nav class="mobile-header__multipleTabs tabs-mobile flex r-reverse align-center owl-carousel" id="mobile-filter">
                 <a data-trigger="content01" class="active item">معرفی</a>
                 <a data-trigger="content02" class="item">علائم</a>
                 <a data-trigger="content03" class="item">داروها</a>
                 <a data-trigger="content04" class="item">درمان</a>
                 <a data-trigger="content05" class="item">عوراض</a>
                 <a data-trigger="content02" class="item">کلینیک</a>
-            </nav>
+            </nav> -->
         </div>
     </header>
    
@@ -549,12 +552,12 @@
                     <input type="text" class="filter__input" placeholder="جستجو">
                 </div>
                 <ul class="filter__list flex column align-center">
-                    <li class=" flex r-reverse justi-between"><a href="#"> بیماری های مخصوص دستگاه گوارش انسان </a><i class="fas fa-angle-right"></i></li>
-                    <li class=" flex r-reverse justi-between"><a href="#"> مغز و استخوان</a><i class="fas fa-angle-right"></i></li>
-                    <li class=" flex r-reverse justi-between"><a href="#"> خون و سرطان</a><i class="fas fa-angle-right"></i></li>
-                    <li class=" flex r-reverse justi-between"><a href="#">گوارشی و کبد</a><i class="fas fa-angle-right"></i></li>
-                    <li class=" flex r-reverse justi-between"><a href="#">کودکان</a><i class="fas fa-angle-right"></i></li>
-                    <li class=" flex r-reverse justi-between"><a href="#">همه ی بیماری ها</a><i class="fas fa-angle-right"></i></li>
+                    <li class=" flex r-reverse align-center justi-between"><a href="#"> بیماری های مخصوص دستگاه گوارش انسان </a><i class="fas fa-angle-right"></i></li>
+                    <li class=" flex r-reverse align-center justi-between"><a href="#"> مغز و استخوان</a><i class="fas fa-angle-right"></i></li>
+                    <li class=" flex r-reverse align-center justi-between"><a href="#"> خون و سرطان</a><i class="fas fa-angle-right"></i></li>
+                    <li class=" flex r-reverse align-center justi-between"><a href="#">گوارشی و کبد</a><i class="fas fa-angle-right"></i></li>
+                    <li class=" flex r-reverse align-center justi-between"><a href="#">کودکان</a><i class="fas fa-angle-right"></i></li>
+                    <li class=" flex r-reverse align-center justi-between"><a href="#">همه ی بیماری ها</a><i class="fas fa-angle-right"></i></li>
                 </ul>
             </div>
             <!-- سرچ باکس -->

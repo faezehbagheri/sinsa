@@ -21,6 +21,11 @@
         margin: 1.5rem;
     }
 
+    &__text{
+        font-size: 1.4rem;
+        color: white;
+    }
+
     &__filter{
         margin-top: 25rem;
         box-shadow: 0 4px 7px -2px #dbd9d9;
@@ -86,13 +91,13 @@
             border: 1px solid $color-primary;
             text-align: center;
             padding: 1.5rem;
+            text-decoration: none;
 
             @include respond(phone-small){
                 width: 14rem;
             }
         }
-    }
-    
+    }    
 
     &__circle{
         height: 13rem;
@@ -183,6 +188,7 @@
 
         @include respond(phone-small){font-size: 4rem;}
     }
+
     &__left-icon{
         font-size: 4rem;
         position: absolute;
@@ -193,7 +199,6 @@
 
         @include respond(phone-small){font-size: 4rem;}
     }
-
 
     &__category{
         margin: 2rem 0;

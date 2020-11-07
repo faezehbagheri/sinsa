@@ -3,6 +3,12 @@
     margin-top: -17rem;
     position: relative;
 
+    @include respond(phone){
+        width: 99%;
+        margin-top: 4rem;
+        align-items: center !important;
+    }
+
     &__margin-right{
         margin-right: 3rem;
     }
@@ -10,6 +16,10 @@
     &__img-header{
         // height: 20rem;
         width: 100%;
+
+        @include respond(phone){
+            display: none;
+        }
 
         img{
             width: 100%;
@@ -24,6 +34,11 @@
         border-radius: 2rem 2rem 0 0;
         width: 100%;
         height: auto;
+
+        @include respond(phone){
+            // background-color: $color-gray-lighter;
+            padding-top: 1rem;
+        }
     }
 
     &__photo{
@@ -34,6 +49,11 @@
         position: relative;
         top: -10rem;
         // left: 10%;
+
+        @include respond(phone){
+            top: 0;
+            margin-bottom: 1rem;
+        }
 
         img{
             height: 17rem;
@@ -50,19 +70,35 @@
         margin-right: 2rem;
         margin-top: 2rem;
 
+        @include respond(phone){
+            width: 60%;
+        }
+
         h2{
             font-size: 2.5rem;
             color: $color-pink;
+
+            @include respond(phone){
+                font-size: 3rem;
+            }
         }
 
         h3{
             font-size: 1.7rem;
             color: $color-primary;
+
+            @include respond(phone){
+                font-size: 2rem;
+            }
         }
     }
 
     &__score{
         margin: 3rem 5rem;
+
+        @include respond(phone){
+            display: none !important;
+        }
 
         span{
             font-size: 1.8rem;
@@ -85,6 +121,10 @@
         position: relative;
         height: auto;
         z-index: 99;
+
+        @include respond(phone){
+            box-shadow: none;
+        }
     }
 
     &__container{
@@ -99,6 +139,11 @@
         &:last-of-type{
             margin-bottom: 3rem;
         }
+
+        @include respond(phone){
+            flex-direction: column !important;
+            align-items: center !important;
+        }
     }
 
     &__title{
@@ -107,6 +152,10 @@
         margin-bottom: 1rem;
 
         @include respond(big-desktop){font-size: 2rem;}
+
+        @include respond(phone){
+            font-size: 2.2rem;
+        }
     }
 
     &__about-me-1{
@@ -114,16 +163,30 @@
         width: 70%;
         padding-right: 2rem;
 
+        @include respond(phone){
+            width: 95%;
+            margin-bottom: 4rem;
+        }
+
         p{
             font-size: 1.4rem;
             color: $color-gray;
 
             @include respond(big-desktop){font-size: 1.6rem;}
+
+            @include respond(phone){
+                font-size: 1.8rem;
+                text-align: justify;
+            }
         }
     }
 
     &__about-me-2{
         width: 25%;
+
+        @include respond(phone){
+            width: 95%;
+        }
 
         button{
             margin-bottom: 1rem;
@@ -136,18 +199,32 @@
             color: $color-primary-light;
             font-size: 1.4rem;
             cursor: pointer;
+
+            @include respond(phone){
+                height: 5rem;
+                width:  18rem;
+                font-size: 1.8rem;
+            }
         }
 
         span{
             font-size: 1.8rem;
             color: $color-gray-light;
             margin-bottom: 3rem;
+
+            @include respond(phone){
+                font-size: 2rem;
+            }
         }
 
         i{
             font-size: 5rem;
             color: $color-gray-light;
             cursor: pointer;
+
+            @include respond(phone){
+                font-size: 6rem;   
+            }
         }
     }
 
@@ -155,6 +232,10 @@
         width: 70%;
         text-align: right;
         padding-right: 2rem;
+
+        @include respond(phone){
+            width: 95%;
+        }
 
         i{
             font-size: 2.8rem;
@@ -164,6 +245,10 @@
             &:first-of-type{
                 color: $color-primary;
             }
+
+            @include respond(phone){
+                font-size: 3rem;
+            }
         }
 
         p{
@@ -171,11 +256,20 @@
             color: $color-gray;
             margin: 0 1rem 2rem 7rem;
 
+            @include respond(phone){
+                font-size: 1.8rem;
+                margin: 0 1rem 1rem 4rem;
+            }
+
             @include respond(big-desktop){font-size: 1.6rem;}
 
             i{
                 font-size: 1.7rem;
                 color: $color-primary;
+
+                @include respond(phone){
+                    font-size: 2rem;   
+                }
             }
         }
 
@@ -183,12 +277,23 @@
 
     &__address-2{
         width: 25%;
+
+        @include respond(phone){
+            width: 95%;
+            margin-top: 4rem;
+        }
     }
 
     &__ax-1{
         width: 70%;
         text-align: right;
         padding-right: 2rem;
+
+        @include respond(phone){
+            width: 95%;
+            padding: 0;
+            margin: auto;
+        }
 
         img{
             height: 30rem;
@@ -200,6 +305,10 @@
                 height: 32rem;
                 width: 45rem;
             }
+
+            @include respond(phone){
+                margin: 0;
+            }
         }
     }
 
@@ -209,7 +318,11 @@
 
     &__ax-2{
         width: 25%;
-        // background-color: pink;
+
+        @include respond(phone){
+            width: 95%;   
+            margin-top: 3rem;
+        }
         
         i{
             font-size: 1.8rem;
@@ -217,6 +330,10 @@
             cursor: pointer;
 
             @include respond(big-desktop){font-size: 2.3rem;}
+
+            @include respond(phone){
+                font-size: 2.5rem;
+            }
         }
 
         div{
@@ -228,6 +345,10 @@
             font-weight: 100;
             margin-right: 2rem;
             color: $color-primary-dark;
+
+            @include respond(phone){
+                font-size: 1.8rem;
+            }
         }
 
         button{
@@ -242,12 +363,21 @@
             color: white;
             font-size: 1.6rem;
             cursor: pointer;
+
+            @include respond(phone){
+                width: 18rem;
+                height: 5rem;
+                font-size: 2rem;   
+            }
         }
         
         span{
-
             font-size: 1.4rem;
             color: $color-gray;
+
+            @include respond(phone){
+                font-size: 1.8rem;
+            }
         }
     }
 
@@ -299,6 +429,10 @@
     
     &__article-main{
         margin: 1rem;
+
+        @include respond(phone){
+            display: none;
+        }
     }
 
     &__article-item{

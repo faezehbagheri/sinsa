@@ -163,10 +163,16 @@
                     <i class="fas fa-times-circle mobile-category__icon" onclick="colseSearchAdvanced()"></i>
                 </div>
             </div>
-        </div>
-        <!-- دسته بندی  -->
-        <div class="mobile-header__suggestion flex r-reverse align-center">       
-            
+        </div>        
+        <!-- فیلتر  -->
+        <div class="mobile-header__filter flex r-reverse align-center">       
+            <nav class="mobile-header__multipleTabs tabs-mobile flex r-reverse align-center owl-carousel" id="mobile-filter">
+                <a href="#drabare-man" class="active item">درباره من</a>
+                <a href="#adress" class="item">آدرس</a>
+                <a href="#ax" class="item">عکس ها</a>
+                <a href="#maghalat" class="item">مقالات من</a>
+                <a href="#nazarat" class="item">نظرات شما</a>
+            </nav>
         </div>
     </header>
 
@@ -624,6 +630,7 @@
                         </div>
                         <div id="maghalat" class="doctors-page__container">
                             <h2 class="doctors-page__title doctors-page__margin-right">مقالات من</h2>
+                            
                             <div class="doctors-page__article-main flex r-reverse justi-around owl-carousel" id="articleDesktop">
                                 <div class="doctors-page__article-item item">
                                     <img src="./assets/img/white-paper-shakhes.png">
