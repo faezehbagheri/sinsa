@@ -2,7 +2,7 @@
     height: 50rem;
     width: 70%;
     position: relative;
-    margin-top: 5rem;
+    margin-top: 3rem;
     
     // @include respond(big-desktop){ margin-top: 30vh;}
     @include respond(phone){ display: none;}

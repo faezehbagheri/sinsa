@@ -838,7 +838,8 @@ body {
         height: 13vh; } }
     @media only screen and (max-width: 30em) {
       .filter__main-box {
-        height: 20rem; } }
+        height: 20rem;
+        border-radius: 3.5rem; } }
   .filter__icon-box {
     height: 8rem;
     width: 8rem;
@@ -877,6 +878,9 @@ body {
     box-shadow: 0 2px 5px #A0A0A0;
     margin-bottom: 2rem;
     overflow: hidden; }
+    @media only screen and (max-width: 30em) {
+      .filter__box {
+        border-radius: 3.5rem; } }
     .filter__box h2 {
       text-align: center;
       color: #707070;
@@ -884,6 +888,10 @@ body {
       width: 100%;
       padding: 1rem;
       color: white; }
+      @media only screen and (max-width: 30em) {
+        .filter__box h2 {
+          padding: 1.5rem;
+          font-size: 2.4rem; } }
   .filter__title {
     font-size: 1.5rem;
     color: #707070;
@@ -934,6 +942,9 @@ body {
     box-shadow: 1px 1px 4px #A0A0A0;
     margin: 1rem auto;
     background-color: #fff; }
+    @media only screen and (max-width: 30em) {
+      .filter__search-box {
+        height: 8rem; } }
   .filter__input {
     height: 96%;
     width: 72%;
@@ -2565,7 +2576,7 @@ body {
   height: 50rem;
   width: 70%;
   position: relative;
-  margin-top: 5rem; }
+  margin-top: 3rem; }
   @media only screen and (max-width: 30em) {
     .search {
       display: none; } }
