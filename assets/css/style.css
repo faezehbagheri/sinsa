@@ -18,6 +18,21 @@ html {
 body {
   box-sizing: border-box; }
 
+.red {
+  color: #E43F6F; }
+
+.blue {
+  color: blue; }
+
+.green {
+  color: #90C73D; }
+
+.yellow {
+  color: yellow; }
+
+.orange {
+  color: orange; }
+
 @font-face {
   font-family: 'irsans-bold';
   src: url(../../assets/fonts/iransans-bold/iransansweb_bold.eot?) format("embedded-opentype"), url(../../assets/fonts/iransans-bold/iransansweb_bold.ttf) format("truetype"), url(../../assets/fonts/iransans-bold/iransansweb_bold.woff) format("woff"), url(../../assets/fonts/iransans-bold/iransansweb_bold.woff2) format("woff2"); }
@@ -2662,7 +2677,8 @@ body {
     font-size: 1.4rem;
     color: #fff;
     font-weight: 100;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    direction: rtl; }
   .suggestion__icon {
     padding-right: 1rem; }
   .suggestion__item {
