@@ -778,9 +778,15 @@ body {
     .doctors-page__article-text h3 {
       font-size: 1.6rem;
       color: white; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__article-text h3 {
+          font-size: 1.8rem; } }
     .doctors-page__article-text span {
       font-size: 1.1rem;
       color: #6DC2BE; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__article-text span {
+          font-size: 1.2rem; } }
     .doctors-page__article-text p {
       color: white;
       margin-top: 2rem;
@@ -790,6 +796,10 @@ body {
         border: 1px solid white;
         border-radius: 2rem;
         padding: 0 1rem; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__article-text p {
+          opacity: 1;
+          font-size: 1.4rem; } }
     .doctors-page__article-text i {
       font-size: 1.3rem;
       margin-left: 5px; }
@@ -806,6 +816,9 @@ body {
     overflow: hidden;
     box-shadow: 0 0 5px #A0A0A0;
     margin: 1rem; }
+    @media only screen and (max-width: 30em) {
+      .doctors-page__comments-item {
+        width: 95%; } }
     .doctors-page__comments-item p {
       width: 60%;
       font-size: 1.4rem;
@@ -2872,8 +2885,7 @@ body {
   left: -7%;
   margin-top: -2.5rem;
   z-index: 99;
-  overflow: hidden;
-  display: none; }
+  overflow: hidden; }
   .suggestion__box {
     width: 100%;
     padding: 1rem;

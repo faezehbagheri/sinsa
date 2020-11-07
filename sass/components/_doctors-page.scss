@@ -480,10 +480,18 @@
         h3{
             font-size: 1.6rem;
             color: white;
+
+            @include respond(phone){
+                font-size: 1.8rem;
+            }
         }
         span{
             font-size: 1.1rem;
             color: $color-primary;
+
+            @include respond(phone){
+                font-size: 1.2rem;
+            }
         }
 
         p{
@@ -496,6 +504,11 @@
                 border: 1px solid white;
                 border-radius: 2rem;
                 padding: 0 1rem;
+            }
+
+            @include respond(phone){
+                opacity: 1;
+                font-size: 1.4rem;
             }
         }
         i{
@@ -521,6 +534,10 @@
         overflow: hidden;
         box-shadow: 0 0 5px $color-gray-light;
         margin: 1rem;
+
+        @include respond(phone){
+            width: 95%;
+        }
 
         p{
             width: 60%;
