@@ -52,6 +52,10 @@
         margin-left: 1.5rem;
         margin-top: -2rem;
         cursor: pointer;
+
+        @include respond(phone){
+            display: none !important;
+        }
     }
 
     &__advanced-label{
@@ -63,7 +67,7 @@
     
     &__search-container{
         height: 6rem;
-        width: 80%;
+        width: 95%;
         border-radius: 5rem;
         position: relative;
         margin: 2rem 1rem;
@@ -82,7 +86,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50% , -50%);
-        width: 60%;
+        width: 70%;
         border: none;
         outline: none;
         background-color: #fff;
@@ -90,10 +94,6 @@
         text-align: right;
         color: $color-gray;
         border-left: 1px solid $color-primary;
-
-        @include respond(phone){
-            width: 70%;
-        }
     }
 
     &__right-icon{
@@ -116,6 +116,7 @@
         left: 7%;
         transform: translate(-15% , -50%);
         color: $color-primary;
+        cursor: pointer;
 
         @include respond(phone){
             font-size: 3.5rem;

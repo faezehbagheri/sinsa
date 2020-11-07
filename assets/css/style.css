@@ -297,6 +297,16 @@ body {
   @media only screen and (max-width: 30em) {
     .category {
       width: 100%; } }
+  .category .search {
+    width: 120% !important;
+    height: auto;
+    margin-top: 1rem;
+    margin: 0; }
+    @media only screen and (max-width: 30em) {
+      .category .search {
+        display: none; } }
+  .category .search__advanced {
+    display: none !important; }
 
 .comment {
   height: 50vh;
@@ -2784,13 +2794,16 @@ body {
     margin-left: 1.5rem;
     margin-top: -2rem;
     cursor: pointer; }
+    @media only screen and (max-width: 30em) {
+      .search__advanced-btn {
+        display: none !important; } }
   .search__advanced-label {
     font-size: 1.7rem;
     color: #fff;
     margin-top: -2rem; }
   .search__search-container {
     height: 6rem;
-    width: 80%;
+    width: 95%;
     border-radius: 5rem;
     position: relative;
     margin: 2rem 1rem;
@@ -2806,7 +2819,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    width: 70%;
     border: none;
     outline: none;
     background-color: #fff;
@@ -2814,9 +2827,6 @@ body {
     text-align: right;
     color: #707070;
     border-left: 1px solid #6DC2BE; }
-    @media only screen and (max-width: 30em) {
-      .search__input {
-        width: 70%; } }
   .search__right-icon {
     font-size: 3rem;
     position: absolute;
@@ -2833,7 +2843,8 @@ body {
     top: 50%;
     left: 7%;
     transform: translate(-15%, -50%);
-    color: #6DC2BE; }
+    color: #6DC2BE;
+    cursor: pointer; }
     @media only screen and (max-width: 30em) {
       .search__left-icon {
         font-size: 3.5rem; } }
@@ -2899,14 +2910,17 @@ body {
 
 .suggestion {
   height: 30rem;
-  width: 65%;
+  width: 70%;
   border-radius: 5rem;
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
-  left: -7%;
   margin-top: -2.5rem;
-  z-index: 99;
-  overflow: hidden; }
+  z-index: 99999;
+  overflow: hidden;
+  display: none; }
+  @media only screen and (max-width: 30em) {
+    .suggestion {
+      width: 95%; } }
   .suggestion__box {
     width: 100%;
     padding: 1rem;
@@ -3752,9 +3766,12 @@ body {
     z-index: 999;
     overflow: hidden;
     transition: all .5s; }
+    @media only screen and (max-width: 30em) {
+      .mobile-header__search {
+        height: 12rem; } }
     @media only screen and (max-width: 22.5em) {
       .mobile-header__search {
-        height: 10vh; } }
+        height: 11vh; } }
   .mobile-header__search-box {
     height: 8rem;
     width: 90%;

@@ -147,7 +147,9 @@
         overflow: hidden;
         transition: all .5s;
 
-        @include respond(phone-small) {height: 10vh;}
+        @include respond(phone){ height: 12rem; }
+
+        @include respond(phone-small) {height: 11vh;}
     }
 
     &__search-box{

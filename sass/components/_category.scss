@@ -1,7 +1,19 @@
 .category{
     width: 50%;
     // background-color: pink;
+
     @include respond(phone){
         width: 100%;
     }
+
+    .search{
+        width: 120% !important;
+        // width: 100%; 
+        height: auto; 
+        margin-top: 1rem;
+        margin: 0;
+        @include respond(phone){ display: none; }
+    }
+
+    .search__advanced{display: none !important;}
 }

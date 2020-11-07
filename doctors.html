@@ -142,14 +142,14 @@
                     <div class="search__box flex justi-center align-center u-margin-bottom-medium ">
                         <div class="search__search-container">
                             <i class="fas fa-search search__right-icon"></i> 
-                            <input type="text" class="search__input" onkeydown="openSuggestionBox()">
+                            <input type="text" class="search__input" onkeydown="openSuggestionBox(0)">
                             <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
                         </div>
                     </div>
                     <!-- search suggestion -->
                     <div class="suggestion">
                         <div class="suggestion__box">
-                            <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox()"></i>
+                            <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(0)"></i>
                             <div class="suggestion__recent-search flex column justi-around align-end">
                                 <h3 class="suggestion__header">جستجوهای اخیر</h3>
                                 <div class="flex r-reverse justi-start align-center wrap">
@@ -192,33 +192,35 @@
                             </div>
                         </div>
                     </div>
-                </form>
-            </div>     
-            <div class="mobile-header__search-box box-1">
-                <i class="fas fa-search mobile-header__right-icon"></i> 
-                <input type="text" class="mobile-header__input input-1">
-                <i class="fas fa-bars mobile-header__left-icon" onclick="openSearchAdvanced()"></i>
-            </div>
-            <div class="mobile-header__search-box box-2">
-                <i class="fas fa-map-marker-alt  mobile-header__right-icon"></i>
-                <input type="text" class="mobile-header__input input-2">
-                <i class="fas fa-angle-down mobile-header__left-icon"></i>
-            </div>
-            <div class="mobile-category">
-                <div>
-                    <h2 class="mobile-category__header">دسته بندی</h2>
-                    <div class="mobile-category__main flex r-reverse justi-around align-center owl-carousel" id="category">
-                        <div class="mobile-category__item item">سلامت</div>
-                        <div class="mobile-category__item item">خانواده</div>
-                        <div class="mobile-category__item item">بیمارستان</div>
-                        <div class="mobile-category__item item">بیماری</div>
-                        <div class="mobile-category__item item">پزشک</div>
-                        <div class="mobile-category__item item">کلینیک</div>
-                        <div class="mobile-category__item item">دارو</div>
+                    <!-- جستجو پیشرفته -->
+                    <div class="search__advanced flex column justi-center align-center">
+                        <div class="search-advanced flex justi-center align-center u-margin-bottom-medium ">
+                            <div class="search-advanced__list flex align-center justi-between owl-carousel owl-theme"
+                                id="search">
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">آزمایشگاه</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">داروخانه</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">دارو</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">بیمارستان</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">کلینیک</a></div>
+                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
+                                        تصویربرداری</a></div>
+                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
+                                        تصویربرداری</a></div>
+                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
+                                        تصویربرداری</a></div>
+                            </div>
+                        </div>
+                        <div class="flex r-reverse align-center justi-center">
+                            <div class="search__advanced-btn" id="btn-1" onclick="showAdvancedSearch()"></div>
+                            <span class="search__advanced-label" id="label">جستجوی پیشرفته</span>
+                        </div>
                     </div>
-                    <button class="mobile-category__btn">جستجو کن</button>
-                    <i class="fas fa-times-circle mobile-category__icon" onclick="colseSearchAdvanced()"></i>
-                </div>
+                </form>
             </div>
         </div>        
         <!-- فیلتر  -->
