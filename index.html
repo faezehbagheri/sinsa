@@ -132,14 +132,14 @@
         <div class="mobile-header__head flex r-reverse justi-between align-center">
             <a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a>
             <h2 class="heading-primary">بیماری ها</h2>
-            <i class="fas fa-ellipsis-v mobile-header__icon"></i>
+            <i class="fas fa-filter mobile-header__icon"></i>
         </div>
         <!-- سرچ -->
         <div class="mobile-header__search" id="mobile-search">
             <div class="mobile-header__search-box box-1">
                 <i class="fas fa-search mobile-header__right-icon"></i> 
                 <input type="text" class="mobile-header__input input-1">
-                <i class="fas fa-bars mobile-header__left-icon" onclick="openSearchAdvanced('home')"></i>
+                <i class="fas fa-bars mobile-header__left-icon" onclick="openSearchAdvanced()"></i>
             </div>
             <div class="mobile-header__search-box box-2">
                 <i class="fas fa-map-marker-alt  mobile-header__right-icon"></i>
@@ -159,13 +159,44 @@
                         <div class="mobile-category__item item">دارو</div>
                     </div>
                     <button class="mobile-category__btn">جستجو کن</button>
-                    <i class="fas fa-times-circle mobile-category__icon" onclick="colseSearchAdvanced('home')"></i>
+                    <i class="fas fa-times-circle mobile-category__icon" onclick="colseSearchAdvanced()"></i>
                 </div>
             </div>
         </div>
-        <!-- دسته بندی  -->
-        <div class="mobile-header__suggestion flex r-reverse align-center">       
-            
+        <!-- فیلتر  -->
+        <div class="mobile-header__filter flex r-reverse align-center">       
+            <div class="flex r-reverse owl-carousel" id="mobile-header-filter">
+                <div class="mobile-header__filter-item flex column align-center item">
+                    <div>
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <span>پزشک</span>
+                </div>
+                <div class="mobile-header__filter-item flex column align-center item">
+                    <div>
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <span>دارو</span>
+                </div>
+                <div class="mobile-header__filter-item flex column align-center item">
+                    <div>
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <span>بیمارستان</span>
+                </div>
+                <div class="mobile-header__filter-item flex column align-center item">
+                    <div>
+                        <i class="fas fa-briefcase-medical"></i>
+                    </div>
+                    <span>سلامت</span>
+                </div>
+                <div class="mobile-header__filter-item flex column align-center item">
+                    <div>
+                        <i class="fas fa-capsules"></i>
+                    </div>
+                    <span>بیماری</span>
+                </div>
+            </div>
         </div>
     </header>
    
@@ -448,11 +479,11 @@
     
     <!-- Desktop Header -->
     <header class="header homepage">           
-        <div class="header__main flex r-reverse justi-center align-center">            
+        <div class="header__main flex column justi-center align-center">            
             <!-- Search Box -->
+            <label class="header__label">چطوری مشاوره آنلاین بگیریم؟</label>
             <div class="search">
                 <form class="search__form flex column justi-center align-center">
-                    <label class="search__label u-margin-bottom-medium ">چطوری مشاوره آنلاین بگیریم؟</label>
                     <div class="search__box flex justi-center align-center u-margin-bottom-medium ">
                         <div class="search__search-container">
                             <i class="fas fa-search search__right-icon"></i> 
@@ -536,8 +567,7 @@
                         </div>
                     </div>
                 </form>
-            </div>
-            
+            </div>            
         </div>
         <!-- Date Box -->
         <div class="date-box">
@@ -707,7 +737,7 @@
                                 <span class="personal-card__comment">715 نظر</span>
                             </div>
                             <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
-                            <button class="personal-card__btn">دریافت مشاوره</button>
+                            <a href="#" class="personal-card__link">دریافت مشاوره</a>
                         </div>
                     </div>
                     <div class="personal-card__doctor-2 item">
@@ -726,7 +756,7 @@
                                 <span class="personal-card__comment">715 نظر</span>
                             </div>
                             <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
-                            <button class="personal-card__btn">دریافت مشاوره</button>
+                            <a href="#" class="personal-card__link">دریافت مشاوره</a>
                         </div>
                     </div>
                     <div class="personal-card__doctor-3 item">
@@ -745,7 +775,7 @@
                                 <span class="personal-card__comment">715 نظر</span>
                             </div>
                             <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
-                            <button class="personal-card__btn">دریافت مشاوره</button>
+                            <a href="#" class="personal-card__link">دریافت مشاوره</a>
                         </div>
                     </div>
                     <div class="personal-card__doctor-4 item">
@@ -764,7 +794,7 @@
                                 <span class="personal-card__comment">715 نظر</span>
                             </div>
                             <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
-                            <button class="personal-card__btn">دریافت مشاوره</button>
+                            <a href="#" class="personal-card__link">دریافت مشاوره</a>
                         </div>
                     </div>
                     <div class="personal-card__doctor-5 item">
@@ -783,7 +813,7 @@
                                 <span class="personal-card__comment">715 نظر</span>
                             </div>
                             <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
-                            <button class="personal-card__btn">دریافت مشاوره</button>
+                            <a href="#" class="personal-card__link">دریافت مشاوره</a>
                         </div>
                     </div>
                 </div>

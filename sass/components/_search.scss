@@ -1,18 +1,14 @@
 .search{
     height: 50rem;
     width: 70%;
-    margin-top: 12rem;
     position: relative;
+    margin-top: 5rem;
     
-    @include respond(big-desktop){ margin-top: 30vh;}
+    // @include respond(big-desktop){ margin-top: 30vh;}
+    @include respond(phone){ display: none;}
 
     &__form{
         position: relative;
-    }
-
-    &__label{
-        font-size: 5rem;
-        color: #ffffff;
     }
 
     &__box{

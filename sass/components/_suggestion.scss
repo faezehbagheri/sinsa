@@ -8,6 +8,7 @@
     margin-top: -2.5rem;
     z-index: 99;
     overflow: hidden;
+    display: none;
 
     &__box{
         width: 100%;
@@ -31,12 +32,7 @@
         &::-webkit-scrollbar-thumb{
             border-radius: 10px;
             background-color: #FFF;
-            background-image: -webkit-gradient(linear,
-                                            40% 0%,
-                                            75% 84%,
-                                            from($color-primary),
-                                            to($color-primary-dark),
-                                            )
+            background-image: -webkit-gradient(linear,40% 0%,75% 84%,from($color-primary),to($color-primary-dark),)
         }
     }
 

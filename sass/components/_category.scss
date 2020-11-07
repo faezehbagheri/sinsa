@@ -1,4 +1,7 @@
 .category{
     width: 50%;
     // background-color: pink;
+    @include respond(phone){
+        width: 100%;
+    }
 }

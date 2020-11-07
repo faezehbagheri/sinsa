@@ -1,5 +1,16 @@
 $(document).ready(function () {  
 
+    var activeTabMobile = $(".tabs-mobile").find('a.active').data('trigger');
+    $('#' + activeTabMobile).show();
+
+    $('.tabs-mobile>a').on('click', function () {
+        var tabId = $(this).data('trigger');
+        $('#' + tabId).show();
+        $('.tab-amodi__tabcontent:not(#' + tabId + ')').hide();
+        $(this).addClass('active');
+        $(this).siblings('a').removeClass('active');
+    });
+
     var activeTab = $(".tabs").find('a.active').data('trigger');
     $('#' + activeTab).show();
 
@@ -59,7 +70,40 @@ $(document).ready(function () {
     var $filter = $("#filter");
     var $dastebansi = $('#dastebansi');
     var $articleDesktop = $("#articleDesktop");
+    var $mobileHeaderFilter = $("#mobile-header-filter");
+    var $mobileFilter = $("#mobile-filter");
+
+
+    /// mobileFilter ///
+    $mobileFilter.children().each(function (index) {
+        $(this).attr('data-position', index);
+    });
+
+    $mobileFilter.owlCarousel({
+        loop: false,
+        rtl: true,
+        items: 4,
+    });
+
+    $(document).on('click', '.owl-item>div', function () {
+        var $speed = 300;  // in ms
+        $mobileFilter.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+    });
     
+    /// mobileHeaderFilter ///
+    $mobileHeaderFilter.children().each(function (index) {
+        $(this).attr('data-position', index);
+    });
+
+    $mobileHeaderFilter.owlCarousel({
+        loop: true,
+        items: 5,
+    });
+
+    $(document).on('click', '.owl-item>div', function () {
+        var $speed = 300;  // in ms
+        $mobileHeaderFilter.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+    });
 
     /// articleDesktop ///
     $articleDesktop.children().each(function (index) {

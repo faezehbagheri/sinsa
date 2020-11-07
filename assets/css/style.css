@@ -156,6 +156,9 @@ body {
 
 .card {
   width: 43%; }
+  @media only screen and (max-width: 30em) {
+    .card {
+      width: 95%; } }
   .card__main {
     width: 100%;
     height: 50rem;
@@ -173,11 +176,21 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow-y: scroll; }
-    .card__container::-webkit-scrollbar {
-      width: 1rem; }
-    .card__container::-webkit-scrollbar-thumb {
-      color: none; }
+    overflow: hidden; }
+  .card__list {
+    overflow-y: scroll;
+    height: 100%; }
+    .card__list::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+      background-color: #F5F5F5;
+      border-radius: 10px; }
+    .card__list::-webkit-scrollbar {
+      width: 8px;
+      background-color: #F5F5F5; }
+    .card__list::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #FFF;
+      background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#6DC2BE), to(#49838B)); }
   .card__label {
     font-size: 1.4rem;
     vertical-align: bottom;
@@ -188,6 +201,10 @@ body {
     position: relative;
     z-index: 0;
     color: #fff; }
+    @media only screen and (max-width: 30em) {
+      .card__label {
+        padding: 2rem 5rem;
+        font-size: 2.3rem; } }
   .card__label:before, .card__label:after {
     display: block;
     content: " ";
@@ -196,6 +213,9 @@ body {
     height: 100%;
     width: 3rem;
     background-color: #6DC2BE; }
+    @media only screen and (max-width: 30em) {
+      .card__label:before, .card__label:after {
+        width: 5rem; } }
   .card__label:before {
     left: -17px;
     transform: skew(-30deg, 0deg);
@@ -211,8 +231,20 @@ body {
   .card__item {
     height: 5.9rem;
     border-bottom: 1px solid #6DC2BE;
-    margin-left: 6px;
-    text-decoration: none; }
+    width: 100%;
+    text-decoration: none;
+    transition: all .3s; }
+    @media only screen and (max-width: 30em) {
+      .card__item {
+        height: 9rem; } }
+    .card__item:hover {
+      background-color: #6DC2BE; }
+    .card__item:hover span {
+      color: white;
+      font-size: 1.8rem; }
+      @media only screen and (max-width: 30em) {
+        .card__item:hover span {
+          font-size: 2.5rem; } }
     .card__item:last-of-type {
       border-bottom: none; }
     .card__item div {
@@ -222,6 +254,10 @@ body {
       background-color: #EEF1EF;
       margin: 1.5rem;
       position: relative; }
+      @media only screen and (max-width: 30em) {
+        .card__item div {
+          width: 4rem;
+          height: 4rem; } }
     .card__item i {
       color: #6DC2BE;
       font-size: 1.8rem;
@@ -229,13 +265,23 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+      @media only screen and (max-width: 30em) {
+        .card__item i {
+          font-size: 2.5rem; } }
     .card__item span {
       color: #707070;
       font-size: 1.4rem;
-      margin: 1.5rem; }
+      margin: 1.5rem;
+      transition: all .3s; }
+      @media only screen and (max-width: 30em) {
+        .card__item span {
+          font-size: 2.2rem; } }
 
 .category {
   width: 50%; }
+  @media only screen and (max-width: 30em) {
+    .category {
+      width: 100%; } }
 
 .comment {
   height: 50vh;
@@ -761,7 +807,7 @@ body {
   margin-left: 3rem; }
   @media only screen and (max-width: 30em) {
     .filter {
-      display: none !important; } }
+      width: 95%; } }
   @media only screen and (min-width: 112.5em) {
     .filter {
       width: 29rem; } }
@@ -775,6 +821,9 @@ body {
     @media only screen and (min-width: 112.5em) {
       .filter__main-box {
         height: 13vh; } }
+    @media only screen and (max-width: 30em) {
+      .filter__main-box {
+        height: 20rem; } }
   .filter__icon-box {
     height: 8rem;
     width: 8rem;
@@ -782,6 +831,10 @@ body {
     background-color: #fff;
     border: 2px solid #90C73D;
     position: relative; }
+    @media only screen and (max-width: 30em) {
+      .filter__icon-box {
+        height: 12rem;
+        width: 12rem; } }
   .filter__icon {
     font-size: 4rem;
     color: #707070;
@@ -789,8 +842,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 30em) {
+      .filter__icon {
+        font-size: 6rem; } }
   .filter__span {
     font-size: 1.5rem; }
+    @media only screen and (max-width: 30em) {
+      .filter__span {
+        font-size: 2rem; } }
   .filter__header:hover {
     cursor: pointer; }
     .filter__header:hover > * {
@@ -2175,20 +2234,21 @@ body {
   .personal-card__consulting {
     color: #707070;
     font-size: .85rem; }
-  .personal-card__btn {
-    height: 4rem;
-    width: 13rem;
+  .personal-card__link {
+    padding: .8rem 1.5em;
     background-color: #90C73D;
     color: #ffffff;
     font-size: 1.6rem;
-    border-radius: 2rem;
+    border-radius: 3rem;
     border: none;
     outline: none;
     position: relative;
     top: 7%;
     box-shadow: 0 2px 4px #90C73D;
     font-family: 'irsans';
-    cursor: pointer; }
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; }
   .personal-card__address {
     margin: 1rem; }
     .personal-card__address i {
@@ -2215,7 +2275,8 @@ body {
   background-color: #ffffff;
   border-radius: 3rem;
   position: relative;
-  box-shadow: 0 0 1rem #d9d9d9; }
+  box-shadow: 0 0 1rem #d9d9d9;
+  margin-bottom: 5rem; }
   @media only screen and (min-width: 112.5em) {
     .owl-item.center .personal-card__main {
       height: 30rem;
@@ -2488,16 +2549,13 @@ body {
 .search {
   height: 50rem;
   width: 70%;
-  margin-top: 12rem;
-  position: relative; }
-  @media only screen and (min-width: 112.5em) {
+  position: relative;
+  margin-top: 5rem; }
+  @media only screen and (max-width: 30em) {
     .search {
-      margin-top: 30vh; } }
+      display: none; } }
   .search__form {
     position: relative; }
-  .search__label {
-    font-size: 5rem;
-    color: #ffffff; }
   .search__box {
     background-color: rgba(0, 0, 0, 0.3);
     height: 8rem;
@@ -2631,7 +2689,8 @@ body {
   left: -7%;
   margin-top: -2.5rem;
   z-index: 99;
-  overflow: hidden; }
+  overflow: hidden;
+  display: none; }
   .suggestion__box {
     width: 100%;
     padding: 1rem;
@@ -3239,12 +3298,20 @@ body {
       display: none; } }
   .header__main {
     margin: 0 3rem; }
+  .header__label {
+    font-size: 5rem;
+    color: #ffffff;
+    margin-top: 25rem; }
 
 .illness-main {
   height: auto;
   width: 100%;
   margin-top: 20rem;
   margin-bottom: 25rem; }
+  @media only screen and (max-width: 30em) {
+    .illness-main {
+      margin-top: 2rem;
+      flex-direction: column !important; } }
   @media only screen and (min-width: 112.5em) {
     .illness-main {
       height: auto; } }
@@ -3373,14 +3440,59 @@ body {
     font-size: 3rem;
     color: #fff;
     margin: 1.5rem; }
-  .mobile-header__suggestion {
+  .mobile-header__filter {
     margin-top: 25rem;
     box-shadow: 0 4px 7px -2px #dbd9d9;
     transition: all .5s;
     display: none; }
     @media only screen and (max-width: 30em) {
-      .mobile-header__suggestion {
+      .mobile-header__filter {
         display: flex; } }
+  .mobile-header__filter-item {
+    margin: 3rem 1rem; }
+    .mobile-header__filter-item div {
+      height: 14rem;
+      width: 14rem;
+      border-radius: 100%;
+      border: 2px solid #EEF1EF;
+      position: relative;
+      margin-top: 2rem; }
+      @media only screen and (max-width: 22.5em) {
+        .mobile-header__filter-item div {
+          height: 10rem;
+          width: 10rem; } }
+    .mobile-header__filter-item i {
+      font-size: 7rem;
+      color: #A0A0A0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      @media only screen and (max-width: 22.5em) {
+        .mobile-header__filter-item i {
+          font-size: 4.5rem; } }
+    .mobile-header__filter-item span {
+      font-size: 2.5rem;
+      color: #707070;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 22.5em) {
+        .mobile-header__filter-item span {
+          font-size: 2.3rem; } }
+  .mobile-header__multipleTabs {
+    padding: 1.5rem 0; }
+    .mobile-header__multipleTabs a {
+      font-size: 2.5rem;
+      color: #707070;
+      display: inline-block;
+      width: 18rem;
+      border-radius: 5rem;
+      border: 1px solid #6DC2BE;
+      text-align: center;
+      padding: 1.5rem; }
+      @media only screen and (max-width: 22.5em) {
+        .mobile-header__multipleTabs a {
+          width: 14rem; } }
   .mobile-header__circle {
     height: 13rem;
     width: 13rem;

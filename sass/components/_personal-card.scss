@@ -92,13 +92,12 @@
         font-size: .85rem;
     }
 
-    &__btn{
-        height: 4rem;
-        width: 13rem;
+    &__link{
+        padding: .8rem 1.5em;
         background-color: $color-primary-light;
         color: #ffffff;
         font-size: 1.6rem;
-        border-radius: 2rem;
+        border-radius: 3rem;
         border: none;
         outline: none;
         position: relative;
@@ -106,6 +105,8 @@
         box-shadow: 0 2px 4px $color-primary-light;
         font-family: 'irsans';
         cursor: pointer;
+        text-align: center;
+        text-decoration: none;
     }
 
     &__address{
@@ -143,6 +144,7 @@
     border-radius: 3rem;
     position: relative;
     box-shadow: 0 0 1rem #d9d9d9;
+    margin-bottom: 5rem;
     // margin-right: 10rem;
 
     @include respond(big-desktop){

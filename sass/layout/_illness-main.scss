@@ -1,12 +1,13 @@
 .illness-main{
     height: auto;
     width: 100%;
-
     margin-top: 20rem;
     margin-bottom: 25rem;
 
     @include respond(phone){
         // display: none;
+        margin-top: 2rem;
+        flex-direction: column !important;
     }
     
     @include respond(big-desktop){height: auto;}
