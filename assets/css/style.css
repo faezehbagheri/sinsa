@@ -2749,7 +2749,7 @@ body {
   margin-top: 3rem; }
   @media only screen and (max-width: 30em) {
     .search {
-      display: none; } }
+      width: 100%; } }
   .search__form {
     position: relative; }
   .search__box {
@@ -2757,6 +2757,9 @@ body {
     height: 8rem;
     width: 80%;
     border-radius: 4rem; }
+    @media only screen and (max-width: 30em) {
+      .search__box {
+        width: 95%; } }
   .search__btn {
     width: 15%;
     height: 6rem;
@@ -2767,6 +2770,9 @@ body {
     color: #ffffff;
     font-size: 2rem;
     cursor: pointer; }
+    @media only screen and (max-width: 30em) {
+      .search__btn {
+        display: none; } }
   .search__advanced-btn {
     height: 3.5rem;
     width: 3.5rem;
@@ -2789,6 +2795,12 @@ body {
     position: relative;
     margin: 2rem 1rem;
     background-color: #fff; }
+    @media only screen and (max-width: 30em) {
+      .search__search-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: 2px solid #6DC2BE; } }
   .search__input {
     position: absolute;
     top: 50%;
@@ -2802,6 +2814,9 @@ body {
     text-align: right;
     color: #707070;
     border-left: 1px solid #6DC2BE; }
+    @media only screen and (max-width: 30em) {
+      .search__input {
+        width: 70%; } }
   .search__right-icon {
     font-size: 3rem;
     position: absolute;
@@ -2809,13 +2824,19 @@ body {
     left: 95%;
     transform: translate(-95%, -50%);
     color: #6DC2BE; }
+    @media only screen and (max-width: 30em) {
+      .search__right-icon {
+        font-size: 3.5rem; } }
   .search__left-icon {
     font-size: 3rem;
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 7%;
     transform: translate(-15%, -50%);
     color: #6DC2BE; }
+    @media only screen and (max-width: 30em) {
+      .search__left-icon {
+        font-size: 3.5rem; } }
 
 .service {
   height: 50vh;
