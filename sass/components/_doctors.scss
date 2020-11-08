@@ -68,6 +68,10 @@
 
     &__header{
         width: 75%;
+
+        @include respond(phone){
+            display: none;
+        }
     }
 
     &__header-container{
