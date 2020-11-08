@@ -2286,6 +2286,9 @@ body {
   width: 100%;
   margin-top: 4rem;
   display: none; }
+  @media only screen and (max-width: 30em) {
+    .personal-card-large {
+      display: none; } }
   .personal-card-large__main {
     width: 95%;
     height: 20rem;
