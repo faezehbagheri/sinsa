@@ -2778,8 +2778,12 @@ body {
     outline: none;
     background-color: #90C73D;
     color: #ffffff;
+    text-decoration: none;
     font-size: 2rem;
     cursor: pointer; }
+    .search__btn i {
+      font-size: 2.5rem;
+      margin-left: 1rem; }
     @media only screen and (max-width: 30em) {
       .search__btn {
         display: none; } }
@@ -2803,7 +2807,7 @@ body {
     margin-top: -2rem; }
   .search__search-container {
     height: 6rem;
-    width: 95%;
+    width: 80%;
     border-radius: 5rem;
     position: relative;
     margin: 2rem 1rem;

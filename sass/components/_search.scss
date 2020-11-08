@@ -33,8 +33,14 @@
         outline: none;
         background-color: $color-primary-light;
         color: #ffffff;
+        text-decoration: none;
         font-size: 2rem;
         cursor: pointer;
+        
+        i{
+            font-size: 2.5rem;
+            margin-left: 1rem;
+        }
 
         @include respond(phone){
             display: none;
@@ -67,7 +73,7 @@
     
     &__search-container{
         height: 6rem;
-        width: 95%;
+        width: 80%;
         border-radius: 5rem;
         position: relative;
         margin: 2rem 1rem;
