@@ -7,12 +7,21 @@
     }
 
     .search{
-        width: 120% !important;
+        width: 100% !important;
         // width: 100%; 
         height: auto; 
         margin-top: 1rem;
         margin: 0;
         @include respond(phone){ display: none; }
+    }
+    
+    .search__box{
+        width: 92%;
+    }
+
+    .suggestion{
+        width: 77%;
+        left: -7%;
     }
 
     .search__advanced{display: none !important;}

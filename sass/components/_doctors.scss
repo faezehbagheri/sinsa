@@ -1,7 +1,7 @@
 .doctors{
     width: 100%;
     @include respond(phone){
-        // display: none !important;
+        display: none !important;
     }
 
     

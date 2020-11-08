@@ -300,13 +300,18 @@ body {
     .category {
       width: 100%; } }
   .category .search {
-    width: 120% !important;
+    width: 100% !important;
     height: auto;
     margin-top: 1rem;
     margin: 0; }
     @media only screen and (max-width: 30em) {
       .category .search {
         display: none; } }
+  .category .search__box {
+    width: 92%; }
+  .category .suggestion {
+    width: 77%;
+    left: -7%; }
   .category .search__advanced {
     display: none !important; }
 
@@ -859,6 +864,9 @@ body {
 
 .doctors {
   width: 100%; }
+  @media only screen and (max-width: 30em) {
+    .doctors {
+      display: none !important; } }
   .doctors__main {
     width: 60%; }
   .doctors__filter-header {
@@ -3751,6 +3759,17 @@ body {
       margin-top: 2rem; }
       @media only screen and (max-width: 22.5em) {
         .mobile-header__filter-item div {
+          height: 10rem;
+          width: 10rem; } }
+    .mobile-header__filter-item a {
+      height: 14rem;
+      width: 14rem;
+      border-radius: 100%;
+      border: 2px solid #EEF1EF;
+      position: relative;
+      margin-top: 2rem; }
+      @media only screen and (max-width: 22.5em) {
+        .mobile-header__filter-item a {
           height: 10rem;
           width: 10rem; } }
     .mobile-header__filter-item i {

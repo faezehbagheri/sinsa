@@ -56,6 +56,21 @@
             }
         }
 
+        a{
+            height: 14rem;
+            width:  14rem;
+            border-radius: 100%;
+            border: 2px solid $color-gray-lighter;
+            position: relative;
+            margin-top: 2rem;
+            
+
+            @include respond(phone-small){
+                height: 10rem;
+                width:  10rem;
+            }
+        }
+
         i{
             font-size: 7rem;
             color: $color-gray-light;
