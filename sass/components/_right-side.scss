@@ -2,6 +2,7 @@
     position: fixed;
     left: 86%;
     top: 30%;
+    z-index: 99;
     
     @include respond(big-desktop){left: 85%;}
             
@@ -14,6 +15,7 @@
         outline: none;
         position: relative;
         cursor: pointer;
+        text-decoration: none;
         transition: all .3s ease-in;
 
         
