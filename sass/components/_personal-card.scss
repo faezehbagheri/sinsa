@@ -1,5 +1,9 @@
 .personal-card{
     width: 100%;
+    
+    @include respond(phone){
+        display: none;
+    }
 
 
     &__main{

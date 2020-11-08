@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/function.js"></script>
     <script src="./assets/js/jqueryFunction.js"></script>
+    <script src="./assets/js/searchFunction.js"></script>
 
     <title>Sinsa</title>
 </head>
@@ -127,6 +128,108 @@
         </div>
     </nav>
 
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <!-- هدر -->
+        <div class="mobile-header__head flex r-reverse justi-between align-center">
+            <a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a>
+            <h2 class="heading-primary">بیماری ها</h2>
+            <i class="fas fa-ellipsis-v mobile-header__icon"></i>
+        </div>
+        <!-- سرچ -->
+        <div class="mobile-header__search" id="mobile-search">
+            <div class="search">
+                <form class="search__form flex column justi-center align-center">
+                    <div class="search__box flex justi-center align-center u-margin-bottom-medium ">
+                        <div class="search__search-container">
+                            <i class="fas fa-search search__right-icon"></i> 
+                            <input type="text" class="search__input" onkeydown="openSuggestionBox(0)">
+                            <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
+                        </div>
+                        <a href="#" class="search__btn flex align-center justi-center">علائم <i class="fas fa-stethoscope"></i></a>
+                    </div>
+                    <!-- search suggestion -->
+                    <div class="suggestion">
+                        <div class="suggestion__box">
+                            <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(0)"></i>
+                            <div class="suggestion__recent-search flex column justi-around align-end">
+                                <h3 class="suggestion__header">جستجوهای اخیر</h3>
+                                <div class="flex r-reverse justi-start align-center wrap">
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                </div>
+                            </div>
+                            <div class="suggestion__related-words flex column align-end">
+                                <h3 class="suggestion__header">کلمات مرتبط</h3>
+                                <div class="suggestion__related-words--items flex column align-end">
+                                    <a href="#" class="suggestion__item">مهرگان</a>
+                                    <a href="#" class="suggestion__item">مهر طلبی</a>
+                                    <a href="#" class="suggestion__item">مهر ورزی</a>
+                                </div>
+                                <button class="suggestion__related-words--btn"><i class="fas fa-angle-down suggestion__icon"></i>مشاهده همه</button>
+                            </div>
+                            <div class="suggestion__article flex r-reverse align-center">
+                                <i class="fas fa-book suggestion__article--icon"></i>
+                                <div class="suggestion__article--items flex column align-end">
+                                    <a href="#" class="suggestion__item">مهرورزی در رابطه چگونه است؟</a>
+                                    <a href="#" class="suggestion__item">مهرورزی در رابطه چگونه است؟</a>
+                                </div>
+                            </div>
+                            <div class="suggestion__hospital flex r-reverse align-center">
+                                <i class="fas fa-hospital suggestion__hospital--icon"></i>
+                                <div class="suggestion__hospital--items flex column align-end">
+                                    <a href="#" class="suggestion__item">بیمارستان مهر_ تهران</a>
+                                    <a href="#" class="suggestion__item">بیمارستان مهر_ اصفهان</a>
+                                </div>
+                            </div>
+                            <div class="suggestion__chat flex r-reverse align-center">
+                                <i class="fas fa-comment suggestion__chat--icon"></i>
+                                <div class="suggestion__chat--items flex column align-end">
+                                    <a href="#" class="suggestion__item">بیمارستان مهرگان _ یزد</a>
+                                    <a href="#" class="suggestion__item">بیمارستان مهر در مقایسه با </a>
+                                    <a href="#" class="suggestion__item">به نظرم اینکه توی همه ی بیمارستان به خصوص بیمارستان مهر </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- جستجو پیشرفته -->
+                    <div class="search__advanced flex column justi-center align-center">
+                        <div class="search-advanced flex justi-center align-center u-margin-bottom-medium ">
+                            <div class="search-advanced__list flex align-center justi-between owl-carousel owl-theme"
+                                id="search">
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">آزمایشگاه</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">داروخانه</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">دارو</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">بیمارستان</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">کلینیک</a></div>
+                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
+                                        تصویربرداری</a></div>
+                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
+                                        تصویربرداری</a></div>
+                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
+                                        تصویربرداری</a></div>
+                            </div>
+                        </div>
+                        <div class="flex r-reverse align-center justi-center">
+                            <div class="search__advanced-btn" id="btn-1" onclick="showAdvancedSearch()"></div>
+                            <span class="search__advanced-label" id="label">جستجوی پیشرفته</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> 
+        <!-- دسته بندی  -->
+        <div class="mobile-header__suggestion flex r-reverse align-center">       
+            
+        </div>
+    </header>
 
     <!-- Desktop Nav -->
     <nav class="navigation flex r-reverse justi-around">
@@ -487,7 +590,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex r-reverse align-start justi-center">
+        <div class="doctors flex r-reverse align-start justi-center">
             <!-- فیلترها -->
             <div class="filter flex column align-center">
                 <div class="filter__main-box">
@@ -1112,6 +1215,49 @@
         </div>
     </div>
 
+    <!-- Mobile Bottom Menu -->
+    <nav class="mobile-bottom-menu flex r-reverse justi-around align-center">
+        <div class="flex column justi-around align-center">
+            <i class="fas fa-folder mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">آرشیو</span>
+        </div>
+        <div class="flex column justi-around align-center">
+            <i class="fas fa-globe-americas mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">اخبار</span>
+        </div>
+        <div>
+            <img src="./assets/img/Group 38108@2x.png" class="mobile-bottom-menu__photo">
+        </div>
+        <div class="flex column justi-around align-center">
+            <i class="fas fa-bell mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">تقویم</span>
+        </div>
+        <div class="flex column justi-around align-center">
+            <i class="fas fa-home mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">خانه</span>
+        </div>
+    </nav>
+
+    <!-- Mobile Left Side -->
+    <div class="left-side flex column justi-end">
+        <div class="left-side__box flex column-reverse">
+            <button class="left-side__btn ">
+                <i class="fas fa-newspaper left-side__icon left-side__icon-1"></i>
+            </button>        
+            <button class="left-side__btn ">
+                <i class="fas fa-phone-alt left-side__icon left-side__icon-2"></i>
+            </button>        
+            <button class="left-side__btn ">
+                <i class="fas fa-pen-alt left-side__icon left-side__icon-3"></i>
+            </button>        
+            <button class="left-side__btn ">
+                <i class="fas fa-comment-dots left-side__icon left-side__icon-4"></i>
+            </button>    
+        </div>
+        <button class="left-side__btn left-side__z-index" onclick="showButton()">
+            <i class="fas fa-ellipsis-v"></i>
+        </button>   
+    </div>
 
     <!-- Desktop Footer -->
     <footer class="footer">

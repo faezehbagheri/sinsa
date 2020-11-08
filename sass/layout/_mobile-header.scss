@@ -138,7 +138,7 @@
     }
 
     &__search{
-        height: 8vh;
+        // height: 8vh;
         width: 100%;
         background-color: #fff;
         position: fixed;
@@ -147,9 +147,9 @@
         overflow: hidden;
         transition: all .5s;
 
-        @include respond(phone){ height: 12rem; }
+        // @include respond(phone){ height: 12rem; }
 
-        @include respond(phone-small) {height: 11vh;}
+        // @include respond(phone-small) {height: 11vh;}
     }
 
     &__search-box{

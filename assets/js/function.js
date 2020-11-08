@@ -44,37 +44,6 @@ function showAdvancedSearch(){
     showAdvanced = !showAdvanced;
 }
 
-var showSearchAdvanced = true;
-function openSearchAdvanced(){
-    if(showSearchAdvanced){
-        var searchBox = document.querySelector(".mobile-header__search");
-        searchBox.style.height = "60rem";
-        searchBox.style.overflow = "visible";
-        searchBox.style.backgroundColor = "#EEF1EF"
-        document.querySelector(".mobile-category__icon").style.display= "block";
-        document.querySelector(".box-1").style.backgroundColor = "#fff";
-        document.querySelector(".input-1").style.backgroundColor = "#fff";
-        document.querySelector(".box-2").style.backgroundColor = "#fff";
-        document.querySelector(".input-2").style.backgroundColor = "#fff";
-        document.querySelector(".mobile-header__filter").style.marginTop = "79rem";
-    }else{
-        colseSearchAdvanced();
-    }
-    showSearchAdvanced = !showSearchAdvanced;
-}
-
-function colseSearchAdvanced(){
-    var searchBox = document.querySelector(".mobile-header__search");
-    searchBox.style.height = "10rem";
-    searchBox.style.overflow = "hidden";
-    searchBox.style.backgroundColor = "#fff"
-    document.querySelector(".mobile-category__icon").style.display= "none";
-    document.querySelector(".box-2").style.backgroundColor = "#EEF1EF";
-    document.querySelector(".input-2").style.backgroundColor = "#EEF1EF";
-    document.querySelector(".box-1").style.backgroundColor = "#EEF1EF";
-    document.querySelector(".input-1").style.backgroundColor = "#EEF1EF";
-    document.querySelector(".mobile-header__filter").style.marginTop = "25rem";
-}
 
 var show = true;
 function showButton(){
@@ -178,28 +147,6 @@ function openSubMenu(num){
 }
 
 
-function openSuggestionBox(num){
-  var searchInput = document.querySelectorAll(".search__input");
-  var suggestion = document.querySelectorAll(".suggestion");
-  var searchAdv = document.querySelectorAll(".search__advanced");
-    console.log(searchInput[0].value);
-    if(searchInput[num].value.length >= 2){
-        console.log("ff");
-        suggestion[num].style= "display: flex";
-        searchAdv[num].style.display = "none";
-        document.querySelector(".mobile-header__search").style.height = "43rem"
-    }else{
-      colseSuggestionBox(num);
-    }
-}
-
-function colseSuggestionBox(num){
-  var suggestion = document.querySelectorAll(".suggestion");
-  var searchAdv = document.querySelectorAll(".search__advanced");
-  suggestion[num].style= "display:none"; 
-  searchAdv[num].style.display = "flex";
-  document.querySelector(".mobile-header__search").style.height = "12rem";
-}
 
 function toggleSearchBox(){
     document.querySelector(".map-toolbar__search-box").classList.toggle("map-toolbar__show-searchBox")

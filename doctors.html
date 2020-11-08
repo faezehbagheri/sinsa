@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/function.js"></script>
     <script src="./assets/js/jqueryFunction.js"></script>
+    <script src="./assets/js/searchFunction.js"></script>
 
     <title>Sinsa</title>
 </head>
@@ -558,13 +559,106 @@
     <main class="illness-main flex r-reverse align-start justi-center">       
         <!-- فیلترها -->
         <div class="filter flex column align-center">
-            <div class="filter__buttons flex r-reverse align-center justi-around">
-                <button class="filter__filter-btn flex align-center justi-center">فیلتر
-                    <i class="fas fa-filter filter__filter-icon"></i>
+            <div class="filter__main-box">
+                <div class="flex r-reverse align-center owl-carousel" id="filter">
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-user-md filter__icon"></i>
+                        </div>
+                        <span class="filter__span">پزشک</span>
+                    </div>
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-pills filter__icon"></i>
+                        </div>
+                        <span class="filter__span">دارو</span>
+                    </div>
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-hospital filter__icon"></i>
+                        </div>
+                        <span class="filter__span">بیمارستان</span>
+                    </div>
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-plus-square filter__icon"></i>
+                        </div>
+                        <span class="filter__span">داروخانه</span>
+                    </div>
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-pills filter__icon"></i>
+                        </div>
+                        <span class="filter__span">کلینیک</span>
+                    </div>
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-microscope filter__icon"></i>
+                        </div>
+                        <span class="filter__span">مرکز تصویر برداری</span>
+                    </div>
+                </div>
+            </div>
+            <!-- فیلتر دسته بندی ها -->
+            <div class="filter__box">
+                <h2>دسته بندی تخصص ها</h2>
+                <div class="filter__search-box flex r-reverse align-center justi-start" style="height: 3rem;">
+                    <button class="filter__search-btn" style="background-color: inherit;">
+                        <i class="fas fa-search filter__search-icon" style="color: #000000; font-size: 1.4rem;"></i>
+                    </button>
+                    <input type="text" class="filter__input" placeholder="جستجو">
+                </div>
+                <div class="filter__list">
+                    <ul class="flex column align-center">
+                        <li class=" flex r-reverse align-center justi-between"><a href="#"> بیماری های مخصوص دستگاه گوارش انسان </a><i class="fas fa-angle-right"></i></li>
+                        <li class=" flex r-reverse align-center justi-between"><a href="#"> مغز و استخوان</a><i class="fas fa-angle-right"></i></li>
+                        <li class=" flex r-reverse align-center justi-between"><a href="#"> خون و سرطان</a><i class="fas fa-angle-right"></i></li>
+                        <li class=" flex r-reverse align-center justi-between"><a href="#">گوارشی و کبد</a><i class="fas fa-angle-right"></i></li>
+                        <li class=" flex r-reverse align-center justi-between"><a href="#">کودکان</a><i class="fas fa-angle-right"></i></li>
+                        <li class=" flex r-reverse align-center justi-between"><a href="#">همه ی بیماری ها</a><i class="fas fa-angle-right"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- سرچ باکس -->
+            <div class="filter__search-box flex r-reverse align-center justi-start">
+                <button class="filter__search-btn">
+                    <i class="fas fa-search filter__search-icon"></i>
                 </button>
-                <button class="filter__reset-btn flex align-center justi-center">پاکسازی
-                    <i class="fas fa-undo filter__reset-icon"></i>
-                </button>
+                <input type="text" class="filter__input" placeholder="بیماری مورد نظر را جستجو کنید">
+            </div>                
+            <!-- سرچ حروف الفبا -->
+            <div class="filter__alphba-search flex column align-center justi-start">
+                <h3>مشاهده ی لیست بیماری ها</h3>
+                <ul class="filter__tabs" role="tablist">
+                    <li>
+                        <input type="radio" name="tabs" id="tab1" checked />
+                        <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">حروف الفبا</label>
+                        <div id="tab-content1" class="filter__tab-content filter__tab-content--1 flex r-reverse align-center justi-around align-content-center wrap" role="tabpanel" aria-labelledby="description" aria-hidden="false">
+                            <a class="flex align-center justi-center" href="#">الف</a><a class="flex align-center justi-center" href="#">ب</a><a class="flex align-center justi-center" href="#">پ</a><a class="flex align-center justi-center" href="#">ت</a>
+                            <a class="flex align-center justi-center" href="#">ث</a><a class="flex align-center justi-center" href="#">ج</a><a class="flex align-center justi-center" href="#">چ</a><a class="flex align-center justi-center" href="#">ح</a>
+                            <a class="flex align-center justi-center" href="#">خ</a><a class="flex align-center justi-center" href="#">د</a><a class="flex align-center justi-center" href="#">ذ</a><a class="flex align-center justi-center" href="#">ر</a>
+                            <a class="flex align-center justi-center" href="#">ز</a><a class="flex align-center justi-center" href="#">ژ</a><a class="flex align-center justi-center" href="#">س</a><a class="flex align-center justi-center" href="#">ش</a>
+                            <a class="flex align-center justi-center" href="#">ص</a><a class="flex align-center justi-center" href="#">ض</a><a class="flex align-center justi-center" href="#">ط</a><a class="flex align-center justi-center" href="#">ظ</a>
+                            <a class="flex align-center justi-center" href="#">ع</a><a class="flex align-center justi-center" href="#">غ</a><a class="flex align-center justi-center" href="#">ف</a><a class="flex align-center justi-center" href="#">ق</a>
+                            <a class="flex align-center justi-center" href="#">ک</a><a class="flex align-center justi-center" href="#">گ</a><a class="flex align-center justi-center" href="#">ل</a><a class="flex align-center justi-center" href="#">م</a>
+                            <a class="flex align-center justi-center" href="#">ن</a><a class="flex align-center justi-center" href="#">و</a><a class="flex align-center justi-center" href="#">ه</a><a class="flex align-center justi-center" href="#">ی</a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <input type="radio" name="tabs" id="tab2" />
+                        <label for="tab2"role="tab" aria-selected="false" aria-controls="panel2" tabindex="0">حروف انگلیسی</label>
+                        <div id="tab-content2" class="filter__tab-content flex r align-center justi-center align-content-center wrap" role="tabpanel" aria-labelledby="specification" aria-hidden="true">
+                            <a class="flex align-center justi-center" href="#">A</a><a class="flex align-center justi-center" href="#">B</a><a class="flex align-center justi-center" href="#">C</a><a class="flex align-center justi-center" href="#">D</a>
+                            <a class="flex align-center justi-center" href="#">E</a><a class="flex align-center justi-center" href="#">F</a><a class="flex align-center justi-center" href="#">G</a><a class="flex align-center justi-center" href="#">H</a>
+                            <a class="flex align-center justi-center" href="#">I</a><a class="flex align-center justi-center" href="#">J</a><a class="flex align-center justi-center" href="#">K</a><a class="flex align-center justi-center" href="#">L</a>
+                            <a class="flex align-center justi-center" href="#">M</a><a class="flex align-center justi-center" href="#">N</a><a class="flex align-center justi-center" href="#">O</a><a class="flex align-center justi-center" href="#">P</a>
+                            <a class="flex align-center justi-center" href="#">Q</a><a class="flex align-center justi-center" href="#">R</a><a class="flex align-center justi-center" href="#">S</a><a class="flex align-center justi-center" href="#">T</a>
+                            <a class="flex align-center justi-center" href="#">U</a><a class="flex align-center justi-center" href="#">V</a><a class="flex align-center justi-center" href="#">W</a><a class="flex align-center justi-center" href="#">X</a>
+                            <a class="flex align-center justi-center" href="#">Y</a><a class="flex align-center justi-center" href="#">Z</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- صفحه پزشکان -->
