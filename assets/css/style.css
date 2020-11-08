@@ -2926,8 +2926,7 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   margin-top: -2.5rem;
   z-index: 99999;
-  overflow: hidden;
-  display: none; }
+  overflow: hidden; }
   @media only screen and (max-width: 30em) {
     .suggestion {
       width: 95%; } }

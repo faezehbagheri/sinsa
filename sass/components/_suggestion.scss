@@ -7,7 +7,7 @@
     margin-top: -2.5rem;
     z-index: 99999;
     overflow: hidden;
-    display: none;
+    // display: none;
 
     @include respond(phone){
         width: 95%;
