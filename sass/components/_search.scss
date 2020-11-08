@@ -18,9 +18,11 @@
         height: 8rem;
         width: 80%;
         border-radius: 4rem;
+        padding: 0 2rem;
 
         @include respond(phone){
             width: 95%;
+            padding: 0;
         }
     }
 
@@ -28,7 +30,8 @@
         width: 15%;
         height: 6rem;
         border-radius: 3rem;
-        // margin-left: 2rem;
+        // margin: 2rem 1rem;
+        // margin-left: 5px;
         border: none;
         outline: none;
         background-color: $color-primary-light;
@@ -73,10 +76,12 @@
     
     &__search-container{
         height: 6rem;
-        width: 80%;
+        // width: 80%;
+        flex: 1;
         border-radius: 5rem;
         position: relative;
-        margin: 2rem 1rem;
+        // margin: 2rem 1rem;
+        // margin-right: 5px;
         background-color: #fff;
 
         @include respond(phone){

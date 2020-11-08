@@ -1904,6 +1904,10 @@ body {
     width: 100%;
     transition: height 0.4s ease-in-out; }
 
+.mobile-article__link {
+  text-decoration: none;
+  padding: 1rem; }
+
 .mobile-article__item {
   height: 38rem;
   width: 90vw;
@@ -2060,7 +2064,8 @@ body {
     height: 18rem;
     width: 17rem;
     border-radius: 2rem;
-    margin: 1.5rem; }
+    margin: 1.5rem;
+    text-decoration: none; }
     @media only screen and (max-width: 22.5em) {
       .mobile-specialty__item {
         height: 15rem;
@@ -2766,10 +2771,12 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     height: 8rem;
     width: 80%;
-    border-radius: 4rem; }
+    border-radius: 4rem;
+    padding: 0 2rem; }
     @media only screen and (max-width: 30em) {
       .search__box {
-        width: 95%; } }
+        width: 95%;
+        padding: 0; } }
   .search__btn {
     width: 15%;
     height: 6rem;
@@ -2807,10 +2814,9 @@ body {
     margin-top: -2rem; }
   .search__search-container {
     height: 6rem;
-    width: 80%;
+    flex: 1;
     border-radius: 5rem;
     position: relative;
-    margin: 2rem 1rem;
     background-color: #fff; }
     @media only screen and (max-width: 30em) {
       .search__search-container {
