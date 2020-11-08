@@ -1258,6 +1258,7 @@ body {
     transform: translateY(-40%); }
   .filter__list {
     list-style-type: none;
+    height: 24rem;
     overflow-x: hidden;
     overflow-y: scroll; }
     @media only screen and (max-width: 30em) {
@@ -1274,8 +1275,6 @@ body {
       border-radius: 10px;
       background-color: #FFF;
       background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#6DC2BE), to(#49838B)); }
-    .filter__list ul {
-      height: 29rem; }
     .filter__list li {
       width: 100%;
       border-bottom: 1px solid #B4D3D1;
@@ -2979,8 +2978,7 @@ body {
   margin-top: -2.5rem;
   left: -4%;
   z-index: 99999;
-  overflow: hidden;
-  display: none; }
+  overflow: hidden; }
   @media only screen and (max-width: 30em) {
     .suggestion {
       width: 95%;

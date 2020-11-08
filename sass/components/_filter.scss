@@ -416,7 +416,7 @@
 
     &__list{
         list-style-type: none;
-        // height: 24rem;
+        height: 24rem;
         overflow-x: hidden;
         overflow-y: scroll;
         // margin-bottom: 3rem;
@@ -441,10 +441,6 @@
             border-radius: 10px;
             background-color: #FFF;
             background-image: -webkit-gradient(linear,40% 0%,75% 84%,from($color-primary),to($color-primary-dark),)
-        }
-
-        ul{
-            height: 29rem;
         }
 
         li{
