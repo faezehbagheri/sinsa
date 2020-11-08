@@ -134,7 +134,10 @@
         <div class="mobile-header__head flex r-reverse justi-between align-center">
             <a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a>
             <h2 class="heading-primary">بیماری ها</h2>
-            <i class="fas fa-ellipsis-v mobile-header__icon"></i>
+            <div class="flex column align-center">
+                <i class="fas fa-filter mobile-header__icon" onclick="openMobileFilter()"></i>
+                <span class="mobile-header__text">مشاهده فیلتر</span>
+            </div>
         </div>
         <!-- سرچ -->
         <div class="mobile-header__search" id="mobile-search">
@@ -149,7 +152,7 @@
                         <a href="#" class="search__btn flex align-center justi-center">علائم <i class="fas fa-stethoscope"></i></a>
                     </div>
                     <!-- search suggestion -->
-                    <div class="suggestion">
+                    <div class="suggestion" style="display: none;">
                         <div class="suggestion__box">
                             <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(0)"></i>
                             <div class="suggestion__recent-search flex column justi-around align-end">
@@ -993,7 +996,7 @@
                         </div>
                         <h2 class="personal-card__name">سارا رحیمی</h2>
                         <h4 class="personal-card__specialty"> پزشک عمومی </h4>
-                        <div class="personal-card__address flex column r-reverse align-center">                                
+                        <div class="personal-card__address flex column align-center">                                
                             <span>تهران<i class="fas fa-map-marker-alt"></i></span>
                             <p>قلهک</p>
                         </div>
@@ -1002,6 +1005,13 @@
                             <span class="personal-card__comment">715 نظر</span>
                         </div>
                         <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <div class="flex personal-card__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                             <a href="#" class="personal-card__link">دریافت مشاوره</a>
                     </div>
                     <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
@@ -1019,6 +1029,13 @@
                             <span class="personal-card__comment">715 نظر</span>
                         </div>
                         <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <div class="flex personal-card__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                             <a href="#" class="personal-card__link">دریافت مشاوره</a>
                     </div>
                     <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
@@ -1036,6 +1053,13 @@
                             <span class="personal-card__comment">715 نظر</span>
                         </div>
                         <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <div class="flex personal-card__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                             <a href="#" class="personal-card__link">دریافت مشاوره</a>
                     </div>
                     <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
@@ -1053,6 +1077,13 @@
                             <span class="personal-card__comment">715 نظر</span>
                         </div>
                         <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <div class="flex personal-card__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                             <a href="#" class="personal-card__link">دریافت مشاوره</a>
                     </div>
                     <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
@@ -1070,6 +1101,13 @@
                             <span class="personal-card__comment">715 نظر</span>
                         </div>
                         <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <div class="flex personal-card__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                             <a href="#" class="personal-card__link">دریافت مشاوره</a>
                     </div>
                     <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
@@ -1087,6 +1125,13 @@
                             <span class="personal-card__comment">715 نظر</span>
                         </div>
                         <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <div class="flex personal-card__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                             <a href="#" class="personal-card__link">دریافت مشاوره</a>
                     </div>
                     <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
@@ -1104,6 +1149,13 @@
                             <span class="personal-card__comment">715 نظر</span>
                         </div>
                         <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <div class="flex personal-card__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                             <a href="#" class="personal-card__link">دریافت مشاوره</a>
                     </div>
                     <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
@@ -1121,24 +1173,42 @@
                             <span class="personal-card__comment">715 نظر</span>
                         </div>
                         <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                        <div class="flex personal-card__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                             <a href="#" class="personal-card__link">دریافت مشاوره</a>
                     </div>
                     <div class="personal-card__main flex column justi-around align-center" style="margin-top: 12rem;">
-                        <div class="personal-card__photo-box">
-                            <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+                        <div class="flex column align-center">
+                            <div class="personal-card__photo-box">
+                                <img class="personal-card__photo" src="./assets/img/Mask Group15@2x.png">
+                            </div>
+                            <h2 class="personal-card__name">سارا رحیمی</h2>
+                            <h4 class="personal-card__specialty"> پزشک عمومی </h4>
                         </div>
-                        <h2 class="personal-card__name">سارا رحیمی</h2>
-                        <h4 class="personal-card__specialty"> پزشک عمومی </h4>
-                        <div class="personal-card__address flex column r-reverse align-center">                                
-                            <span>تهران<i class="fas fa-map-marker-alt"></i></span>
-                            <p>قلهک</p>
+                        <div class="flex column  align-center">
+                            <div class="personal-card__address flex column r-reverse align-center">                                
+                                <span>تهران<i class="fas fa-map-marker-alt"></i></span>
+                                <p>قلهک</p>
+                            </div>
+                            <div class="flex r-reverse">
+                                <span class="personal-card__percentage">89%</span>
+                                <span class="personal-card__comment">715 نظر</span>
+                            </div>
+                            <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
+                            <div class="flex personal-card__star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
-                        <div class="flex r-reverse">
-                            <span class="personal-card__percentage">89%</span>
-                            <span class="personal-card__comment">715 نظر</span>
-                        </div>
-                        <p class="personal-card__consulting"> مشاوره 200 (درمدت 1 سال و 6 ماه)</p>
-                            <a href="#" class="personal-card__link">دریافت مشاوره</a>
+                        <a href="#" class="personal-card__link">دریافت مشاوره</a>
                     </div>
                 </div>  
                 <div class="personal-card-large flex r-reverse wrap justi-around">
@@ -1157,13 +1227,11 @@
                         </div>
                         <div class="personal-card-large__secondary-info flex column align-center justi-start">
                             <div class="flex align-baseline">
-                                <div class="personal-card-large__star flex">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                                 <p>915 نظر</p>
                                 <span>67%</span>
                             </div>

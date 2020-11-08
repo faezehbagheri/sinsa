@@ -543,6 +543,10 @@
             width: 60%;
             font-size: 1.4rem;
             color: $color-gray;
+
+            @include respond(phone){
+                font-size: 2rem;
+            }
         }
 
         span{
@@ -554,6 +558,10 @@
             background-color: $color-yellow;
             text-align: center;
             margin-top: -4rem;
+
+            @include respond(phone){
+                font-size: 2rem;   
+            }
         }
 
         i{
@@ -574,6 +582,10 @@
         p{
             font-size: 1.4rem;
             color: $color-primary;
+
+            @include respond(phone){
+                font-size: 2re;
+            }
         }
     }
 }

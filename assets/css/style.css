@@ -840,6 +840,9 @@ body {
       width: 60%;
       font-size: 1.4rem;
       color: #707070; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__comments-item p {
+          font-size: 2rem; } }
     .doctors-page__comments-item span {
       font-size: 1.5rem;
       color: white;
@@ -849,6 +852,9 @@ body {
       background-color: #F4E36F;
       text-align: center;
       margin-top: -4rem; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__comments-item span {
+          font-size: 2rem; } }
     .doctors-page__comments-item i {
       font-size: 1.2rem;
       margin: 3px; }
@@ -861,6 +867,9 @@ body {
     .doctors-page__comments-photo p {
       font-size: 1.4rem;
       color: #6DC2BE; }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__comments-photo p {
+          font-size: 2re; } }
 
 .doctors {
   width: 100%; }
@@ -2275,24 +2284,15 @@ body {
 
 .personal-card-large {
   width: 100%;
-  margin-top: 4rem; }
-  @media only screen and (max-width: 30em) {
-    .personal-card-large {
-      margin-top: 0; } }
+  margin-top: 4rem;
+  display: none; }
   .personal-card-large__main {
     width: 95%;
     height: 20rem;
     border-radius: 2.5rem;
     background-color: white;
     box-shadow: 1px 1px 6px #A0A0A0;
-    margin-top: 5rem;
-    position: relative; }
-    @media only screen and (max-width: 30em) {
-      .personal-card-large__main {
-        height: 25rem;
-        width: 90%;
-        margin-top: 13rem;
-        flex-direction: column; } }
+    margin-top: 5rem; }
   .personal-card-large__photo {
     height: 90%;
     width: 15%;
@@ -2301,10 +2301,6 @@ body {
     position: relative;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50%); }
-    @media only screen and (max-width: 30em) {
-      .personal-card-large__photo {
-        position: relative;
-        top: -5%; } }
     .personal-card-large__photo img {
       height: 12rem;
       width: 12rem;
@@ -2322,30 +2318,16 @@ body {
     width: 50%;
     height: 18rem;
     float: right; }
-    @media only screen and (max-width: 30em) {
-      .personal-card-large__primary-info {
-        margin-right: 2rem; } }
     @media only screen and (min-width: 112.5em) {
       .personal-card-large__primary-info {
         width: 55%; } }
-    @media only screen and (max-width: 30em) {
-      .personal-card-large__primary-info div {
-        flex-direction: column;
-        align-items: center; } }
     .personal-card-large__primary-info h2 {
       font-size: 2.3rem;
       color: #E43F6F;
       margin-left: 4rem; }
-      @media only screen and (max-width: 30em) {
-        .personal-card-large__primary-info h2 {
-          font-size: 2.5rem;
-          margin: 0; } }
     .personal-card-large__primary-info h3 {
       font-size: 1.7rem;
       color: #6DC2BE; }
-      @media only screen and (max-width: 30em) {
-        .personal-card-large__primary-info h3 {
-          font-size: 2rem; } }
     .personal-card-large__primary-info span {
       font-size: 1.3rem;
       color: #707070;
@@ -2421,11 +2403,8 @@ body {
 
 .personal-card {
   width: 100%; }
-  @media only screen and (max-width: 30em) {
-    .personal-card {
-      display: none; } }
   .personal-card__main {
-    height: 26rem;
+    height: 28rem;
     width: 22rem;
     background-color: #ffffff;
     border-radius: 3rem;
@@ -2434,8 +2413,15 @@ body {
     box-shadow: 0 0 1rem #d9d9d9; }
     @media only screen and (min-width: 112.5em) {
       .personal-card__main {
-        height: 26rem;
+        height: 28rem;
         width: 26rem; } }
+    @media only screen and (max-width: 30em) {
+      .personal-card__main {
+        width: 95%;
+        align-items: flex-end;
+        padding-right: 5rem;
+        box-shadow: 0 0 5px #cccccc;
+        height: 33rem; } }
   .personal-card__photo-box {
     height: 11rem;
     width: 11rem;
@@ -2451,6 +2437,10 @@ body {
       .personal-card__photo-box {
         height: 13rem;
         width: 13rem; } }
+    @media only screen and (max-width: 30em) {
+      .personal-card__photo-box {
+        height: 15rem;
+        width: 15rem; } }
   .personal-card__photo {
     height: 9rem;
     width: 9rem !important;
@@ -2464,13 +2454,23 @@ body {
       .personal-card__photo {
         height: 11rem;
         width: 11rem !important; } }
+    @media only screen and (max-width: 30em) {
+      .personal-card__photo {
+        height: 13rem;
+        width: 13rem !important; } }
   .personal-card__name {
     font-size: 1.8rem;
     color: #E43F6F; }
+    @media only screen and (max-width: 30em) {
+      .personal-card__name {
+        font-size: 2.5rem; } }
   .personal-card__specialty {
     font-size: 1.3rem;
     font-weight: 700;
     color: #6DC2BE; }
+    @media only screen and (max-width: 30em) {
+      .personal-card__specialty {
+        font-size: 1.8rem; } }
     .personal-card__specialty i {
       font-size: 3rem;
       color: #90C73D;
@@ -2479,19 +2479,33 @@ body {
   .personal-card__percentage {
     display: inline-block;
     background-color: #49838B;
-    width: 4rem;
-    height: 2rem;
+    padding: 2px 1rem;
     border-radius: 1rem;
     text-align: center;
     color: #ffffff;
     font-size: 1.1rem; }
+    @media only screen and (max-width: 30em) {
+      .personal-card__percentage {
+        font-size: 1.8rem;
+        padding: 2px 1rem;
+        border-radius: 2rem; } }
   .personal-card__comment {
     font-size: 1rem;
     margin-right: 1rem;
     color: #707070; }
+    @media only screen and (max-width: 30em) {
+      .personal-card__comment {
+        font-size: 1.8rem; } }
   .personal-card__consulting {
     color: #707070;
-    font-size: .85rem; }
+    font-size: 1rem; }
+    @media only screen and (max-width: 30em) {
+      .personal-card__consulting {
+        font-size: 1.8rem; } }
+  .personal-card__star {
+    font-size: 1.5rem;
+    color: #F4E36F;
+    margin-top: 1rem; }
   .personal-card__link {
     padding: .8rem 1.5em;
     background-color: #90C73D;
@@ -2507,20 +2521,39 @@ body {
     cursor: pointer;
     text-align: center;
     text-decoration: none; }
+    @media only screen and (max-width: 30em) {
+      .personal-card__link {
+        position: relative;
+        left: -60%;
+        padding: 1.2rem 3rem;
+        font-size: 2rem; } }
   .personal-card__address {
     margin: 1rem; }
+    @media only screen and (max-width: 30em) {
+      .personal-card__address {
+        flex-direction: row-reverse !important; } }
     .personal-card__address i {
       font-size: 1.8rem;
       color: #49838B;
       margin-left: 1rem; }
+      @media only screen and (max-width: 30em) {
+        .personal-card__address i {
+          font-size: 2.5rem; } }
     .personal-card__address span {
       font-size: 1.8rem;
       font-weight: 100;
       color: #707070; }
+      @media only screen and (max-width: 30em) {
+        .personal-card__address span {
+          font-size: 2.2rem;
+          margin-left: 1rem; } }
     .personal-card__address p {
       font-size: 1.3rem;
       font-weight: 100;
       color: #707070; }
+      @media only screen and (max-width: 30em) {
+        .personal-card__address p {
+          font-size: 2.2rem; } }
 
 .owl-item > div {
   cursor: pointer;
