@@ -12,6 +12,7 @@
 
     @include respond(phone){
         width: 95%;
+        left: 0;
     }
 
     &__box{
@@ -46,6 +47,10 @@
         position: absolute;
         left: 50%;
         cursor: pointer;
+
+        @include respond(phone){
+            font-size: 3.5rem;
+        }
     }
 
     a,
@@ -60,6 +65,10 @@
         font-weight: 100;
         margin-bottom: 5px;
         direction: rtl;
+
+        @include respond(phone){
+            font-size: 2rem;
+        }
     }
 
     &__icon{
@@ -70,6 +79,10 @@
         font-size: 1.5rem;
         color: #fff;
         margin: .3rem;
+
+        @include respond(phone){
+            font-size: 2rem;
+        }
     }
 
     &__recent-search{
@@ -86,6 +99,10 @@
             font-size: 1.6rem;
             color: $color-gray;
             margin-bottom: 1rem;
+
+            @include respond(phone){
+                font-size: 2rem;
+            }
         }
     }
 
@@ -111,17 +128,26 @@
             color: $color-primary-light;
             font-size: 1.7rem;
             cursor: pointer;
+
+            @include respond(phone){
+                font-size: 2.3rem;
+            }
         }
     }
 
     &__article{
         // height: 5vh;
         position: relative;
+        padding-top: 1rem;
 
         &--icon{
             font-size: 3rem;
             color: $color-primary;
             margin: 0  5%;
+
+            @include respond(phone){
+                font-size: 3.8rem;
+            }
         }
 
         &--items{
@@ -138,6 +164,10 @@
             font-size: 3rem;
             color: $color-pink;
             margin: 0  5%;
+
+            @include respond(phone){
+                font-size: 3.8rem;
+            }
         }
 
         &--items{

@@ -2932,7 +2932,8 @@ body {
   overflow: hidden; }
   @media only screen and (max-width: 30em) {
     .suggestion {
-      width: 95%; } }
+      width: 95%;
+      left: 0; } }
   .suggestion__box {
     width: 100%;
     padding: 1rem;
@@ -2956,6 +2957,9 @@ body {
     position: absolute;
     left: 50%;
     cursor: pointer; }
+    @media only screen and (max-width: 30em) {
+      .suggestion__close {
+        font-size: 3.5rem; } }
   .suggestion a,
   .suggestion a:link, .suggestion a:visited {
     text-decoration: none; }
@@ -2965,12 +2969,18 @@ body {
     font-weight: 100;
     margin-bottom: 5px;
     direction: rtl; }
+    @media only screen and (max-width: 30em) {
+      .suggestion__header {
+        font-size: 2rem; } }
   .suggestion__icon {
     padding-right: 1rem; }
   .suggestion__item {
     font-size: 1.5rem;
     color: #fff;
     margin: .3rem; }
+    @media only screen and (max-width: 30em) {
+      .suggestion__item {
+        font-size: 2rem; } }
   .suggestion__recent-search {
     border-bottom: 1px solid #fff;
     padding-bottom: 1rem;
@@ -2984,6 +2994,9 @@ body {
       font-size: 1.6rem;
       color: #707070;
       margin-bottom: 1rem; }
+      @media only screen and (max-width: 30em) {
+        .suggestion__recent-search--item {
+          font-size: 2rem; } }
   .suggestion__related-words {
     height: 15rem;
     margin: .7rem 2.5rem;
@@ -3003,12 +3016,19 @@ body {
       color: #90C73D;
       font-size: 1.7rem;
       cursor: pointer; }
+      @media only screen and (max-width: 30em) {
+        .suggestion__related-words--btn {
+          font-size: 2.3rem; } }
   .suggestion__article {
-    position: relative; }
+    position: relative;
+    padding-top: 1rem; }
     .suggestion__article--icon {
       font-size: 3rem;
       color: #6DC2BE;
       margin: 0  5%; }
+      @media only screen and (max-width: 30em) {
+        .suggestion__article--icon {
+          font-size: 3.8rem; } }
     .suggestion__article--items {
       width: 82%;
       border-bottom: 1px solid #fff;
@@ -3019,6 +3039,9 @@ body {
       font-size: 3rem;
       color: #E43F6F;
       margin: 0  5%; }
+      @media only screen and (max-width: 30em) {
+        .suggestion__hospital--icon {
+          font-size: 3.8rem; } }
     .suggestion__hospital--items {
       width: 82%;
       border-bottom: 1px solid #fff;
