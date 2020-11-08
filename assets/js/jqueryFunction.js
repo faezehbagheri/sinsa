@@ -299,7 +299,6 @@ $(document).ready(function () {
 $(function(){
 
     $('input.filter__input').keyup(function(){
-        console.log("heeeellloooo");
 
         var searchText = $(this).val();
 

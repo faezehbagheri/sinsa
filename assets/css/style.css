@@ -866,16 +866,19 @@ body {
   width: 100%; }
   @media only screen and (max-width: 30em) {
     .doctors {
-      display: none !important; } }
+      flex-direction: column !important; } }
   .doctors__main {
     width: 60%; }
+    @media only screen and (max-width: 30em) {
+      .doctors__main {
+        width: 100%; } }
   .doctors__filter-header {
     width: 100%;
     height: 8rem;
     border-bottom: 2px solid #A0A0A0; }
     @media only screen and (max-width: 30em) {
       .doctors__filter-header {
-        display: none; } }
+        display: none !important; } }
     .doctors__filter-header span {
       font-size: 1.2rem;
       color: #A0A0A0; }
@@ -2274,18 +2277,24 @@ body {
 
 .personal-card-large {
   width: 100%;
-  margin-top: 4rem;
-  display: none; }
+  margin-top: 4rem; }
   @media only screen and (max-width: 30em) {
     .personal-card-large {
-      display: none; } }
+      margin-top: 0; } }
   .personal-card-large__main {
     width: 95%;
     height: 20rem;
     border-radius: 2.5rem;
     background-color: white;
     box-shadow: 1px 1px 6px #A0A0A0;
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    position: relative; }
+    @media only screen and (max-width: 30em) {
+      .personal-card-large__main {
+        height: 25rem;
+        width: 90%;
+        margin-top: 13rem;
+        flex-direction: column; } }
   .personal-card-large__photo {
     height: 90%;
     width: 15%;
@@ -2294,6 +2303,10 @@ body {
     position: relative;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50%); }
+    @media only screen and (max-width: 30em) {
+      .personal-card-large__photo {
+        position: relative;
+        top: -5%; } }
     .personal-card-large__photo img {
       height: 12rem;
       width: 12rem;
@@ -2311,16 +2324,30 @@ body {
     width: 50%;
     height: 18rem;
     float: right; }
+    @media only screen and (max-width: 30em) {
+      .personal-card-large__primary-info {
+        margin-right: 2rem; } }
     @media only screen and (min-width: 112.5em) {
       .personal-card-large__primary-info {
         width: 55%; } }
+    @media only screen and (max-width: 30em) {
+      .personal-card-large__primary-info div {
+        flex-direction: column;
+        align-items: center; } }
     .personal-card-large__primary-info h2 {
       font-size: 2.3rem;
       color: #E43F6F;
       margin-left: 4rem; }
+      @media only screen and (max-width: 30em) {
+        .personal-card-large__primary-info h2 {
+          font-size: 2.5rem;
+          margin: 0; } }
     .personal-card-large__primary-info h3 {
       font-size: 1.7rem;
       color: #6DC2BE; }
+      @media only screen and (max-width: 30em) {
+        .personal-card-large__primary-info h3 {
+          font-size: 2rem; } }
     .personal-card-large__primary-info span {
       font-size: 1.3rem;
       color: #707070;
@@ -2953,7 +2980,8 @@ body {
   margin-top: -2.5rem;
   left: -4%;
   z-index: 99999;
-  overflow: hidden; }
+  overflow: hidden;
+  display: none; }
   @media only screen and (max-width: 30em) {
     .suggestion {
       width: 95%;

@@ -1,10 +1,11 @@
 .personal-card-large{
     width: 100%;
     margin-top: 4rem;
-    display: none;
+    // display: none;
     
     @include respond(phone){
-        display: none;
+        // display: none;
+        margin-top: 0;
     }
     
     &__main{
@@ -14,6 +15,22 @@
         background-color: white;
         box-shadow: 1px 1px 6px $color-gray-light;
         margin-top: 5rem;
+        position: relative;
+    
+        @include respond(phone){
+            height: 25rem;
+            width: 90%;
+            margin-top: 13rem;
+            flex-direction: column;
+        }
+    }
+
+    &__star{
+        @include respond(phone){
+            // position: absolute;
+            // top: -70%;
+            // left: 85%;
+        }
     }
 
     &__photo{
@@ -24,6 +41,14 @@
         position: relative;
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50%);
+    
+        @include respond(phone){
+            // position: absolute;
+            // top: -70%;
+            // right: 5%;
+            position: relative;
+            top: -5%;
+        }
 
         img{
             height: 12rem;
@@ -43,18 +68,39 @@
         width: 50%;
         height: 18rem;
         float: right;
+    
+        @include respond(phone){
+            margin-right: 2rem;
+        }
         
         @include respond(big-desktop){width: 55%;}
+
+        div{           
+    
+            @include respond(phone){
+                flex-direction: column;
+                align-items: center;
+            }
+        }
 
         h2{
             font-size: 2.3rem;
             color: $color-pink;
             margin-left: 4rem;
+    
+            @include respond(phone){
+                font-size: 2.5rem;
+                margin: 0;
+            }
         }
 
         h3{
             font-size: 1.7rem;
             color:  $color-primary;
+    
+            @include respond(phone){
+                font-size: 2rem;   
+            }
         }
 
         span{
