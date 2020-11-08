@@ -11,7 +11,7 @@
         width: 22rem;
         background-color: #ffffff;
         border-radius: 3rem;
-        margin-top: 15rem;
+        margin-top: 17rem;
         position: relative;
         box-shadow: 0 0 1rem #d9d9d9;
 
@@ -22,11 +22,11 @@
         }
     
         @include respond(phone){
+            flex-direction: row-reverse;
             width: 95%;
             align-items: flex-end;
-            padding-right: 5rem;
             box-shadow: 0 0 5px #cccccc;
-            height: 33rem;
+            // height: 33rem;
         }
     }
 
@@ -35,7 +35,7 @@
         width: 11rem;
         border-radius: 100%;
         position: relative;
-        top: -10%;
+        top: -37%;
         transform: translateY(-50%);
         shape-outside: circle(50% at 50% 50%);
         margin-bottom: -10rem;
@@ -49,9 +49,22 @@
     
         @include respond(phone){
             // left: 30%;
-            height: 15rem;
-            width: 15rem;
+            height:24rem;
+            width:24rem;
+            top: 15%;
         }
+    }
+
+    &__section-1{
+        width: 45%;
+        height: 100%;
+        // background-color: pink;
+    }
+
+    &__section-2{
+        width: 45%;
+        height: 100%;
+        // background-color: pink;
     }
 
     &__photo{        
@@ -70,17 +83,18 @@
         }
     
         @include respond(phone){
-            height: 13rem;
-            width: 13rem !important;   
+            height: 20rem;
+            width: 20rem !important;   
         }
     }
 
     &__name{
         font-size: 1.8rem;
         color: $color-pink;
+        margin-top: 1rem;
     
         @include respond(phone){
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
     }
 
@@ -90,7 +104,7 @@
         color: $color-primary;
     
         @include respond(phone){
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
 
         i{
@@ -161,8 +175,9 @@
         text-decoration: none;
     
         @include respond(phone){
-            position: relative;
-            left: -60%;
+            position: absolute;
+            left: 10%;
+            top: 86%;
             padding: 1.2rem 3rem;
             font-size: 2rem;
         }

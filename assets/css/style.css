@@ -2408,7 +2408,7 @@ body {
     width: 22rem;
     background-color: #ffffff;
     border-radius: 3rem;
-    margin-top: 15rem;
+    margin-top: 17rem;
     position: relative;
     box-shadow: 0 0 1rem #d9d9d9; }
     @media only screen and (min-width: 112.5em) {
@@ -2417,17 +2417,16 @@ body {
         width: 26rem; } }
     @media only screen and (max-width: 30em) {
       .personal-card__main {
+        flex-direction: row-reverse;
         width: 95%;
         align-items: flex-end;
-        padding-right: 5rem;
-        box-shadow: 0 0 5px #cccccc;
-        height: 33rem; } }
+        box-shadow: 0 0 5px #cccccc; } }
   .personal-card__photo-box {
     height: 11rem;
     width: 11rem;
     border-radius: 100%;
     position: relative;
-    top: -10%;
+    top: -37%;
     transform: translateY(-50%);
     shape-outside: circle(50% at 50% 50%);
     margin-bottom: -10rem;
@@ -2439,8 +2438,15 @@ body {
         width: 13rem; } }
     @media only screen and (max-width: 30em) {
       .personal-card__photo-box {
-        height: 15rem;
-        width: 15rem; } }
+        height: 24rem;
+        width: 24rem;
+        top: 15%; } }
+  .personal-card__section-1 {
+    width: 45%;
+    height: 100%; }
+  .personal-card__section-2 {
+    width: 45%;
+    height: 100%; }
   .personal-card__photo {
     height: 9rem;
     width: 9rem !important;
@@ -2456,21 +2462,22 @@ body {
         width: 11rem !important; } }
     @media only screen and (max-width: 30em) {
       .personal-card__photo {
-        height: 13rem;
-        width: 13rem !important; } }
+        height: 20rem;
+        width: 20rem !important; } }
   .personal-card__name {
     font-size: 1.8rem;
-    color: #E43F6F; }
+    color: #E43F6F;
+    margin-top: 1rem; }
     @media only screen and (max-width: 30em) {
       .personal-card__name {
-        font-size: 2.5rem; } }
+        font-size: 3rem; } }
   .personal-card__specialty {
     font-size: 1.3rem;
     font-weight: 700;
     color: #6DC2BE; }
     @media only screen and (max-width: 30em) {
       .personal-card__specialty {
-        font-size: 1.8rem; } }
+        font-size: 2rem; } }
     .personal-card__specialty i {
       font-size: 3rem;
       color: #90C73D;
@@ -2523,8 +2530,9 @@ body {
     text-decoration: none; }
     @media only screen and (max-width: 30em) {
       .personal-card__link {
-        position: relative;
-        left: -60%;
+        position: absolute;
+        left: 10%;
+        top: 86%;
         padding: 1.2rem 3rem;
         font-size: 2rem; } }
   .personal-card__address {
@@ -3761,6 +3769,8 @@ body {
       position: fixed;
       top: 90%;
       z-index: 99999; } }
+  .mobile-bottom-menu a {
+    text-decoration: none; }
   .mobile-bottom-menu__icon {
     font-size: 4.5rem;
     color: #99D4D1; }
