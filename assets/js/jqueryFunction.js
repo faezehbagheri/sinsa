@@ -299,10 +299,11 @@ $(document).ready(function () {
 $(function(){
 
     $('input.filter__input').keyup(function(){
+        console.log("heeeellloooo");
 
         var searchText = $(this).val();
 
-        $('ul.filter__list > li').each(function(){
+        $('.filter__list > ul > li').each(function(){
 
             var currentLiText = $(this).text(),
                 showCurrentLi = currentLiText.indexOf(searchText) !== -1;
