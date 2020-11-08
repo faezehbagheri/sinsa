@@ -2420,7 +2420,8 @@ body {
         flex-direction: row-reverse;
         width: 95%;
         align-items: flex-end;
-        box-shadow: 0 0 5px #cccccc; } }
+        box-shadow: 0 0 5px #cccccc;
+        margin-top: 8rem !important; } }
   .personal-card__photo-box {
     height: 11rem;
     width: 11rem;
