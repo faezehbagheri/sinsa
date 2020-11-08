@@ -253,7 +253,8 @@ body {
       .card__item {
         height: 9rem; } }
     .card__item:hover {
-      background-color: #6DC2BE; }
+      background-color: #6DC2BE;
+      box-shadow: 1px 1px 5px #A0A0A0; }
     .card__item:hover span {
       color: white;
       font-size: 1.8rem; }
@@ -1250,37 +1251,48 @@ body {
     transform: translateY(-40%); }
   .filter__list {
     list-style-type: none;
-    height: 21rem;
+    height: 24rem;
     overflow-x: hidden;
-    overflow-y: scroll;
-    margin-bottom: 3rem; }
+    overflow-y: scroll; }
     @media only screen and (max-width: 30em) {
       .filter__list {
         height: 30rem; } }
+    .filter__list::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+      background-color: #F5F5F5;
+      border-radius: 10px 0 0 10px; }
     .filter__list::-webkit-scrollbar {
-      width: 1rem; }
+      width: 8px;
+      background-color: #F5F5F5; }
     .filter__list::-webkit-scrollbar-thumb {
-      background-color: #B4D3D1;
-      border-radius: 2rem 0 0 2rem; }
+      border-radius: 10px;
+      background-color: #FFF;
+      background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#6DC2BE), to(#49838B)); }
+    .filter__list ul {
+      height: 29rem; }
     .filter__list li {
-      margin: 6px;
-      width: 85%;
+      width: 100%;
       border-bottom: 1px solid #B4D3D1;
-      padding: 3px 1.5rem; }
+      padding: 0 1.5rem;
+      height: 5rem;
+      transition: all .3s; }
       @media only screen and (max-width: 30em) {
         .filter__list li {
           padding: 1rem 1.5rem; } }
+      .filter__list li:hover {
+        background-color: #6DC2BE;
+        box-shadow: 1px 1px 5px #A0A0A0; }
+        .filter__list li:hover a {
+          color: white;
+          font-size: 1.6rem; }
     .filter__list a,
     .filter__list a:link,
     .filter__list a:visited {
       text-decoration: none;
       font-size: 1.4rem;
       color: #707070;
-      text-align: right; }
-      .filter__list a:hover,
-      .filter__list a:link:hover,
-      .filter__list a:visited:hover {
-        transform: scale(1.2); }
+      text-align: right;
+      transition: all .3s; }
       @media only screen and (max-width: 30em) {
         .filter__list a,
         .filter__list a:link,
@@ -3058,12 +3070,17 @@ body {
   width: 52%; }
   @media only screen and (max-width: 30em) {
     .tab-amodi {
-      width: 100%; } }
+      width: 100%;
+      align-items: center !important; } }
   .tab-amodi h1 {
     margin-bottom: 5px;
     padding-bottom: 5px;
     border-bottom: 1px solid #90C73D;
     color: #6DC2BE; }
+    @media only screen and (max-width: 30em) {
+      .tab-amodi h1 {
+        font-size: 2.5rem;
+        border-bottom: none; } }
   .tab-amodi__container {
     width: 100%; }
   .tab-amodi__multipleTabs {
