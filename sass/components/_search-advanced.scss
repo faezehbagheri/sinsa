@@ -4,7 +4,7 @@
     background-color: rgba($color: $color-black, $alpha: .3);
     border-radius: 6rem;
     margin-top: -2rem;
-    display: none;
+    // display: none;
     overflow: hidden;
     
     @include respond(big-desktop){width: 60vw; }
