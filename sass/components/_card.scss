@@ -114,9 +114,10 @@
             box-shadow: 1px 1px 5px $color-gray-light;
         }
 
-        &:hover span{
+        &:hover span,
+        &:hover p{
             color: white;
-            font-size: 1.8rem;
+            font-size: 1.7rem;
 
             @include respond(phone){
                 font-size: 2.5rem;
@@ -124,23 +125,9 @@
         }
         
         
+        
         &:last-of-type{
             border-bottom: none;
-        }
-
-
-        div{
-            width:  3.5rem;
-            height: 3.5rem;
-            border-radius: 100%;
-            background-color: $color-gray-lighter;
-            margin: 1.5rem;
-            position: relative;
-
-            @include respond(phone){
-                width:  4rem;
-                height: 4rem;
-            }
         }
 
         i{
@@ -157,12 +144,34 @@
         span{
             color: $color-gray;
             font-size: 1.4rem;
+            font-weight: bold;
             margin: 1.5rem;
             transition: all .3s;
 
             @include respond(phone){
                 font-size: 2.2rem;
             }
+        }
+        p{
+            margin-left: 3rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $color-primary;
+            // font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    &__circle{
+        width:  3.5rem;
+        height: 3.5rem;
+        border-radius: 100%;
+        background-color: $color-gray-lighter;
+        margin: 1.5rem;
+        position: relative;
+
+        @include respond(phone){
+            width:  4rem;
+            height: 4rem;
         }
     }
 }

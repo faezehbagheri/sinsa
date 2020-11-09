@@ -35,6 +35,15 @@ body {
 .orange {
   color: orange; }
 
+.white {
+  color: white !important; }
+
+.bg-white {
+  background-color: white !important; }
+
+.border-bottom-white {
+  border-bottom: 1px solid white !important; }
+
 @font-face {
   font-family: 'irsans-bold';
   src: url(../../assets/fonts/iransans-bold/iransansweb_bold.eot?) format("embedded-opentype"), url(../../assets/fonts/iransans-bold/iransansweb_bold.ttf) format("truetype"), url(../../assets/fonts/iransans-bold/iransansweb_bold.woff) format("woff"), url(../../assets/fonts/iransans-bold/iransansweb_bold.woff2) format("woff2"); }
@@ -258,25 +267,16 @@ body {
     .card__item:hover {
       background-color: #6DC2BE;
       box-shadow: 1px 1px 5px #A0A0A0; }
-    .card__item:hover span {
+    .card__item:hover span,
+    .card__item:hover p {
       color: white;
-      font-size: 1.8rem; }
+      font-size: 1.7rem; }
       @media only screen and (max-width: 30em) {
-        .card__item:hover span {
+        .card__item:hover span,
+        .card__item:hover p {
           font-size: 2.5rem; } }
     .card__item:last-of-type {
       border-bottom: none; }
-    .card__item div {
-      width: 3.5rem;
-      height: 3.5rem;
-      border-radius: 100%;
-      background-color: #EEF1EF;
-      margin: 1.5rem;
-      position: relative; }
-      @media only screen and (max-width: 30em) {
-        .card__item div {
-          width: 4rem;
-          height: 4rem; } }
     .card__item i {
       color: #6DC2BE;
       font-size: 1.8rem;
@@ -290,11 +290,28 @@ body {
     .card__item span {
       color: #707070;
       font-size: 1.4rem;
+      font-weight: bold;
       margin: 1.5rem;
       transition: all .3s; }
       @media only screen and (max-width: 30em) {
         .card__item span {
           font-size: 2.2rem; } }
+    .card__item p {
+      margin-left: 3rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #6DC2BE; }
+  .card__circle {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    background-color: #EEF1EF;
+    margin: 1.5rem;
+    position: relative; }
+    @media only screen and (max-width: 30em) {
+      .card__circle {
+        width: 4rem;
+        height: 4rem; } }
 
 .category {
   width: 50%; }
@@ -2609,7 +2626,7 @@ body {
   width: 17rem;
   border-radius: 100%;
   position: relative;
-  top: -10%;
+  top: -25%;
   transform: translateY(-50%);
   shape-outside: circle(50% at 50% 50%);
   margin-bottom: -13rem;
@@ -3054,7 +3071,7 @@ body {
     font-size: 2.5rem;
     color: white;
     position: absolute;
-    left: 50%;
+    left: 5%;
     cursor: pointer; }
     @media only screen and (max-width: 30em) {
       .suggestion__close {
@@ -3169,7 +3186,8 @@ body {
         font-size: 2.5rem;
         border-bottom: none; } }
   .tab-amodi__container {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 2rem; }
   .tab-amodi__multipleTabs {
     display: flex;
     flex-flow: row-reverse wrap;
