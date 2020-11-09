@@ -24,14 +24,16 @@
         @include respond(big-desktop){ top: -10%; }
     }
 
+    &__link{
+        margin-top: -10rem;
+    }
+
     &__icon{
         font-size: 3rem;
         color: $color-gray;
-        margin-top: -10rem;
         margin-bottom: 15rem;
+        cursor: pointer;
 
-        
-        @include respond(big-desktop){ margin-top: -10rem; }        
     }
 
     &__main-section{

@@ -7,7 +7,9 @@
   font-family: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  transition: all 2s ease; }
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 45%; } }
@@ -3706,14 +3708,13 @@ body {
     @media only screen and (min-width: 112.5em) {
       .main__half-circle {
         top: -10%; } }
+  .main__link {
+    margin-top: -10rem; }
   .main__icon {
     font-size: 3rem;
     color: #707070;
-    margin-top: -10rem;
-    margin-bottom: 15rem; }
-    @media only screen and (min-width: 112.5em) {
-      .main__icon {
-        margin-top: -10rem; } }
+    margin-bottom: 15rem;
+    cursor: pointer; }
   .main__main-section {
     height: 420vh;
     width: 75%;
