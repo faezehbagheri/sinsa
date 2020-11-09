@@ -10,8 +10,8 @@
 html {
     // This defines what 1rem is
     font-size: 62.5%;
-    scroll-behavior: smooth;
-    transition: all 2s ease;
+    // scroll-behavior: smooth;
+    // transition: all 2s ease;
 
     
     @include respond(port-land){ font-size: 50%; }

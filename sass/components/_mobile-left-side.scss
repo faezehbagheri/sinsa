@@ -9,6 +9,10 @@
 
     @include respond(phone){display: flex;}
 
+    @include respond(iphone){
+        top: 80%;   
+    }
+
 
     &__box{
         position: absolute;
@@ -29,6 +33,11 @@
         margin-bottom: 2rem;
         font-size: 3rem;
         color: $color-gray;
+
+        @include respond(iphone){
+            height: 6rem;
+            width: 6rem;
+        }
         
     }
 

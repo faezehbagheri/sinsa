@@ -96,8 +96,8 @@ $(document).ready(function () {
     });
 
     $mobileHeaderFilter.owlCarousel({
-        loop: true,
-        items: 5,
+        rtl: true,
+        items: 4,
     });
 
     $(document).on('click', '.owl-item>div', function () {
@@ -255,8 +255,18 @@ $(document).ready(function () {
     });
 
     $specialty.owlCarousel({
-        items: 4,
-        rtl: true
+        rtl: true,
+        responsive: {
+            300: {
+                items: 3
+            },
+            600: {
+                items: 3
+            },
+            700: {
+                items: 3
+            }
+        }
     });
 
     $(document).on('click', '.owl-item>div', function () {
@@ -271,7 +281,7 @@ $(document).ready(function () {
 
     $article.owlCarousel({
         items: 1,
-        rtl: true
+        rtl: true,
     });
 
     $(document).on('click', '.owl-item>div', function () {

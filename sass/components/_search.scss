@@ -24,6 +24,10 @@
             width: 95%;
             padding: 0;
         }
+
+        @include respond(iphone){
+            height: 6rem;
+        }
     }
 
     &__btn{

@@ -7,9 +7,7 @@
   font-family: inherit; }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  transition: all 2s ease; }
+  font-size: 62.5%; }
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 45%; } }
@@ -1949,6 +1947,10 @@ body {
     width: 100%;
     transition: height 0.4s ease-in-out; }
 
+@media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+  .mobile-article {
+    margin-top: 10rem; } }
+
 .mobile-article__link {
   text-decoration: none;
   padding: 1rem; }
@@ -2079,6 +2081,9 @@ body {
   @media only screen and (max-width: 30em) {
     .left-side {
       display: flex; } }
+  @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+    .left-side {
+      top: 80%; } }
   .left-side__box {
     position: absolute;
     top: 90%;
@@ -2096,6 +2101,10 @@ body {
     margin-bottom: 2rem;
     font-size: 3rem;
     color: #707070; }
+    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+      .left-side__btn {
+        height: 6rem;
+        width: 6rem; } }
   .left-side__icon {
     font-size: 3rem;
     color: #707070; }
@@ -2105,7 +2114,7 @@ body {
 .mobile-specialty {
   box-shadow: 0 4px 7px -2px #dbd9d9; }
   .mobile-specialty__item {
-    background-color: #6DC2BE;
+    background-color: rgba(109, 194, 190, 0.5);
     height: 18rem;
     width: 17rem;
     border-radius: 2rem;
@@ -2115,6 +2124,10 @@ body {
       .mobile-specialty__item {
         height: 15rem;
         width: 13rem; } }
+    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+      .mobile-specialty__item {
+        height: 14rem;
+        width: 12rem; } }
   .mobile-specialty__icon {
     font-size: 7rem;
     color: #fff; }
@@ -2895,6 +2908,9 @@ body {
       .search__box {
         width: 95%;
         padding: 0; } }
+    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+      .search__box {
+        height: 6rem; } }
   .search__btn {
     width: 15%;
     height: 6rem;
@@ -3045,7 +3061,8 @@ body {
   margin-top: -2.5rem;
   left: -4%;
   z-index: 99999;
-  overflow: hidden; }
+  overflow: hidden;
+  display: none; }
   @media only screen and (max-width: 30em) {
     .suggestion {
       width: 95%;
@@ -3477,7 +3494,6 @@ body {
       text-align: right;
       font-size: 2.2rem;
       padding: 2.5rem;
-      color: #6DC2BE;
       line-height: 5rem; } }
 
 .activate i:first-child {
@@ -3800,10 +3816,16 @@ body {
   .mobile-bottom-menu__icon {
     font-size: 4.5rem;
     color: #99D4D1; }
+    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+      .mobile-bottom-menu__icon {
+        font-size: 4rem; } }
   .mobile-bottom-menu__span {
     font-size: 2.5rem;
     color: #fff;
     margin-top: 1rem; }
+    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+      .mobile-bottom-menu__span {
+        font-size: 2rem; } }
   .mobile-bottom-menu__photo {
     position: absolute;
     height: 20rem;
@@ -3813,6 +3835,9 @@ body {
     @media only screen and (max-width: 22.5em) {
       .mobile-bottom-menu__photo {
         height: 17rem; } }
+    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+      .mobile-bottom-menu__photo {
+        height: 12rem; } }
 
 .mobile-header {
   display: none; }
@@ -3821,12 +3846,15 @@ body {
       display: flex;
       flex-direction: column; } }
   .mobile-header__head {
-    height: 10vh;
+    height: 12rem;
     width: 100%;
     background-color: #6DC2BE;
     position: fixed;
     top: 0;
     z-index: 999; }
+    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+      .mobile-header__head {
+        height: 7rem; } }
   .mobile-header__icon {
     font-size: 3rem;
     color: #fff;
@@ -3842,6 +3870,9 @@ body {
     @media only screen and (max-width: 30em) {
       .mobile-header__filter {
         display: flex; } }
+    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+      .mobile-header__filter {
+        margin-top: 19rem; } }
   .mobile-header__filter-item {
     margin: 3rem 1rem; }
     .mobile-header__filter-item div {
@@ -3866,6 +3897,10 @@ body {
         .mobile-header__filter-item a {
           height: 10rem;
           width: 10rem; } }
+      @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+        .mobile-header__filter-item a {
+          height: 9rem;
+          width: 9rem; } }
     .mobile-header__filter-item i {
       font-size: 7rem;
       color: #A0A0A0;
@@ -3876,6 +3911,9 @@ body {
       @media only screen and (max-width: 22.5em) {
         .mobile-header__filter-item i {
           font-size: 4.5rem; } }
+      @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+        .mobile-header__filter-item i {
+          font-size: 6rem; } }
     .mobile-header__filter-item span {
       font-size: 2.5rem;
       color: #707070;
@@ -3931,10 +3969,13 @@ body {
     width: 100%;
     background-color: #fff;
     position: fixed;
-    top: 10%;
+    margin-top: 12rem;
     z-index: 999;
     overflow: hidden;
     transition: all .5s; }
+    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+      .mobile-header__search {
+        margin-top: 7rem; } }
   .mobile-header__search-box {
     height: 8rem;
     width: 90%;

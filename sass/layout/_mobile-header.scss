@@ -7,12 +7,16 @@
     }
 
     &__head{
-        height: 10vh;
+        height: 12rem;
         width: 100%;
         background-color: $color-primary;
         position: fixed;
         top: 0;
         z-index: 999;
+
+        @include respond(iphone){
+            height: 7rem;
+        }
     }
     
     &__icon{
@@ -34,6 +38,10 @@
 
         @include respond(phone){
             display: flex;
+        }
+
+        @include respond(iphone){
+            margin-top: 19rem;
         }
     }
 
@@ -69,6 +77,11 @@
                 height: 10rem;
                 width:  10rem;
             }
+
+            @include respond(iphone){
+                height: 9rem;
+                width:  9rem;
+            }
         }
 
         i{
@@ -78,6 +91,10 @@
 
             @include respond(phone-small){
                 font-size: 4.5rem;
+            }
+
+            @include respond(iphone){
+                font-size: 6rem;
             }
         }
 
@@ -157,10 +174,14 @@
         width: 100%;
         background-color: #fff;
         position: fixed;
-        top: 10%;
+        margin-top: 12rem;
         z-index: 999;
         overflow: hidden;
         transition: all .5s;
+
+        @include respond(iphone){
+            margin-top: 7rem;
+        }
 
         // @include respond(phone){ height: 12rem; }
 

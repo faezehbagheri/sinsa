@@ -2,7 +2,7 @@
     box-shadow: 0 4px 7px -2px #dbd9d9;
     
     &__item{
-        background-color: $color-primary;
+        background-color: rgba($color-primary , .5);
         height: 18rem;
         width:  17rem;
         border-radius: 2rem;
@@ -12,6 +12,11 @@
         @include respond(phone-small){
             height: 15rem;
             width:  13rem;
+        }
+
+        @include respond(iphone){
+            height: 14rem;
+            width: 12rem;
         }
     }
 
