@@ -40,7 +40,7 @@ function openSuggestionBox(num){
         console.log("ff");
         suggestion[num].style= "display: flex";
         searchAdv[num].style.display = "none";
-        document.querySelector(".mobile-header__search").style.height = "43rem"
+        // document.querySelector(".mobile-header__search").style.height = "43rem"
     }else{
       colseSuggestionBox(num);
     }
@@ -51,5 +51,5 @@ function colseSuggestionBox(num){
   var searchAdv = document.querySelectorAll(".search__advanced");
   suggestion[num].style= "display:none"; 
   searchAdv[num].style.display = "flex";
-  document.querySelector(".mobile-header__search").style.height = "12rem";
+  // document.querySelector(".mobile-header__search").style.height = "12rem";
 }

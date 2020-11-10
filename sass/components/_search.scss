@@ -34,7 +34,7 @@
         width: 15%;
         height: 6rem;
         border-radius: 3rem;
-        // margin: 2rem 1rem;
+        margin: 2rem 1rem;
         // margin-left: 5px;
         border: none;
         outline: none;
@@ -84,7 +84,7 @@
         flex: 1;
         border-radius: 5rem;
         position: relative;
-        // margin: 2rem 1rem;
+        margin: 2rem 1rem;
         // margin-right: 5px;
         background-color: #fff;
 
@@ -108,7 +108,7 @@
         font-size: 3rem;
         text-align: right;
         color: $color-gray;
-        border-left: 1px solid $color-primary;
+        // border-left: 1px solid $color-primary;
     }
 
     &__right-icon{
@@ -131,6 +131,8 @@
         left: 7%;
         transform: translate(-15% , -50%);
         color: $color-primary;
+        border-right: 2px solid $color-primary;
+        padding: 1rem 2rem 1rem 0;
         cursor: pointer;
 
         @include respond(phone){

@@ -10,6 +10,11 @@
         flex-direction: column !important;
         align-items: center !important;
     }
+
+    @include respond(iphone){
+        width: 99%;
+        margin: 0 auto;
+    }
     
     @include respond(big-desktop){height: auto;}
 }

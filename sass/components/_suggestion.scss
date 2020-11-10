@@ -1,18 +1,25 @@
 .suggestion{
     height: 30rem;
-    width: 70%;
-    border-radius: 5rem;
+    width: 62%;
+    border-radius: 3rem;
     position: relative;
     background-color: rgba($color: #000000, $alpha: .4);
     margin-top: -2.5rem;
-    left: -4%;
+    left: -6.5%;
     z-index: 99999;
     overflow: hidden;
     // display: none;
 
     @include respond(phone){
         width: 95%;
+        height: 50rem;
         left: 0;
+        border-radius: 3rem;
+    }
+
+    @include respond(iphone){
+        border-radius: 2rem;
+        height: 30rem;
     }
 
     &__box{
@@ -22,11 +29,20 @@
         position: relative;
         overflow-y: scroll;
         // display: none;
+
+        @include respond(phone){
+            height: 50rem;
+        }
+
+        @include respond(iphone){
+            height: 30rem;
+        }
     
         &::-webkit-scrollbar-track{
             -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
             background-color: #F5F5F5;
             border-radius: 10px;
+            position: absolute;
         }
     
         &::-webkit-scrollbar{
@@ -43,7 +59,7 @@
 
     &__close{
         font-size:2.5rem;
-        color: white;
+        color: $color-primary-dark;
         position: absolute;
         left: 5%;
         cursor: pointer;
@@ -56,18 +72,18 @@
     a,
     a:link,a:visited{
         text-decoration: none;
-        // color: white;
     }
 
     &__header{
         font-size: 1.4rem;
+        font-weight: bold;
         color: #fff;
         font-weight: 100;
         margin-bottom: 5px;
         direction: rtl;
 
         @include respond(phone){
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
     }
 
@@ -77,16 +93,19 @@
 
     &__item{
         font-size: 1.5rem;
+        text-align: right;
         color: #fff;
         margin: .3rem;
+        padding: 1rem 0;
 
         @include respond(phone){
-            font-size: 2rem;
+            font-size: 2.5rem;
+            padding: 2rem 0;
         }
     }
 
     &__recent-search{
-        border-bottom: 1px solid #fff;
+        border-bottom: 2px solid $color-primary-dark;
         padding-bottom: 1rem;
         margin: 2.5rem;
 
@@ -101,44 +120,38 @@
             margin-bottom: 1rem;
 
             @include respond(phone){
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
         }
     }
 
     &__related-words{
-        height: 15rem;
         margin: .7rem 2.5rem;
         position: relative;
+        border-bottom: 2px solid $color-primary-dark;
 
         &--items{
             width: 90%;
-            border-bottom: 1px solid #fff;
-            margin: 1rem 10%; 
+            margin: .5rem 10%; 
             padding-bottom: 1rem;
         }
 
-        &--btn{
-            position: absolute;
-            left: 5%;
-            top: 70%;
-            background-color: transparent;
-            border: none;
-            outline: none;
-            color: $color-primary-light;
-            font-size: 1.7rem;
-            cursor: pointer;
-
-            @include respond(phone){
-                font-size: 2.3rem;
+        a{
+            width: 100%;
+            &:not(:last-child){                
+                border-bottom: 1px solid #fff;
             }
+        }
+
+        @include respond(iphone){
+            
         }
     }
 
     &__article{
-        // height: 5vh;
         position: relative;
-        padding-top: 1rem;
+        border-bottom: 2px solid $color-primary-dark;
+        margin: .7rem 2.5rem;
 
         &--icon{
             font-size: 3rem;
@@ -152,13 +165,21 @@
 
         &--items{
             width: 82%;
-            border-bottom: 1px solid #fff;
             padding-bottom: 1rem;
+        }
+
+        a{
+            width: 100%;
+            &:not(:last-child){                
+                border-bottom: 1px solid #fff;
+            }
         }
     }
 
     &__hospital{
         position: relative;
+        border-bottom: 2px solid $color-primary-dark;
+        margin: .7rem 2.5rem;
 
         &--icon{
             font-size: 3rem;
@@ -172,19 +193,40 @@
 
         &--items{
             width: 82%;
-            border-bottom: 1px solid #fff;
+            // border-bottom: 1px solid #fff;
             padding-bottom: 1rem;
+        }
+
+        a{
+            width: 100%;
+            &:not(:last-child){                
+                border-bottom: 1px solid #fff;
+            }
         }
     }
 
     &__chat{
         position: relative;
         padding-bottom: 1rem;
+        margin: .7rem 2.5rem;
 
         &--icon{
             font-size: 3rem;
             color: $color-primary-light;
             margin: 0  5%;
+        }
+
+        &--items{
+            width: 82%;
+            // border-bottom: 1px solid #fff;
+            padding-bottom: 1rem;
+        }
+
+        a{
+            width: 100%;
+            &:not(:last-child){                
+                border-bottom: 1px solid #fff;
+            }
         }
 
     }

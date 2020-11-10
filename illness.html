@@ -430,7 +430,7 @@
                         <a href="#" class="search__btn flex align-center justi-center">علائم <i class="fas fa-stethoscope"></i></a>
                     </div>
                     <!-- search suggestion -->
-                    <div class="suggestion">
+                    <div class="suggestion" style="display: none;">
                         <div class="suggestion__box">
                             <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(0)"></i>
                             <div class="suggestion__recent-search flex column justi-around align-end">
@@ -449,7 +449,6 @@
                                     <a href="#" class="suggestion__item">مهر طلبی</a>
                                     <a href="#" class="suggestion__item">مهر ورزی</a>
                                 </div>
-                                <button class="suggestion__related-words--btn"><i class="fas fa-angle-down suggestion__icon"></i>مشاهده همه</button>
                             </div>
                             <div class="suggestion__article flex r-reverse align-center">
                                 <i class="fas fa-book suggestion__article--icon"></i>
@@ -937,9 +936,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-                        
                     </div>
                 </div>                    
                 <div id="content03" class="tab-amodi__tabcontent">
@@ -991,114 +987,192 @@
                             </div>
                         </div> -->
                         <div class="card flex column align-center justi-start" style="margin-top: 3rem;">
-                            <!-- <div class="card__label">
-                                پربازدیدترین ها
-                            </div> -->
                             <div class="card__main">
-                                <div class="card__container">
-                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                        <span>آتورواستاتین</span>
-                                        <div><i class="fas fa-angle-right"></i></div>
-                                    </a>
-                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                        <span>آتنولول</span>
-                                        <div><i class="fas fa-angle-right"></i></div>
-                                    </a>
-                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                        <span>آزاتیوپرین</span>
-                                        <div><i class="fas fa-angle-right"></i></div>
-                                    </a>
-                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                        <span>آزیتروماسین</span>
-                                        <div><i class="fas fa-angle-right"></i></div>
-                                    </a>
-                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                        <span>آسیکلوویر</span>
-                                        <div><i class="fas fa-angle-right"></i></div>
-                                    </a>
-                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                        <span>آستمیزول</span>
-                                        <div><i class="fas fa-angle-right"></i></div>
-                                    </a>
-                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                        <span>آکاربوز</span>
-                                        <div><i class="fas fa-angle-right"></i></div>
-                                    </a>
-                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                        <span>آزاتیوپرین</span>
-                                        <div><i class="fas fa-angle-right"></i></div>
-                                    </a>
-                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                        <span>آکسار</span>
-                                        <div><i class="fas fa-angle-right"></i></div>
-                                    </a>
-                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                        <span>آستمیزول</span>
-                                        <div><i class="fas fa-angle-right"></i></div>
-                                    </a>
-                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                        <span>آسیکلوویر</span>
-                                        <div><i class="fas fa-angle-right"></i></div>
-                                    </a>
+                                <div class="card__container" style="width: 96%;">
+                                    <div class="card__list">
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آپروتیئین</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آتراکوریوم</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آتروپین</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آتورواستاتین</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آتنولول</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آزاتیوپرین</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آزیتروماسین</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آسیکلوویر</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آتنولول</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آسیکلوویر</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آسیکلوویر</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                            <span>آسیکلوویر</span>
+                                            <div class=" flex align-center">
+                                                <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                                <p>Abdominal Aortic </p>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div> 
-                        </div>                   
+                            </div>
+                        </div>                  
                     </div>  
                 </div>
                 <div id="content04" class="tab-amodi__tabcontent">
                     <div class="card flex column align-center justi-start" style="width: 100%;">
-                        <!-- <div class="card__label">
-                            پربازدیدترین ها
-                        </div> -->
                         <div class="card__main">
                             <div class="card__container" style="width: 96%;">
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتورواستاتین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آتنولول</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آزاتیوپرین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آزیتروماسین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آسیکلوویر</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آستمیزول</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آکاربوز</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آزاتیوپرین</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آکسار</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آستمیزول</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
-                                <a href="#" class="card__item flex r-reverse align-center justi-between">
-                                    <span>آسیکلوویر</span>
-                                    <div><i class="fas fa-angle-right"></i></div>
-                                </a>
+                                <div class="card__list">
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آپروتیئین</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آتراکوریوم</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آتروپین</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آتورواستاتین</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آتنولول</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آزاتیوپرین</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آزیتروماسین</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آسیکلوویر</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آتنولول</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آسیکلوویر</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آسیکلوویر</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card__item flex r-reverse align-center justi-between">
+                                        <span>آسیکلوویر</span>
+                                        <div class=" flex align-center">
+                                            <div class="card__circle"><i class="fas fa-angle-right"></i></div>
+                                            <p>Abdominal Aortic </p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </div> 
-                    </div> 
+                        </div>
+                    </div>     
                 </div>
                 <div id="content05" class="tab-amodi__tabcontent">
                     <h2>Tab content 5</h2>
@@ -1195,7 +1269,7 @@
             </button>    
         </div>
         <button class="left-side__btn left-side__z-index" onclick="showButton()">
-            <i class="fas fa-ellipsis-v"></i>
+            <i class="fas fa-ellipsis-v left-side__icon"></i>
         </button>   
     </div>
 

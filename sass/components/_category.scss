@@ -1,6 +1,5 @@
 .category{
     width: 50%;
-    // background-color: pink;
 
     @include respond(phone){
         width: 100%;
@@ -8,7 +7,6 @@
 
     .search{
         width: 100% !important;
-        // width: 100%; 
         height: auto; 
         margin-top: 1rem;
         margin: 0;
@@ -20,8 +18,8 @@
     }
 
     .suggestion{
-        width: 77%;
-        left: -7%;
+        width: 70%;
+        left: -8%;
     }
 
     .search__advanced{display: none !important;}

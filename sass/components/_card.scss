@@ -1,8 +1,9 @@
 .card{
     width: 43%;
-    // border-radius: 0 0 2rem 2rem;
+    
     @include respond(phone){
         width: 95%;
+        margin-top: 2rem;
     }
 
     &__main{
@@ -12,6 +13,14 @@
         position: relative;
         border-radius: 2rem;
         margin-bottom: 5rem;
+
+        @include respond(phone){
+            height: 58rem;
+        }
+
+        @include respond(iphone){
+            height: 39rem;
+        }
     }
 
     &__container{
@@ -56,10 +65,16 @@
         position: relative;
         z-index: 0;
         color: #fff;
+        border-radius: 10px 10px 0 0;
 
         @include respond(phone){
             padding: 2rem 5rem;
             font-size: 2.3rem;
+        }
+
+        @include respond(iphone){
+            padding: 1.5rem 3rem;
+            border-radius: 2rem 2rem 0 0;
         }
     }
 
@@ -76,6 +91,10 @@
         
         @include respond(phone){
             width: 5rem;
+        }
+
+        @include respond(iphone){
+            width: 4rem;
         }
     }
 
@@ -106,7 +125,11 @@
         transition: all .3s;
 
         @include respond(phone){
-            height: 9rem;
+            height: 11rem;
+        }
+
+        @include respond(iphone){
+            height: 7.5rem;
         }
 
         &:hover{
@@ -157,7 +180,10 @@
             font-size: 1.6rem;
             font-weight: 500;
             color: $color-primary;
-            // font-family: Arial, Helvetica, sans-serif;
+
+            @include respond(phone){
+                margin-left: 2rem;
+            }
         }
     }
 
@@ -170,8 +196,13 @@
         position: relative;
 
         @include respond(phone){
-            width:  4rem;
-            height: 4rem;
+            width:  4.5rem;
+            height: 4.5rem;
+        }
+
+        @include respond(iphone){
+            height: 3.5rem;
+            width: 3.5rem;
         }
     }
 }

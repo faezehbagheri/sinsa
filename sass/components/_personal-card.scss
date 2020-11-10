@@ -29,6 +29,10 @@
             margin-top: 8rem !important;
             // height: 33rem;
         }
+    
+        @include respond(iphone){
+            height: 23rem;
+        }
     }
 
     &__photo-box{        
@@ -50,9 +54,15 @@
     
         @include respond(phone){
             // left: 30%;
-            height:24rem;
-            width:24rem;
-            top: 15%;
+            height:23rem;
+            width:23rem;
+            top: 10%;
+        }
+    
+        @include respond(iphone){
+            height: 15rem;
+            width:  15rem;
+            top: -15%;
         }
     }
 
@@ -68,6 +78,10 @@
             height: 100%;        
             width: 45%;
             padding-top: 3rem;
+        }
+    
+        @include respond(iphone){
+            width: 50%;
         }
     }
 
@@ -89,6 +103,11 @@
         @include respond(phone){
             height: 20rem;
             width: 20rem !important;   
+        }
+    
+        @include respond(iphone){
+            height: 13rem;
+            width:  13rem !important;
         }
     }
 

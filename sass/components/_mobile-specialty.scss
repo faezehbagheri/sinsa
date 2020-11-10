@@ -1,5 +1,9 @@
 .mobile-specialty{
     box-shadow: 0 4px 7px -2px #dbd9d9;
+
+    @include respond(iphone){
+        height: 120rem;   
+    }
     
     &__item{
         background-color: rgba($color-primary , .5);

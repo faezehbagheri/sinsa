@@ -1,7 +1,7 @@
 .mobile-article{
 
     @include respond(iphone){
-        margin-top: 10rem;
+        margin-top: 1rem;
     }
     &__link{
         text-decoration: none;
@@ -11,7 +11,7 @@
     &__item{
         height: 38rem;
         width: 90vw;
-        border-radius: 5rem;
+        border-radius: 3rem;
         position: relative;
         overflow: hidden;
         box-shadow: 0 2px 5px $color-gray-light;
@@ -19,14 +19,23 @@
         @include respond(phone-small){
             height: 30rem;
         }
+
+        @include respond(iphone){
+            height: 30rem; 
+            margin-bottom: 7rem;  
+        }
     }
 
     &__header{
         height: 7rem;
-        padding-right: 5rem;
+        // padding-right: 5rem;
         background-color: #ffffff;
 
         @include respond(phone-small){height: 5rem;}
+
+        @include respond(iphone){
+            height: 6rem;   
+        }
     }
 
     &__heading-primary{
@@ -39,8 +48,7 @@
 
     &__heading-secondary{
         font-size: 2rem;
-        color: $color-primary;
-        padding-right: 2rem;
+        color: $color-gray;
         
         @include respond(phone-small){font-size: 1.8rem;}
     }
@@ -53,6 +61,10 @@
 
         @include respond(phone-small){
             height: 28rem;
+        }
+
+        @include respond(iphone){
+            height: 32rem;   
         }
     }
 

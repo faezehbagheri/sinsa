@@ -1,5 +1,8 @@
 $(document).ready(function () {  
 
+    $("#body:not(.suggestion)").on('click' , function(){
+        $('.suggestion').hide();
+    })
     var activeTabMobile = $(".tabs-mobile").find('a.active').data('trigger');
     $('#' + activeTabMobile).show();
 
@@ -82,7 +85,7 @@ $(document).ready(function () {
     $mobileFilter.owlCarousel({
         loop: false,
         rtl: true,
-        items: 4,
+        items: 3,
     });
 
     $(document).on('click', '.owl-item>div', function () {
@@ -117,7 +120,7 @@ $(document).ready(function () {
                 items: 3
             },
             400: {
-                items: 4
+                items: 3
             },
             1000: {
                 items: 5
