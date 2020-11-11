@@ -1,0 +1,83 @@
+.result{
+
+    &__item{
+        margin: 0;
+        width: 100%;
+        border-bottom: 2px solid $color-secondary-light;
+    }
+
+    &__set-size {
+        font-size: 10em;
+    }
+
+    &__wrapper {
+        @include size($default-size, $default-size);
+        float: left;
+        margin: 15px;
+        position: relative;
+        margin-right: 4rem;        
+    }
+
+    &__pie {
+        @include size(100%, 100%);
+        clip: rect(0, $default-size, $default-size, $default-size / 2);
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    &__half-circle {
+        @include size(100%, 100%);
+        border: ($default-size / 18) solid #3498db;
+        border-radius: 50%;
+        clip: rect(0, $default-size / 2, $default-size, 0);
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+    
+    &__label {
+        background: white;
+        border-radius: 50%;
+        bottom: $label-font-size-redo / 10;
+        color: $color-gray;
+        box-shadow: 0 0 5px $color-gray;
+        cursor: default;
+        display: block;
+        font-size: 2rem;
+        left: $label-font-size-redo / 10;
+        position: absolute;
+        right: $label-font-size-redo / 10;
+        text-align: center;
+        top: $label-font-size-redo / 10;
+        padding: 3rem;
+    }
+    
+    &__progress-30 {
+        @include draw-progress(30, $color-pink);
+    }
+
+    &__progress-45 {
+        @include draw-progress(45, $color-yellow);
+    }
+
+    &__progress-70 {
+        @include draw-progress(70, $color-primary-light);
+    }
+
+    i{
+        font-size: 2.5rem;
+        color: $color-primary-dark;
+        margin-left: 6rem;
+    }
+    
+    a,
+    a:link,
+    a:visited{
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: $color-gray;
+        width: 65%;
+        text-align: right;
+    }
+}

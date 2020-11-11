@@ -557,3 +557,19 @@ function changeListType(id){
 function openMobileFilter(){
   document.querySelector('.filter').classList.toggle("filter__show");
 }
+
+function openSearchOption(){
+  var value = document.querySelector(".visit__input").value;
+  if(value.length >= 2){
+    document.querySelector(".visit__option").style.height = "30rem";
+  }else{
+    document.querySelector(".visit__option").style.height = "0";
+  }
+}
+
+
+///// انتخاب علائم بیماری در صفحه ویزیت////
+var text;
+$("ul.visit__option-list li").on('click', function(){
+  text = $(this).text();
+});

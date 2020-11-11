@@ -1,6 +1,6 @@
 .visit{
     width: 100%;    
-    height: 65rem;
+    height: 70rem;
     background-color: #B4D3D1;
     position: relative;
     border-radius: 2rem;
@@ -39,6 +39,10 @@
         height: 30rem;
     }
 
+    &__search-box{
+        position: relative;
+    }
+
     &__search{
         width: 23rem;
         height: 4rem;
@@ -65,8 +69,71 @@
         }
     }
 
+    &__option{
+        width: 23rem;
+        height: 0;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 5px $color-gray-light;
+        background-color: white;
+        overflow-y: scroll;
+        position: absolute;
+        top: 16%;
+        transition: all .6s ease;
+    
+        &::-webkit-scrollbar-track{
+            border-radius: 10px;
+            position: absolute;
+        }
+    
+        &::-webkit-scrollbar{
+            width: 6px;
+        }
+    
+        &::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: #cccccc;
+        }
+    }
+
+    &__option-list{
+        list-style-type: none;
+        text-align: right;
+
+
+        li{
+            // margin: 6px;
+            width: 100%;
+            border-bottom: 1px solid $color-secondary-light;
+            padding: 0 1.5rem;
+            height: 5rem;
+            transition: all .3s;
+            font-size: 1.4rem;
+            color: $color-gray;
+            background-color: white;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $color-secondary;
+                box-shadow: 1px 1px 5px $color-gray-light;
+                color: white;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
     &__selected{
         height: 25rem;
+        margin-top: 1rem;
+    }
+
+    &__item-selected{
+        font-size: 1.8rem;
+        color: $color-secondary;
+        cursor: pointer;
+        
+        i{
+            margin-left: 1rem;
+        }
     }
 
     &__circle{

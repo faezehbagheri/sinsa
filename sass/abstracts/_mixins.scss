@@ -48,3 +48,31 @@
         };
     }
 }
+@mixin size($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin draw-progress($progress, $color) {
+    .result__pie {
+      .result__half-circle {
+        border-color: $color ;
+      }
+  
+      .result__left-side {
+        transform: rotate($progress * 3.6deg);
+      }
+  
+      @if $progress <= 50 {
+        .result__right-side {
+          display: none;
+        }
+      } @else {
+        clip: rect(auto, auto, auto, auto);
+  
+        .result__right-side {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }

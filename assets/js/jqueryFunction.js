@@ -3,6 +3,11 @@ $(document).ready(function () {
     $("#body:not(.suggestion)").on('click' , function(){
         $('.suggestion').hide();
     })
+
+    // $("#body:not(.visit__option)").on('click' , function(){
+    //     $('.visit__option').hide();
+    // })
+
     var activeTabMobile = $(".tabs-mobile").find('a.active').data('trigger');
     $('#' + activeTabMobile).show();
 
@@ -316,6 +321,20 @@ $(function(){
         var searchText = $(this).val();
 
         $('.filter__list > ul > li').each(function(){
+
+            var currentLiText = $(this).text(),
+                showCurrentLi = currentLiText.indexOf(searchText) !== -1;
+
+            $(this).toggle(showCurrentLi);
+
+        });     
+    });
+
+    $('input.visit__input').keyup(function(){
+
+        var searchText = $(this).val();
+
+        $('ul.visit__option-list > li').each(function(){
 
             var currentLiText = $(this).text(),
                 showCurrentLi = currentLiText.indexOf(searchText) !== -1;
