@@ -9,7 +9,8 @@
     &__main{
         width: 100%;    
         height: 50rem;
-        background-color: #B4D3D1;
+        background-color: $color-secondary-light;
+        box-shadow: -1px 0 5px $color-gray-light;
         position: relative;
         border-radius: 2rem;
         margin-bottom: 5rem;

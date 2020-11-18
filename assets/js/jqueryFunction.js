@@ -19,6 +19,7 @@ $(document).ready(function () {
         $(this).siblings('a').removeClass('active');
     });
 
+    $('.tab-amodi__tabcontent').hide();
     var activeTab = $(".tabs").find('a.active').data('trigger');
     $('#' + activeTab).show();
 

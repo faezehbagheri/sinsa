@@ -30,7 +30,7 @@
 
     &__icons{
         width: 12%;
-        border-left: 2px solid $color-gray-light;
+        border-left: 2px solid rgba($color: $color-gray-light, $alpha: .3);
 
         i{
             font-size: 1.7rem;
@@ -63,7 +63,7 @@
             padding: 1.3rem 1.5rem;
 
             &:not(:last-of-type){
-                border-bottom: 1px solid $color-gray-lighter;
+                border-bottom: 2px solid rgba($color: $color-gray-light, $alpha: .3);
             }
         }
 

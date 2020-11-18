@@ -567,6 +567,10 @@ function openSearchOption(){
   }
 }
 
+function openTab(selector){
+  document.querySelector(selector).classList.toggle('active-tab');
+}
+
 
 ///// انتخاب علائم بیماری در صفحه ویزیت////
 var text;
