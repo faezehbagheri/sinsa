@@ -29,8 +29,8 @@
     }
 
     &__icon{
-        font-size: 3rem;
-        color: $color-gray;
+        font-size: 5rem;
+        color: rgba($color: $color-gray-lighter, $alpha: .8);
         margin-bottom: 15rem;
         cursor: pointer;
 

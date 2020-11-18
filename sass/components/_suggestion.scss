@@ -1,14 +1,13 @@
 .suggestion{
-    height: 30rem;
-    width: 62%;
-    border-radius: 3rem;
+    height: 33rem;
+    width: 100%;
+    border-radius: 5rem;
     position: relative;
-    background-color: rgba($color: #000000, $alpha: .4);
-    margin-top: -2.5rem;
-    left: -6.5%;
+    background-color: rgba($color: #000000, $alpha: .3);
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: .8);
+    margin-top: 5px;
     z-index: 99999;
     overflow: hidden;
-    // display: none;
 
     @include respond(phone){
         width: 95%;
@@ -20,6 +19,65 @@
     @include respond(iphone){
         border-radius: 2rem;
         height: 30rem;
+    }
+
+    &__result{
+        background-color: white;
+        width: 100%;
+        border-radius: 4rem;
+        overflow: hidden;
+    }
+
+    &__icons{
+        width: 12%;
+        border-left: 2px solid $color-gray-light;
+
+        i{
+            font-size: 1.7rem;
+            margin: 1.5rem;
+            color: $color-gray;
+            cursor: pointer;
+        }
+    }
+
+
+    &__result-list{
+        width: 82%;
+        min-height: 22rem;
+        text-align: right;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+        
+        &::-webkit-scrollbar-thumb{
+            background-color: none;
+        }
+
+        a,
+        a:link,
+        a:visited{
+            font-size: 1.6rem;
+            color: $color-gray;            
+            padding: 1.3rem 1.5rem;
+
+            &:not(:last-of-type){
+                border-bottom: 1px solid $color-gray-lighter;
+            }
+        }
+
+        span{
+            font-size: 1.6rem;
+            color: $color-primary;
+        }
+    }
+
+    &__container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 1rem 2rem;
     }
 
     &__box{
@@ -101,9 +159,10 @@
     }
 
     &__recent-search{
-        border-bottom: 2px solid $color-primary-dark;
-        padding-bottom: 1rem;
-        margin: 2.5rem;
+        width: 100%;
+        border-bottom: 1px solid $color-gray-lighter;
+        margin: 1rem;
+        margin-top: 0;
 
         &--item{
             background-color: #fff;
@@ -111,7 +170,7 @@
             border-radius: 2rem;
             margin-left: 1rem;
             text-align: center;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: $color-gray;
             margin-bottom: 1rem;
 
@@ -226,4 +285,9 @@
         }
 
     }
+}
+
+.active-icon{
+    font-size: 2.5rem !important;
+    color: $color-primary-light !important;
 }

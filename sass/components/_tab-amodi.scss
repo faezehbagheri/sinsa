@@ -34,36 +34,9 @@
         cursor: pointer;
         margin-right: 2rem;
         
-        @include respond(phone){display: none;}
-
-        // & a{
-        //     flex:1 0 0; 
-        //     padding:10px 0; 
-        //     text-align: center; 
-        //     text-decoration:none;
-        //     background-color: $color-primary;
-        //     border-radius: 25px 25px 0 0;
-        //     margin-left: 1px;
-        //     color: #ffff;
-        //     font-size: 1.5rem;
-
-        //     // @include respond(phone){display:none;}
-        // }
-
-        // & a.active {
-        //     background:rgb(253, 253, 253); 
-        //     border: 3px solid $color-primary;
-        //     border-bottom: none;
-        //     color:#fff;
-
-        //     @include respond(phone){
-        //         font-size: 2rem;
-        //         display:block;
-        //     }
-        // }
-
-       
+        @include respond(phone){display: none;}       
     }
+
     &__label{
         width: 11rem;
         padding:1.1rem 1rem;
@@ -79,12 +52,33 @@
         color: $color-primary-dark;
         box-shadow: 0px -2px 6px #a6a6a665;
 
+        &.main-search{
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            
+            &::after{
+                width: 4rem;
+                right: -24px;
+            }
+
+            &::before{
+                width: 4rem;
+                left: -24px;
+            }
+        }
+
         &:hover{
             background-color: $color-primary-dark;
             color: white;
-            &::after,
+            
             &::before{
                 background-color: $color-primary-dark;
+                border-left: 1px solid $color-primary-dark;
+            }
+
+            &::after{
+                background-color: $color-primary-dark;
+                border-right: 1px solid $color-primary-dark;
             }
         }
         
@@ -97,18 +91,18 @@
     }
 
     &__label.active{
-        background-color: $color-secondary-light;
+        background-color: $color-primary-light;
         z-index: 9;
         color: #fff !important;
         
         &::before{
-            background-color: $color-secondary-light;
-            border-left: 1px solid $color-secondary-light;
+            background-color: $color-primary-light;
+            border-left: 1px solid $color-primary-light;
         }
 
         &::after{
-            background-color: $color-secondary-light;
-            border-right: 1px solid $color-secondary-light;
+            background-color: $color-primary-light;
+            border-right: 1px solid $color-primary-light;
         }
     }
 

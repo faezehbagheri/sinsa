@@ -1,8 +1,8 @@
 $(document).ready(function () {  
 
-    $("#body:not(.suggestion)").on('click' , function(){
-        $('.suggestion').hide();
-    })
+    // $("#body:not(.suggestion)").on('click' , function(){
+    //     $('.suggestion').hide();
+    // })
 
     // $("#body:not(.visit__option)").on('click' , function(){
     //     $('.visit__option').hide();
