@@ -1,13 +1,20 @@
 .result{
+    width: 90%;
+    direction: rtl;
 
     &__item{
         margin: 0;
         width: 100%;
-        border-bottom: 2px solid $color-secondary-light;
+        padding: 3rem 1rem;
+        &:not(:last-of-type){
+            border-bottom: 2px solid $color-secondary-light;
+        }
     }
 
     &__set-size {
         font-size: 10em;
+        border-radius: 100%;
+        background-color: pink;
     }
 
     &__wrapper {
@@ -80,4 +87,126 @@
         width: 65%;
         text-align: right;
     }
+
+    &__tab{
+        border-bottom: 2px solid $color-gray-light;
+        direction: rtl;
+
+        a{
+            width: 16%;
+            background-color: $color-secondary-light;
+            color: white;
+            padding:1rem 3rem;
+
+            &::after,
+            &::before{
+                background-color: $color-secondary-light;
+                border-color:  $color-secondary-light;
+            }
+
+            &:hover{
+                background-color: $color-secondary-light;
+                &::after,
+                &::before{
+                    background-color: $color-secondary-light;
+                    border-color:  $color-secondary-light;
+                }
+    
+
+            }
+        }
+    }
+
+    h3{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color-pink;
+        padding: 1rem;
+        border-bottom: 2px solid $color-gray-light;
+    }
+
+    p{
+        font-size: 1.4rem;
+        margin: 1rem 0;
+        color: $color-primary-dark;
+    }
+
+    &__circle{
+        width: 15rem;
+        height:15rem;
+        border: 2px dashed $color-gray;
+        border-radius: 100%;
+        position: relative;
+
+        .bar{
+            width:  12rem;
+            height: 12rem;
+            position: relative;
+            @include centerABS();
+        }
+
+    }
+    
+    #top {
+        position: absolute;
+        text-align: center;
+        height: 40px;
+        width: 100px;
+        left: 33%;
+        top: -12%;
+        border-top: 1px solid $color-gray;
+        font-size: 1.6rem;
+        text-align: right;
+        color: $color-gray;
+                
+        span{
+            position: absolute;
+            left: 115%;
+            top: -40%;
+        }
+      }
+      #top:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        height: 20px;
+        // width: 50%;
+        left: -14px;
+        transform: skew(-30deg, 0deg);
+        border-left: 1px solid $color-gray;
+        border-radius: 10px 0 0 0;
+      }
+      
+    #bottom {
+        position: absolute;
+        text-align: center;
+        height: 20px;
+        width: 110px;
+        left: 30%;
+        top: 100%;
+        border-bottom: 1px solid $color-gray;
+        font-size: 1.6rem;
+        text-align: right;
+        color: $color-gray;
+        padding-bottom: 2rem;
+        
+        span{
+            position: absolute;
+            left: 115%;
+            top: 15%;
+        }
+      }
+      #bottom:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        height: 20px;
+        // width: 50%;
+        left: -8px;
+        transform: skew(30deg, 0deg);
+        border-left: 1px solid $color-gray;
+        border-radius: 10px 0 0 0;
+        // transform: rotate(0deg);
+      }
+
 }

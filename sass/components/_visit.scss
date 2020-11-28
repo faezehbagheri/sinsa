@@ -36,7 +36,8 @@
 
     &__main{
         width: 80%;
-        height: 30rem;
+        height: 35rem;
+        margin-top: 3rem;
     }
 
     &__search-box{
@@ -49,10 +50,11 @@
         border-radius: 1rem;
         background-color: white;
         box-shadow: 0 1px 5px $color-gray-light;
+        padding: 0 5px;
 
         input{
             height: 3rem;
-            width: 80%;
+            width: 90%;
             border: none;
             outline: none;
             text-align: right;
@@ -159,6 +161,7 @@
 
     &_buttons{
         width: 80%;
+        margin-top: 3rem;
 
         button{
             width: 14rem;
