@@ -239,6 +239,44 @@
         transition: all 1s ease;
         
     }
+
+    &__result{
+        width: 100%;
+        direction: rtl;
+        padding: 0 5rem;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s ease;
+
+        div{
+            margin-top: 1.5rem;
+        }
+
+        a,
+        a:link,
+        a:visited{
+            font-size: 1.8rem;
+            font-weight: 500;
+            padding: 1rem;
+            border-bottom: 2px solid $color-gray;
+            width: 40%;
+            text-decoration: none;
+            color: black;
+
+            i{
+                font-size: 2.5rem;
+                color: $color-gray-light;
+                margin-left: 1.5rem;
+            }
+        }
+        p{
+            font-size: 1.6rem;
+            line-height: 4rem;
+            margin: 1rem 3.5rem 0 0;
+            text-align: justify;
+            color: $color-gray;
+        }
+    }
 }
 .active-tab{
 
@@ -283,90 +321,29 @@
     }
 }
 
-.activate{
-    padding-bottom: 2rem;
+.activate{   
 
-    &>:first-child{
-        @include respond(phone){
-            background-color: $color-primary !important;  
-        }      
-    }
+    & > :last-child{
+        height: 55rem;
+        overflow-y: auto;
+        margin: 1rem auto;
 
-    &>:last-child{
-        height: 48vh;        
-        overflow-y: scroll;
-
-        & div{
-            text-align: right;
-            font-size: 1.5rem;
-            padding: 2.5rem;
-            color: $color-gray;
-            line-height: 5rem;
-
-            @include respond(phone){
-                text-align: right;
-                font-size: 2.2rem;
-                padding: 2.5rem;
-                color: $color-gray;
-                line-height: 5rem;
-            }
-        }
         
-        &::-webkit-scrollbar {
-            width: 1rem;
+        &::-webkit-scrollbar-track{
+            border-radius: 10px;
+            position: absolute;
         }
-        
-        &::-webkit-scrollbar-thumb {
-            color: none;
+    
+        &::-webkit-scrollbar{
+            width: 6px;
         }
-        
-        @include respond(big-desktop){height: 40vh;}
-        @include respond(phone){height: 40rem;}
-
-    }
-
-    & button{
-        background-color: $color-primary-light !important;
-    }
-
-    & h2{
-        width: 50%;
-        font-size: 2rem;
-        color: $color-primary;
-        padding: 2rem;
-        border-bottom: 3px solid $color-primary;
-        
-        @include respond(big-desktop){
-            font-size: 2.2rem;
-            padding: 2rem;
-        }
-
-        @include respond(phone){
-            font-size: 2.8rem !important;
-            border-bottom: none;
-            color: #fff !important;
-            padding: 2rem;
-            width: 70%;
+    
+        &::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: #cccccc;
         }
     }
-
-    & p{
-        
-        text-align: right;
-        font-size: 1.7rem;
-        padding: 2.5rem;
-        color: $color-gray;
-        line-height: 5rem;
-        
-        @include respond(phone){
-            text-align: right;
-            font-size: 2.2rem;
-            padding: 2.5rem;
-            // color: $color-primary;
-            line-height: 5rem;
-        }
-    }
-
+    
     & i{
         &:first-child{
             display: none;
@@ -376,6 +353,89 @@
             display: inline-block;
         }
     }
+    
+    & button{
+        background-color: $color-primary-light !important;
+    }
+
+    // &>:first-child{
+    //     @include respond(phone){
+    //         background-color: $color-primary !important;  
+    //     }      
+    // }
+
+    // &>:last-child{
+    //     height: 48vh;        
+    //     overflow-y: scroll;
+
+    //     & div{
+    //         text-align: right;
+    //         font-size: 1.5rem;
+    //         padding: 2.5rem;
+    //         color: $color-gray;
+    //         line-height: 5rem;
+
+    //         @include respond(phone){
+    //             text-align: right;
+    //             font-size: 2.2rem;
+    //             padding: 2.5rem;
+    //             color: $color-gray;
+    //             line-height: 5rem;
+    //         }
+    //     }
+        
+    //     &::-webkit-scrollbar {
+    //         width: 1rem;
+    //     }
+        
+    //     &::-webkit-scrollbar-thumb {
+    //         color: none;
+    //     }
+        
+    //     @include respond(big-desktop){height: 40vh;}
+    //     @include respond(phone){height: 40rem;}
+
+    // }
+
+
+    // & h2{
+    //     width: 50%;
+    //     font-size: 2rem;
+    //     color: $color-primary;
+    //     padding: 2rem;
+    //     border-bottom: 3px solid $color-primary;
+        
+    //     @include respond(big-desktop){
+    //         font-size: 2.2rem;
+    //         padding: 2rem;
+    //     }
+
+    //     @include respond(phone){
+    //         font-size: 2.8rem !important;
+    //         border-bottom: none;
+    //         color: #fff !important;
+    //         padding: 2rem;
+    //         width: 70%;
+    //     }
+    // }
+
+    // & p{
+        
+    //     text-align: right;
+    //     font-size: 1.7rem;
+    //     padding: 2.5rem;
+    //     color: $color-gray;
+    //     line-height: 5rem;
+        
+    //     @include respond(phone){
+    //         text-align: right;
+    //         font-size: 2.2rem;
+    //         padding: 2.5rem;
+    //         // color: $color-primary;
+    //         line-height: 5rem;
+    //     }
+    // }
+
 }
 
   

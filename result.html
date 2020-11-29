@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+    <link href="./assets/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/function.js"></script>
+    <script src="./assets/js/jqueryFunction.js"></script>
+    <script src="./assets/js/searchFunction.js"></script>
+
+    <title>Sinsa</title>
+</head>
+
+<body id="body">
+
+    
+    <!-- منو موبایل -->
+    <nav class="mobile-menu flex column justi-around align-end " id="menu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__header">
+                <a href="#"><img src="./assets/img/Logo Icon@2x.png" class="mobile-menu__logo"></a>
+            </div>
+            <div class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item flex r-reverse justi-start align-center">                        
+                        <a class="mobile-menu__link mobile-menu__margin" href="#">صفحه اصلی</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <span class="mobile-menu__link" onclick="openSubMenu('2')">بیماری ها<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-2"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-2"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-2">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <span class="mobile-menu__link" onclick="openSubMenu('3')">داروها<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-3"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-3"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-3">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <span class="mobile-menu__link" onclick="openSubMenu('4')">زندگی سالم<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-4"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-4"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-4">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>                    
+                    <li class="mobile-menu__item">
+                        <span class="mobile-menu__link" onclick="openSubMenu('5')">خانواده<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-5"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-5"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-5">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item flex r-reverse justi-start align-center">
+                        <span class="mobile-menu__link mobile-menu__margin">اخبار</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <span class="mobile-menu__link" onclick="openSubMenu('6')">مقالات<i class="fas fa-angle-left mobile-menu__icon" id="left-icon-6"></i><i class="fas fa-angle-down mobile-menu__down-icon" id="down-icon-6"></i></span>
+                        <ul class="mobile-menu__sub-list" id="sub-menu-6">
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">عادت های سلامت</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">سلامت روان</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">زیبایی و تعادل</a>
+                            </li>
+                            <li class="mobile-menu__sub-item flex r-reverse justi-start align-center">                        
+                                <a class="mobile-menu__sub-link" href="#">رژیم غذایی</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Desktop Nav -->
+    <nav class="navigation flex r-reverse justi-around">
+        <div class="navigation__list flex r-reverse justi-between">
+            <img src="./assets/img/Logo Icon@2x.png" class="navigation__logo">
+            <div>
+                <button class="navigation__item" onclick="creat('#submenu-1')">بیماری ها</button>
+                <!-- زیرمنو -->
+                <div class="navigation__submenu flex column justi-end align-center">
+                    <div class="navigation__sub-list flex r-reverse justi-around align-baseline owl-carousel submenu">
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>رژیم غذایی</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse align-center"><i class="fas fa-angle-down navigation__icon"></i>زیبایی</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>سلامت روان </button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>عادت سلامت</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>منابع</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>کتاب سلامت</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>پادکست سلامت</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <img src="./assets/img/submenu.png" class="navigation__img"> -->
+                </div>
+            </div>
+            <div>
+                <button class="navigation__item">داروها</button>
+                <!-- زیرمنو -->
+                <div class="navigation__submenu flex column justi-end align-center">
+                    <div class="navigation__sub-list flex r-reverse justi-around align-baseline owl-carousel submenu">
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>رژیم غذایی</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse align-center"><i class="fas fa-angle-down navigation__icon"></i>زیبایی</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>سلامت روان </button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>عادت سلامت</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>منابع</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>کتاب سلامت</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>پادکست سلامت</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <img src="./assets/img/submenu.png" class="navigation__img"> -->
+                </div>
+            </div>
+            <div>
+                <button class="navigation__item">زندگی سالم</button>
+                <!-- زیرمنو -->
+                <div class="navigation__submenu flex column justi-end align-center">
+                    <div class="navigation__sub-list flex r-reverse justi-around align-baseline owl-carousel submenu">
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>رژیم غذایی</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse align-center"><i class="fas fa-angle-down navigation__icon"></i>زیبایی</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>سلامت روان </button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>عادت سلامت</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>منابع</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>کتاب سلامت</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                        <div class="navigation__sub-title item flex column align-start">
+                            <button class="navigation__sub-title flex r-reverse  align-center"><i class="fas fa-angle-down navigation__icon"></i>پادکست سلامت</button>
+                            <ul>
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">رژیم غذایی و فیتنس </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">سلامت روان</a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">پادکست های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">زیبایی و تعادل </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">عادت های سلامت </a></li>                            
+                                <li class="navigation__sub-item"><a href="#" class="navigation__sub-link">کتاب های سلامت </a></li>                            
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <img src="./assets/img/submenu.png" class="navigation__img"> -->
+                </div>
+            </div>
+            <div>
+                <button class="navigation__item">خانواده</button>                    
+            </div>
+            <div>
+                <button class="navigation__item">اخبار</button>
+            </div>
+            <div>
+                <button class="navigation__item">مقالات</button>
+            </div>
+        </div>
+        <div>
+            <button class="navigation__btn">ورود / ثبت نام</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <!-- هدر -->
+        <div class="mobile-header__head flex r-reverse justi-between align-center">
+            <a href="#menu"><i class="fas fa-bars mobile-header__icon"></i></a>
+            <h2 class="heading-primary">بیماری ها</h2>
+            <div class="flex column align-center">
+                <i class="fas fa-filter mobile-header__icon" onclick="openMobileFilter()"></i>
+                <span class="mobile-header__text">مشاهده فیلتر</span>
+            </div>
+        </div>
+        <!-- سرچ -->
+        <div class="mobile-header__search" id="mobile-search">
+            <div class="search">
+                <form class="search__form flex column justi-center align-center">
+                    <div class="search__box flex justi-center align-center u-margin-bottom-medium ">
+                        <div class="search__search-container">
+                            <i class="fas fa-search search__right-icon"></i> 
+                            <input type="text" class="search__input" onkeydown="openSuggestionBox(0)">
+                            <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
+                        </div>
+                        <a href="#" class="search__btn flex align-center justi-center">علائم <i class="fas fa-stethoscope"></i></a>
+                    </div>
+                    <!-- search suggestion -->
+                    <div class="suggestion" style="display: none;">
+                        <div class="suggestion__box">
+                            <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(0)"></i>
+                            <div class="suggestion__recent-search flex column justi-around align-end">
+                                <h3 class="suggestion__header">جستجوهای اخیر</h3>
+                                <div class="flex r-reverse justi-start align-center wrap">
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                </div>
+                            </div>
+                            <div class="suggestion__related-words flex column align-end">
+                                <h3 class="suggestion__header">کلمات مرتبط</h3>
+                                <div class="suggestion__related-words--items flex column align-end">
+                                    <a href="#" class="suggestion__item">مهرگان</a>
+                                    <a href="#" class="suggestion__item">مهر طلبی</a>
+                                    <a href="#" class="suggestion__item">مهر ورزی</a>
+                                </div>
+                            </div>
+                            <div class="suggestion__article flex r-reverse align-center">
+                                <i class="fas fa-book suggestion__article--icon"></i>
+                                <div class="suggestion__article--items flex column align-end">
+                                    <a href="#" class="suggestion__item">مهرورزی در رابطه چگونه است؟</a>
+                                    <a href="#" class="suggestion__item">مهرورزی در رابطه چگونه است؟</a>
+                                </div>
+                            </div>
+                            <div class="suggestion__hospital flex r-reverse align-center">
+                                <i class="fas fa-hospital suggestion__hospital--icon"></i>
+                                <div class="suggestion__hospital--items flex column align-end">
+                                    <a href="#" class="suggestion__item">بیمارستان مهر_ تهران</a>
+                                    <a href="#" class="suggestion__item">بیمارستان مهر_ اصفهان</a>
+                                </div>
+                            </div>
+                            <div class="suggestion__chat flex r-reverse align-center">
+                                <i class="fas fa-comment suggestion__chat--icon"></i>
+                                <div class="suggestion__chat--items flex column align-end">
+                                    <a href="#" class="suggestion__item">بیمارستان مهرگان _ یزد</a>
+                                    <a href="#" class="suggestion__item">بیمارستان مهر در مقایسه با </a>
+                                    <a href="#" class="suggestion__item">به نظرم اینکه توی همه ی بیمارستان به خصوص بیمارستان مهر </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- جستجو پیشرفته -->
+                    <div class="search__advanced flex column justi-center align-center">
+                        <div class="search-advanced flex justi-center align-center u-margin-bottom-medium ">
+                            <div class="search-advanced__list flex align-center justi-between owl-carousel owl-theme"
+                                id="search">
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">آزمایشگاه</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">داروخانه</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">دارو</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">بیمارستان</a></div>
+                                <div class="search-advanced__item item"><a href="#"
+                                        class="search-advanced__link">کلینیک</a></div>
+                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
+                                        تصویربرداری</a></div>
+                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
+                                        تصویربرداری</a></div>
+                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
+                                        تصویربرداری</a></div>
+                            </div>
+                        </div>
+                        <div class="flex r-reverse align-center justi-center">
+                            <div class="search__advanced-btn" id="btn-1" onclick="showAdvancedSearch()"></div>
+                            <span class="search__advanced-label" id="label">جستجوی پیشرفته</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>      
+        <!-- فیلتر  -->
+        <div class="mobile-header__filter flex r-reverse align-center">       
+            <nav class="mobile-header__multipleTabs tabs-mobile flex r-reverse align-center owl-carousel" id="mobile-filter">
+                <a data-trigger="content01" class="active item">معرفی</a>
+                <a data-trigger="content02" class="item">علائم</a>
+                <a data-trigger="content03" class="item">داروها</a>
+                <a data-trigger="content04" class="item">درمان</a>
+                <a data-trigger="content05" class="item">عوراض</a>
+                <a data-trigger="content02" class="item">کلینیک</a>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Right Side Fixed -->
+   <div class="right-side flex column">
+    <div class="flex r-reverse justi-around align-center">
+        <a href="#" class="right-side__btn right-side__btn-1">
+            <img class="right-side__photo" src="./assets/img/chat@2x.png">
+        </a>
+        <div class="right-side__tips right-side__tips-1 flex r-reverse align-center">
+            <span class="right-side__span">مشاوره‌ی آنلاین</span>
+            <div class="right-side__circle"></div>
+        </div>
+    </div>
+    <div class="flex r-reverse justi-around align-center">
+        <a href="#" class="right-side__btn right-side__btn-2">
+            <img class="right-side__photo" src="./assets/img/call@2x.png">
+        </a>
+        <div class="right-side__tips right-side__tips-2 flex r-reverse align-center">
+            <span class="right-side__span">مشاوره‌ی تلفنی</span>
+            <div class="right-side__circle"></div>
+        </div>
+    </div>
+    <div class="flex r-reverse justi-around align-center">
+        <a href="#" class="right-side__btn right-side__btn-3">
+            <img class="right-side__photo" src="./assets/img/pen@2x.png">
+        </a>
+        <div class="right-side__tips right-side__tips-3 flex r-reverse align-center">
+            <span class="right-side__span">نوبت دهی آنلاین</span>
+            <div class="right-side__circle"></div>
+        </div>
+    </div>
+    <div class="flex r-reverse justi-around align-center">
+        <a href="#" class="right-side__btn right-side__btn-4">
+            <img class="right-side__photo" src="./assets/img/newspaper@2x.png">
+        </a>
+        <div class="right-side__tips right-side__tips-4 flex r-reverse align-center">
+            <span class="right-side__span">نوبت دهی حضوری</span>
+            <div class="right-side__circle"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Main -->
+    <main class="illness-main flex r-reverse align-start justi-center">
+        <!-- فیلترها -->
+        <div class="filter flex column align-center">
+
+            <div class="filter__main-box">
+                <div class="flex r-reverse align-center owl-carousel" id="filter">
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-user-md filter__icon"></i>
+                        </div>
+                        <span class="filter__span">پزشک</span>
+                    </div>
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-pills filter__icon"></i>
+                        </div>
+                        <span class="filter__span">دارو</span>
+                    </div>
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-hospital filter__icon"></i>
+                        </div>
+                        <span class="filter__span">بیمارستان</span>
+                    </div>
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-plus-square filter__icon"></i>
+                        </div>
+                        <span class="filter__span">داروخانه</span>
+                    </div>
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-pills filter__icon"></i>
+                        </div>
+                        <span class="filter__span">کلینیک</span>
+                    </div>
+                    <div class="item  flex column align-center">
+                        <div class="filter__icon-box">
+                            <i class="fas fa-microscope filter__icon"></i>
+                        </div>
+                        <span class="filter__span">مرکز تصویر برداری</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- سرچ باکس -->
+            <div class="filter__search-box flex r-reverse align-center justi-start">
+                <button class="filter__search-btn">
+                    <i class="fas fa-search filter__search-icon"></i>
+                </button>
+                <input type="text" class="filter__input" placeholder="بیماری مورد نظر را جستجو کنید">
+            </div>
+            
+            <!-- سرچ حروف الفبا -->
+            <div class="filter__alphba-search flex column align-center justi-start">
+                <h3>مشاهده ی لیست بیماری ها</h3>
+                <ul class="filter__tabs" role="tablist">
+                    <li>
+                        <input type="radio" name="tabs" id="tab1" checked />
+                        <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">حروف الفبا</label>
+                        <div id="tab-content1" class="filter__tab-content filter__tab-content--1 flex r-reverse align-center justi-around align-content-center wrap" role="tabpanel" aria-labelledby="description" aria-hidden="false">
+                            <a class="flex align-center justi-center" href="#">الف</a><a class="flex align-center justi-center" href="#">ب</a><a class="flex align-center justi-center" href="#">پ</a><a class="flex align-center justi-center" href="#">ت</a>
+                            <a class="flex align-center justi-center" href="#">ث</a><a class="flex align-center justi-center" href="#">ج</a><a class="flex align-center justi-center" href="#">چ</a><a class="flex align-center justi-center" href="#">ح</a>
+                            <a class="flex align-center justi-center" href="#">خ</a><a class="flex align-center justi-center" href="#">د</a><a class="flex align-center justi-center" href="#">ذ</a><a class="flex align-center justi-center" href="#">ر</a>
+                            <a class="flex align-center justi-center" href="#">ز</a><a class="flex align-center justi-center" href="#">ژ</a><a class="flex align-center justi-center" href="#">س</a><a class="flex align-center justi-center" href="#">ش</a>
+                            <a class="flex align-center justi-center" href="#">ص</a><a class="flex align-center justi-center" href="#">ض</a><a class="flex align-center justi-center" href="#">ط</a><a class="flex align-center justi-center" href="#">ظ</a>
+                            <a class="flex align-center justi-center" href="#">ع</a><a class="flex align-center justi-center" href="#">غ</a><a class="flex align-center justi-center" href="#">ف</a><a class="flex align-center justi-center" href="#">ق</a>
+                            <a class="flex align-center justi-center" href="#">ک</a><a class="flex align-center justi-center" href="#">گ</a><a class="flex align-center justi-center" href="#">ل</a><a class="flex align-center justi-center" href="#">م</a>
+                            <a class="flex align-center justi-center" href="#">ن</a><a class="flex align-center justi-center" href="#">و</a><a class="flex align-center justi-center" href="#">ه</a><a class="flex align-center justi-center" href="#">ی</a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <input type="radio" name="tabs" id="tab2" />
+                        <label for="tab2"role="tab" aria-selected="false" aria-controls="panel2" tabindex="0">حروف انگلیسی</label>
+                        <div id="tab-content2" class="filter__tab-content flex align-center justi-center align-content-center wrap" role="tabpanel" aria-labelledby="specification" aria-hidden="true">
+                            <a class="flex align-center justi-center" href="#">A</a><a class="flex align-center justi-center" href="#">B</a><a class="flex align-center justi-center" href="#">C</a><a class="flex align-center justi-center" href="#">D</a>
+                            <a class="flex align-center justi-center" href="#">E</a><a class="flex align-center justi-center" href="#">F</a><a class="flex align-center justi-center" href="#">G</a><a class="flex align-center justi-center" href="#">H</a>
+                            <a class="flex align-center justi-center" href="#">I</a><a class="flex align-center justi-center" href="#">J</a><a class="flex align-center justi-center" href="#">K</a><a class="flex align-center justi-center" href="#">L</a>
+                            <a class="flex align-center justi-center" href="#">M</a><a class="flex align-center justi-center" href="#">N</a><a class="flex align-center justi-center" href="#">O</a><a class="flex align-center justi-center" href="#">P</a>
+                            <a class="flex align-center justi-center" href="#">Q</a><a class="flex align-center justi-center" href="#">R</a><a class="flex align-center justi-center" href="#">S</a><a class="flex align-center justi-center" href="#">T</a>
+                            <a class="flex align-center justi-center" href="#">U</a><a class="flex align-center justi-center" href="#">V</a><a class="flex align-center justi-center" href="#">W</a><a class="flex align-center justi-center" href="#">X</a>
+                            <a class="flex align-center justi-center" href="#">Y</a><a class="flex align-center justi-center" href="#">Z</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- درباره بیماری ها -->
+        <div class="tab-amodi flex column align-end">   
+            <!-- سرچ باکس -->
+            <div class="search" style="margin: 0; margin-bottom: 3.5rem;">
+                <form class="search__form flex column justi-center align-center">
+                    <div class="search__box flex justi-center align-center ">
+                        <a href="#" class="search__btn flex align-center justi-center">جستجو</a>
+                        <div class="search__search-container flex r-reverse align-center justi-around">
+                            <i class="fas fa-search search__right-icon"></i>
+                            <input type="text" class="search__input"
+                                placeholder="بیماری مورد نظر را جستجو کنید">
+                            <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
+                        </div>
+                    </div>
+                    <!-- search suggestion -->
+                    <div class="suggestion" style="display: none;">
+                        <!-- <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(1)"></i> -->
+                        <div class="suggestion__container flex column align-center justi-center">
+                            <div class="suggestion__recent-search flex column justi-around align-end">
+                                <h3 class="suggestion__header">جستجوهای مشابه</h3>
+                                <div class="flex r-reverse justi-start align-center wrap">
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                    <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
+                                </div>
+                            </div>
+                            <!-- <h3 class="suggestion__header">نتایج مرتبط</h3> -->
+                            <div class="suggestion__result flex r-reverse">
+                                <div class="suggestion__icons flex column align-center justi-center">
+                                    <div class="flex column align-center active-icon">
+                                        <i class="fas fa-book"></i>
+                                        <span>مقالات</span>
+                                    </div>
+                                    <div class="flex column align-center">
+                                        <i class="fas fa-pills"></i>
+                                        <span>داروها</span>
+                                    </div>
+                                    <div class="flex column align-center">
+                                        <i class="fas fa-viruses"></i>
+                                        <span>علائم</span>
+                                    </div>
+                                </div>
+                                <div class="suggestion__result-list flex column">
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>      
+            <div class="tab-amodi__container">
+                <div class="tab-ofoghi__tab">
+                    <div class="tab-ofoghi__container activate flex column align-end" id="box-1">
+                        <div class="tab-ofoghi__box" onclick="toggleTab('#box-1')">
+                            <div class="tab-ofoghi__header flex r-reverse justi-between align-center">
+                                <h2 class="tab-ofoghi__title color-primary-light border-primary-light">کلینیک ها <i class="fas fa-briefcase-medical"></i>
+                                </h2>
+                                <button class="tab-ofoghi__btn tab-ofoghi__btn-1">
+                                    <i class="fas fa-angle-right tab-ofoghi__logo"></i>
+                                    <i class="fas fa-angle-down tab-ofoghi__logo-active"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-ofoghi__result flex column align-center">
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> کلینیک 1 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> کلینیک 2 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> کلینیک 3 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-ofoghi__container flex column align-end" id="box-2">
+                        <div class="tab-ofoghi__box" onclick="toggleTab('#box-2')">
+                            <div class="tab-ofoghi__header flex r-reverse justi-between align-center">
+                                <h2 class="tab-ofoghi__title color-primary border-primary">مقالات <i class="fas fa-book"></i></h2>
+                                <button class="tab-ofoghi__btn">
+                                    <i class="fas fa-angle-right tab-ofoghi__logo"></i>
+                                    <i class="fas fa-angle-down tab-ofoghi__logo-active"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-ofoghi__result flex column align-center">
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> مقالات 1 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> مقالات 2 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> مقالات 3 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> مقالات 4 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> مقالات 5 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-ofoghi__container flex column align-end" id="box-3">
+                        <div class="tab-ofoghi__box" onclick="toggleTab('#box-3')">
+                            <div class="tab-ofoghi__header flex r-reverse justi-between align-center">
+                                <h2 class="tab-ofoghi__title color-pink border-pink">داروها <i class="fas fa-pills"></i></h2>
+                                <button class="tab-ofoghi__btn">
+                                    <i class="fas fa-angle-right tab-ofoghi__logo"></i>
+                                    <i class="fas fa-angle-down tab-ofoghi__logo-active"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-ofoghi__result flex column align-center">
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> داروها 1 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> داروها 2 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> داروها 3 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-ofoghi__container flex column align-end" id="box-4">
+                        <div class="tab-ofoghi__box" onclick="toggleTab('#box-4')">
+                            <div class="tab-ofoghi__header flex r-reverse justi-between align-center">
+                                <h2 class="tab-ofoghi__title orange border-orange">نظرات <i class="fas fa-comments"></i></h2>
+                                <button class="tab-ofoghi__btn">
+                                    <i class="fas fa-angle-right tab-ofoghi__logo"></i>
+                                    <i class="fas fa-angle-down tab-ofoghi__logo-active"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-ofoghi__result flex column align-center">
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> نظرات 1 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> نظرات 2 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                            <div>
+                                <a href="#" class="flex align-baseline"><i class="fas fa-briefcase-medical"></i> نظرات 3 </a>
+                                <p>سرطان می‌تواند بر روی بافت‌های مختلف بدن تأثیر بگذارد. از نشانه های سرطان می‌توان به علائمی
+                                    مانند کاهش وزن، خستگی، تغییرات پوستی و سرفه‌های مداوم اشاره کرد. در صورت مشاهدۀ این لائم به صورت دائمی و آزار دهنده حتماً به پزشک مراجعه کنید
+                                   </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+            <!-- پرسش و پاسخ -->
+            <div class="flex column align-center">
+                <h2 class="heading-primary">پرسش و پاسخ</h2>
+                <div class="question flex r-reverse align-center justi-center">
+                    <div class="question__qa">
+                        <div class="question__que flex r-reverse align-center">
+                            <i class="far fa-times-circle question__icon"></i>
+                            <h3 class="question__header">مناسب ترین سن برای شروع ارتودنسی چه سنی است؟</h3>
+                        </div>
+                        <div class="question__ans flex column align-end">
+                            <p class="question__pragraph">:پرسش<br>
+                                مناسب ترین سن برای شروع ارتودنسی چه سنی است؟<br>
+                                :پاسخ<br>
+                                اکثرا لازم است که بیمار قابلیت دسترسی مجدد به محل درمان چه به صورت حضوری و چه غیر حضوری
+                                داشته باشد تا در صورت بروز هر نوع مشکل احتمالی
+                                بتواند جهت حل مشکل خود اقدام کند، برای مثال بیمار پس از درمان جراحی و با مراجعه به منزل
+                                خود پس از چند ساعت با خونریزی مواجه می‌شود
+                            </p>
+                            <a href="#" class="question__link flex align-center">مشاهده ی کامل<i
+                                    class="fas fa-caret-left"></i></a>
+                        </div>
+                    </div>
+                    <form class="question__form flex column justi-center align-center">
+                        <input type="text" name="full name" class="question__fullName" placeholder="نام و نام خانوادگی">
+                        <input type="text" name="question" class="question__question" placeholder="سوال / پیام">
+                        <input type="text" name="email" class="question__email" placeholder=" ایمیل">
+                        <input type="text" name="phone" class="question__phone" placeholder="شماره تماس">
+                        <button type="submit" class="question__btn">ارسال</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- <img src="./assets/img/Artboard-2.png" class="main__bg display"> -->
+    <!-- دسته بندی سرویس ها -->
+    <div class="service">
+        <div class="service__left-border">
+            <a href="#"><div class="service__logo-box">
+                <i class="fas fa-pills service__icon"></i>
+            </div></a>
+            <a href="#"><div class="service__logo-box">
+                <i class="fas fa-hospital service__icon"></i>
+            </div></a>
+            <a href="#"><div class="service__logo-box">
+                <i class="fas fa-briefcase-medical service__icon"></i>
+            </div></a>
+            <div class="service__circle"></div>
+        </div>
+    </div>
+
+    <!-- Mobile Bottom Menu -->
+    <nav class="mobile-bottom-menu flex r-reverse justi-around align-center">
+        <a href="#"><div class="flex column justi-around align-center">
+            <i class="fas fa-folder mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">آرشیو</span>
+        </div></a>
+        <a href="#"><div class="flex column justi-around align-center">
+            <i class="fas fa-globe-americas mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">اخبار</span>
+        </div></a>
+        <a href="#"><div>
+            <img src="./assets/img/Group 38108@2x.png" class="mobile-bottom-menu__photo">
+        </div></a>
+        <a href="#"><div class="flex column justi-around align-center">
+            <i class="fas fa-bell mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">تقویم</span>
+        </div></a>
+        <a href="#"><div class="flex column justi-around align-center">
+            <i class="fas fa-home mobile-bottom-menu__icon"></i>
+            <span class="mobile-bottom-menu__span">خانه</span>
+        </div></a>
+    </nav>
+
+    <!-- Mobile Left Side -->
+    <div class="left-side flex column justi-end">
+        <div class="left-side__box flex column-reverse">
+            <button class="left-side__btn ">
+                <i class="fas fa-newspaper left-side__icon left-side__icon-1"></i>
+            </button>        
+            <button class="left-side__btn ">
+                <i class="fas fa-phone-alt left-side__icon left-side__icon-2"></i>
+            </button>        
+            <button class="left-side__btn ">
+                <i class="fas fa-pen-alt left-side__icon left-side__icon-3"></i>
+            </button>        
+            <button class="left-side__btn ">
+                <i class="fas fa-comment-dots left-side__icon left-side__icon-4"></i>
+            </button>    
+        </div>
+        <button class="left-side__btn left-side__z-index" onclick="showButton()">
+            <i class="fas fa-ellipsis-v left-side__icon"></i>
+        </button>   
+    </div>
+
+    <!-- Desktop Footer -->
+    <footer class="footer">
+        <img src="./assets/img/footer.png" class="footer__background">
+        <div class="footer__main flex r-reverse align-center justi-around">
+            <div class="footer__about-us">
+                <h2 class="footer__header" onclick="openOption()">درباره ما</h2>
+                <p class="footer__pragraph">
+                    مشاوره تلفنی چیست؟<br>
+                    به زودی پزشک با شما تماس خواهد گرفت. به جای اینکه از کار خود مرخصی بگیرید، در ترافیک بمانید و زمان
+                    زیادی را برای پیدا کردن جای پارک هدر بدهید، یا اگر در محل زندگی خود به دکتر متخصص دسترسی ندارید
+                </p>
+                <div>
+                    <h3 class="footer__header-secondary">آدرس</h3><span class="footer__span">
+                        تهران - خیابان شریعتی - بالاتر از دوراهی قلهک - پلاک 1423</span>
+                </div>
+                <h3 class="footer__header-secondary">تلفن</h3><span class="footer__span">021 - 22601162</span>
+            </div>
+            <div class="footer__app flex column align-center justi-around">
+                <div class="footer__img flex r-reverse justi-center align-center">
+                    <img src="./assets/img/apple androide.png" class="footer__photo">
+                    <img src="./assets/img/pic footer.png" class="footer__photo">
+                </div>
+                <button class="footer__btn">دانلود اپلیکیشن</button>
+            </div>
+            <div class="footer__map">
+                <img src="./assets/img/Subtraction 2.png" class="footer__map-photo">
+            </div>
+        </div>
+        <div class="footer__bottom flex r-reverse">
+            <img src="./assets/img/footer-background.png" class="footer__bottom-background">
+            <img src="./assets/img/Logo Icon@2x.png" class="footer__logo">
+            <div class="footer__social">
+                <i class="fab fa-instagram footer__icon"></i>
+                <i class="fab fa-twitter footer__icon"></i>
+                <i class="fab fa-facebook-f footer__icon"></i>
+                <i class="fas fa-globe-americas footer__icon"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

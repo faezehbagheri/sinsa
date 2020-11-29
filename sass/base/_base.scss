@@ -25,12 +25,38 @@ body {
     box-sizing: border-box;
 }
 
+*{
+    &::-webkit-scrollbar-track{
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    &::-webkit-scrollbar{
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: #cccccc;
+    }
+}
+
+
 .red{color:$red !important;}
 .blue{color:$blue !important;}
 .green{color:$green !important;}
 .yellow{color:$yellow !important;}
-.orange{color:$orange !important;}
 .white{color: white !important;}
+.orange{color:$orange !important;}
 .color-primary-dark{color: $color-primary-dark !important;}
+.color-primary{color: $color-primary !important;}
+.color-primary-light{color: $color-primary-light !important;}
+.color-pink{color: $color-pink !important;}
+
+.border-orange{border-color: $orange !important;}
+.border-primary{border-color: $color-primary !important;}
+.border-primary-light{border-color: $color-primary-light !important;}
+.border-pink{border-color: $color-pink !important;}
+
 .bg-white{background-color: white !important;}
 .border-bottom-white{border-bottom:1px solid white !important;}

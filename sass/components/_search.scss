@@ -100,11 +100,11 @@
     }
 
     &__input{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50% , -50%);
-        width: 70%;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50% , -50%);
+        width: 83%;
         border: none;
         outline: none;
         background-color: #fff;
@@ -113,6 +113,7 @@
         direction: rtl;
         color: $color-gray;
         // border-left: 1px solid $color-primary;
+        direction: rtl;
         
         &::placeholder{
             font-size: 1.4rem;
@@ -121,10 +122,11 @@
 
     &__right-icon{
         font-size: 3rem;
-        position: absolute;
-        top: 50%;
-        left: 95%;
-        transform: translate(-95% , -50%);
+        // position: absolute;
+        // top: 50%;
+        // left: 95%;
+        // transform: translate(-95% , -50%);
+        margin-right: 2rem;
         color: $color-primary;
 
         @include respond(phone){
@@ -265,10 +267,54 @@
             .select2-container--default {
                 .select2-results > .select2-results__options {
                     -webkit-overflow-scrolling: touch; /* use momentum scrolling */
-                    text-align: right !important;
-                    direction: rtl !important;
+
+                    
+        &::-webkit-scrollbar-track{
+            border-radius: 10px;
+            position: absolute;
+        }
+    
+        &::-webkit-scrollbar{
+            width: 6px;
+        }
+    
+        &::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: #cccccc;
+        }
                 }
             }
+        }
+    }
+}
+
+.big-select{
+    width: 90%;
+
+    .select2-container {
+        .select2-choices {
+            min-height: 150px;
+            max-height: 150px; 
+            overflow-y: hidden; 
+            font-size: 2rem;
+        }
+        .select2-selection--multiple{
+            border: none !important;
+            height: 2rem;
+        }
+        .select2-selection--single {
+            height: 90%;
+            font-size: 1.6rem; 
+            position: relative;
+            outline: none;
+            border: none !important;
+
+            .select2-selection__arrow {
+                top: 50%;
+                right: 92%;
+                transform: translate(-82%, -50%);
+            }
+            
         }
     }
 }

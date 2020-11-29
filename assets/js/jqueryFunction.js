@@ -358,6 +358,14 @@ function matchStart(term, text) {
 
 $.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) {
     $("select").select2({
-        matcher: oldMatcher(matchStart)
+        matcher: oldMatcher(matchStart),
+        dropdownAutoWidth: true,
+        dir: "rtl"
     })
+    $('#multiple').select2({
+        // matcher: oldMatcher(matchStart),
+        maximumSelectionLength: 3,
+        dir: "rtl",
+        // placeholder: 'داروی خود را وارد کنید'
+      });
 });
