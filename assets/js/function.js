@@ -571,6 +571,13 @@ function openTab(selector){
   document.querySelector(selector).classList.toggle('active-tab');
 }
 
+// window.addEventListener('native.showkeyboard', keyboardShowHandler);
+
+// window.addEventListener('native.hidekeyboard', keyboardHideHandler);
+
+// function keyboardShowHandler(){
+//   document.querySelector(".mobile-bottom-menu").display= "none";
+// }
 
 ///// انتخاب علائم بیماری در صفحه ویزیت////
 var text;

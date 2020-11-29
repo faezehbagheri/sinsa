@@ -9,68 +9,17 @@
         &:not(:last-of-type){
             border-bottom: 2px solid $color-secondary-light;
         }
+
+        @include respond(phone){
+            flex-direction: column;
+
+            & > div{
+                margin: 3rem 0 !important;
+                width: 85% !important;
+            }
+        }
     }
 
-    &__set-size {
-        font-size: 10em;
-        border-radius: 100%;
-        background-color: pink;
-    }
-
-    &__wrapper {
-        @include size($default-size, $default-size);
-        float: left;
-        margin: 15px;
-        position: relative;
-        margin-right: 4rem;        
-    }
-
-    &__pie {
-        @include size(100%, 100%);
-        clip: rect(0, $default-size, $default-size, $default-size / 2);
-        left: 0;
-        position: absolute;
-        top: 0;
-    }
-
-    &__half-circle {
-        @include size(100%, 100%);
-        border: ($default-size / 18) solid #3498db;
-        border-radius: 50%;
-        clip: rect(0, $default-size / 2, $default-size, 0);
-        left: 0;
-        position: absolute;
-        top: 0;
-    }
-    
-    &__label {
-        background: white;
-        border-radius: 50%;
-        bottom: $label-font-size-redo / 10;
-        color: $color-gray;
-        box-shadow: 0 0 5px $color-gray;
-        cursor: default;
-        display: block;
-        font-size: 2rem;
-        left: $label-font-size-redo / 10;
-        position: absolute;
-        right: $label-font-size-redo / 10;
-        text-align: center;
-        top: $label-font-size-redo / 10;
-        padding: 3rem;
-    }
-    
-    &__progress-30 {
-        @include draw-progress(30, $color-pink);
-    }
-
-    &__progress-45 {
-        @include draw-progress(45, $color-yellow);
-    }
-
-    &__progress-70 {
-        @include draw-progress(70, $color-primary-light);
-    }
 
     i{
         font-size: 2.5rem;
@@ -91,6 +40,7 @@
     &__tab{
         border-bottom: 2px solid $color-gray-light;
         direction: rtl;
+        margin-top: 3rem;
 
         a{
             width: 16%;
@@ -98,10 +48,19 @@
             color: white;
             padding:1rem 3rem;
 
+            @include respond(phone){
+                width: 30%;
+                padding: 1rem 5rem;
+                font-size: 2.2rem;
+                margin-right: 5rem;
+            }
+
             &::after,
             &::before{
                 background-color: $color-secondary-light;
                 border-color:  $color-secondary-light;
+
+                @include respond(phone){width: 5rem;}
             }
 
             &:hover{
@@ -123,12 +82,22 @@
         color: $color-pink;
         padding: 1rem;
         border-bottom: 2px solid $color-gray-light;
+
+        @include respond(phone){
+            font-size: 2.5rem;
+        }
     }
 
     p{
         font-size: 1.4rem;
         margin: 1rem 0;
         color: $color-primary-dark;
+        text-align: justify;
+
+        @include respond(phone){
+            font-size: 2rem;
+            color: $color-gray;
+        }
     }
 
     &__circle{
@@ -158,6 +127,8 @@
         font-size: 1.6rem;
         text-align: right;
         color: $color-gray;
+
+        @include respond(phone){font-size: 2rem;}
                 
         span{
             position: absolute;
@@ -189,6 +160,8 @@
         text-align: right;
         color: $color-gray;
         padding-bottom: 2rem;
+
+        @include respond(phone){font-size: 2rem;}
         
         span{
             position: absolute;

@@ -32,12 +32,19 @@
         text-align: center;
         padding: 2rem;
         border-bottom: 2px solid $color-gray-light;
+
+        @include respond(phone){font-size: 2rem;}
     }
 
     &__main{
         width: 80%;
         height: 35rem;
         margin-top: 3rem;
+
+        @include respond(phone){
+            flex-direction: column;
+            height: 65rem;
+        }
     }
 
     &__search-box{
@@ -52,12 +59,31 @@
         box-shadow: 0 1px 5px $color-gray-light;
         padding: 0 5px;
 
+        @include respond(phone){
+            width: 50rem;
+            height: 8rem;
+
+            i{
+                font-size: 3rem !important;
+            }
+        }
+
         input{
             height: 3rem;
             width: 90%;
             border: none;
             outline: none;
             text-align: right;
+            direction: rtl;
+
+            @include respond(phone){
+                height: 100%;
+                font-size: 2.8rem !important;
+
+                &::placeholder{
+                    font-size: 2.3rem;
+                }
+            }
 
             &::placeholder{
                 color: $color-gray-light;
@@ -81,6 +107,10 @@
         position: absolute;
         top: 16%;
         transition: all .6s ease;
+
+        @include respond(phone){
+            width: 50rem;
+        }
     
         &::-webkit-scrollbar-track{
             border-radius: 10px;
@@ -114,11 +144,18 @@
             background-color: white;
             cursor: pointer;
 
+            @include respond(phone){
+                font-size: 2.3rem;
+                height: 9rem;
+            }
+
             &:hover{
                 background-color: $color-secondary;
                 box-shadow: 1px 1px 5px $color-gray-light;
                 color: white;
                 font-size: 1.6rem;
+
+                @include respond(phone){ font-size: 2.4rem;}
             }
         }
     }
@@ -126,12 +163,19 @@
     &__selected{
         height: 25rem;
         margin-top: 1rem;
+
+        @include respond(phone){height: 40rem;}
     }
 
     &__item-selected{
         font-size: 1.8rem;
         color: $color-secondary;
         cursor: pointer;
+
+        @include respond(phone){
+            font-size: 2.5rem;
+            line-height: 5.5rem;
+        }
         
         i{
             margin-left: 1rem;
@@ -144,6 +188,13 @@
         border-radius: 100%;
         background-color: white;
         box-shadow: 0 1px 5px $color-gray-light;
+
+        @include respond(phone){
+            width: 14rem;
+            height:14rem;
+
+            a{font-size: 2rem !important;}
+        }
         
         a,
         a:link,
@@ -169,6 +220,12 @@
             border-radius: 3rem;
             border: none;
             font-size: 1.5rem;
+
+            @include respond(phone){
+                width: 18rem;
+                height: 6.5rem;
+                font-size: 2.2rem;
+            }
         }
     }
 

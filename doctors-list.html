@@ -141,20 +141,21 @@
         <div class="mobile-header__search" id="mobile-search">
             <div class="search">
                 <form class="search__form flex column justi-center align-center">
-                    <div class="search__box flex justi-center align-center u-margin-bottom-medium ">
-                        <div class="search__search-container">
-                            <i class="fas fa-search search__right-icon"></i> 
-                            <input type="text" class="search__input" onkeydown="openSuggestionBox(0)">
+                    <!-- این قسمت تغییر کرده است -->
+                    <div class="search__box flex justi-center align-center ">
+                        <a href="#" class="search__btn flex align-center justi-center">جستجو</a>
+                        <div class="search__search-container flex r-reverse align-center justi-around">
+                            <i class="fas fa-search search__right-icon"></i>
+                            <input type="text" class="search__input">
                             <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
                         </div>
-                        <a href="#" class="search__btn flex align-center justi-center">علائم <i class="fas fa-stethoscope"></i></a>
-                    </div>
+                    </div>                    
                     <!-- search suggestion -->
-                    <div class="suggestion" style="display: none;">
-                        <div class="suggestion__box">
-                            <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(0)"></i>
+                    <div class="suggestion">
+                        <!-- <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(1)"></i> -->
+                        <div class="suggestion__container flex column align-center justi-center">
                             <div class="suggestion__recent-search flex column justi-around align-end">
-                                <h3 class="suggestion__header">جستجوهای اخیر</h3>
+                                <h3 class="suggestion__header">جستجوهای مشابه</h3>
                                 <div class="flex r-reverse justi-start align-center wrap">
                                     <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
                                     <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
@@ -162,66 +163,60 @@
                                     <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
                                 </div>
                             </div>
-                            <div class="suggestion__related-words flex column align-end">
-                                <h3 class="suggestion__header">کلمات مرتبط</h3>
-                                <div class="suggestion__related-words--items flex column align-end">
-                                    <a href="#" class="suggestion__item">مهرگان</a>
-                                    <a href="#" class="suggestion__item">مهر طلبی</a>
-                                    <a href="#" class="suggestion__item">مهر ورزی</a>
-                                </div>                               
-                            </div>
-                            <div class="suggestion__article flex r-reverse align-center">
-                                <i class="fas fa-book suggestion__article--icon"></i>
-                                <div class="suggestion__article--items flex column align-end">
-                                    <a href="#" class="suggestion__item">مهرورزی در رابطه چگونه است؟</a>
-                                    <a href="#" class="suggestion__item">مهرورزی در رابطه چگونه است؟</a>
+                            <!-- <h3 class="suggestion__header">نتایج مرتبط</h3> -->
+                            <div class="suggestion__result flex r-reverse">
+                                <div class="suggestion__icons flex column align-center justi-center">
+                                    <div class="flex column align-center active-icon">
+                                        <i class="fas fa-book"></i>
+                                        <span>مقالات</span>
+                                    </div>
+                                    <div class="flex column align-center">
+                                        <i class="fas fa-pills"></i>
+                                        <span>داروها</span>
+                                    </div>
+                                    <div class="flex column align-center">
+                                        <i class="fas fa-viruses"></i>
+                                        <span>علائم</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="suggestion__hospital flex r-reverse align-center">
-                                <i class="fas fa-hospital suggestion__hospital--icon"></i>
-                                <div class="suggestion__hospital--items flex column align-end">
-                                    <a href="#" class="suggestion__item">بیمارستان مهر_ تهران</a>
-                                    <a href="#" class="suggestion__item">بیمارستان مهر_ اصفهان</a>
-                                </div>
-                            </div>
-                            <div class="suggestion__chat flex r-reverse align-center">
-                                <i class="fas fa-comment suggestion__chat--icon"></i>
-                                <div class="suggestion__chat--items flex column align-end">
-                                    <a href="#" class="suggestion__item">بیمارستان مهرگان _ یزد</a>
-                                    <a href="#" class="suggestion__item">بیمارستان مهر در مقایسه با </a>
-                                    <a href="#" class="suggestion__item">به نظرم اینکه توی همه ی بیمارستان به خصوص بیمارستان مهر </a>
+                                <div class="suggestion__result-list flex column">
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- جستجو پیشرفته -->
-                    <div class="search__advanced flex column justi-center align-center">
-                        <div class="search-advanced flex justi-center align-center u-margin-bottom-medium ">
-                            <div class="search-advanced__list flex align-center justi-between owl-carousel owl-theme"
-                                id="search">
-                                <div class="search-advanced__item item"><a href="#"
-                                        class="search-advanced__link">آزمایشگاه</a></div>
-                                <div class="search-advanced__item item"><a href="#"
-                                        class="search-advanced__link">داروخانه</a></div>
-                                <div class="search-advanced__item item"><a href="#"
-                                        class="search-advanced__link">دارو</a></div>
-                                <div class="search-advanced__item item"><a href="#"
-                                        class="search-advanced__link">بیمارستان</a></div>
-                                <div class="search-advanced__item item"><a href="#"
-                                        class="search-advanced__link">کلینیک</a></div>
-                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
-                                        تصویربرداری</a></div>
-                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
-                                        تصویربرداری</a></div>
-                                <div class="search-advanced__item item"><a href="#" class="search-advanced__link">مرکز
-                                        تصویربرداری</a></div>
-                            </div>
-                        </div>
-                        <div class="flex r-reverse align-center justi-center">
-                            <div class="search__advanced-btn" id="btn-1" onclick="showAdvancedSearch()"></div>
-                            <span class="search__advanced-label" id="label">جستجوی پیشرفته</span>
-                        </div>
-                    </div>
+                    <!-- حذف جستجوی پیشرفته -->
+                    
+                    <!-- انتهای تغییرات -->
                 </form>
             </div>
         </div> 

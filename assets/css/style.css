@@ -3015,68 +3015,12 @@ body {
     padding: 3rem 1rem; }
     .result__item:not(:last-of-type) {
       border-bottom: 2px solid #B4D3D1; }
-  .result__set-size {
-    font-size: 10em;
-    border-radius: 100%;
-    background-color: pink; }
-  .result__wrapper {
-    height: 1em;
-    width: 1em;
-    float: left;
-    margin: 15px;
-    position: relative;
-    margin-right: 4rem; }
-  .result__pie {
-    height: 100%;
-    width: 100%;
-    clip: rect(0, 1em, 1em, 0.5em);
-    left: 0;
-    position: absolute;
-    top: 0; }
-  .result__half-circle {
-    height: 100%;
-    width: 100%;
-    border: 0.05556em solid #3498db;
-    border-radius: 50%;
-    clip: rect(0, 0.5em, 1em, 0);
-    left: 0;
-    position: absolute;
-    top: 0; }
-  .result__label {
-    background: white;
-    border-radius: 50%;
-    bottom: 0.2em;
-    color: #707070;
-    box-shadow: 0 0 5px #707070;
-    cursor: default;
-    display: block;
-    font-size: 2rem;
-    left: 0.2em;
-    position: absolute;
-    right: 0.2em;
-    text-align: center;
-    top: 0.2em;
-    padding: 3rem; }
-  .result__progress-30 .result__pie .result__half-circle {
-    border-color: #E43F6F; }
-  .result__progress-30 .result__pie .result__left-side {
-    transform: rotate(108deg); }
-  .result__progress-30 .result__pie .result__right-side {
-    display: none; }
-  .result__progress-45 .result__pie .result__half-circle {
-    border-color: #F4E36F; }
-  .result__progress-45 .result__pie .result__left-side {
-    transform: rotate(162deg); }
-  .result__progress-45 .result__pie .result__right-side {
-    display: none; }
-  .result__progress-70 .result__pie {
-    clip: rect(auto, auto, auto, auto); }
-    .result__progress-70 .result__pie .result__half-circle {
-      border-color: #90C73D; }
-    .result__progress-70 .result__pie .result__left-side {
-      transform: rotate(252deg); }
-    .result__progress-70 .result__pie .result__right-side {
-      transform: rotate(180deg); }
+    @media only screen and (max-width: 30em) {
+      .result__item {
+        flex-direction: column; }
+        .result__item > div {
+          margin: 3rem 0 !important;
+          width: 85% !important; } }
   .result i {
     font-size: 2.5rem;
     color: #49838B;
@@ -3091,15 +3035,25 @@ body {
     text-align: right; }
   .result__tab {
     border-bottom: 2px solid #A0A0A0;
-    direction: rtl; }
+    direction: rtl;
+    margin-top: 3rem; }
     .result__tab a {
       width: 16%;
       background-color: #B4D3D1;
       color: white;
       padding: 1rem 3rem; }
+      @media only screen and (max-width: 30em) {
+        .result__tab a {
+          width: 30%;
+          padding: 1rem 5rem;
+          font-size: 2.2rem;
+          margin-right: 5rem; } }
       .result__tab a::after, .result__tab a::before {
         background-color: #B4D3D1;
         border-color: #B4D3D1; }
+        @media only screen and (max-width: 30em) {
+          .result__tab a::after, .result__tab a::before {
+            width: 5rem; } }
       .result__tab a:hover {
         background-color: #B4D3D1; }
         .result__tab a:hover::after, .result__tab a:hover::before {
@@ -3111,10 +3065,18 @@ body {
     color: #E43F6F;
     padding: 1rem;
     border-bottom: 2px solid #A0A0A0; }
+    @media only screen and (max-width: 30em) {
+      .result h3 {
+        font-size: 2.5rem; } }
   .result p {
     font-size: 1.4rem;
     margin: 1rem 0;
-    color: #49838B; }
+    color: #49838B;
+    text-align: justify; }
+    @media only screen and (max-width: 30em) {
+      .result p {
+        font-size: 2rem;
+        color: #707070; } }
   .result__circle {
     width: 15rem;
     height: 15rem;
@@ -3140,6 +3102,9 @@ body {
     font-size: 1.6rem;
     text-align: right;
     color: #707070; }
+    @media only screen and (max-width: 30em) {
+      .result #top {
+        font-size: 2rem; } }
     .result #top span {
       position: absolute;
       left: 115%;
@@ -3165,6 +3130,9 @@ body {
     text-align: right;
     color: #707070;
     padding-bottom: 2rem; }
+    @media only screen and (max-width: 30em) {
+      .result #bottom {
+        font-size: 2rem; } }
     .result #bottom span {
       position: absolute;
       left: 115%;
@@ -3313,7 +3281,10 @@ body {
     @media only screen and (max-width: 30em) {
       .search__box {
         width: 95%;
-        padding: 0; } }
+        padding: 0;
+        height: 9.5rem;
+        margin: 2rem 1rem 1rem;
+        border-radius: 5rem; } }
     @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
       .search__box {
         height: 6rem; } }
@@ -4196,10 +4167,17 @@ body {
     text-align: center;
     padding: 2rem;
     border-bottom: 2px solid #A0A0A0; }
+    @media only screen and (max-width: 30em) {
+      .visit__header {
+        font-size: 2rem; } }
   .visit__main {
     width: 80%;
     height: 35rem;
     margin-top: 3rem; }
+    @media only screen and (max-width: 30em) {
+      .visit__main {
+        flex-direction: column;
+        height: 65rem; } }
   .visit__search-box {
     position: relative; }
   .visit__search {
@@ -4209,12 +4187,25 @@ body {
     background-color: white;
     box-shadow: 0 1px 5px #A0A0A0;
     padding: 0 5px; }
+    @media only screen and (max-width: 30em) {
+      .visit__search {
+        width: 50rem;
+        height: 8rem; }
+        .visit__search i {
+          font-size: 3rem !important; } }
     .visit__search input {
       height: 3rem;
       width: 90%;
       border: none;
       outline: none;
-      text-align: right; }
+      text-align: right;
+      direction: rtl; }
+      @media only screen and (max-width: 30em) {
+        .visit__search input {
+          height: 100%;
+          font-size: 2.8rem !important; }
+          .visit__search input::placeholder {
+            font-size: 2.3rem; } }
       .visit__search input::placeholder {
         color: #A0A0A0; }
     .visit__search i {
@@ -4231,6 +4222,9 @@ body {
     position: absolute;
     top: 16%;
     transition: all .6s ease; }
+    @media only screen and (max-width: 30em) {
+      .visit__option {
+        width: 50rem; } }
     .visit__option::-webkit-scrollbar-track {
       border-radius: 10px;
       position: absolute; }
@@ -4252,18 +4246,32 @@ body {
       color: #707070;
       background-color: white;
       cursor: pointer; }
+      @media only screen and (max-width: 30em) {
+        .visit__option-list li {
+          font-size: 2.3rem;
+          height: 9rem; } }
       .visit__option-list li:hover {
         background-color: #6DC2BE;
         box-shadow: 1px 1px 5px #A0A0A0;
         color: white;
         font-size: 1.6rem; }
+        @media only screen and (max-width: 30em) {
+          .visit__option-list li:hover {
+            font-size: 2.4rem; } }
   .visit__selected {
     height: 25rem;
     margin-top: 1rem; }
+    @media only screen and (max-width: 30em) {
+      .visit__selected {
+        height: 40rem; } }
   .visit__item-selected {
     font-size: 1.8rem;
     color: #6DC2BE;
     cursor: pointer; }
+    @media only screen and (max-width: 30em) {
+      .visit__item-selected {
+        font-size: 2.5rem;
+        line-height: 5.5rem; } }
     .visit__item-selected i {
       margin-left: 1rem; }
   .visit__circle {
@@ -4272,6 +4280,12 @@ body {
     border-radius: 100%;
     background-color: white;
     box-shadow: 0 1px 5px #A0A0A0; }
+    @media only screen and (max-width: 30em) {
+      .visit__circle {
+        width: 14rem;
+        height: 14rem; }
+        .visit__circle a {
+          font-size: 2rem !important; } }
     .visit__circle a,
     .visit__circle a:link,
     .visit__circle a:visited {
@@ -4290,6 +4304,11 @@ body {
       border-radius: 3rem;
       border: none;
       font-size: 1.5rem; }
+      @media only screen and (max-width: 30em) {
+        .visit_buttons button {
+          width: 18rem;
+          height: 6.5rem;
+          font-size: 2.2rem; } }
   .visit__nxt-btn {
     background-color: #90C73D;
     color: white;

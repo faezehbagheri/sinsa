@@ -27,6 +27,9 @@
         @include respond(phone){
             width: 95%;
             padding: 0;
+            height: 9.5rem;
+            margin: 2rem 1rem 1rem;
+            border-radius: 5rem;
         }
 
         @include respond(iphone){
@@ -100,10 +103,6 @@
     }
 
     &__input{
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50% , -50%);
         width: 83%;
         border: none;
         outline: none;
@@ -112,7 +111,6 @@
         text-align: right;
         direction: rtl;
         color: $color-gray;
-        // border-left: 1px solid $color-primary;
         direction: rtl;
         
         &::placeholder{
@@ -122,10 +120,6 @@
 
     &__right-icon{
         font-size: 3rem;
-        // position: absolute;
-        // top: 50%;
-        // left: 95%;
-        // transform: translate(-95% , -50%);
         margin-right: 2rem;
         color: $color-primary;
 
