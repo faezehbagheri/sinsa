@@ -963,18 +963,19 @@
         <!-- دسته بندی داروها -->
         <div class="category flex column align-center">
             <!-- سرچ باکس -->
-            <div class="search">
+            <div class="search" style="margin: 0; margin-bottom: 3.5rem;">
                 <form class="search__form flex column justi-center align-center">
                     <div class="search__box flex justi-center align-center ">
                         <a href="#" class="search__btn flex align-center justi-center">جستجو</a>
-                        <div class="search__search-container">
+                        <div class="search__search-container flex r-reverse align-center justi-around">
                             <i class="fas fa-search search__right-icon"></i>
-                            <input type="text" class="search__input" placeholder="بیماری مورد نظر را جستجو کنید">
+                            <input type="text" class="search__input"
+                                placeholder="بیماری مورد نظر را جستجو کنید">
                             <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
                         </div>
-                    </div> 
+                    </div>
                     <!-- search suggestion -->
-                    <div class="suggestion">
+                    <div class="suggestion" style="display: none;">
                         <!-- <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(1)"></i> -->
                         <div class="suggestion__container flex column align-center justi-center">
                             <div class="suggestion__recent-search flex column justi-around align-end">
@@ -989,26 +990,50 @@
                             <!-- <h3 class="suggestion__header">نتایج مرتبط</h3> -->
                             <div class="suggestion__result flex r-reverse">
                                 <div class="suggestion__icons flex column align-center justi-center">
-                                    <i class="fas fa-book active-icon"></i>
-                                    <i class="fas fa-book"></i>
-                                    <i class="fas fa-book"></i>
+                                    <div class="flex column align-center active-icon">
+                                        <i class="fas fa-book"></i>
+                                        <span>مقالات</span>
+                                    </div>
+                                    <div class="flex column align-center">
+                                        <i class="fas fa-pills"></i>
+                                        <span>داروها</span>
+                                    </div>
+                                    <div class="flex column align-center">
+                                        <i class="fas fa-viruses"></i>
+                                        <span>علائم</span>
+                                    </div>
                                 </div>
                                 <div class="suggestion__result-list flex column">
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
-                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
+                                    <a href="#" class="flex r-reverse justi-between align-center">آپروتینین
+                                        <span>Abdominal Aortic </span></a>
                                 </div>
                             </div>
                         </div>

@@ -71,13 +71,16 @@
 font-size: 16px;
 }
 .select2-results__option {
-  padding: 6px;
+  padding: 6px 15px;
   user-select: none;
   -webkit-user-select: none; 
+  transition: all .3s ease;
 }
 
 .select2-results__option:hover {
   background-color: #6DC2BE;
+  color: white;
+  font-size: 18px;
 }
 
 .select2-results__option--selectable {
