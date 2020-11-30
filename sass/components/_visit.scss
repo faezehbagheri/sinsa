@@ -255,6 +255,8 @@
 
     &__svg{
         color: $color-primary;
+
+        @include respond(phone){display: none;}
     }
 
 }

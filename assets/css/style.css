@@ -148,6 +148,12 @@ body {
   .display {
     display: none; } }
 
+.display-none {
+  display: none !important; }
+
+.display-inline {
+  display: inline !important; }
+
 .article {
   width: 99vw;
   transition: all .2s; }
@@ -1876,6 +1882,73 @@ body {
     top: 29rem;
     height: 8rem; }
 
+/*! CSS Used from: Embedded */
+/*! CSS Used from: https://symptomate.com/static/CACHE/css/4dd054f964f4.css ; media=all */
+@media all {
+  svg:not(:root) {
+    overflow: hidden; }
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .ng-hide:not(.ng-hide-animate) {
+    display: none; }
+  body-model-widget .symptoms-models {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    width: 20rem; }
+  body-model-widget .symptoms-models .symptom-model {
+    overflow: hidden;
+    height: 320px; }
+  body-model-widget .symptoms-models .model-controls {
+    width: 80%;
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    margin-top: 16px;
+    cursor: pointer;
+    color: #49838B;
+    user-select: none;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+  body-model-widget .symptoms-models .model-controls:hover .model-rotate-icon {
+    width: 25px;
+    height: 22px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2025%2022%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%220px%22%20fill%3D%22%23105ea7%22%20stroke%3D%22%23105ea7%22%3E%0A%20%20%3Cpath%20d%3D%22M10.555%2012.969C5.717%2012.759%202%2011.509%202%2010c0-1.657%204.477-3%2010-3s10%201.343%2010%203c0%201.23-2.468%202.287-6%202.75v1.965c4.66-.686%208-2.538%208-4.715%200-2.761-5.373-5-12-5S0%207.239%200%2010c0%202.567%204.642%204.682%2010.619%204.967l-1.326%201.326%201.414%201.414L14.414%2014l-3.707-3.707-1.414%201.414%201.262%201.262z%22/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    border-radius: 0; }
+  body-model-widget .symptoms-models .model-controls .model-rotate-icon {
+    width: 25px;
+    height: 22px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2025%2022%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%220px%22%20fill%3D%22%231576d1%22%20stroke%3D%22%231576d1%22%3E%0A%20%20%3Cpath%20d%3D%22M10.555%2012.969C5.717%2012.759%202%2011.509%202%2010c0-1.657%204.477-3%2010-3s10%201.343%2010%203c0%201.23-2.468%202.287-6%202.75v1.965c4.66-.686%208-2.538%208-4.715%200-2.761-5.373-5-12-5S0%207.239%200%2010c0%202.567%204.642%204.682%2010.619%204.967l-1.326%201.326%201.414%201.414L14.414%2014l-3.707-3.707-1.414%201.414%201.262%201.262z%22/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    border-radius: 0;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 8px; }
+  body-model-widget .symptoms-models .body-area {
+    cursor: pointer;
+    opacity: 0; }
+  body-model-widget .symptoms-models .body-area:hover {
+    opacity: 0.5; }
+  body-model-widget .symptoms-models .model-female-front, body-model-widget .symptoms-models .model-female-back, body-model-widget .symptoms-models .model-male-front, body-model-widget .symptoms-models .model-male-back {
+    color: #49838B;
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: top;
+    width: 168px;
+    height: 320px; }
+  body-model-widget .body-model-popover {
+    position: absolute; }
+  .rotate-icon {
+    font-size: 2rem;
+    margin-right: 1rem; } }
+
 .map-header {
   width: 100%;
   height: 10vh;
@@ -3530,7 +3603,7 @@ body {
   @media only screen and (max-width: 30em) {
     .suggestion {
       width: 95%;
-      height: 50rem;
+      height: 65rem;
       left: 0;
       border-radius: 3rem; } }
   @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
@@ -3545,15 +3618,24 @@ body {
   .suggestion__icons {
     width: 12%;
     border-left: 2px solid rgba(160, 160, 160, 0.3); }
+    @media only screen and (max-width: 30em) {
+      .suggestion__icons {
+        width: 20%; } }
     .suggestion__icons div {
       cursor: pointer;
       margin-bottom: 1.2rem; }
     .suggestion__icons i {
       font-size: 1.9rem;
       color: #707070; }
+      @media only screen and (max-width: 30em) {
+        .suggestion__icons i {
+          font-size: 3.3rem; } }
     .suggestion__icons span {
       font-size: 1.2rem;
       color: #707070; }
+      @media only screen and (max-width: 30em) {
+        .suggestion__icons span {
+          font-size: 1.8rem; } }
   .suggestion__result-list {
     width: 82%;
     min-height: 22rem;
@@ -3569,6 +3651,12 @@ body {
       font-size: 1.6rem;
       color: #707070;
       padding: 1.3rem 1.5rem; }
+      @media only screen and (max-width: 30em) {
+        .suggestion__result-list a,
+        .suggestion__result-list a:link,
+        .suggestion__result-list a:visited {
+          padding: 3rem 1.5rem;
+          font-size: 2rem; } }
       .suggestion__result-list a:not(:last-of-type),
       .suggestion__result-list a:link:not(:last-of-type),
       .suggestion__result-list a:visited:not(:last-of-type) {
@@ -3576,6 +3664,9 @@ body {
     .suggestion__result-list span {
       font-size: 1.6rem;
       color: #6DC2BE; }
+      @media only screen and (max-width: 30em) {
+        .suggestion__result-list span {
+          font-size: 2rem; } }
   .suggestion__container {
     width: 100%;
     height: 100%;
@@ -3721,10 +3812,16 @@ body {
 .active-icon i {
   font-size: 2.7rem !important;
   color: #90C73D !important; }
+  @media only screen and (max-width: 30em) {
+    .active-icon i {
+      font-size: 4.3rem !important; } }
 
 .active-icon span {
   font-size: 1.6rem !important;
   color: #90C73D !important; }
+  @media only screen and (max-width: 30em) {
+    .active-icon span {
+      font-size: 2rem !important; } }
 
 .tab-amodi {
   width: 52%; }
@@ -4299,6 +4396,9 @@ body {
       margin-left: 1rem; }
   .visit__svg {
     color: #6DC2BE; }
+    @media only screen and (max-width: 30em) {
+      .visit__svg {
+        display: none; } }
 
 .footer {
   height: 60vh;

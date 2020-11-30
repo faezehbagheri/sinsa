@@ -584,3 +584,8 @@ var text;
 $("ul.visit__option-list li").on('click', function(){
   text = $(this).text();
 });
+
+function toggleHuman(){
+  document.querySelector(".model-male-front").classList.toggle('display-none');
+  document.querySelector(".model-male-back").classList.toggle('display-inline');
+}
