@@ -366,6 +366,7 @@ $.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) {
         // matcher: oldMatcher(matchStart),
         maximumSelectionLength: 3,
         dir: "rtl",
+        language: 'fa'
         // placeholder: 'داروی خود را وارد کنید'
       });
 });

@@ -75,6 +75,7 @@ font-size: 16px;
   user-select: none;
   -webkit-user-select: none; 
   transition: all .3s ease;
+  cursor: pointer;
 }
 
 .select2-results__option:hover {
@@ -193,7 +194,8 @@ font-size: 16px;
 
 .select2-container--default .select2-selection--multiple {
   background-color: white;
-  border: 1px solid #aaa;
+  /* border: 1px solid #aaa; */
+  outline: none;
   border-radius: 4px;
   cursor: text;
   padding-bottom: 5px;
@@ -259,7 +261,7 @@ font-size: 16px;
   margin-right: auto; }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
-  border: solid black 1px;
+  border: none;
   outline: 0; }
 
 .select2-container--default.select2-container--disabled .select2-selection--multiple {
