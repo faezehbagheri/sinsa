@@ -125,7 +125,9 @@
         color: $color-primary-dark;
         position: absolute;
         left: 5%;
+        top: 2%;
         cursor: pointer;
+        z-index: 9999;
 
         @include respond(phone){
             font-size: 3.5rem;
