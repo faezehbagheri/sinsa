@@ -26,7 +26,7 @@
     }
 
     &__header{
-        width: 80%;
+        width: 90%;
         font-size: 1.5rem;
         letter-spacing: 2px;
         text-align: center;
@@ -37,13 +37,14 @@
     }
 
     &__main{
-        width: 80%;
-        height: 45rem;
-        margin-top: 3rem;
+        width: 90%;
+        // height: 45rem;
+        margin: 3rem 0;
+        padding: 0 3.5rem;
 
         @include respond(phone){
             flex-direction: column;
-            height: 65rem;
+            // height: 65rem;
         }
     }
 

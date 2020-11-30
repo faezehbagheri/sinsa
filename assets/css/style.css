@@ -1446,7 +1446,7 @@ body {
           padding: 1rem 1.5rem;
           height: 10rem; } }
       .filter__list li:hover {
-        background-color: #6DC2BE;
+        background-color: #90C73D;
         box-shadow: 1px 1px 5px #A0A0A0; }
         .filter__list li:hover a {
           color: white;
@@ -1901,7 +1901,7 @@ body {
     display: inline-block;
     position: relative;
     margin-top: 20px;
-    width: 20rem; }
+    width: 30rem; }
   body-model-widget .symptoms-models .symptom-model {
     overflow: hidden;
     height: 320px; }
@@ -4230,7 +4230,7 @@ body {
     .visit__container::-webkit-scrollbar-thumb {
       color: none; }
   .visit__header {
-    width: 80%;
+    width: 90%;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-align: center;
@@ -4240,13 +4240,12 @@ body {
       .visit__header {
         font-size: 2rem; } }
   .visit__main {
-    width: 80%;
-    height: 45rem;
-    margin-top: 3rem; }
+    width: 90%;
+    margin: 3rem 0;
+    padding: 0 3.5rem; }
     @media only screen and (max-width: 30em) {
       .visit__main {
-        flex-direction: column;
-        height: 65rem; } }
+        flex-direction: column; } }
   .visit__search-box {
     position: relative; }
   .visit__search {

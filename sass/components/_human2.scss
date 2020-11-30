@@ -9,7 +9,7 @@
     *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
     *:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
     .ng-hide:not(.ng-hide-animate){display:none;}
-    body-model-widget .symptoms-models{display:inline-block;position:relative;margin-top:20px; width: 20rem;}
+    body-model-widget .symptoms-models{display:inline-block;position:relative;margin-top:20px; width: 30rem;}
     body-model-widget .symptoms-models .symptom-model{overflow:hidden;height:320px;}
     body-model-widget .symptoms-models .model-controls{width: 80%; padding-left: 3rem; font-size: 1.5rem; margin-top:16px;cursor:pointer;color:$color-primary-dark;user-select:none;-webkit-transition:color 0.3s ease;-o-transition:color 0.3s ease;transition:color 0.3s ease;}
     // body-model-widget .symptoms-models .model-controls:hover{color:$color-primary;}
