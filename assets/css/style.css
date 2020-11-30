@@ -29,6 +29,9 @@ body {
   border-radius: 10px;
   background-color: #cccccc; }
 
+button {
+  cursor: pointer; }
+
 .red {
   color: #E43F6F !important; }
 
@@ -4139,7 +4142,7 @@ body {
         font-size: 2rem; } }
   .visit__main {
     width: 80%;
-    height: 35rem;
+    height: 45rem;
     margin-top: 3rem; }
     @media only screen and (max-width: 30em) {
       .visit__main {
@@ -4148,7 +4151,7 @@ body {
   .visit__search-box {
     position: relative; }
   .visit__search {
-    width: 23rem;
+    width: 30rem;
     height: 4rem;
     border-radius: 1rem;
     background-color: white;
@@ -4178,9 +4181,9 @@ body {
     .visit__search i {
       font-size: 2rem;
       color: #6DC2BE;
-      margin-left: 1rem; }
+      margin: 1rem; }
   .visit__option {
-    width: 23rem;
+    width: 30rem;
     height: 0;
     border-radius: 1rem;
     box-shadow: 1px 1px 5px #A0A0A0;
@@ -4188,7 +4191,8 @@ body {
     overflow-y: scroll;
     position: absolute;
     top: 16%;
-    transition: all .6s ease; }
+    transition: all .6s ease;
+    z-index: 9999; }
     @media only screen and (max-width: 30em) {
       .visit__option {
         width: 50rem; } }
@@ -4234,6 +4238,7 @@ body {
   .visit__item-selected {
     font-size: 1.8rem;
     color: #6DC2BE;
+    margin-right: 1rem;
     cursor: pointer; }
     @media only screen and (max-width: 30em) {
       .visit__item-selected {
@@ -4290,6 +4295,8 @@ body {
     .visit__prev-btn i {
       font-size: 2rem;
       margin-left: 1rem; }
+  .visit__svg {
+    color: #6DC2BE; }
 
 .footer {
   height: 60vh;

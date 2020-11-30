@@ -152,7 +152,7 @@
                 <form class="search__form flex column justi-center align-center">
                     <!-- این قسمت تغییر کرده است -->
                     <div class="search__box flex justi-center align-center ">
-                        <a href="#" class="search__btn flex align-center justi-center">جستجو</a>
+                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
                         <div class="search__search-container flex r-reverse align-center justi-around">
                             <i class="fas fa-search search__right-icon"></i>
                             <input type="text" class="search__input">
@@ -160,7 +160,7 @@
                         </div>
                     </div>                    
                     <!-- search suggestion -->
-                    <div class="suggestion">
+                    <div class="suggestion" style="display: none;">
                         <!-- <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(1)"></i> -->
                         <div class="suggestion__container flex column align-center justi-center">
                             <div class="suggestion__recent-search flex column justi-around align-end">
@@ -918,6 +918,7 @@
                                         <a href="#" class="flex column align-center"><i class="fas fa-plus"></i>علائم
                                             بیشتر</a>
                                     </div>
+                                    <img class="visit__svg" src="/assets/img/drug.svg">
                                 </div>
                                 <div class="result flex column">
                                     <div class="result__tab">

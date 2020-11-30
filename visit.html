@@ -7,6 +7,8 @@
 
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/progressbar.min.js"></script>
+
 
     <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
@@ -141,7 +143,7 @@
                 <form class="search__form flex column justi-center align-center">
                     <!-- این قسمت تغییر کرده است -->
                     <div class="search__box flex justi-center align-center ">
-                        <a href="#" class="search__btn flex align-center justi-center">جستجو</a>
+                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
                         <div class="search__search-container flex r-reverse align-center justi-around">
                             <i class="fas fa-search search__right-icon"></i>
                             <input type="text" class="search__input">
@@ -659,23 +661,23 @@
                         <a data-trigger="content4" class="tab-amodi__label ">نتیجه</a>
                     </nav>
                     <div id="content1" class="tab-amodi__tabcontent">
-                        <div class="visit">
-                            <div class="visit__main" style="width: 96%;">
+                        <div class="tab-ofoghi__new-tab flex column align-center justi-start" style="width: 100%;">
+                            <div class="tab-ofoghi__tabs-list flex column align-center" style=" padding: 3rem 0;">
                                 
                             </div>
                         </div> 
                     </div>
                     <div id="content2" class="tab-amodi__tabcontent">
-                        <div class="visit">
-                            <div class="visit__main" style="width: 96%;">
+                        <div class="tab-ofoghi__new-tab flex column align-center justi-start" style="width: 100%;">
+                            <div class="tab-ofoghi__tabs-list flex column align-center" style=" padding: 3rem 0;">
                                 
                             </div>
                         </div> 
                     </div> 
                     <!-- علائم -->
                     <div id="content3" class="tab-amodi__tabcontent">
-                        <div class="visit">
-                            <div class="visit__container flex column align-center justi-around" style="width: 96%;">
+                        <div class="tab-ofoghi__new-tab flex column align-center justi-start" style="width: 100%;">
+                            <div class="tab-ofoghi__tabs-list flex column align-center" style=" padding: 3rem 0;">
                                 <h3 class="visit__header">علائم خود را برای تشخیص بهتر وارد کنید</h3>
                                 <div class="visit__main flex r-reverse align-center justi-between">
                                     <!-- سرچ باکس -->
@@ -736,6 +738,38 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="result flex column">
+                                    <div class="result__tab">
+                                        <a class="tab-amodi__label">نتیجه</a>
+                                    </div>
+                                    <div class="result__item flex align-center justi-between">
+                                        <div class="flex justi-end" style="position: relative;">
+                                            <div class="result__circle">
+                                                <div class="bar" id="bar1"></div>
+                                            </div>
+                                        </div>                                        
+                                        <a href="#">سردرد ناشی از کم خوابی</a>
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
+                                    <div class="result__item flex align-center justi-between">
+                                        <div class="flex justi-end" style="position: relative;">
+                                            <div class="result__circle">
+                                                <div class="bar" id="bar2"></div>
+                                            </div>
+                                        </div>
+                                        <a href="#">سردر ناشی از استرس</a>
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>                                    
+                                    <div class="result__item flex align-center justi-between">
+                                        <div class="flex justi-end" style="position: relative;">
+                                            <div class="result__circle">
+                                                <div class="bar" id="bar3"></div>
+                                            </div>
+                                        </div>
+                                        <a href="#">واریس</a>
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
+                                </div>
                                 <div class="visit_buttons flex r-reverse align-center justi-between">
                                     <button class="visit__prev-btn flex align-center justi-center">بازگشت<i class="fas fa-undo"></i></button>
                                     <button class="visit__nxt-btn flex align-center justi-center"><i class="fas fa-angle-left"></i>بعدی</button>
@@ -744,48 +778,36 @@
                         </div> 
                     </div>
                     <div id="content4" class="tab-amodi__tabcontent">
-                        <div class="visit">
-                            <div class="visit__container" style="width: 96%;">
+                        <div class="tab-ofoghi__new-tab flex column align-center justi-start" style="width: 100%;">
+                            <div class="tab-ofoghi__tabs-list flex column align-center" style=" padding: 3rem 0;">
                                 <div class="result flex column">
-                                    <div class="result__item flex r-reverse align-center justi-between">
-                                        <div class="result__set-size">
-                                            <div class="result__wrapper result__progress-30">
-                                                <span class="result__label">30%</span>
-                                                <div class="result__pie">
-                                                  <div class="result__left-side result__half-circle"></div>
-                                                  <div class="result__right-side result__half-circle"></div>
-                                                </div>
-                                              </div>
-                                        </div>
+                                    <div class="result__item flex align-center justi-between">
+                                        <div class="flex justi-end" style="position: relative;">
+                                            <div class="result__circle">
+                                                <div class="bar" id="bar01"></div>
+                                            </div>
+                                        </div>                                        
                                         <a href="#">سردرد ناشی از کم خوابی</a>
                                         <i class="fas fa-angle-right"></i>
                                     </div>
-                                    <div class="result__item flex r-reverse align-center justi-between">
-                                        <div class="result__set-size">
-                                            <div class="result__wrapper result__progress-70">
-                                                <span class="result__label">70%</span>
-                                                <div class="result__pie">
-                                                  <div class="result__left-side result__half-circle"></div>
-                                                  <div class="result__right-side result__half-circle"></div>
-                                                </div>
-                                              </div>
+                                    <div class="result__item flex align-center justi-between">
+                                        <div class="flex justi-end" style="position: relative;">
+                                            <div class="result__circle">
+                                                <div class="bar" id="bar02"></div>
+                                            </div>
                                         </div>
                                         <a href="#">سردر ناشی از استرس</a>
                                         <i class="fas fa-angle-right"></i>
-                                    </div>
-                                    <div class="result__item flex r-reverse align-center justi-between">
-                                        <div class="result__set-size">
-                                            <div class="result__wrapper result__progress-45">
-                                                <span class="result__label">45%</span>
-                                                <div class="result__pie">
-                                                  <div class="result__left-side result__half-circle"></div>
-                                                  <div class="result__right-side result__half-circle"></div>
-                                                </div>
-                                              </div>
+                                    </div>                                    
+                                    <div class="result__item flex align-center justi-between">
+                                        <div class="flex justi-end" style="position: relative;">
+                                            <div class="result__circle">
+                                                <div class="bar" id="bar03"></div>
+                                            </div>
                                         </div>
                                         <a href="#">واریس</a>
                                         <i class="fas fa-angle-right"></i>
-                                    </div>
+                                    </div>  
                                 </div>
                             </div>
                         </div> 
@@ -928,4 +950,181 @@
     </footer>
 
 </body>
+<script>
+
+
+    var bar = new ProgressBar.Circle(bar1, {
+      color: '#E43F6F',
+      strokeWidth: 4,
+      trailWidth: 1,
+      easing: 'easeInOut',
+      duration: 1400,
+      text: {
+        autoStyleContainer: false
+      },
+      from: { color: '#ffe6e6', width: 1 },
+      to: { color: '#E43F6F', width: 4 },
+      // Set default step function for all animate calls
+      step: function(state, circle) {
+        circle.path.setAttribute('stroke', state.color);
+        circle.path.setAttribute('stroke-width', state.width);
+    
+        var value = Math.round(circle.value() * 100);
+        if (value === 0) {
+          circle.setText('');
+        } else {
+          circle.setText(value + '%');
+        }
+    
+      }
+    });
+    bar.text.style.fontSize = '2.3rem';
+    
+    bar.animate(0.8) // Number from 0.0 to 1.0
+    
+    bar = new ProgressBar.Circle(bar2, {
+      color: '#F4E36F',
+      strokeWidth: 4,
+      trailWidth: 1,
+      easing: 'easeInOut',
+      duration: 1400,
+      text: {
+        autoStyleContainer: false
+      },
+      from: { color: '#ffffe6', width: 1 },
+      to: { color: '#F4E36F', width: 4 },
+      // Set default step function for all animate calls
+      step: function(state, circle) {
+        circle.path.setAttribute('stroke', state.color);
+        circle.path.setAttribute('stroke-width', state.width);
+    
+        var value = Math.round(circle.value() * 100);
+        if (value === 0) {
+          circle.setText('');
+        } else {
+          circle.setText(value + '%');
+        }
+    
+      }
+    });
+    bar.animate(0.7) // Number from 0.0 to 1.0
+    bar.text.style.fontSize = '2.3rem';
+    
+    
+    bar = new ProgressBar.Circle(bar3, {
+      color: '#90C73D',
+      strokeWidth: 4,
+      trailWidth: 1,
+      easing: 'easeInOut',
+      duration: 1400,
+      text: {
+        autoStyleContainer: false
+      },
+      from: { color: '#e6ffee', width: 1 },
+      to: { color: '#90C73D', width: 4 },
+      // Set default step function for all animate calls
+      step: function(state, circle) {
+        circle.path.setAttribute('stroke', state.color);
+        circle.path.setAttribute('stroke-width', state.width);
+    
+        var value = Math.round(circle.value() * 100);
+        if (value === 0) {
+          circle.setText('');
+        } else {
+          circle.setText(value + '%');
+        }
+    
+      }
+    });
+    bar.animate(0.5) // Number from 0.0 to 1.0
+    bar.text.style.fontSize = '2.3rem';
+    
+      
+    bar = new ProgressBar.Circle(bar01, {
+      color: '#E43F6F',
+      strokeWidth: 4,
+      trailWidth: 1,
+      easing: 'easeInOut',
+      duration: 1400,
+      text: {
+        autoStyleContainer: false
+      },
+      from: { color: '#ffe6e6', width: 1 },
+      to: { color: '#E43F6F', width: 4 },
+      // Set default step function for all animate calls
+      step: function(state, circle) {
+        circle.path.setAttribute('stroke', state.color);
+        circle.path.setAttribute('stroke-width', state.width);
+    
+        var value = Math.round(circle.value() * 100);
+        if (value === 0) {
+          circle.setText('');
+        } else {
+          circle.setText(value + '%');
+        }
+    
+      }
+    });
+    bar.animate(0.8) // Number from 0.0 to 1.0
+    bar.text.style.fontSize = '2.3rem';
+    
+      
+    bar = new ProgressBar.Circle(bar02, {
+      color: '#F4E36F',
+      strokeWidth: 4,
+      trailWidth: 1,
+      easing: 'easeInOut',
+      duration: 1400,
+      text: {
+        autoStyleContainer: false
+      },
+      from: { color: '#ffffe6', width: 1 },
+      to: { color: '#F4E36F', width: 4 },
+      // Set default step function for all animate calls
+      step: function(state, circle) {
+        circle.path.setAttribute('stroke', state.color);
+        circle.path.setAttribute('stroke-width', state.width);
+    
+        var value = Math.round(circle.value() * 100);
+        if (value === 0) {
+          circle.setText('');
+        } else {
+          circle.setText(value + '%');
+        }
+    
+      }
+    });
+    bar.animate(0.7) // Number from 0.0 to 1.0
+    bar.text.style.fontSize = '2.3rem';
+    
+      
+    bar = new ProgressBar.Circle(bar03, {
+      color: '#90C73D',
+      strokeWidth: 4,
+      trailWidth: 1,
+      easing: 'easeInOut',
+      duration: 1400,
+      text: {
+        autoStyleContainer: false
+      },
+      from: { color: '#e6ffee', width: 1 },
+      to: { color: '#90C73D', width: 4 },
+      // Set default step function for all animate calls
+      step: function(state, circle) {
+        circle.path.setAttribute('stroke', state.color);
+        circle.path.setAttribute('stroke-width', state.width);
+    
+        var value = Math.round(circle.value() * 100);
+        if (value === 0) {
+          circle.setText('');
+        } else {
+          circle.setText(value + '%');
+        }
+    
+      }
+    });
+    bar.animate(0.5) // Number from 0.0 to 1.0
+    bar.text.style.fontSize = '2.3rem';
+    
+    </script>
 </html>
