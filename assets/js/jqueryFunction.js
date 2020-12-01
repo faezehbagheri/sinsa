@@ -67,6 +67,18 @@ $(document).ready(function () {
             $(this).toggleClass('doctors-page__icon-active');
         }
     )
+
+    $('.tabcontent').hide();
+    var activeSearchTabMobile = $(".tab-amodi__mobile-multipleTabs").find('a.active-mobile-tab').data('trigger');
+    $('#' + activeSearchTabMobile).show();
+
+    $('.tab-amodi__mobile-multipleTabs>a').on('click', function () {
+        var tabId = $(this).data('trigger');
+        $('#' + tabId).show();
+        $('.tabcontent:not(#' + tabId + ')').hide();
+        $(this).addClass('active-mobile-tab');
+        $(this).siblings('a').removeClass('active-mobile-tab');
+    });
        
     var search = $("#search");
     var $doctors = $("#doctors");
@@ -89,15 +101,15 @@ $(document).ready(function () {
     });
 
     $mobileFilter.owlCarousel({
-        loop: false,
         rtl: true,
-        items: 3,
+        items: 4,
     });
 
     $(document).on('click', '.owl-item>div', function () {
         var $speed = 300;  // in ms
         $mobileFilter.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
     });
+    
     
     /// mobileHeaderFilter ///
     $mobileHeaderFilter.children().each(function (index) {
@@ -360,13 +372,13 @@ $.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) {
     $("select").select2({
         matcher: oldMatcher(matchStart),
         dropdownAutoWidth: true,
-        dir: "rtl"
+        dir: "rtl",
+        language: "fa"
     })
     $('#multiple').select2({
         // matcher: oldMatcher(matchStart),
         maximumSelectionLength: 3,
         dir: "rtl",
-        language: 'fa'
         // placeholder: 'داروی خود را وارد کنید'
       });
 });

@@ -12,7 +12,7 @@
     @include respond(phone){
         width: 95%;
         height: 65rem;
-        left: 0;
+        margin: 0 auto;
         border-radius: 3rem;
     }
 

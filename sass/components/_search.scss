@@ -10,6 +10,13 @@
 
     @include respond(phone){ 
         width: 100%;
+        margin: 0;
+    }
+
+    &.result-page{
+        @include respond(phone){ 
+            display: none;
+        }
     }
 
     &__form{
@@ -25,11 +32,12 @@
         box-shadow: 0 0 5px rgba($color: #000000, $alpha: .8);
 
         @include respond(phone){
-            width: 95%;
+            width: 99%;
             padding: 0;
             height: 9.5rem;
-            margin: 2rem 1rem 1rem;
-            border-radius: 5rem;
+            // margin: 2rem 1rem 1rem;
+            // margin: 0 1rem 1rem;
+            border-radius: 2rem;
         }
 
         @include respond(iphone){
@@ -99,6 +107,7 @@
             height: 100%;
             margin: 0;
             border: 2px solid $color-primary;
+            border-radius: 2rem;
         }
     }
 
@@ -115,6 +124,9 @@
         
         &::placeholder{
             font-size: 1.4rem;
+
+            @include respond(phone){font-size: 2rem;}
+            
         }
     }
 
@@ -214,8 +226,34 @@
             @include centerABS();
         }
     }
+
+    &__multipleTabs{
+        width: 90%;
+        height: 8rem;
+
+        a,
+        a:link,
+        a:visited{
+            // height: 100%;
+            padding: 1rem 0;
+            text-align: center;
+            border-radius: 2rem 2rem 0 0;
+            width: 25%;
+            font-size: 2.5rem;
+            border-left: 2px solid white;
+            background-color: rgba($color: $color-primary, $alpha: .8);
+            color: white;
+            transition: all .3s ease;
+        }
+    }
 }
 
+.active-mobile-tab{
+    background-color: rgba($color: $color-primary-light, $alpha: .8) !important;
+    color: white !important;
+    padding: 1.8rem 0 !important;
+    font-size: 2.2rem !important;
+}
 
 // @include respond(tab-land){ width: 65rem;}
 
@@ -233,6 +271,8 @@
         padding: 0 5px;
         font-size: 1.5rem;
         color: $color-gray;
+
+        @include respond(phone){font-size: 2rem;}
     }
     
     .select2-selection__choice{

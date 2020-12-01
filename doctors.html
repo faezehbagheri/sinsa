@@ -7,6 +7,10 @@
     
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js"></script>
+    <link rel="stylesheet" href="/assets/css/select2.css">
+
 
     <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
@@ -139,12 +143,217 @@
             <div class="search">
                 <form class="search__form flex column justi-center align-center">
                     <!-- این قسمت تغییر کرده است -->
-                    <div class="search__box flex justi-center align-center ">
-                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
-                        <div class="search__search-container flex r-reverse align-center justi-around">
-                            <i class="fas fa-search search__right-icon"></i>
-                            <input type="text" class="search__input">
-                            <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
+                    <div class="tab-amodi u-margin-top-medium">
+                        <div class="tab-amodi__container flex column align-end">
+                            <nav class="tab-amodi__mobile-multipleTabs flex align-end">
+                                <a data-trigger="mobile-tab-01" class="tab-amodi__label active-mobile-tab">جستجو</a>
+                                <a data-trigger="mobile-tab-02" class="tab-amodi__label ">علائم</a>
+                                <a data-trigger="mobile-tab-04" class="tab-amodi__label ">مکان یاب</a>
+                                <a data-trigger="mobile-tab-05" class="tab-amodi__label ">تداخلات دارویی</a>
+                            </nav>
+                            <div class="search tabcontent" id="mobile-tab-01">
+                                <form class="search__form flex column justi-center align-end">
+                                    <div class="search__box flex justi-center align-center ">
+                                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
+                                        <div class="search__search-container flex r-reverse align-center justi-around">
+                                            <i class="fas fa-search search__right-icon"></i>
+                                            <input type="text" class="search__input"
+                                                placeholder="بیماری مورد نظر را جستجو کنید">
+                                            <a href="#"><i class="fas fa-map-marker-alt search__left-icon"></i></a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="search tabcontent" id="mobile-tab-02">
+                                <form class="search__form flex column justi-center align-end">
+                                    <div class="search__box flex justi-center align-center ">
+                                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
+                                        <div class="search__search-container flex r-reverse align-center justi-around">
+                                            <i class="fas fa-search search__right-icon"></i>
+                                            <input type="text" class="search__input" placeholder="علائم مورد نظر را جستجو کنید">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="search tabcontent" id="mobile-tab-03">
+                                <form class="search__form flex column justi-center align-end">
+                                    <div class="search__box flex justi-center align-center ">
+                                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
+                                        <div class="search__search-container flex r-reverse align-center">
+                                            <div class="search__tadakholat flex r-reverse align-center">
+                                                <i class="fas fa-pills search__drug-icon"></i>
+                                                <div class="container">
+                                                    <select class="select2" name="drug">
+                                                        <option value="" disabled selected> نام داروی مورد نظر </option>
+                                                        <option value=""> آپروتینین </option>
+                                                        <option value="">آتراکوریوم</option>
+                                                        <option value=""> آتروپین </option>
+                                                        <option value=""> آتورواستاتین </option>
+                                                        <option value=""> آتنولول</option>
+                                                        <option value=""> آزاتیوپرین</option>
+                                                        <option value=""> آزیترومایسین</option>
+                                                        <option value=""> آلبندازول</option>
+                                                        <option value=""> آلپرازولام</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search__tadakholat flex r-reverse align-center">
+                                                <i class="fas fa-pills search__drug-icon"></i>
+                                                <div class="container">
+                                                    <select class="select2" name="drug">
+                                                        <option value="" disabled selected> نام داروی مورد نظر </option>
+                                                        <option value=""> آپروتینین </option>
+                                                        <option value="">آتراکوریوم</option>
+                                                        <option value=""> آتروپین </option>
+                                                        <option value=""> آتورواستاتین </option>
+                                                        <option value=""> آتنولول</option>
+                                                        <option value=""> آزاتیوپرین</option>
+                                                        <option value=""> آزیترومایسین</option>
+                                                        <option value=""> آلبندازول</option>
+                                                        <option value=""> آلپرازولام</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search__tadakholat flex r-reverse align-center">
+                                                <i class="fas fa-capsules search__drug-icon"></i>
+                                                <div class="container">
+                                                    <select class="select2" name="drug">
+                                                        <option value="" disabled selected> نام داروی مورد نظر </option>
+                                                        <option value=""> آپروتینین </option>
+                                                        <option value="">آتراکوریوم</option>
+                                                        <option value=""> آتروپین </option>
+                                                        <option value=""> آتورواستاتین </option>
+                                                        <option value=""> آتنولول</option>
+                                                        <option value=""> آزاتیوپرین</option>
+                                                        <option value=""> آزیترومایسین</option>
+                                                        <option value=""> آلبندازول</option>
+                                                        <option value=""> آلپرازولام</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <button class="search__plus-btn"><i class="fas fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="search tabcontent" id="mobile-tab-04">
+                                <form class="search__form flex column justi-center align-end">
+                                    <div class="search__box flex justi-center align-center ">
+                                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
+                                        <div class="search__search-container flex r-reverse align-center">
+                                            <div class="search__tadakholat flex r-reverse align-center">
+                                                <i class="fas fa-list search__drug-icon"></i>
+                                                <div class="container">
+                                                    <select class="select2" id="myselect" name="category">
+                                                        <option value="" disabled selected> دسته بندی </option>
+                                                        <option value=""> آپروتینین </option>
+                                                        <option value="">آتراکوریوم</option>
+                                                        <option value=""> آتروپین </option>
+                                                        <option value=""> آتورواستاتین </option>
+                                                        <option value=""> آتنولول</option>
+                                                        <option value=""> آزاتیوپرین</option>
+                                                        <option value=""> آزیترومایسین</option>
+                                                        <option value=""> آلبندازول</option>
+                                                        <option value=""> آلپرازولام</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search__tadakholat flex r-reverse align-center">
+                                                <i class="fas fa-map search__drug-icon"></i>
+                                                <div class="container">
+                                                    <select class="select2" name="country">
+                                                        <option value="" disabled selected> استان </option>
+                                                        <option value=""> آپروتینین </option>
+                                                        <option value="">آتراکوریوم</option>
+                                                        <option value=""> آتروپین </option>
+                                                        <option value=""> آتورواستاتین </option>
+                                                        <option value=""> آتنولول</option>
+                                                        <option value=""> آزاتیوپرین</option>
+                                                        <option value=""> آزیترومایسین</option>
+                                                        <option value=""> آلبندازول</option>
+                                                        <option value=""> آلپرازولام</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search__tadakholat flex r-reverse align-center">
+                                                <i class="fas fa-map-marker-alt search__drug-icon"></i>
+                                                <div class="container">
+                                                    <select class="select2" name="city">
+                                                        <option value="" disabled selected> شهر </option>
+                                                        <option value=""> آپروتینین </option>
+                                                        <option value="">آتراکوریوم</option>
+                                                        <option value=""> آتروپین </option>
+                                                        <option value=""> آتورواستاتین </option>
+                                                        <option value=""> آتنولول</option>
+                                                        <option value=""> آزاتیوپرین</option>
+                                                        <option value=""> آزیترومایسین</option>
+                                                        <option value=""> آلبندازول</option>
+                                                        <option value=""> آلپرازولام</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search__tadakholat flex r-reverse align-center">
+                                                <i class="fas fa-map search__drug-icon"></i>
+                                                <div class="container">
+                                                    <select class="select2" name="mahale">
+                                                        <option value="" disabled selected> محله </option>
+                                                        <option value=""> آپروتینین </option>
+                                                        <option value="">آتراکوریوم</option>
+                                                        <option value=""> آتروپین </option>
+                                                        <option value=""> آتورواستاتین </option>
+                                                        <option value=""> آتنولول</option>
+                                                        <option value=""> آزاتیوپرین</option>
+                                                        <option value=""> آزیترومایسین</option>
+                                                        <option value=""> آلبندازول</option>
+                                                        <option value=""> آلپرازولام</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search__tadakholat flex r-reverse align-center">
+                                                <i class="fas fa-map-marker-alt search__drug-icon"></i>
+                                                <div class="container">
+                                                    <select class="select2" name="specialty">
+                                                        <option value="" disabled selected> تخصص </option>
+                                                        <option value=""> آپروتینین </option>
+                                                        <option value="">آتراکوریوم</option>
+                                                        <option value=""> آتروپین </option>
+                                                        <option value=""> آتورواستاتین </option>
+                                                        <option value=""> آتنولول</option>
+                                                        <option value=""> آزاتیوپرین</option>
+                                                        <option value=""> آزیترومایسین</option>
+                                                        <option value=""> آلبندازول</option>
+                                                        <option value=""> آلپرازولام</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="search tabcontent" id="mobile-tab-05">
+                                <form class="search__form flex column justi-center align-end">
+                                    <div class="search__box flex justi-center align-center ">
+                                        <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
+                                        <div class="search__search-container flex r-reverse align-center justi-around">
+                                            <i class="fas fa-search search__right-icon"></i>
+                                            <div class="container big-select">
+                                                <select class="select2  js-states form-control" id="multiple" name="drug[]" multiple="multiple" placeholder="selected">
+                                                    <option value="" disabled selected> نام داروی مورد نظر </option>
+                                                    <option value=""> آپروتینین </option>
+                                                    <option value="">آتراکوریوم</option>
+                                                    <option value=""> آتروپین </option>
+                                                    <option value=""> آتورواستاتین </option>
+                                                    <option value=""> آتنولول</option>
+                                                    <option value=""> آزاتیوپرین</option>
+                                                    <option value=""> آزیترومایسین</option>
+                                                    <option value=""> آلبندازول</option>
+                                                    <option value=""> آلپرازولام</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>                    
                     <!-- search suggestion -->

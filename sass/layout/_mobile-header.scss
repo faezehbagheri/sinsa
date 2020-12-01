@@ -31,7 +31,7 @@
     }
 
     &__filter{
-        margin-top: 27rem;
+        margin-top: 35rem;
         box-shadow: 0 4px 7px -2px #dbd9d9;
         transition: all .5s;
         display: none;
@@ -185,7 +185,7 @@
         transition: all .5s;
 
         @include respond(iphone){
-            margin-top: 7rem;
+            margin-top: 0;
         }
 
         // @include respond(phone){ height: 12rem; }

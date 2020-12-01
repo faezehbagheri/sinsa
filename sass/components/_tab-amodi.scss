@@ -34,7 +34,21 @@
         cursor: pointer;
         margin-right: 2rem;
         
-        @include respond(phone){display: none;}       
+        @include respond(phone){
+            display: none;
+        }       
+    }
+    
+    &__mobile-multipleTabs {
+        display:flex;
+        flex-flow: row-reverse wrap;
+        position: relative;
+        cursor: pointer;
+        margin-right: 2rem;
+        
+        @include respond(phone){
+            margin: 0 auto;
+        }       
     }
 
     &__label{
@@ -51,6 +65,18 @@
         z-index: 0;
         color: $color-primary-dark;
         box-shadow: 0px -2px 6px #a6a6a665;
+        
+        @include respond(phone){
+            font-size: 2.2rem;
+            width: 15.5rem;
+            padding: 1.5rem 5px;
+            margin: 0; 
+            background-color: rgba($color: $color-primary, $alpha: .8);
+            margin-right: 2px;
+            box-shadow: none;        
+            color: white;
+            border-radius: 1.2rem 1.2rem 0 0;  
+        }       
 
         &.main-search{
             padding: 1.5rem;
@@ -94,6 +120,10 @@
         background-color: $color-primary-light;
         z-index: 9;
         color: #fff !important;
+
+        @include respond(phone){
+            z-index: 0;
+        }
         
         &::before{
             background-color: $color-primary-light;
@@ -116,6 +146,8 @@
         height: 100%;
         width: 3rem;  
         background-color: white;
+        
+        @include respond(phone){display: none;}  
         
     }
 
@@ -157,6 +189,33 @@
        width: 100%;
     }
 
+    
+    &__prev-control {
+        display:none;
+
+        @include respond(phone){
+            display:inline-block; 
+            position:absolute; 
+            left:10px; top:10px; 
+            color: $color-pink;
+            font-size: 3rem; 
+            cursor:pointer;
+        }
+    }
+
+    &__next-control {
+        display:none;
+
+        @include respond(phone){
+            display:inline-block; 
+            position:absolute; 
+            right:10px; 
+            top:10px;   
+            color: $color-pink;
+            font-size: 3rem; 
+            cursor:pointer;
+        }
+    }
     
 }
 

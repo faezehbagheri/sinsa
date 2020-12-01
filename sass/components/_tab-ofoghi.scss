@@ -57,6 +57,10 @@
             border-bottom: 2px solid $color-primary;
             transition: width .2s ease,
                         font-size 1s ease;
+
+            @include respond(phone){
+                font-size: 2.4rem;
+            }
         }
 
         i{
@@ -68,6 +72,11 @@
             padding: 7px 8px;
             margin-left: 2rem;
             transition: all 1s ease;
+
+            @include respond(phone){
+                padding: 8px;
+                font-size: 1.6rem;
+            }
         }
 
         i.minus{
@@ -250,6 +259,8 @@
 
         div{
             margin-top: 1.5rem;
+
+            @include respond(phone){margin-top: 2.5rem;}
         }
 
         a,
@@ -263,6 +274,8 @@
             text-decoration: none;
             color: black;
 
+            @include respond(phone){font-size: 2.4rem;}
+
             i{
                 font-size: 2.5rem;
                 color: $color-gray-light;
@@ -275,6 +288,11 @@
             margin: 1rem 3.5rem 0 0;
             text-align: justify;
             color: $color-gray;
+
+            @include respond(phone){
+                font-size: 2.1rem;
+                line-height: 5.5rem;
+            }
         }
     }
 }
@@ -285,6 +303,10 @@
         color: $color-gray;
         font-size: 2.2rem;
         border-bottom: 2px solid $color-primary !important;
+
+        @include respond(phone){
+            font-size: 2.7rem;
+        }
     }
 
     i.plus{
@@ -303,21 +325,11 @@
         margin: 2rem 1rem 1rem;
         padding: 0 1rem;
         line-height: 5rem;
-        // overflow-y: scroll;
 
-        // &::-webkit-scrollbar-track{
-        //     border-radius: 10px;
-        //     position: absolute;
-        // }
-    
-        // &::-webkit-scrollbar{
-        //     width: 6px;
-        // }
-    
-        // &::-webkit-scrollbar-thumb{
-        //     border-radius: 10px;
-        //     background-color: #cccccc;
-        // }
+        @include respond(phone){
+            font-size: 2.2rem;
+            line-height: 5.8rem;
+        }
     }
 }
 
