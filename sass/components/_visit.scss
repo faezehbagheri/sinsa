@@ -137,7 +137,6 @@
         li{
             // margin: 6px;
             width: 100%;
-            border-bottom: 1px solid $color-secondary-light;
             padding: 0 1.5rem;
             height: 5rem;
             transition: all .3s;
@@ -145,6 +144,10 @@
             color: $color-gray;
             background-color: white;
             cursor: pointer;
+
+            &:not(:last-of-type){
+                border-bottom: 1px solid $color-secondary-light;
+            }
 
             @include respond(phone){
                 font-size: 2.3rem;

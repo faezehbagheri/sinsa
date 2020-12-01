@@ -16,7 +16,18 @@
             & > div{
                 margin: 3rem 0 !important;
                 width: 85% !important;
+
+                &.visit-page{
+                    justify-content: center;
+                }
             }
+
+            a{
+                font-size: 2.3rem !important;
+                text-align: center !important;
+            }
+
+            i{display: none !important;}
         }
     }
 

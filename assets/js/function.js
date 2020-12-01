@@ -562,6 +562,7 @@ function openSearchOption(){
   var value = document.querySelector(".visit__input").value;
   if(value.length >= 2){
     document.querySelector(".visit__option").style.height = "30rem";
+    // document.querySelector(".mobile-option").style.height = "40rem";
   }else{
     document.querySelector(".visit__option").style.height = "0";
   }

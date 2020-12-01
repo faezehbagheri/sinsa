@@ -19,5 +19,17 @@
     body-model-widget .symptoms-models .body-area:hover{opacity:0.5;}
     body-model-widget .symptoms-models .model-female-front,body-model-widget .symptoms-models .model-female-back,body-model-widget .symptoms-models .model-male-front,body-model-widget .symptoms-models .model-male-back{color:$color-primary-dark;fill:currentColor;display:inline-block;vertical-align:top;width:168px;height:320px;}
     body-model-widget .body-model-popover{position:absolute;}
-    .rotate-icon{font-size: 2rem; margin-right: 1rem;}
+}
+.rotate-icon{
+    font-size: 2rem; 
+    margin-right: 1rem;
+    @include respond(phone){
+        font-size: 2.5rem !important;
     }
+}
+.model-controls{
+    @include respond(phone){
+        font-size: 2.5rem !important;
+        padding-left: 5rem !important;
+    }
+}

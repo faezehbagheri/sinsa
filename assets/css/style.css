@@ -1944,10 +1944,19 @@ body {
     width: 168px;
     height: 320px; }
   body-model-widget .body-model-popover {
-    position: absolute; }
-  .rotate-icon {
-    font-size: 2rem;
-    margin-right: 1rem; } }
+    position: absolute; } }
+
+.rotate-icon {
+  font-size: 2rem;
+  margin-right: 1rem; }
+  @media only screen and (max-width: 30em) {
+    .rotate-icon {
+      font-size: 2.5rem !important; } }
+
+@media only screen and (max-width: 30em) {
+  .model-controls {
+    font-size: 2.5rem !important;
+    padding-left: 5rem !important; } }
 
 .map-header {
   width: 100%;
@@ -3096,7 +3105,14 @@ body {
         flex-direction: column; }
         .result__item > div {
           margin: 3rem 0 !important;
-          width: 85% !important; } }
+          width: 85% !important; }
+          .result__item > div.visit-page {
+            justify-content: center; }
+        .result__item a {
+          font-size: 2.3rem !important;
+          text-align: center !important; }
+        .result__item i {
+          display: none !important; } }
   .result i {
     font-size: 2.5rem;
     color: #49838B;
@@ -4307,7 +4323,6 @@ body {
     text-align: right; }
     .visit__option-list li {
       width: 100%;
-      border-bottom: 1px solid #B4D3D1;
       padding: 0 1.5rem;
       height: 5rem;
       transition: all .3s;
@@ -4315,6 +4330,8 @@ body {
       color: #707070;
       background-color: white;
       cursor: pointer; }
+      .visit__option-list li:not(:last-of-type) {
+        border-bottom: 1px solid #B4D3D1; }
       @media only screen and (max-width: 30em) {
         .visit__option-list li {
           font-size: 2.3rem;
