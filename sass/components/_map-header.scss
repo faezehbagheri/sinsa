@@ -105,4 +105,19 @@
         }
     }
 
+
+    .container{
+        background-color: transparent;
+        margin-left: 5rem;
+
+        .select2-container {
+            .select2-selection--single {
+                background-color: transparent;
+                border-bottom: 1px solid $color-gray;
+                border-radius: 0;
+                padding: 5px 2rem;
+            }
+        }
+    }
+
 }

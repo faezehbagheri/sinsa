@@ -257,6 +257,8 @@
         overflow: hidden;
         transition: all 1s ease;
 
+        @include respond(iphone){padding: 0 2rem;}
+
         div{
             margin-top: 1.5rem;
 
@@ -292,6 +294,10 @@
             @include respond(phone){
                 font-size: 2.1rem;
                 line-height: 5.5rem;
+            }
+
+            @include respond(iphone){
+                line-height: 4rem;
             }
         }
     }

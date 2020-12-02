@@ -8,8 +8,6 @@
         align-items: center !important;
     }
 
-    @include respond(big-desktop){}
-
     & h1{
         margin-bottom: 5px;
         padding-bottom: 5px;
@@ -76,7 +74,13 @@
             box-shadow: none;        
             color: white;
             border-radius: 1.2rem 1.2rem 0 0;  
-        }       
+        }  
+
+        @include respond(iphone){
+            width: 9rem;
+            font-size: 2rem;
+            padding: 1rem 1px;
+        }     
 
         &.main-search{
             padding: 1.5rem;

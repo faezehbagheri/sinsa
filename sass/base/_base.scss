@@ -43,6 +43,11 @@ body {
 
 button{
     cursor: pointer;
+    outline: none;
+}
+
+input{
+    direction: rtl;
 }
 
 

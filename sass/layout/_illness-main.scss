@@ -13,7 +13,7 @@
 
     @include respond(iphone){
         width: 99%;
-        margin: 0 auto;
+        margin: 3rem auto;
     }
     
     @include respond(big-desktop){height: auto;}

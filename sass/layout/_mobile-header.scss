@@ -17,6 +17,11 @@
         @include respond(iphone){
             height: 7rem;
         }
+
+        @include respond(iphone){
+            // height: 15rem;
+            z-index: 9999;
+        }
     }
     
     &__icon{
@@ -185,7 +190,7 @@
         transition: all .5s;
 
         @include respond(iphone){
-            margin-top: 0;
+            margin-top: 4rem;
         }
 
         // @include respond(phone){ height: 12rem; }

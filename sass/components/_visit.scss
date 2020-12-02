@@ -28,7 +28,6 @@
     &__header{
         width: 90%;
         font-size: 1.5rem;
-        letter-spacing: 2px;
         text-align: center;
         padding: 2rem;
         border-bottom: 2px solid $color-gray-light;
@@ -69,6 +68,11 @@
             }
         }
 
+        @include respond(iphone){
+            width: 35rem;
+            height: 6rem;
+        }
+
         input{
             height: 3rem;
             width: 90%;
@@ -100,7 +104,6 @@
 
     &__option{
         width: 30rem;
-        height: 0;
         border-radius: 1rem;
         box-shadow: 1px 1px 5px $color-gray-light;
         background-color: white;
@@ -108,10 +111,15 @@
         position: absolute;
         top: 16%;
         transition: all .6s ease;
-        z-index: 9999;
+        z-index: 99;
+        // height: 30rem;
 
         @include respond(phone){
             width: 50rem;
+        }
+
+        @include respond(iphone){
+            width: 35rem;
         }
     
         &::-webkit-scrollbar-track{
@@ -132,6 +140,15 @@
     &__option-list{
         list-style-type: none;
         text-align: right;
+        height: 30rem;
+
+        @include respond(phone){
+            height: 40rem;
+        }
+
+        @include respond(iphone){
+            height: 30rem;
+        }
 
 
         li{
@@ -154,6 +171,10 @@
                 height: 9rem;
             }
 
+            @include respond(iphone){
+                height: 7.5rem;
+            }
+
             &:hover{
                 background-color: $color-secondary;
                 box-shadow: 1px 1px 5px $color-gray-light;
@@ -170,6 +191,8 @@
         margin-top: 1rem;
 
         @include respond(phone){height: 40rem;}
+
+        @include respond(iphone){height: 30rem;}
     }
 
     &__item-selected{
@@ -196,10 +219,15 @@
         box-shadow: 0 1px 5px $color-gray-light;
 
         @include respond(phone){
-            width: 14rem;
-            height:14rem;
+            width: 16rem;
+            height:16rem;
 
             a{font-size: 2rem !important;}
+        }
+
+        @include respond(iphone){
+            height: 12rem;
+            width:  12rem;
         }
         
         a,
@@ -231,6 +259,12 @@
                 width: 18rem;
                 height: 6.5rem;
                 font-size: 2.2rem;
+            }
+
+            @include respond(iphone){
+                width: 14rem;
+                height: 5.3rem;
+                font-size: 2.5rem;
             }
         }
     }

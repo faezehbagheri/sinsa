@@ -343,19 +343,19 @@ $(function(){
         });     
     });
 
-    $('input.visit__input').keyup(function(){
+    // $('input.visit__input').keyup(function(){
 
-        var searchText = $(this).val();
+    //     var searchText = $(this).val();
 
-        $('ul.visit__option-list > li').each(function(){
+    //     $('ul.visit__option-list > li').each(function(){
 
-            var currentLiText = $(this).text(),
-                showCurrentLi = currentLiText.indexOf(searchText) !== -1;
+    //         var currentLiText = $(this).text(),
+    //             showCurrentLi = currentLiText.indexOf(searchText) !== -1;
 
-            $(this).toggle(showCurrentLi);
+    //         $(this).toggle(showCurrentLi);
 
-        });     
-    });
+    //     });     
+    // });
 
 });
 

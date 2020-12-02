@@ -18,7 +18,7 @@
 
     @include respond(iphone){
         border-radius: 2rem;
-        height: 30rem;
+        height: 45rem;
     }
 
     &__result{
@@ -26,6 +26,8 @@
         width: 100%;
         border-radius: 4rem;
         overflow: hidden;
+
+        @include respond(iphone){border-radius: 3rem;}
     }
 
     &__icons{
@@ -58,9 +60,17 @@
 
     &__result-list{
         width: 82%;
-        min-height: 22rem;
+        max-height: 28rem;
         text-align: right;
         overflow-y: scroll;
+
+        @include respond(phone){
+            max-height: 38rem;
+        }
+
+        @include respond(iphone){
+            max-height: 26rem;
+        }
 
         &::-webkit-scrollbar{
             width: 0;
