@@ -4695,6 +4695,43 @@ body-model-widget .body-model-popover {
         width: 15rem;
         height: 15rem; } }
 
+.radialProgressBar {
+  border-radius: 50%;
+  -webkit-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+  width: 12rem;
+  height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.radialProgressBar .overlay {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+  background: #fff;
+  text-align: center;
+  padding-top: 30%;
+  font-size: 2.2rem; }
+
+.progress-25 {
+  background-image: -webkit-linear-gradient(72deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #90C73D 50%, #ddd 50%);
+  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%), linear-gradient(180deg, #90C73D 50%, #ddd 50%); }
+
+.progress-50 {
+  background-image: -webkit-linear-gradient(right, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #F4E36F 50%, #ddd 50%);
+  background-image: linear-gradient(90deg, #ddd 50%, transparent 50%), linear-gradient(-90deg, #F4E36F 50%, #ddd 50%); }
+
+.progress-75 {
+  background-image: -webkit-linear-gradient(right, #E43F6F 50%, transparent 50%), -webkit-linear-gradient(108deg, #E43F6F 50%, #ddd 50%);
+  background-image: linear-gradient(0deg, #E43F6F 50%, transparent 50%), linear-gradient(-90deg, #E43F6F 50%, #ddd 50%); }
+
 .footer {
   height: 60vh;
   width: 100%;
