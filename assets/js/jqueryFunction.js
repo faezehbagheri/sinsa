@@ -102,7 +102,7 @@ $(document).ready(function () {
 
     $mobileFilter.owlCarousel({
         rtl: true,
-        items: 4,
+        items: 3,
     });
 
     $(document).on('click', '.owl-item>div', function () {
@@ -132,6 +132,7 @@ $(document).ready(function () {
     });
 
     $articleDesktop.owlCarousel({
+        rtl:true,
         loop: true,
         responsive: {
             0: {
@@ -172,6 +173,7 @@ $(document).ready(function () {
     });
 
     $filter.owlCarousel({
+        rtl:true,
         loop: true,
         items: 1,
     });
@@ -188,6 +190,7 @@ $(document).ready(function () {
     });
 
     $submenu.owlCarousel({
+        rtl:true,
         loop: true,
         items: 1,
     });
@@ -198,6 +201,7 @@ $(document).ready(function () {
     });
 
     search.owlCarousel({
+        rtl:true,
         loop: true,
         margin: 10,
         nav: true,
@@ -224,6 +228,7 @@ $(document).ready(function () {
     });
 
     $comment.owlCarousel({
+        rtl:true,
         loop: true,
         autoplay: true,
         autoplayTimeout: 4000,
@@ -242,6 +247,7 @@ $(document).ready(function () {
     });
 
     $doctors.owlCarousel({
+        rtl:true,
         center: true,
         loop: true,
         autoplay: true,
@@ -343,19 +349,8 @@ $(function(){
         });     
     });
 
-    // $('input.visit__input').keyup(function(){
-
-    //     var searchText = $(this).val();
-
-    //     $('ul.visit__option-list > li').each(function(){
-
-    //         var currentLiText = $(this).text(),
-    //             showCurrentLi = currentLiText.indexOf(searchText) !== -1;
-
-    //         $(this).toggle(showCurrentLi);
-
-    //     });     
-    // });
+ 
+    
 
 });
 

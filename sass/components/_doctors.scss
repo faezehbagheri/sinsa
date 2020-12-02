@@ -12,6 +12,8 @@
         @include respond(phone){
             width: 100%;
         }
+
+        @include respond(iphone){padding-bottom: 10rem;}
     }
 
     &__filter-header{

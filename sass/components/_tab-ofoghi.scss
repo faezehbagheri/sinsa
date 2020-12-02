@@ -60,6 +60,11 @@
 
             @include respond(phone){
                 font-size: 2.4rem;
+                height: 12rem;
+            }
+
+            @include respond(iphone){
+                height: 8rem;
             }
         }
 
@@ -238,7 +243,7 @@
 
     &__pragraph{
         direction: rtl;
-        text-align: right;
+        text-align: justify;
         font-size: 1.5rem;
         padding: 2.5rem;
         color: $color-gray;
@@ -246,6 +251,8 @@
         // opacity: 0;
         // display: none;
         transition: all 1s ease;
+
+        @include respond(phone){font-size: 2.2rem;}
         
     }
 
@@ -305,7 +312,7 @@
 .active-tab{
 
     h3{
-        width: 40%;
+        width: 55%;
         color: $color-gray;
         font-size: 2.2rem;
         border-bottom: 2px solid $color-primary !important;
@@ -334,8 +341,10 @@
 
         @include respond(phone){
             font-size: 2.2rem;
-            line-height: 5.8rem;
+            line-height: 6rem;
         }
+
+        @include respond(iphone){line-height: 5rem;}
     }
 }
 

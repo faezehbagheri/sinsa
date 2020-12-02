@@ -537,6 +537,17 @@
         }
     }
 
+    .owl-prev{
+        right: 15%;
+        top: 40%;
+        transform: translate(-15%, -40%);
+    }
+    .owl-next{
+        left:15%;
+        top:40%;
+        transform: translate(-15%, -40%);
+    }
+
 }
 
 /* Styling Checkbox Starts */

@@ -294,7 +294,16 @@
     &__svg{
         color: $color-primary;
 
-        @include respond(phone){display: none;}
+        @include respond(phone){
+            width:  20rem;
+            height: 20rem;
+            margin-top: 5rem;
+        }
+
+        @include respond(iphone){
+            width: 15rem;
+            height: 15rem;
+        }
     }
 
 }

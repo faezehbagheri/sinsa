@@ -250,6 +250,37 @@
 
 }
 
+.owl-nav{
+    display:block !important;
+}
+
+.owl-prev{
+    color:$color-gray !important;
+    text-align: center;
+    padding:1rem;
+    position: absolute;
+    right: 1%;
+    top: 40%;
+    transform: translate(-1%, -40%);
+    border-radius: 50%;
+    & span{
+        font-size: 3rem;
+    }
+}
+.owl-next{
+    color:$color-gray !important;
+    text-align: center;
+    padding:1rem;
+    position: absolute;
+    left:1%;
+    top:40%;
+    transform: translate(-1%, -40%);
+    border-radius: 50%;
+    & span{
+        font-size: 3rem; 
+    }
+}
+
 .owl-item > div {
     cursor: pointer;
     margin: 6% 4%;
