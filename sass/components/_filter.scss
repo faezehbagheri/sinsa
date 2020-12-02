@@ -537,17 +537,37 @@
         }
     }
 
+    .owl-nav{
+        display:block !important;
+    }
+    
     .owl-prev{
-        right: 15%;
+        color:$color-gray !important;
+        text-align: center;
+        padding:1rem;
+        position: absolute;
+        right: 10%;
         top: 40%;
-        transform: translate(-15%, -40%);
+        transform: translate(-10%, -40%);
+        border-radius: 50%;
+        & span{
+            font-size: 3rem;
+        }
     }
     .owl-next{
-        left:15%;
+        color:$color-gray !important;
+        text-align: center;
+        padding:1rem;
+        position: absolute;
+        left:10%;
         top:40%;
-        transform: translate(-15%, -40%);
+        transform: translate(-10%, -40%);
+        border-radius: 50%;
+        & span{
+            font-size: 3rem; 
+        }
     }
-
+    
 }
 
 /* Styling Checkbox Starts */

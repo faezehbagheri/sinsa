@@ -1513,14 +1513,30 @@ body {
       @media only screen and (max-width: 30em) {
         .filter__list i {
           font-size: 2.5rem; } }
+  .filter .owl-nav {
+    display: block !important; }
   .filter .owl-prev {
-    right: 15%;
+    color: #707070 !important;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    right: 10%;
     top: 40%;
-    transform: translate(-15%, -40%); }
+    transform: translate(-10%, -40%);
+    border-radius: 50%; }
+    .filter .owl-prev span {
+      font-size: 3rem; }
   .filter .owl-next {
-    left: 15%;
+    color: #707070 !important;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    left: 10%;
     top: 40%;
-    transform: translate(-15%, -40%); }
+    transform: translate(-10%, -40%);
+    border-radius: 50%; }
+    .filter .owl-next span {
+      font-size: 3rem; }
 
 /* Styling Checkbox Starts */
 .checkbox-label {
@@ -2994,33 +3010,6 @@ body-model-widget .body-model-popover {
       @media only screen and (max-width: 30em) {
         .personal-card__address p {
           font-size: 2.2rem; } }
-
-.owl-nav {
-  display: block !important; }
-
-.owl-prev {
-  color: #707070 !important;
-  text-align: center;
-  padding: 1rem;
-  position: absolute;
-  right: 1%;
-  top: 40%;
-  transform: translate(-1%, -40%);
-  border-radius: 50%; }
-  .owl-prev span {
-    font-size: 3rem; }
-
-.owl-next {
-  color: #707070 !important;
-  text-align: center;
-  padding: 1rem;
-  position: absolute;
-  left: 1%;
-  top: 40%;
-  transform: translate(-1%, -40%);
-  border-radius: 50%; }
-  .owl-next span {
-    font-size: 3rem; }
 
 .owl-item > div {
   cursor: pointer;
