@@ -4969,9 +4969,9 @@ body-model-widget .body-model-popover {
         font-size: 2rem; } }
   .mobile-bottom-menu__photo {
     position: absolute;
-    height: 20rem;
+    height: 15rem;
     top: -20%;
-    left: 50%;
+    left: 53%;
     transform: translate(-50%, -20%); }
     @media only screen and (max-width: 22.5em) {
       .mobile-bottom-menu__photo {
@@ -5007,7 +5007,7 @@ body-model-widget .body-model-popover {
     font-size: 1.4rem;
     color: white; }
   .mobile-header__filter {
-    margin-top: 35rem;
+    margin-top: 40rem;
     box-shadow: 0 4px 7px -2px #dbd9d9;
     transition: all .5s;
     display: none; }
@@ -5016,7 +5016,7 @@ body-model-widget .body-model-popover {
         display: flex; } }
     @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
       .mobile-header__filter {
-        margin-top: 20rem; } }
+        margin-top: 25rem; } }
   .mobile-header__filter-item {
     margin: 3rem 1rem; }
     .mobile-header__filter-item div {

@@ -36,9 +36,9 @@
 
     &__photo{
         position: absolute;
-        height: 20rem;
+        height: 15rem;
         top: -20%;
-        left: 50%;
+        left: 53%;
         transform: translate(-50% , -20%);
 
         @include respond(phone-small){            

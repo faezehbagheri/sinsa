@@ -36,7 +36,7 @@
     }
 
     &__filter{
-        margin-top: 35rem;
+        margin-top: 40rem;
         box-shadow: 0 4px 7px -2px #dbd9d9;
         transition: all .5s;
         display: none;
@@ -46,7 +46,7 @@
         }
 
         @include respond(iphone){
-            margin-top: 20rem;
+            margin-top: 25rem;
         }
     }
 
