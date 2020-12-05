@@ -275,7 +275,7 @@ body {
   .card__label {
     font-size: 1.4rem;
     vertical-align: bottom;
-    padding: 15px 25px 8px;
+    padding: 1.5rem 3rem;
     background-color: #6DC2BE;
     margin-right: -9px;
     display: inline-block;
@@ -297,7 +297,7 @@ body {
     position: absolute;
     top: 0;
     height: 100%;
-    width: 3rem;
+    width: 4rem;
     background-color: #6DC2BE; }
     @media only screen and (max-width: 30em) {
       .card__label:before, .card__label:after {
