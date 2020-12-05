@@ -4027,9 +4027,8 @@ body-model-widget .body-model-popover {
       .tab-amodi__mobile-multipleTabs {
         margin: 0 auto; } }
   .tab-amodi__label {
-    width: 11rem;
-    padding: 1.1rem 1rem;
-    font-size: 1.2rem;
+    padding: 1.1rem 3rem;
+    font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
     vertical-align: bottom;
@@ -4043,7 +4042,7 @@ body-model-widget .body-model-popover {
     @media only screen and (max-width: 30em) {
       .tab-amodi__label {
         font-size: 2.2rem;
-        width: 15.5rem;
+        min-width: 15rem;
         padding: 1.5rem 5px;
         margin: 0;
         background-color: rgba(109, 194, 190, 0.8);
@@ -4056,15 +4055,12 @@ body-model-widget .body-model-popover {
         width: 9rem;
         font-size: 2rem;
         padding: 1rem 1px; } }
-    .tab-amodi__label.main-search {
-      padding: 1.5rem;
-      font-size: 1.5rem; }
-      .tab-amodi__label.main-search::after {
-        width: 4rem;
-        right: -24px; }
-      .tab-amodi__label.main-search::before {
-        width: 4rem;
-        left: -24px; }
+    .tab-amodi__label.main-search::after {
+      width: 4rem;
+      right: -24px; }
+    .tab-amodi__label.main-search::before {
+      width: 4rem;
+      left: -24px; }
     .tab-amodi__label:hover {
       background-color: #49838B;
       color: white; }
@@ -4076,7 +4072,6 @@ body-model-widget .body-model-popover {
         border-right: 1px solid #49838B; }
     @media only screen and (min-width: 112.5em) {
       .tab-amodi__label {
-        width: 13rem;
         font-size: 1.4rem; } }
   .tab-amodi__label.active {
     background-color: #90C73D;
@@ -4847,6 +4842,8 @@ body-model-widget .body-model-popover {
     font-size: 5rem;
     color: #ffffff;
     margin-top: 25rem; }
+  .header .tab-amodi {
+    width: 55%; }
 
 .illness-main {
   height: auto;
