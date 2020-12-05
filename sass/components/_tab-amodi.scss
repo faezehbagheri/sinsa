@@ -37,15 +37,18 @@
         }       
     }
     
-    &__mobile-multipleTabs {
-        display:flex;
-        flex-flow: row-reverse wrap;
-        position: relative;
-        cursor: pointer;
-        margin-right: 2rem;
+    .showTab {        
         
         @include respond(phone){
+            display:flex;
+            flex-flow: row-reverse wrap;
+            position: relative;
+            cursor: pointer;
+            margin-right: 2rem;
             margin: 0 auto;
+            width: 96%;
+            border-radius: 2rem 2rem 0 0;
+            overflow: hidden;
         }       
     }
 
@@ -66,18 +69,22 @@
         
         @include respond(phone){
             font-size: 2.2rem;
-            min-width: 15rem;
+            // min-width: 15rem;
+            width: 49%;
             padding: 1.5rem 5px;
             margin: 0; 
-            background-color: rgba($color: $color-primary, $alpha: .8);
-            margin-right: 2px;
+            background-color: rgba($color: $color-primary, $alpha: .6);
             box-shadow: none;        
             color: white;
-            border-radius: 1.2rem 1.2rem 0 0;  
+            border-bottom: 1px solid $color-primary;
+            
+            // margin-right: 2px;
+            // border-radius: 1.2rem 1.2rem 0 0;  
         }  
 
         @include respond(iphone){
-            width: 9rem;
+            // width: 9rem;
+            width: 49%;
             font-size: 2rem;
             padding: 1rem 1px;
         }     

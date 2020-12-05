@@ -69,15 +69,15 @@ $(document).ready(function () {
     )
 
     $('.tabcontent').hide();
-    var activeSearchTabMobile = $(".tab-amodi__mobile-multipleTabs").find('a.active-mobile-tab').data('trigger');
+    var activeSearchTabMobile = $(".showTab").find('a.active').data('trigger');
     $('#' + activeSearchTabMobile).show();
 
-    $('.tab-amodi__mobile-multipleTabs>a').on('click', function () {
+    $('.showTab>a').on('click', function () {
         var tabId = $(this).data('trigger');
         $('#' + tabId).show();
         $('.tabcontent:not(#' + tabId + ')').hide();
-        $(this).addClass('active-mobile-tab');
-        $(this).siblings('a').removeClass('active-mobile-tab');
+        $(this).addClass('active');
+        $(this).siblings('a').removeClass('active');
     });
        
     var search = $("#search");

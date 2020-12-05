@@ -3486,6 +3486,7 @@ body-model-widget .body-model-popover {
         width: 99%;
         padding: 0;
         height: 9.5rem;
+        margin: 0 auto;
         border-radius: 2rem; } }
     @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
       .search__box {
@@ -3651,11 +3652,9 @@ body-model-widget .body-model-popover {
 .active-mobile-tab {
   background-color: rgba(144, 199, 61, 0.8) !important;
   color: white !important;
-  padding: 1.8rem 0 !important;
   font-size: 2.2rem !important; }
   @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
     .active-mobile-tab {
-      padding: 1.3rem 0 !important;
       font-size: 2rem !important; } }
 
 .container {
@@ -4017,15 +4016,17 @@ body-model-widget .body-model-popover {
     @media only screen and (max-width: 30em) {
       .tab-amodi__multipleTabs {
         display: none; } }
-  .tab-amodi__mobile-multipleTabs {
-    display: flex;
-    flex-flow: row-reverse wrap;
-    position: relative;
-    cursor: pointer;
-    margin-right: 2rem; }
-    @media only screen and (max-width: 30em) {
-      .tab-amodi__mobile-multipleTabs {
-        margin: 0 auto; } }
+  @media only screen and (max-width: 30em) {
+    .tab-amodi .showTab {
+      display: flex;
+      flex-flow: row-reverse wrap;
+      position: relative;
+      cursor: pointer;
+      margin-right: 2rem;
+      margin: 0 auto;
+      width: 96%;
+      border-radius: 2rem 2rem 0 0;
+      overflow: hidden; } }
   .tab-amodi__label {
     padding: 1.1rem 3rem;
     font-size: 1.5rem;
@@ -4042,17 +4043,16 @@ body-model-widget .body-model-popover {
     @media only screen and (max-width: 30em) {
       .tab-amodi__label {
         font-size: 2.2rem;
-        min-width: 15rem;
+        width: 49%;
         padding: 1.5rem 5px;
         margin: 0;
-        background-color: rgba(109, 194, 190, 0.8);
-        margin-right: 2px;
+        background-color: rgba(109, 194, 190, 0.6);
         box-shadow: none;
         color: white;
-        border-radius: 1.2rem 1.2rem 0 0; } }
+        border-bottom: 1px solid #6DC2BE; } }
     @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
       .tab-amodi__label {
-        width: 9rem;
+        width: 49%;
         font-size: 2rem;
         padding: 1rem 1px; } }
     .tab-amodi__label.main-search::after {
