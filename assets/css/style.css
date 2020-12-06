@@ -4443,7 +4443,7 @@ body-model-widget .body-model-popover {
       line-height: 5rem; } }
 
 .activate > :last-child {
-  height: 55rem;
+  height: auto;
   overflow-y: auto;
   margin: 1rem auto; }
   .activate > :last-child::-webkit-scrollbar-track {
