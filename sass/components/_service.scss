@@ -1,6 +1,6 @@
 .service{
     height: 50vh;
-    width: 15vw;
+    width: 15rem;
     position: fixed;
     // left: 0%;
     top: 25%;
@@ -8,15 +8,22 @@
     @include respond(phone){
         display: none;
     }
+        
+    @include respond(phone-land){top: 35%;}
 
     &__left-border{
         height: 40vh;
-        width: 4vw;
+        width: 4rem;
         @include centerABS;
         border-left: 2px solid $color-gray-light;
 
         @include respond(big-desktop){
-            height: 35vh
+            height: 35rem
+        }
+        
+        @include respond(phone-land){
+            width: 6rem;
+            height: 30rem;
         }
     }
 
@@ -28,14 +35,14 @@
         border: 1px solid $color-gray-light;
         margin-top: 2rem;
         position: relative;
-        left: -55%;
+        left: -50%;
         cursor: pointer;
         
         @include respond(big-desktop){
             height: 6.5rem;
             width:  6.5rem;
             margin-top: 3rem;
-            left: -50%;
+            left: -90%;
         }
     }
 

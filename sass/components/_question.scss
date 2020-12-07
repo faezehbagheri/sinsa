@@ -21,10 +21,12 @@
 
         
         @include respond(big-desktop){ height: 40vh; }
+        
+        @include respond(phone-land){height: 45rem;}
     }
 
     &__form{
-        height: 50vh;
+        // height: 50vh;
         width: 35%;
         margin-right: 3rem;
     }
@@ -39,6 +41,8 @@
         color: #fff;
         text-align: right;
         padding: 1rem;
+        
+        @include respond(phone-land){font-size: 1.8rem;}
     }
 
     &__icon{
@@ -56,6 +60,8 @@
         color: $color-gray;
         text-align: right;
         padding:3rem;
+        
+        @include respond(phone-land){font-size: 1.8rem;}
     }
 
     &__link,
@@ -69,6 +75,8 @@
         i{
             margin-left: 1rem;
         }
+        
+        @include respond(phone-land){font-size: 1.8rem;}
     }
 
     &__fullName{
@@ -87,6 +95,12 @@
             text-align: right;
             padding-right: 1.2rem;
             font-family: 'irsans';
+        }
+        
+        @include respond(phone-land){
+            height: 5rem;
+            border-radius: 1.2rem;    
+            font-size: 1.4rem;    
         }
     }
 
@@ -107,6 +121,11 @@
             padding-right: 1.2rem;
             font-family: 'irsans';
         }
+        
+        @include respond(phone-land){
+            height: 18rem;
+            font-size: 1.4rem;
+        }
     }
 
     &__email{
@@ -126,6 +145,8 @@
             padding-right: 1.2rem;
             font-family: 'irsans';
         }
+        
+        @include respond(phone-land){height: 5rem; font-size: 1.4rem;}
     }
 
     &__phone{
@@ -144,6 +165,11 @@
             text-align: right;
             padding-right: 1.2rem;
             font-family: 'irsans';
+        }
+        
+        @include respond(phone-land){
+            height: 5rem;
+            font-size: 1.4rem;
         }
     }
 

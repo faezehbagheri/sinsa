@@ -30,6 +30,11 @@
         border-radius: 4rem;
         padding: 0 2rem;
         box-shadow: 0 0 5px rgba($color: #000000, $alpha: .8);
+        
+        @include respond(phone-land){
+            height: 10rem;
+            border-radius: 6rem;
+        }
 
         @include respond(phone){
             width: 99%;
@@ -68,6 +73,12 @@
         @include respond(phone){
             display: none;
         }
+        
+        @include respond(phone-land){
+            height: 7.5rem;
+            width: 18%;
+            border-radius: 5rem;
+        }
     }
 
     &__advanced-btn{
@@ -102,6 +113,10 @@
         position: relative;
         margin: 2rem 1rem;
         background-color: #fff;
+        
+        @include respond(phone-land){
+            height: 7.5rem;
+        }
 
         @include respond(phone){
             width: 100%;
@@ -159,6 +174,8 @@
 
     &__hashtag{
         margin-right: 2rem;
+        
+        @include respond(phone){display: none;}
 
         a,
         a:link,
@@ -179,6 +196,10 @@
                 color: $color-primary-light;
                 background-color: rgba($color: #000000, $alpha: .6);
                 transform: scale(1.07);
+            }
+        
+            @include respond(phone-land){
+                font-size: 2rem;
             }
         }
     }
@@ -279,6 +300,8 @@
         color: $color-gray;
 
         @include respond(phone){font-size: 2rem;}
+
+        @include respond(phone-land){font-size: 1.8rem;}
     }
     
     .select2-selection__choice{

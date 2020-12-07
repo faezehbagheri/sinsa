@@ -19,6 +19,8 @@
     @include respond(big-desktop){
         width: 29rem;
     }
+        
+    @include respond(phone-land){width: 70%; margin-top: 10rem;}
 
     &__show{
         height: 170rem;
@@ -43,6 +45,10 @@
         @include respond(iphone){
             height: 19rem;
         }
+        
+        @include respond(phone-land){
+            height: 25rem;
+        }
     }
 
     &__icon-box{
@@ -61,6 +67,11 @@
             height: 13rem;
             width: 13rem;
         }
+        
+        @include respond(phone-land){
+            height: 15rem;
+            width:  15rem;
+        }
     }
 
     &__icon{
@@ -74,6 +85,10 @@
         @include respond(phone){
             font-size: 7rem;
         }
+        
+        @include respond(phone-land){
+            font-size: 7rem;
+        }
     }
 
     &__span{
@@ -82,6 +97,8 @@
         @include respond(phone){
             font-size: 2.5rem;   
         }
+        
+        @include respond(phone-land){font-size: 2rem;}
     }
 
     &__header{
@@ -217,7 +234,7 @@
         margin: 1rem auto;
         background-color: #fff;
 
-        @include respond(phone){
+        @include respond(phone-land){
             height: 7rem !important;
             margin-top: 2rem;
         }
@@ -242,7 +259,7 @@
             color: rgb(196, 193, 193);
             text-align: right;
 
-            @include respond(phone){
+            @include respond(phone-land){
                 font-size: 2rem;
             }
         }
@@ -265,7 +282,7 @@
         @include centerABS();
         color: #fff;
 
-        @include respond(phone){
+        @include respond(phone-land){
             font-size: 2.8rem !important;
         }
     }
@@ -279,7 +296,7 @@
         box-shadow: 1px 1px 5px $color-gray-light;
         margin-bottom: 5rem;
 
-        @include respond(phone){
+        @include respond(phone-land){
             height: 100rem;
         }
 
@@ -295,6 +312,11 @@
             @include respond(phone){
                 padding: 2rem;   
                 font-size: 2.3rem;
+            }
+        
+            @include respond(phone-land){
+                font-size: 2rem;
+                padding: 2rem;
             }
         }
     }
@@ -330,7 +352,7 @@
             color: $color-gray;
             outline: none;
 
-            @include respond(phone){
+            @include respond(phone-land){
                 height: 6rem;
                 font-size: 2rem;
             }
@@ -340,7 +362,7 @@
             background: $color-gray-lighter;
             font-size: 1.3rem;
 
-            @include respond(phone){
+            @include respond(phone-land){
                 font-size: 2.2rem;
             }
         }
@@ -360,7 +382,7 @@
         left: 0; 
         background: $color-gray-lighter;
 
-        @include respond(phone){
+        @include respond(phone-land){
             height: 80rem;   
         }
 
@@ -385,6 +407,11 @@
             text-decoration: none;
             text-align: center;
             transition: all .3s ease;
+        
+            @include respond(phone-land){
+                height: 7.5rem;
+                font-size: 2.2rem;
+            }
 
             @include respond(phone){
                 height: 8rem;
@@ -400,6 +427,8 @@
                 background-color: $color-primary-light;
                 color: white;
                 border: 1px solid white;
+        
+                @include respond(phone-land){transform: scale(1.05);}
             }
         }
     } 
@@ -552,6 +581,8 @@
         border-radius: 50%;
         & span{
             font-size: 3rem;
+        
+            @include respond(phone-land){font-size: 7rem;}
         }
     }
     .owl-next{
@@ -565,6 +596,8 @@
         border-radius: 50%;
         & span{
             font-size: 3rem; 
+        
+            @include respond(phone-land){font-size: 7rem;}
         }
     }
     

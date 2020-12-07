@@ -17,6 +17,11 @@
             @content
         };
     }
+    @if $breakpoint == phone-land {
+        @media only screen and (max-width :51em){
+            @content
+        };
+    }
 
     @if $breakpoint == iphone {
         @media only screen and (max-width : 30em) and (-webkit-min-device-pixel-ratio: 2){

@@ -66,6 +66,11 @@
             @include respond(iphone){
                 height: 8rem;
             }
+        
+            @include respond(phone-land){
+                font-size: 2.3rem;
+                height: 10rem;
+            }
         }
 
         i{
@@ -138,6 +143,8 @@
             border-radius: 1rem;
             box-shadow: -2px 2px 8px $color-gray-light;
         }
+        
+        @include respond(phone-land){width: 102%;}
     }
 
     &__header{
@@ -150,6 +157,8 @@
         @include respond(iphone){
             height: 8rem;
         }
+        
+        @include respond(phone-land){height: 10rem;}
     }
 
     &__title{
@@ -176,6 +185,8 @@
         @include respond(iphone){
             padding-right: 1.5rem;   
         }
+        
+        @include respond(phone-land){font-size: 2.2rem;}
     }
 
     &__btn{
@@ -189,6 +200,8 @@
         outline: none;
         cursor: pointer;
         transition: all .5s;
+        
+        @include respond(phone-land){left: 2%;}
         
         @include respond(big-desktop){
             height: 5rem;
@@ -213,6 +226,11 @@
             height: 3.5rem;
             width:  3.5rem;
         }
+        
+        @include respond(phone-land){
+            height: 5rem;
+            width: 5rem;
+        }
     }
 
     &__logo{
@@ -221,7 +239,7 @@
         color: #fff;
         
         @include respond(big-desktop){font-size: 3rem;}
-        @include respond(phone){font-size: 3rem;}
+        @include respond(phone-land){font-size: 3rem;}
     }
 
     &__logo-active{
@@ -231,7 +249,7 @@
         display: none;
         
         @include respond(big-desktop){font-size: 3rem;}
-        @include respond(phone){font-size: 3rem;}
+        @include respond(phone-land){font-size: 3rem;}
     }
 
     &__text{
@@ -253,6 +271,8 @@
         transition: all 1s ease;
 
         @include respond(phone){font-size: 2.2rem;}
+        
+        @include respond(phone-land){font-size: 2rem;}
         
     }
 
@@ -320,6 +340,8 @@
         @include respond(phone){
             font-size: 2.7rem;
         }
+        
+        @include respond(phone-land){font-size: 2.5rem;}
     }
 
     i.plus{
@@ -345,6 +367,8 @@
         }
 
         @include respond(iphone){line-height: 5rem;}
+        
+        @include respond(phone-land){font-size: 2rem;}
     }
 }
 
@@ -384,6 +408,8 @@
     & button{
         background-color: $color-primary-light !important;
     }
+    
+    
 
     // &>:first-child{
     //     @include respond(phone){

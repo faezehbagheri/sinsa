@@ -8,6 +8,15 @@
         align-items: center !important;
     }
 
+    &.search-box{     
+        @include respond(phone-land){width: 88% !important;}
+    }
+        
+    @include respond(phone-land){
+        // width: 88% !important;
+        width: 81%;
+    }
+
     & h1{
         margin-bottom: 5px;
         padding-bottom: 5px;
@@ -18,6 +27,8 @@
             font-size: 2.5rem;
             border-bottom: none;
         }
+        
+        @include respond(phone-land){font-size: 2rem;}
     }
 
     &__container{
@@ -67,6 +78,11 @@
         color: $color-primary-dark;
         box-shadow: 0px -2px 6px #a6a6a665;
         
+        @include respond(phone-land){
+            font-size: 1.8rem;
+            padding: 1.2rem 2.5rem;
+        }
+        
         @include respond(phone){
             font-size: 2.2rem;
             // min-width: 15rem;
@@ -78,8 +94,6 @@
             color: white;
             border-bottom: 1px solid $color-primary;
             
-            // margin-right: 2px;
-            // border-radius: 1.2rem 1.2rem 0 0;  
         }  
 
         @include respond(iphone){
@@ -90,8 +104,6 @@
         }     
 
         &.main-search{
-            // padding: 1rem 3rem;
-            // font-size: 1.5rem;
             
             &::after{
                 width: 4rem;
@@ -129,7 +141,7 @@
 
     &__label.active{
         background-color: $color-primary-light;
-        z-index: 9;
+        z-index:1;
         color: #fff !important;
 
         @include respond(phone){
@@ -160,6 +172,7 @@
         
         @include respond(phone){display: none;}  
         
+        
     }
 
     &__label:before {
@@ -167,12 +180,22 @@
         transform: skew(-30deg, 0deg);
         border-left: 1px solid white;
         box-shadow: -6px -1px 5px 0px #5c5c5c28;
+        
+        @include respond(phone-land){
+            left: -13px !important;
+            transform: skew(-20deg, 0deg) !important;
+        }
     }
     &__label:after {
         right: -17px;
         transform: skew(30deg, 0deg);
         border-right: 1px solid white;
         box-shadow: 6px -1px 8px 0px #5c5c5c28;
+        
+        @include respond(phone-land){
+            right: -13px !important;
+            transform: skew(20deg , 0deg);
+        }
     }
 
     &__label:before {

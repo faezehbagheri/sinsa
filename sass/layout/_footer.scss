@@ -1,5 +1,5 @@
 .footer{
-    height: 60vh;
+    height: 58rem;
     width: 100%;
     margin-top: 12rem;
     background-color: $color-primary;
@@ -8,6 +8,8 @@
     @include respond(phone){
         display: none;
     }
+        
+    @include respond(phone-land){height: 50rem;}
 
     &__background{
         height: 9rem;
@@ -52,7 +54,12 @@
 
     &__app{
         width: 30%;
-        height: 40vh;
+        height: 40rem;
+    }
+
+    &__photo{
+        
+        @include respond(phone-land){width: 18rem;}
     }
 
     &__btn{

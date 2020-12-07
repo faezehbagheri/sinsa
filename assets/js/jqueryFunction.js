@@ -355,25 +355,25 @@ $(function(){
 });
 
 
-// function matchStart(term, text) {
-//     if (text.toUpperCase().indexOf(term.toUpperCase()) == 0) {
-//         return true;
-//     }
+function matchStart(term, text) {
+    if (text.toUpperCase().indexOf(term.toUpperCase()) == 0) {
+        return true;
+    }
 
-//     return false;
-// }
+    return false;
+}
 
-// $.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) {
-//     $("select").select2({
-//         matcher: oldMatcher(matchStart),
-//         dropdownAutoWidth: true,
-//         dir: "rtl",
-//         language: "fa"
-//     })
-//     $('#multiple').select2({
-//         // matcher: oldMatcher(matchStart),
-//         maximumSelectionLength: 3,
-//         dir: "rtl",
-//         // placeholder: 'داروی خود را وارد کنید'
-//       });
-// });
+$.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) {
+    $("select").select2({
+        matcher: oldMatcher(matchStart),
+        dropdownAutoWidth: true,
+        dir: "rtl",
+        language: "fa"
+    })
+    $('#multiple').select2({
+        // matcher: oldMatcher(matchStart),
+        maximumSelectionLength: 3,
+        dir: "rtl",
+        // placeholder: 'داروی خود را وارد کنید'
+      });
+});

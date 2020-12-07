@@ -15,6 +15,11 @@
         width: 99%;
         margin: 3rem auto;
     }
+        
+    @include respond(phone-land){
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+    }
     
     @include respond(big-desktop){height: auto;}
 

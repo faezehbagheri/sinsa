@@ -1,24 +1,19 @@
 .main{
-    height: 440vh;
+    height: auto;
     width: 100%;
     position: relative;
-    // overflow-x: hidden;
-    // background-color: rgb(230, 212, 248);
-    // z-index: -99;
-        
-    @include respond(big-desktop){ height: 380vh; }
+
     @include respond(phone){
         display: none;
     }
 
 
     &__half-circle{
-        height: 105vh;
+        // height: 105vh;
         width: 100%;
         background-color: #fff;
         top: -9%;
         clip-path: circle(50% at 50% 100%);
-        position: absolute;
 
         
         @include respond(big-desktop){ top: -10%; }
@@ -37,13 +32,8 @@
     }
 
     &__main-section{
-        height: 420vh;
         width: 75%;
-        position: absolute;
         z-index: 999;
-        
-                
-        @include respond(big-desktop){ height: 340vh; }
     }
 
     &__section-specialty{
@@ -62,7 +52,7 @@
     }
 
     &__section-doctors{
-        height: 60vh;
+        // height: 60vh;
         width: 85vw;
         margin-top: 8rem;
     }
@@ -74,24 +64,24 @@
     }
 
     &__section-article{
-        height: 80vh;
+        // height: 80vh;
         margin-top: 10rem;
         // background-color: aquamarine;
     }
 
     &__section-database{
-        height: 40vh;
+        // height: 40vh;
     }
 
     &__section-comment{
-        height: 60vh;
+        // height: 60vh;
         width: 100%;
         margin-top: 8rem;
     }
 
     
     &__section-question{
-        height: 70vh;
+        // height: 70vh;
         width: 100%;
     }
 

@@ -13,10 +13,7 @@ html {
     // scroll-behavior: smooth;
     // transition: all 2s ease;
 
-    
-    @include respond(port-land){ font-size: 50%; }
-
-    @include respond(smallest){ font-size: 45%; }
+    @include respond(phone-land){font-size: 48%;}
     
     @include respond(phone){ font-size: 38%; }
 }
