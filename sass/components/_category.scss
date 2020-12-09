@@ -1,6 +1,10 @@
 .category{
     width: 50%;
 
+    @include respond(phone-land){
+        width: 81%;
+    }
+
     @include respond(phone){
         width: 100%;
     }

@@ -1,5 +1,11 @@
 .doctors{
     width: 100%;
+
+    @include respond(phone-land){
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+    }
+
     @include respond(phone){
         // display: none !important;
         flex-direction: column !important;
@@ -12,6 +18,8 @@
         @include respond(phone){
             width: 100%;
         }
+
+        @include respond(phone-land){width: 81%;}
 
         @include respond(iphone){padding-bottom: 10rem;}
     }

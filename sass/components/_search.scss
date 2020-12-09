@@ -35,6 +35,11 @@
             height: 10rem;
             border-radius: 6rem;
         }
+        
+        @include respond(iphone-land){
+            height: 8rem;
+            border-radius: 4rem;
+        }
 
         @include respond(phone){
             width: 99%;
@@ -52,7 +57,7 @@
     }
 
     &__btn{
-        width: 15%;
+        width: 15rem;
         height: 6rem;
         border-radius: 3rem;
         margin: 2rem 1rem;
@@ -69,15 +74,21 @@
             font-size: 2.5rem;
             margin-left: 1rem;
         }
-
-        @include respond(phone){
-            display: none;
-        }
         
         @include respond(phone-land){
             height: 7.5rem;
             width: 18%;
             border-radius: 5rem;
+        }
+        
+        @include respond(iphone-land){
+            height: 6rem;
+            width: 18%;
+            border-radius: 3rem;
+        }
+
+        @include respond(phone){
+            display: none;
         }
     }
 
@@ -103,7 +114,6 @@
         color: $color-white;
         margin-top: -2rem;
     }
-
     
     &__search-container{
         height: 6rem;
@@ -117,6 +127,8 @@
         @include respond(phone-land){
             height: 7.5rem;
         }
+        
+        @include respond(iphone-land){height: 6rem;}
 
         @include respond(phone){
             width: 100%;
@@ -174,6 +186,7 @@
 
     &__hashtag{
         margin-right: 2rem;
+        direction: rtl;
         
         @include respond(phone){display: none;}
 
@@ -201,6 +214,8 @@
             @include respond(phone-land){
                 font-size: 2rem;
             }
+        
+            @include respond(iphone-land){font-size: 1.6rem;}
         }
     }
     &__tadakholat{
@@ -298,10 +313,11 @@
         padding: 0 5px;
         font-size: 1.5rem;
         color: $color-gray;
+        
+        @include respond(phone-land){font-size: 1.8rem;}
 
         @include respond(phone){font-size: 2rem;}
 
-        @include respond(phone-land){font-size: 1.8rem;}
     }
     
     .select2-selection__choice{

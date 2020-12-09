@@ -5,8 +5,8 @@
     z-index: 99;
     
     @include respond(big-desktop){left: 85%;}
-    @include respond(phone){display: none;}
     @include respond(phone-land){left: 81%;}
+    @include respond(phone){display: none;}
             
     &__btn{
         height: 6rem;

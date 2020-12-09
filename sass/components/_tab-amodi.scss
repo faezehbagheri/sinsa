@@ -1,6 +1,10 @@
 .tab-amodi{
     width: 52%;
     // margin-bottom: 25rem;
+        
+    @include respond(phone-land){
+        width: 81%;
+    }
 
     
     @include respond(phone){
@@ -8,13 +12,13 @@
         align-items: center !important;
     }
 
-    &.search-box{     
-        @include respond(phone-land){width: 88% !important;}
-    }
+    &.search-box{  
+        width: 90%;  
+        max-width: 1100px;
+        @include respond(phone-land){width: 95% !important;}    
+        @include respond(iphone){width: 100% !important;}
         
-    @include respond(phone-land){
-        // width: 88% !important;
-        width: 81%;
+        // @include respond(iphone-land){width: 95% !important;}
     }
 
     & h1{
@@ -22,13 +26,13 @@
         padding-bottom: 5px;
         border-bottom: 1px solid $color-primary-light;
         color: $color-primary;
+        
+        @include respond(phone-land){font-size: 2rem;}
            
         @include respond(phone){
             font-size: 2.5rem;
             border-bottom: none;
         }
-        
-        @include respond(phone-land){font-size: 2rem;}
     }
 
     &__container{
@@ -42,10 +46,10 @@
         position: relative;
         cursor: pointer;
         margin-right: 2rem;
-        
-        @include respond(phone){
-            display: none;
-        }       
+
+        @include respond(phone-land){
+            width: 100%;
+        }   
     }
     
     .showTab {        
@@ -59,8 +63,16 @@
             margin: 0 auto;
             width: 96%;
             border-radius: 2rem 2rem 0 0;
-            overflow: hidden;
+            // overflow: hidden;
         }       
+    }
+    
+    .owl-item {
+        width: auto !important;
+        @include respond(phone){
+            width: 169px !important;
+        }    
+        @include respond(iphone){width: 145px !important;}
     }
 
     &__label{
@@ -71,36 +83,41 @@
         text-decoration: none;
         vertical-align: bottom;
         background-color: white;
-        margin-right: 3rem;
+        margin-right: 4rem;
         display: inline-block;
         position: relative;
         z-index: 0;
         color: $color-primary-dark;
         box-shadow: 0px -2px 6px #a6a6a665;
+
         
-        @include respond(phone-land){
-            font-size: 1.8rem;
-            padding: 1.2rem 2.5rem;
+        // @include respond(phone-land){
+        //     font-size: 1.8rem;
+        //     padding: 1.2rem 2.5rem;
+        // }
+        
+        @include respond(iphone-land){
+            font-size: 1.5rem;
+            
         }
         
         @include respond(phone){
-            font-size: 2.2rem;
+            font-size: 2.3rem;
             // min-width: 15rem;
-            width: 49%;
-            padding: 1.5rem 5px;
-            margin: 0; 
-            background-color: rgba($color: $color-primary, $alpha: .6);
-            box-shadow: none;        
-            color: white;
-            border-bottom: 1px solid $color-primary;
-            
+            width: 75% !important;
+            padding: 1.2rem 3rem;
+            margin: 0;
+            box-shadow: none;     
+            &:nth-child(odd){
+                margin-right: 4rem;
+            }               
         }  
 
         @include respond(iphone){
             // width: 9rem;
-            width: 49%;
-            font-size: 2rem;
-            padding: 1rem 1px;
+            width: 70% !important;
+            font-size: 2.2rem;
+            padding: 1rem 1px !important;
         }     
 
         &.main-search{
@@ -170,7 +187,7 @@
         width: 3rem;  
         background-color: white;
         
-        @include respond(phone){display: none;}  
+        // @include respond(phone){display: none;}  
         
         
     }
@@ -227,7 +244,7 @@
     &__prev-control {
         display:none;
 
-        @include respond(phone){
+        @include respond(phone-land){
             display:inline-block; 
             position:absolute; 
             left:10px; top:10px; 
@@ -240,7 +257,7 @@
     &__next-control {
         display:none;
 
-        @include respond(phone){
+        @include respond(phone-land){
             display:inline-block; 
             position:absolute; 
             right:10px; 
@@ -248,6 +265,47 @@
             color: $color-pink;
             font-size: 3rem; 
             cursor:pointer;
+        }
+    }
+
+
+    .owl-dots{display: none;}
+
+    
+    .owl-nav{               
+        @include respond(phone){
+            display:block !important;
+        }
+    }
+    
+    .owl-prev{
+        color:$color-gray !important;
+        text-align: center;
+        padding:1rem;
+        position: absolute;
+        right:-5%;
+        top: 40%;
+        transform: translate(0, -40%);
+        border-radius: 50%;
+        & span{
+            font-size: 3rem;
+            color: white;
+            @include respond(phone-land){font-size: 7rem;}
+        }
+    }
+    .owl-next{
+        color:$color-gray !important;
+        text-align: center;
+        padding:1rem;
+        position: absolute;
+        left:-5%;
+        top:40%;
+        transform: translate(0, -40%);
+        border-radius: 50%;
+        & span{
+            font-size: 3rem; 
+            color: white;
+            @include respond(phone-land){font-size: 7rem;}
         }
     }
     

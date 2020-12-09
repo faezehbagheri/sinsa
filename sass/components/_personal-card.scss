@@ -20,6 +20,13 @@
             height: 28rem;
             width: 26rem;          
         }
+
+        @include respond(phone-land){
+            width: 27rem;
+            height: 35rem;
+            justify-content: center;
+            margin-top: 18rem !important;
+        }
     
         @include respond(phone){
             flex-direction: row-reverse;
@@ -34,38 +41,7 @@
             height: 23rem;
         }
     }
-
-    &__photo-box{        
-        height: 11rem;
-        width: 11rem;
-        border-radius: 100%;
-        position: relative;
-        top: -32%;
-        transform: translateY(-50%);
-        shape-outside: circle(50% at 50% 50%);
-        margin-bottom: -10rem;
-        background-color: #ffffff;
-        box-shadow: 0 -1px 5px #d9d9d9;
-
-        @include respond(big-desktop){
-            height: 13rem;
-            width: 13rem;          
-        }       
     
-        @include respond(phone){
-            // left: 30%;
-            height:23rem;
-            width:23rem;
-            top: 10%;
-        }
-    
-        @include respond(iphone){
-            height: 15rem;
-            width:  15rem;
-            top: -15%;
-        }
-    }
-
     &__section-1{
         @include respond(phone){
             width: 45%;
@@ -85,6 +61,43 @@
         }
     }
 
+    &__photo-box{        
+        height: 11rem;
+        width: 11rem;
+        border-radius: 100%;
+        position: relative;
+        top: -32%;
+        transform: translateY(-50%);
+        shape-outside: circle(50% at 50% 50%);
+        margin-bottom: -10rem;
+        background-color: #ffffff;
+        box-shadow: 0 -1px 5px #d9d9d9;
+
+        @include respond(big-desktop){
+            height: 13rem;
+            width: 13rem;          
+        }       
+
+        @include respond(phone-land){
+            top: -20%;
+            height: 15rem;
+            width: 15rem;
+        }
+    
+        @include respond(phone){
+            // left: 30%;
+            height:23rem;
+            width:23rem;
+            top: 10%;
+        }
+    
+        @include respond(iphone){
+            height: 15rem;
+            width:  15rem;
+            top: -15%;
+        }
+    }
+
     &__photo{        
         height: 9rem;
         width: 9rem !important;
@@ -98,6 +111,11 @@
         @include respond(big-desktop){
             height: 11rem;
             width: 11rem !important;          
+        }
+
+        @include respond(phone-land){
+            height: 13rem;
+            width: 13rem !important;
         }
     
         @include respond(phone){
@@ -115,6 +133,8 @@
         font-size: 1.8rem;
         color: $color-pink;
         margin-top: 1rem;
+
+        @include respond(phone-land){font-size: 2.2rem;}
     
         @include respond(phone){
             font-size: 3rem;
@@ -125,6 +145,8 @@
         font-size: 1.3rem;
         font-weight: 700;
         color: $color-primary;
+
+        @include respond(phone-land){font-size: 1.6rem;}
     
         @include respond(phone){
             font-size: 2rem;
@@ -148,6 +170,12 @@
         text-align: center;
         color: #ffffff;
         font-size: 1.1rem;
+
+        @include respond(phone-land){
+            font-size: 1.5rem;
+            padding: 3px 1.2rem;
+            border-radius: 1.5rem;
+        }
     
         @include respond(phone){
             font-size: 1.8rem;   
@@ -160,6 +188,11 @@
         font-size: 1rem;
         margin-right: 1rem;
         color: $color-gray;
+
+        @include respond(phone-land){
+            font-size: 1.3rem;
+            padding: 3px;
+        }
     
         @include respond(phone){
             font-size: 1.8rem;
@@ -169,6 +202,11 @@
     &__consulting{
         color: $color-gray;
         font-size: 1rem;
+
+        @include respond(phone-land){
+            font-size: 1.3rem;
+            margin: 1.5rem 0;
+        }
     
         @include respond(phone){
             font-size: 1.8rem;   
@@ -179,6 +217,8 @@
         font-size: 1.5rem;
         color: $color-yellow;
         margin-top: 1rem;
+
+        @include respond(phone-land){font-size: 2rem;}
 
         @include respond(phone){
             font-size: 2.5rem;
@@ -200,6 +240,12 @@
         cursor: pointer;
         text-align: center;
         text-decoration: none;
+
+        @include respond(phone-land){
+            top: 10%;
+            font-size: 1.8rem;
+            padding: 1.3rem 2.5rem;
+        }
     
         @include respond(phone){
             // position: absolute;

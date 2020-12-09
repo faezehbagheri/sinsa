@@ -18,9 +18,8 @@
 
     @include respond(big-desktop){height: 100vh;}
     
-    @include respond(phone){
-        display: none;
-    }
+    @include respond(iphone){height: 55rem;}
+    
     
     &__main{
         margin: 0 3rem;
@@ -30,12 +29,11 @@
         font-size: 5rem;
         color: #ffffff;
         margin-top: 25rem;
-    }
-
-    .tab-amodi{
-        width: 55%;
-    }
+        
+        @include respond(iphone-land){font-size: 4rem;}
     
+        @include respond(iphone){margin-top: 18rem;}
+    }   
 
 }
 

@@ -28,7 +28,7 @@ $(document).ready(function () {
         $('#' + tabId).show();
         $('.tab-amodi__tabcontent:not(#' + tabId + ')').hide();
         $(this).addClass('active');
-        $(this).siblings('a').removeClass('active');
+        $('.owl-item>a').removeClass('active');
     });
 
     $('.tab-amodi__prev-control').on('click', function () {
@@ -93,7 +93,32 @@ $(document).ready(function () {
     var $articleDesktop = $("#articleDesktop");
     var $mobileHeaderFilter = $("#mobile-header-filter");
     var $mobileFilter = $("#mobile-filter");
+    var $tabs = $("#tabs");
 
+    /// tabs ///
+    $tabs.children().each(function (index) {
+        $(this).attr('data-position', index);
+    });
+
+    $tabs.owlCarousel({
+        rtl: true,
+        responsive:{
+            0:{
+                items: 2,
+            },
+            600:{
+                items: 4,
+            }
+        }
+        
+    });
+
+    $(document).on('click', '.owl-item>div', function () {
+        var $speed = 300;  // in ms
+        $tabs.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+    });
+    
+    
 
     /// mobileFilter ///
     $mobileFilter.children().each(function (index) {

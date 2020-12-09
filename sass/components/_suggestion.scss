@@ -36,9 +36,10 @@
         width: 12%;
         border-left: 2px solid rgba($color: $color-gray-light, $alpha: .3);
 
+        @include respond(phone-land){width: 15%;}
+
         @include respond(phone){width: 20%;}
         
-        @include respond(phone-land){width: 15%;}
 
         div{
             cursor: pointer;
@@ -49,19 +50,19 @@
             font-size: 1.9rem;
             // margin: .5rem 1rem;
             color: $color-gray;
-
-            @include respond(phone){font-size: 3.3rem;}
         
             @include respond(phone-land){font-size: 2.5rem;}
+
+            @include respond(phone){font-size: 3.3rem;}
         }
 
         span{
             font-size: 1.2rem;
             color: $color-gray;
-
-            @include respond(phone){font-size: 1.8rem;}
         
             @include respond(phone-land){font-size: 1.5rem;}
+
+            @include respond(phone){font-size: 1.8rem;}
         }
     }
 
@@ -94,15 +95,15 @@
             font-size: 1.6rem;
             color: $color-gray;            
             padding: 1.3rem 1.5rem;
-
-            @include respond(phone){
-                padding: 3rem 1.5rem;
-                font-size: 2rem;
-            }
         
             @include respond(phone-land){
                 font-size: 1.8rem;
                 padding: 2.5rem 1.5rem;
+            }
+
+            @include respond(phone){
+                padding: 3rem 1.5rem;
+                font-size: 2rem;
             }
 
             &:not(:last-of-type){
@@ -166,12 +167,12 @@
         top: 2%;
         cursor: pointer;
         z-index: 9999;
+        
+        @include respond(phone-land){font-size: 3rem;}
 
         @include respond(phone){
             font-size: 3.5rem;
         }
-        
-        @include respond(phone-land){font-size: 3rem;}
     }
 
     a,
@@ -186,12 +187,12 @@
         font-weight: 100;
         margin-bottom: 5px;
         direction: rtl;
+        
+        @include respond(phone-land){font-size: 2rem;}
 
         @include respond(phone){
             font-size: 2.5rem;
         }
-        
-        @include respond(phone-land){font-size: 2rem;}
     }
 
     &__icon{
@@ -226,15 +227,15 @@
             font-size: 1.4rem;
             color: $color-gray;
             margin-bottom: 1rem;
-
-            @include respond(phone){
-                font-size: 2.5rem;
-            }
         
             @include respond(phone-land){
                 font-size: 1.8rem;
                 padding: 1rem 1.5rem;
                 border-radius: 2.5rem;
+            }
+
+            @include respond(phone){
+                font-size: 2.5rem;
             }
         }
     }
@@ -352,16 +353,18 @@
         font-size: 2.7rem !important;
         color: $color-primary-light !important;
 
+        @include respond(phone-land){font-size: 3.5rem !important;}
+
         @include respond(phone){font-size: 4.3rem !important;}
         
-        @include respond(phone-land){font-size: 3.5rem !important;}
     }
     span{
         font-size: 1.6rem !important;
         color: $color-primary-light !important;
 
+        @include respond(phone-land){font-size: 2rem !important;}
+        
         @include respond(phone){font-size: 2rem !important;}
         
-        @include respond(phone-land){font-size: 2rem !important;}
     }
 }

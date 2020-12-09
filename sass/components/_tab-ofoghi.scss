@@ -57,6 +57,11 @@
             border-bottom: 2px solid $color-primary;
             transition: width .2s ease,
                         font-size 1s ease;
+        
+            @include respond(phone-land){
+                font-size: 2.3rem;
+                height: 10rem;
+            }
 
             @include respond(phone){
                 font-size: 2.4rem;
@@ -65,11 +70,6 @@
 
             @include respond(iphone){
                 height: 8rem;
-            }
-        
-            @include respond(phone-land){
-                font-size: 2.3rem;
-                height: 10rem;
             }
         }
 
@@ -136,6 +136,9 @@
         cursor: pointer;
         
         @include respond(big-desktop){width: 108%;}
+        
+        @include respond(phone-land){width: 102%;}
+
         @include respond(phone){
             width: 100%;
             background-color: #fff;
@@ -143,12 +146,12 @@
             border-radius: 1rem;
             box-shadow: -2px 2px 8px $color-gray-light;
         }
-        
-        @include respond(phone-land){width: 102%;}
     }
 
     &__header{
         height: 7.5rem;
+        
+        @include respond(phone-land){height: 10rem;}
 
         @include respond(phone){
             height: 11rem;
@@ -157,8 +160,6 @@
         @include respond(iphone){
             height: 8rem;
         }
-        
-        @include respond(phone-land){height: 10rem;}
     }
 
     &__title{
@@ -173,6 +174,9 @@
         @include respond(big-desktop){
             font-size: 2rem;
         }
+        
+        @include respond(phone-land){font-size: 2.2rem;}
+
         @include respond(phone){
             text-align: right;
             padding-right: 4rem;
@@ -185,8 +189,6 @@
         @include respond(iphone){
             padding-right: 1.5rem;   
         }
-        
-        @include respond(phone-land){font-size: 2.2rem;}
     }
 
     &__btn{
@@ -201,12 +203,16 @@
         cursor: pointer;
         transition: all .5s;
         
-        @include respond(phone-land){left: 2%;}
-        
         @include respond(big-desktop){
             height: 5rem;
             width: 5rem;
             left: 5%;
+        }
+        
+        @include respond(phone-land){
+            height: 5rem;
+            width: 5rem;
+            left: 2%;
         }
 
         @include respond(phone){
@@ -225,11 +231,6 @@
         @include respond(iphone){
             height: 3.5rem;
             width:  3.5rem;
-        }
-        
-        @include respond(phone-land){
-            height: 5rem;
-            width: 5rem;
         }
     }
 
@@ -270,9 +271,10 @@
         // display: none;
         transition: all 1s ease;
 
+        @include respond(phone-land){font-size: 2rem;}
+
         @include respond(phone){font-size: 2.2rem;}
         
-        @include respond(phone-land){font-size: 2rem;}
         
     }
 
@@ -336,12 +338,12 @@
         color: $color-gray;
         font-size: 2.2rem;
         border-bottom: 2px solid $color-primary !important;
+        
+        @include respond(phone-land){font-size: 2.5rem;}
 
         @include respond(phone){
             font-size: 2.7rem;
         }
-        
-        @include respond(phone-land){font-size: 2.5rem;}
     }
 
     i.plus{
@@ -360,6 +362,8 @@
         margin: 2rem 1rem 1rem;
         padding: 0 1rem;
         line-height: 5rem;
+        
+        @include respond(phone-land){font-size: 2rem;}
 
         @include respond(phone){
             font-size: 2.2rem;
@@ -367,8 +371,6 @@
         }
 
         @include respond(iphone){line-height: 5rem;}
-        
-        @include respond(phone-land){font-size: 2rem;}
     }
 }
 

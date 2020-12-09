@@ -4,12 +4,12 @@
     position: fixed;
     // left: 0%;
     top: 25%;
+        
+    @include respond(phone-land){top: 35%;}
     
     @include respond(phone){
         display: none;
     }
-        
-    @include respond(phone-land){top: 35%;}
 
     &__left-border{
         height: 40vh;

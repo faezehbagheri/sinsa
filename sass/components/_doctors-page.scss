@@ -3,11 +3,14 @@
     margin-top: -17rem;
     position: relative;
 
+    @include respond(phone-land){width: 81%;}
+
     @include respond(phone){
         width: 99%;
         margin-top: 4rem;
         align-items: center !important;
     }
+
 
     &__margin-right{
         margin-right: 3rem;
@@ -169,9 +172,9 @@
 
         @include respond(big-desktop){font-size: 2rem;}
 
-        @include respond(phone){
+        @include respond(phone-land){
             font-size: 2.2rem;
-        }
+        } 
     }
 
     &__about-me-1{
@@ -187,13 +190,14 @@
         p{
             font-size: 1.4rem;
             color: $color-gray;
+            text-align: justify;
+            direction: rtl;
 
             @include respond(big-desktop){font-size: 1.6rem;}
 
-            @include respond(phone){
-                font-size: 2rem;
-                text-align: justify;
-            }
+            @include respond(phone-land){font-size: 1.8rem;}
+
+            @include respond(phone){font-size: 2rem;}
         }
     }
 
@@ -216,6 +220,12 @@
             font-size: 1.4rem;
             cursor: pointer;
 
+            @include respond(phone-land){
+                height: 5rem;
+                width: 18rem;
+                font-size: 1.6rem;
+            }
+
             @include respond(phone){
                 height: 6rem;
                 width:  18rem;
@@ -234,6 +244,8 @@
             color: $color-gray-light;
             margin-bottom: 3rem;
 
+            @include respond(phone-land){font-size: 2rem;}
+
             @include respond(phone){
                 font-size: 2.3rem;
             }
@@ -243,6 +255,11 @@
             font-size: 5rem;
             color: $color-gray-light;
             cursor: pointer;
+
+            @include respond(phone-land){
+                font-size: 6rem;
+                margin-bottom: 2rem;
+            }
 
             @include respond(phone){
                 font-size: 7rem;   
@@ -268,6 +285,8 @@
                 color: $color-primary;
             }
 
+            @include respond(phone-land){font-size: 3rem;}
+
             @include respond(phone){
                 font-size: 3rem;
             }
@@ -277,6 +296,11 @@
             font-size: 1.4rem;
             color: $color-gray;
             margin: 0 1rem 2rem 7rem;
+
+            @include respond(phone-land){
+                font-size: 1.8rem;
+                margin: 2rem 1rem 0 5rem;
+            }
 
             @include respond(phone){
                 font-size: 2rem;
@@ -315,6 +339,10 @@
         text-align: right;
         padding-right: 2rem;
 
+        @include respond(phone-land){
+            width: 62%;
+        }
+
         @include respond(phone){
             width: 95%;
             padding: 0;
@@ -331,6 +359,8 @@
                 height: 32rem;
                 width: 45rem;
             }
+
+            @include respond(phone-land){margin-right: 0;}
 
             @include respond(phone){
                 width: 43rem;
@@ -351,6 +381,8 @@
     &__ax-2{
         width: 25%;
 
+        @include respond(phone-land){width: 38%;}
+
         @include respond(phone){
             width: 95%;   
             margin-top: 3rem;
@@ -363,6 +395,8 @@
 
             @include respond(big-desktop){font-size: 2.3rem;}
 
+            @include respond(phone-land){font-size: 2rem;}
+
             @include respond(phone){
                 font-size: 2.5rem;
             }
@@ -370,6 +404,8 @@
 
         div{
             margin-top: 1.8rem;
+
+            @include respond(phone-land){margin-top: 2rem;}
         }
         
         p{
@@ -377,6 +413,8 @@
             font-weight: 100;
             margin-right: 2rem;
             color: $color-primary-dark;
+
+            @include respond(phone-land){font-size: 1.6rem;}
 
             @include respond(phone){
                 font-size: 2.2rem;
@@ -395,6 +433,11 @@
             color: white;
             font-size: 1.6rem;
             cursor: pointer;
+
+            @include respond(phone-land){
+                height: 5rem;
+                font-size: 1.8rem;
+            }
 
             @include respond(phone){
                 width: 18rem;
@@ -493,7 +536,7 @@
         box-shadow: 1px 1px 5px $color-gray-light;
         transition: all .4s ease;
     
-        @include respond(phone){
+        @include respond(phone-land){
             width: 19rem;
             height: 19rem;
         }
@@ -510,7 +553,7 @@
             position: relative;
             z-index: -1;
     
-            @include respond(phone){
+            @include respond(phone-land){
                 height: 19rem;
             }
     
@@ -547,7 +590,7 @@
             font-size: 1.6rem;
             color: white;
 
-            @include respond(phone){
+            @include respond(phone-land){
                 font-size: 2.2rem;
             }
         }
@@ -555,7 +598,7 @@
             font-size: 1.1rem;
             color: $color-primary;
 
-            @include respond(phone){
+            @include respond(phone-land){
                 font-size: 1.5rem;
             }
         }
@@ -572,7 +615,7 @@
                 padding: 0 1rem;
             }
 
-            @include respond(phone){
+            @include respond(phone-land){
                 opacity: 1;
                 font-size: 1.8rem;
             }
@@ -580,6 +623,8 @@
         i{
             font-size: 1.3rem;
             margin-left: 5px;
+
+            @include respond(phone-land){font-size: 1.5rem;}
         }
     }
 
@@ -601,7 +646,7 @@
         box-shadow: 0 0 5px $color-gray-light;
         margin: 1rem;
 
-        @include respond(phone){
+        @include respond(phone-land){
             width: 95%;
         }
     
@@ -613,6 +658,8 @@
             width: 60%;
             font-size: 1.4rem;
             color: $color-gray;
+
+            @include respond(phone-land){font-size: 1.5rem;}
 
             @include respond(phone){
                 font-size: 2rem;
@@ -628,6 +675,8 @@
             background-color: $color-yellow;
             text-align: center;
             margin-top: -4rem;
+
+            @include respond(phone-land){font-size: 1.8rem;}
 
             @include respond(phone){
                 font-size: 2rem; 
@@ -664,6 +713,8 @@
         p{
             font-size: 1.4rem;
             color: $color-primary;
+
+            @include respond(phone-land){font-size: 1.8rem;}
 
             @include respond(phone){
                 font-size: 2.2rem;

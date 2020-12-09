@@ -4,12 +4,12 @@
     margin-top: 12rem;
     background-color: $color-primary;
     position: relative;
+        
+    @include respond(phone-land){height: 50rem;}
 
     @include respond(phone){
         display: none;
     }
-        
-    @include respond(phone-land){height: 50rem;}
 
     &__background{
         height: 9rem;

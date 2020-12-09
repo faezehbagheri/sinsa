@@ -155,10 +155,9 @@
             <i class="fas fa-ellipsis-v mobile-header__icon"></i>
         </div>
         <!-- سرچ -->
-        <div class="mobile-header__search" id="mobile-search">
+        <!-- <div class="mobile-header__search" id="mobile-search">
             <div class="search">
                 <form class="search__form flex column justi-center align-center">
-                    <!-- این قسمت تغییر کرده است -->
                     <div class="tab-amodi u-margin-top-medium">
                         <div class="tab-amodi__container flex column align-end">
                             <nav class="tab-amodi__multipleTabs flex align-end wrap showTab">
@@ -372,7 +371,6 @@
                             </div>
                         </div>
                     </div> 
-                    <!-- search suggestion -->
                     <div class="suggestion" >
                         <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(0)"></i>
                         <div class="suggestion__container flex column align-center justi-center">
@@ -385,7 +383,6 @@
                                     <a href="#" class="suggestion__recent-search--item">آزمایشگاه مهر</a>
                                 </div>
                             </div>
-                            <!-- <h3 class="suggestion__header">نتایج مرتبط</h3> -->
                             <div class="suggestion__result flex r-reverse">
                                 <div class="suggestion__icons flex column align-center justi-center">
                                     <div class="flex column align-center active-icon">
@@ -436,14 +433,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- حذف جستجوی پیشرفته -->
-                    
-                    <!-- انتهای تغییرات -->
                 </form>
             </div>
-        </div>
+        </div> -->
         <!-- فیلتر  -->
-        <div class="mobile-header__filter flex r-reverse align-center">
+        <!-- <div class="mobile-header__filter flex r-reverse align-center">
             <div class="flex r-reverse owl-carousel" id="mobile-header-filter">
                 <div class="mobile-header__filter-item flex column align-center item">
                     <a href="#">
@@ -476,7 +470,7 @@
                     <span>بیماری</span>
                 </div>
             </div>
-        </div>
+        </div> -->
     </header>
 
     <!-- Desktop Nav -->
@@ -910,12 +904,14 @@
             <label class="header__label">چطوری مشاوره آنلاین بگیریم؟</label>
             <div class="tab-amodi search-box u-margin-top-medium">
                 <div class="tab-amodi__container flex column align-end">
-                    <nav class="tab-amodi__multipleTabs tabs flex align-end wrap showTab">
+                    <nav class="tab-amodi__multipleTabs tabs flex align-end wrap showTab owl-carousel" id="tabs">
                         <a data-trigger="content01" class="tab-amodi__label main-search ">جستجو</a>
                         <a data-trigger="content02" class="tab-amodi__label main-search ">علائم</a>
                         <a data-trigger="content03" class="tab-amodi__label main-search ">تداخلات قبلی</a>
                         <a data-trigger="content04" class="tab-amodi__label main-search ">مکان یاب</a>
                         <a data-trigger="content05" class="tab-amodi__label main-search active">تداخلات دارویی</a>
+                        <!-- <div class="tab-amodi__prev-control"><i class="fas fa-angle-left"></i></div>
+                        <div class="tab-amodi__next-control"><i class="fas fa-angle-right"></i></div> -->
                     </nav>
                     <div class="search tab-amodi__tabcontent" id="content01">
                         <form class="search__form flex column justi-center align-end">
@@ -1168,7 +1164,7 @@
                         </form>
                     </div>
                     <!-- search suggestion -->
-                    <div class="suggestion" style="margin-right:  -2rem;">
+                    <div class="suggestion" style="margin-right:  -2rem; display: none;">
                         <i class="suggestion__close fas fa-times-circle" onclick="colseSuggestionBox(1)"></i>
                         <div class="suggestion__container flex column align-center justi-center">
                             <div class="suggestion__recent-search flex column justi-around align-end">
@@ -1235,14 +1231,14 @@
             </div>
         </div>
         <!-- Date Box -->
-        <div class="date-box">
+        <!-- <div class="date-box">
             <div class="date-box__top-center-circle"></div>
             <div class="date-box__top-right-circle"></div>
             <div class="date-box__main-circle"></div>
             <div class="date-box__bottom-left-circle"></div>
             <div class="date-box__bottom-center-circle"></div>
             <div class="date-box__bottom-right-circle"></div>
-        </div>
+        </div> -->
     </header>
 
     <!-- Right Side Fixed -->

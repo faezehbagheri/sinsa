@@ -50,6 +50,8 @@
         color: $color-gray;
         width: 65%;
         text-align: right;
+
+        @include respond(phone-land){font-size: 2rem;}
     }
 
     &__tab{
@@ -62,6 +64,11 @@
             background-color: $color-secondary-light;
             color: white;
             padding:1rem 5rem;
+
+            @include respond(phone-land){
+                font-size: 2rem;
+                padding: 1rem 3.5rem;
+            }
 
             @include respond(phone){
                 width: 30%;
@@ -103,6 +110,8 @@
         padding: 1rem;
         border-bottom: 2px solid $color-gray-light;
 
+        @include respond(phone-land){font-size: 2rem;}
+
         @include respond(phone){
             font-size: 2.5rem;
         }
@@ -113,6 +122,8 @@
         margin: 1rem 0;
         color: $color-primary-dark;
         text-align: justify;
+
+        @include respond(phone-land){font-size: 1.6rem;}
 
         @include respond(phone){
             font-size: 2rem;

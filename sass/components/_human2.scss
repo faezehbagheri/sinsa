@@ -11,6 +11,13 @@
     .ng-hide:not(.ng-hide-animate){display:none;}
     body-model-widget .symptoms-models{
         display:inline-block;position:relative;margin-top:20px; width: 30rem;
+        @include respond(phone-land){
+            width: 22rem;
+            margin-left:-1rem;
+        }        
+        @include respond(phone){
+            width: 30rem;
+        }
         @include respond(iphone){padding-left: 6rem;}
     }
     body-model-widget .symptoms-models .symptom-model{overflow:hidden;height:320px;}
@@ -30,6 +37,11 @@
     }
 }
 .model-controls{
+
+    @include respond(phone-land){
+        font-size: 1.6rem !important;
+        padding-left:6rem !important;
+    }
     @include respond(phone){
         font-size: 2.5rem !important;
         padding-left: 5rem !important;

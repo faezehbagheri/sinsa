@@ -11,6 +11,8 @@
         width: 95%;
         margin: 0 auto;
     }
+        
+    @include respond(phone-land){width: 70%; margin-top: 10rem;}
 
     @include respond(iphone){
         margin: 0;
@@ -19,8 +21,6 @@
     @include respond(big-desktop){
         width: 29rem;
     }
-        
-    @include respond(phone-land){width: 70%; margin-top: 10rem;}
 
     &__show{
         height: 170rem;
@@ -36,6 +36,10 @@
         margin-bottom: 2rem;
 
         @include respond(big-desktop){height: 13vh;}
+        
+        @include respond(phone-land){
+            height: 25rem;
+        }
 
         @include respond(phone){
             height: 25rem;
@@ -45,10 +49,6 @@
         @include respond(iphone){
             height: 19rem;
         }
-        
-        @include respond(phone-land){
-            height: 25rem;
-        }
     }
 
     &__icon-box{
@@ -57,6 +57,11 @@
         border-radius: 100%;background-color: #fff;
         border: 2px solid $color-primary-light;
         position: relative;
+        
+        @include respond(phone-land){
+            height: 15rem;
+            width:  15rem;
+        }
 
         @include respond(phone){
             height: 16rem;
@@ -67,11 +72,6 @@
             height: 13rem;
             width: 13rem;
         }
-        
-        @include respond(phone-land){
-            height: 15rem;
-            width:  15rem;
-        }
     }
 
     &__icon{
@@ -81,12 +81,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
-        @include respond(phone){
-            font-size: 7rem;
-        }
         
         @include respond(phone-land){
+            font-size: 7rem;
+        }
+
+        @include respond(phone){
             font-size: 7rem;
         }
     }
@@ -134,6 +134,11 @@
             width: 100%;
             padding: 1rem;
             color: white;
+
+            @include respond(phone-land){
+                padding: 1.8rem;
+                font-size: 2rem;
+            }
 
             @include respond(phone){
                 padding: 2.5rem;
@@ -308,15 +313,15 @@
             color: $color-gray;
             padding: 1.5rem;
             font-size: 1.3rem;
-
-            @include respond(phone){
-                padding: 2rem;   
-                font-size: 2.3rem;
-            }
         
             @include respond(phone-land){
                 font-size: 2rem;
                 padding: 2rem;
+            }
+
+            @include respond(phone){
+                padding: 2rem;   
+                font-size: 2.3rem;
             }
         }
     }
@@ -486,6 +491,8 @@
         overflow-y: scroll;
         // margin-bottom: 3rem;
 
+        @include respond(phone-land){height: 35rem;}
+
         @include respond(phone){
             height: 50rem;   
         }
@@ -517,6 +524,8 @@
             height: 5rem;
             transition: all .3s;
 
+            @include respond(phone-land){height: 9rem;}
+
             @include respond(phone){
                 padding: 1rem 1.5rem;
                 height: 10rem;
@@ -536,6 +545,8 @@
                     color: white;
                     font-size: 1.6rem;
 
+                    @include respond(phone-land){font-size: 2rem;}
+
                     @include respond(phone){ font-size: 2.4rem;}
                 }
             }
@@ -550,6 +561,8 @@
             text-align: right;
             transition: all .3s;
 
+            @include respond(phone-land){font-size: 1.8rem;}
+
             @include respond(phone){
                 font-size: 2.2rem;
             }
@@ -559,6 +572,8 @@
         i{
             font-size: 1.4rem;
             color: $color-primary-dark;
+
+            @include respond(phone-land){font-size: 2rem;}
 
             @include respond(phone){
                 font-size: 2.5rem;   
