@@ -3796,6 +3796,30 @@ body-model-widget .body-model-popover {
     @media only screen and (max-width: 30em) {
       .search__btn {
         display: none; } }
+  .search__close-btn {
+    width: 15rem;
+    margin: 2rem 1rem; }
+    .search__close-btn button {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      border: 4px solid white;
+      background-color: #E43F6F;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: white; }
+  .search__advance {
+    height: 104%;
+    width: 23rem;
+    border-radius: 5rem 0 0 5rem;
+    box-sizing: padding-box;
+    border: 2px solid white;
+    background-color: #707070;
+    font-size: 1.6rem;
+    color: white;
+    box-shadow: 0 0 5px rgba(112, 112, 112, 0.5);
+    position: absolute;
+    left: 0; }
   .search__advanced-btn {
     height: 3.5rem;
     width: 3.5rem;
@@ -3839,7 +3863,7 @@ body-model-widget .body-model-popover {
     border: none;
     outline: none;
     background-color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: right;
     direction: rtl;
     color: #707070;

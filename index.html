@@ -908,8 +908,8 @@
                         <a data-trigger="content01" class="tab-amodi__label main-search ">جستجو</a>
                         <a data-trigger="content02" class="tab-amodi__label main-search ">علائم</a>
                         <a data-trigger="content03" class="tab-amodi__label main-search ">تداخلات قبلی</a>
-                        <a data-trigger="content04" class="tab-amodi__label main-search ">مکان یاب</a>
-                        <a data-trigger="content05" class="tab-amodi__label main-search active">تداخلات دارویی</a>
+                        <a data-trigger="content04" class="tab-amodi__label main-search active">مکان یاب</a>
+                        <a data-trigger="content05" class="tab-amodi__label main-search ">تداخلات دارویی</a>
                         <!-- <div class="tab-amodi__prev-control"><i class="fas fa-angle-left"></i></div>
                         <div class="tab-amodi__next-control"><i class="fas fa-angle-right"></i></div> -->
                     </nav>
@@ -1028,10 +1028,20 @@
                         <form class="search__form flex column justi-center align-end">
                             <div class="search__box flex justi-center align-center ">
                                 <button type="submit" class="search__btn flex align-center justi-center">جستجو</button>
+                                <div class="search__search-container flex r-reverse align-center justi-around">
+                                    <i class="fas fa-map-marker-alt search__right-icon"></i>
+                                    <input type="text" class="search__input"
+                                        placeholder="بیماری مورد نظر را جستجو کنید">
+                                    <button class="search__advance flex align-center justi-around">جستجوی پیشرفته<img src="/assets/img/advance-icon.png"></button>
+                                </div>
+                            </div>
+                            <div class="search__box flex justi-center align-center " style="margin-top: 1rem;">
+                                <div class="search__close-btn flex align-center justi-center">
+                                    <button>&times;</button>
+                                </div>
                                 <div class="search__search-container flex r-reverse align-center">
                                     <div class="search__tadakholat flex r-reverse align-center">
                                         <i class="fas fa-list search__drug-icon"></i>
-                                        <!-- <input type="text" class="search__tadakhol-input" placeholder="دسته بندی"> -->
                                         <div class="container">
                                             <select class="select2" id="myselect" name="category">
                                                 <option value="" disabled selected> دسته بندی </option>
@@ -1049,7 +1059,6 @@
                                     </div>
                                     <div class="search__tadakholat flex r-reverse align-center">
                                         <i class="fas fa-map search__drug-icon"></i>
-                                        <!-- <input type="text" class="search__tadakhol-input" placeholder="استان"> -->
                                         <div class="container">
                                             <select class="select2" name="country">
                                                 <option value="" disabled selected> استان </option>
@@ -1067,7 +1076,6 @@
                                     </div>
                                     <div class="search__tadakholat flex r-reverse align-center">
                                         <i class="fas fa-map-marker-alt search__drug-icon"></i>
-                                        <!-- <input type="text" class="search__tadakhol-input" placeholder="شهر"> -->
                                         <div class="container">
                                             <select class="select2" name="city">
                                                 <option value="" disabled selected> شهر </option>
@@ -1085,7 +1093,6 @@
                                     </div>
                                     <div class="search__tadakholat flex r-reverse align-center">
                                         <i class="fas fa-map search__drug-icon"></i>
-                                        <!-- <input type="text" class="search__tadakhol-input" placeholder="محله"> -->
                                         <div class="container">
                                             <select class="select2" name="mahale">
                                                 <option value="" disabled selected> محله </option>
@@ -1103,7 +1110,6 @@
                                     </div>
                                     <div class="search__tadakholat flex r-reverse align-center">
                                         <i class="fas fa-map-marker-alt search__drug-icon"></i>
-                                        <!-- <input type="text" class="search__tadakhol-input" placeholder="تخصص"> -->
                                         <div class="container">
                                             <select class="select2" name="specialty">
                                                 <option value="" disabled selected> تخصص </option>

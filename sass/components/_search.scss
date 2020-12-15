@@ -92,6 +92,36 @@
         }
     }
 
+    &__close-btn{
+        width: 15rem;
+        margin: 2rem 1rem;
+
+        button{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 100%;
+            border: 4px solid white;
+            background-color: $color-pink;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    &__advance{
+        height: 104%;
+        width: 23rem;
+        border-radius: 5rem 0 0 5rem;
+        box-sizing: padding-box;
+        border: 2px solid white;
+        background-color: $color-gray;
+        font-size: 1.6rem;
+        color: white;
+        box-shadow: 0 0 5px rgba($color: $color-gray, $alpha: .5);
+        position: absolute;
+        left: 0;
+    }
+
     &__advanced-btn{
         height: 3.5rem;
         width: 3.5rem;
@@ -144,7 +174,7 @@
         border: none;
         outline: none;
         background-color: #fff;
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: right;
         direction: rtl;
         color: $color-gray;
