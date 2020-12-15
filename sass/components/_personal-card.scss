@@ -21,7 +21,7 @@
             width: 26rem;          
         }
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             width: 27rem;
             height: 35rem;
             justify-content: center;
@@ -78,7 +78,7 @@
             width: 13rem;          
         }       
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             top: -20%;
             height: 15rem;
             width: 15rem;
@@ -113,7 +113,7 @@
             width: 11rem !important;          
         }
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 13rem;
             width: 13rem !important;
         }
@@ -134,7 +134,7 @@
         color: $color-pink;
         margin-top: 1rem;
 
-        @include respond(phone-land){font-size: 2.2rem;}
+        @include respond(phone-port){font-size: 2.2rem;}
     
         @include respond(phone){
             font-size: 3rem;
@@ -146,7 +146,7 @@
         font-weight: 700;
         color: $color-primary;
 
-        @include respond(phone-land){font-size: 1.6rem;}
+        @include respond(phone-port){font-size: 1.6rem;}
     
         @include respond(phone){
             font-size: 2rem;
@@ -171,7 +171,7 @@
         color: #ffffff;
         font-size: 1.1rem;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             font-size: 1.5rem;
             padding: 3px 1.2rem;
             border-radius: 1.5rem;
@@ -189,7 +189,7 @@
         margin-right: 1rem;
         color: $color-gray;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             font-size: 1.3rem;
             padding: 3px;
         }
@@ -203,7 +203,7 @@
         color: $color-gray;
         font-size: 1rem;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             font-size: 1.3rem;
             margin: 1.5rem 0;
         }
@@ -218,7 +218,7 @@
         color: $color-yellow;
         margin-top: 1rem;
 
-        @include respond(phone-land){font-size: 2rem;}
+        @include respond(phone-port){font-size: 2rem;}
 
         @include respond(phone){
             font-size: 2.5rem;
@@ -241,7 +241,7 @@
         text-align: center;
         text-decoration: none;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             top: 10%;
             font-size: 1.8rem;
             padding: 1.3rem 2.5rem;

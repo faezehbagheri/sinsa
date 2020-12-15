@@ -12,7 +12,7 @@
         margin: 0 auto;
     }
         
-    @include respond(phone-land){width: 70%; margin-top: 10rem;}
+    @include respond(phone-port){width: 70%; margin-top: 10rem;}
 
     @include respond(iphone){
         margin: 0;
@@ -37,7 +37,7 @@
 
         @include respond(big-desktop){height: 13vh;}
         
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 25rem;
         }
 
@@ -58,7 +58,7 @@
         border: 2px solid $color-primary-light;
         position: relative;
         
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 15rem;
             width:  15rem;
         }
@@ -82,7 +82,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         
-        @include respond(phone-land){
+        @include respond(phone-port){
             font-size: 7rem;
         }
 
@@ -98,7 +98,7 @@
             font-size: 2.5rem;   
         }
         
-        @include respond(phone-land){font-size: 2rem;}
+        @include respond(phone-port){font-size: 2rem;}
     }
 
     &__header{
@@ -135,7 +135,7 @@
             padding: 1rem;
             color: white;
 
-            @include respond(phone-land){
+            @include respond(phone-port){
                 padding: 1.8rem;
                 font-size: 2rem;
             }
@@ -239,7 +239,7 @@
         margin: 1rem auto;
         background-color: #fff;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 7rem !important;
             margin-top: 2rem;
         }
@@ -264,7 +264,7 @@
             color: rgb(196, 193, 193);
             text-align: right;
 
-            @include respond(phone-land){
+            @include respond(phone-port){
                 font-size: 2rem;
             }
         }
@@ -287,7 +287,7 @@
         @include centerABS();
         color: #fff;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             font-size: 2.8rem !important;
         }
     }
@@ -301,7 +301,7 @@
         box-shadow: 1px 1px 5px $color-gray-light;
         margin-bottom: 5rem;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 100rem;
         }
 
@@ -314,7 +314,7 @@
             padding: 1.5rem;
             font-size: 1.3rem;
         
-            @include respond(phone-land){
+            @include respond(phone-port){
                 font-size: 2rem;
                 padding: 2rem;
             }
@@ -357,7 +357,7 @@
             color: $color-gray;
             outline: none;
 
-            @include respond(phone-land){
+            @include respond(phone-port){
                 height: 6rem;
                 font-size: 2rem;
             }
@@ -367,7 +367,7 @@
             background: $color-gray-lighter;
             font-size: 1.3rem;
 
-            @include respond(phone-land){
+            @include respond(phone-port){
                 font-size: 2.2rem;
             }
         }
@@ -387,7 +387,7 @@
         left: 0; 
         background: $color-gray-lighter;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 80rem;   
         }
 
@@ -413,7 +413,7 @@
             text-align: center;
             transition: all .3s ease;
         
-            @include respond(phone-land){
+            @include respond(phone-port){
                 height: 7.5rem;
                 font-size: 2.2rem;
             }
@@ -433,7 +433,7 @@
                 color: white;
                 border: 1px solid white;
         
-                @include respond(phone-land){transform: scale(1.05);}
+                @include respond(phone-port){transform: scale(1.05);}
             }
         }
     } 
@@ -491,7 +491,7 @@
         overflow-y: scroll;
         // margin-bottom: 3rem;
 
-        @include respond(phone-land){height: 35rem;}
+        @include respond(phone-port){height: 35rem;}
 
         @include respond(phone){
             height: 50rem;   
@@ -524,7 +524,7 @@
             height: 5rem;
             transition: all .3s;
 
-            @include respond(phone-land){height: 9rem;}
+            @include respond(phone-port){height: 9rem;}
 
             @include respond(phone){
                 padding: 1rem 1.5rem;
@@ -545,7 +545,7 @@
                     color: white;
                     font-size: 1.6rem;
 
-                    @include respond(phone-land){font-size: 2rem;}
+                    @include respond(phone-port){font-size: 2rem;}
 
                     @include respond(phone){ font-size: 2.4rem;}
                 }
@@ -561,7 +561,7 @@
             text-align: right;
             transition: all .3s;
 
-            @include respond(phone-land){font-size: 1.8rem;}
+            @include respond(phone-port){font-size: 1.8rem;}
 
             @include respond(phone){
                 font-size: 2.2rem;
@@ -573,7 +573,7 @@
             font-size: 1.4rem;
             color: $color-primary-dark;
 
-            @include respond(phone-land){font-size: 2rem;}
+            @include respond(phone-port){font-size: 2rem;}
 
             @include respond(phone){
                 font-size: 2.5rem;   
@@ -597,7 +597,7 @@
         & span{
             font-size: 3rem;
         
-            @include respond(phone-land){font-size: 7rem;}
+            @include respond(phone-port){font-size: 7rem;}
         }
     }
     .owl-next{
@@ -612,7 +612,7 @@
         & span{
             font-size: 3rem; 
         
-            @include respond(phone-land){font-size: 7rem;}
+            @include respond(phone-port){font-size: 7rem;}
         }
     }
     

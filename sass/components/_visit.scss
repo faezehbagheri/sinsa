@@ -32,7 +32,7 @@
         padding: 2rem;
         border-bottom: 2px solid $color-gray-light;
 
-        @include respond(phone-land){font-size: 1.8rem;}
+        @include respond(phone-port){font-size: 1.8rem;}
 
         @include respond(phone){font-size: 2rem;}
     }
@@ -43,7 +43,7 @@
         margin: 3rem 0;
         padding: 0 3.5rem;
 
-        @include respond(phone-land){margin-bottom: 5rem;}
+        @include respond(phone-port){margin-bottom: 5rem;}
 
         @include respond(phone){
             flex-direction: column;
@@ -63,7 +63,7 @@
         box-shadow: 0 1px 5px $color-gray-light;
         padding: 0 5px;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 5.5rem;
         }
 
@@ -89,7 +89,7 @@
             text-align: right;
             direction: rtl;
 
-            @include respond(phone-land){height: 5rem;}
+            @include respond(phone-port){height: 5rem;}
 
             @include respond(phone){
                 height: 100%;
@@ -152,7 +152,7 @@
         text-align: right;
         height: 30rem;
 
-        @include respond(phone-land){height: 35rem;}
+        @include respond(phone-port){height: 35rem;}
 
         @include respond(phone){
             height: 40rem;
@@ -178,7 +178,7 @@
                 border-bottom: 1px solid $color-secondary-light;
             }
 
-            @include respond(phone-land){
+            @include respond(phone-port){
                 font-size: 1.8rem;
                 height: 8rem;
             }
@@ -198,7 +198,7 @@
                 color: white;
                 font-size: 1.6rem;
 
-                @include respond(phone-land){font-size: 2rem;}
+                @include respond(phone-port){font-size: 2rem;}
 
                 @include respond(phone){ font-size: 2.4rem;}
             }
@@ -209,7 +209,7 @@
         height: 25rem;
         margin-top: 1rem;
 
-        @include respond(phone-land){height: 30rem;}
+        @include respond(phone-port){height: 30rem;}
 
         @include respond(phone){height: 40rem;}
 
@@ -239,7 +239,7 @@
         background-color: white;
         box-shadow: 0 1px 5px $color-gray-light;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 12rem;
             width:  12rem;
         }
@@ -281,7 +281,7 @@
             border: none;
             font-size: 1.5rem;
 
-            @include respond(phone-land){
+            @include respond(phone-port){
                 width: 18rem;
                 height: 6rem;
                 font-size: 2rem;

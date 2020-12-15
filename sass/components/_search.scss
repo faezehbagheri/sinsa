@@ -31,12 +31,12 @@
         padding: 0 2rem;
         box-shadow: 0 0 5px rgba($color: #000000, $alpha: .8);
         
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 10rem;
             border-radius: 6rem;
         }
         
-        @include respond(iphone-land){
+        @include respond(iphone-port){
             height: 8rem;
             border-radius: 4rem;
         }
@@ -75,13 +75,13 @@
             margin-left: 1rem;
         }
         
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 7.5rem;
             width: 18%;
             border-radius: 5rem;
         }
         
-        @include respond(iphone-land){
+        @include respond(iphone-port){
             height: 6rem;
             width: 18%;
             border-radius: 3rem;
@@ -93,18 +93,57 @@
     }
 
     &__close-btn{
-        width: 15rem;
+        width: 4rem;
+        height: 4rem;
         margin: 2rem 1rem;
+        padding-top: 3px;
+        border-radius: 100%;
+        border: 4px solid white;
+        background-color: $color-pink;
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: white;
+    }
 
-        button{
-            width: 4rem;
-            height: 4rem;
-            border-radius: 100%;
-            border: 4px solid white;
-            background-color: $color-pink;
-            font-size: 2.2rem;
-            font-weight: bold;
-            color: white;
+    .makan-yab{        
+    
+        @include respond(phone){
+            height: auto;
+            .search__close-btn{display: none;}
+
+            .search__search-container{
+                width: 80% !important;
+                flex-direction: column;
+                div.search__tadakholat{
+                    width: 95%; 
+                    justify-content: center;
+                    padding: 1rem 0;
+                    margin-top: 1rem;
+                    border: none;
+
+                    &:not(:last-child){
+                        border-bottom: 1px solid $color-primary;
+                    }
+
+                    i{
+                        font-size: 3rem;
+                        margin: 0 1rem;
+                    }
+
+                    .container{
+                        height: 7rem;
+
+                        .select2{
+                            height: 100%;
+                            font-size: 2rem !important;
+                        }
+
+                        .select2-selection__rendered {
+                            line-height: 6rem;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -120,6 +159,16 @@
         box-shadow: 0 0 5px rgba($color: $color-gray, $alpha: .5);
         position: absolute;
         left: 0;
+    
+        @include respond(phone){
+            border-radius: 1.5rem 0 0 1.5rem;
+            width: 17rem;
+            font-size: 1.8rem;
+            border: none;
+            height: 100%;
+
+            img{display: none;}
+        }
     }
 
     &__advanced-btn{
@@ -154,11 +203,11 @@
         margin: 2rem 1rem;
         background-color: #fff;
         
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 7.5rem;
         }
         
-        @include respond(iphone-land){height: 6rem;}
+        @include respond(iphone-port){height: 6rem;}
 
         @include respond(phone){
             width: 100%;
@@ -241,11 +290,11 @@
                 transform: scale(1.07);
             }
         
-            @include respond(phone-land){
+            @include respond(phone-port){
                 font-size: 2rem;
             }
         
-            @include respond(iphone-land){font-size: 1.6rem;}
+            @include respond(iphone-port){font-size: 1.6rem;}
         }
     }
     &__tadakholat{
@@ -301,7 +350,6 @@
         a,
         a:link,
         a:visited{
-            // height: 100%;
             padding: 1rem 0;
             text-align: center;
             border-radius: 2rem 2rem 0 0;
@@ -318,12 +366,10 @@
 .active-mobile-tab{
     background-color: rgba($color: $color-primary-light, $alpha: .8) !important;
     color: white !important;
-    // padding: 1.8rem 0 !important;
     font-size: 2.2rem !important;
     
 
     @include respond(iphone){
-        // padding: 1.3rem 0 !important;
         font-size: 2rem !important;
     }
 }
@@ -334,7 +380,7 @@
     width: 98%;
 
     .select2 {
-        width: 100% ;
+        width: 100% !important;
         direction: rtl !important;
         // height: 3.5rem;
         border-radius: 8px;
@@ -344,7 +390,7 @@
         font-size: 1.5rem;
         color: $color-gray;
         
-        @include respond(phone-land){font-size: 1.8rem;}
+        @include respond(phone-port){font-size: 1.8rem;}
 
         @include respond(phone){font-size: 2rem;}
 

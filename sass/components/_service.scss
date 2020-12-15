@@ -5,7 +5,7 @@
     // left: 0%;
     top: 25%;
         
-    @include respond(phone-land){top: 35%;}
+    @include respond(phone-port){top: 35%;}
     
     @include respond(phone){
         display: none;
@@ -21,7 +21,7 @@
             height: 35rem
         }
         
-        @include respond(phone-land){
+        @include respond(phone-port){
             width: 6rem;
             height: 30rem;
         }

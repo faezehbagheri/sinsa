@@ -1,7 +1,7 @@
 .doctors{
     width: 100%;
 
-    @include respond(phone-land){
+    @include respond(phone-port){
         flex-direction: column-reverse !important;
         align-items: center !important;
     }
@@ -19,7 +19,7 @@
             width: 100%;
         }
 
-        @include respond(phone-land){width: 81%;}
+        @include respond(phone-port){width: 81%;}
 
         @include respond(iphone){padding-bottom: 10rem;}
     }

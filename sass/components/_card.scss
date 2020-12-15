@@ -1,7 +1,7 @@
 .card{
     width: 43%;
 
-    @include respond(phone-land){width: 46%;}
+    @include respond(phone-port){width: 46%;}
     
     @include respond(phone){
         width: 95%;
@@ -67,7 +67,7 @@
         color: #fff;
         border-radius: 10px 10px 0 0;
 
-        @include respond(phone-land){font-size: 1.6rem;}
+        @include respond(phone-port){font-size: 1.6rem;}
 
         @include respond(phone){
             padding: 2rem 5rem;
@@ -126,7 +126,7 @@
         text-decoration: none;
         transition: all .3s;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             height: 9rem;
         }
 
@@ -177,7 +177,7 @@
             margin: 1.5rem;
             transition: all .3s;
 
-            @include respond(phone-land){font-size: 1.8rem;}
+            @include respond(phone-port){font-size: 1.8rem;}
 
             @include respond(phone){
                 font-size: 2.2rem;
@@ -189,7 +189,7 @@
             font-weight: 500;
             color: $color-primary;
 
-            @include respond(phone-land){font-size: 1.6rem;}
+            @include respond(phone-port){font-size: 1.6rem;}
 
             @include respond(phone){
                 margin-left: 2rem;

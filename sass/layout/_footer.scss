@@ -5,7 +5,7 @@
     background-color: $color-primary;
     position: relative;
         
-    @include respond(phone-land){height: 50rem;}
+    @include respond(phone-port){height: 50rem;}
 
     @include respond(phone){
         display: none;
@@ -59,7 +59,7 @@
 
     &__photo{
         
-        @include respond(phone-land){width: 18rem;}
+        @include respond(phone-port){width: 18rem;}
     }
 
     &__btn{

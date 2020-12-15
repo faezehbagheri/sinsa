@@ -4,7 +4,7 @@
     margin-top: 20rem;
     margin-bottom: 25rem;
         
-    @include respond(phone-land){
+    @include respond(phone-port){
         flex-direction: column-reverse !important;
         align-items: center !important;
     }

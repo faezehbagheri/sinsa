@@ -16,7 +16,8 @@ html {
       font-size: 38%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 *::-webkit-scrollbar-track {
   border-radius: 10px;
@@ -3797,17 +3798,42 @@ body-model-widget .body-model-popover {
       .search__btn {
         display: none; } }
   .search__close-btn {
-    width: 15rem;
-    margin: 2rem 1rem; }
-    .search__close-btn button {
-      width: 4rem;
-      height: 4rem;
-      border-radius: 100%;
-      border: 4px solid white;
-      background-color: #E43F6F;
-      font-size: 2.2rem;
-      font-weight: bold;
-      color: white; }
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem 1rem;
+    padding-top: 3px;
+    border-radius: 100%;
+    border: 4px solid white;
+    background-color: #E43F6F;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white; }
+  @media only screen and (max-width: 30em) {
+    .search .makan-yab {
+      height: auto; }
+      .search .makan-yab .search__close-btn {
+        display: none; }
+      .search .makan-yab .search__search-container {
+        width: 80% !important;
+        flex-direction: column; }
+        .search .makan-yab .search__search-container div.search__tadakholat {
+          width: 95%;
+          justify-content: center;
+          padding: 1rem 0;
+          margin-top: 1rem;
+          border: none; }
+          .search .makan-yab .search__search-container div.search__tadakholat:not(:last-child) {
+            border-bottom: 1px solid #6DC2BE; }
+          .search .makan-yab .search__search-container div.search__tadakholat i {
+            font-size: 3rem;
+            margin: 0 1rem; }
+          .search .makan-yab .search__search-container div.search__tadakholat .container {
+            height: 7rem; }
+            .search .makan-yab .search__search-container div.search__tadakholat .container .select2 {
+              height: 100%;
+              font-size: 2rem !important; }
+            .search .makan-yab .search__search-container div.search__tadakholat .container .select2-selection__rendered {
+              line-height: 6rem; } }
   .search__advance {
     height: 104%;
     width: 23rem;
@@ -3820,6 +3846,15 @@ body-model-widget .body-model-popover {
     box-shadow: 0 0 5px rgba(112, 112, 112, 0.5);
     position: absolute;
     left: 0; }
+    @media only screen and (max-width: 30em) {
+      .search__advance {
+        border-radius: 1.5rem 0 0 1.5rem;
+        width: 17rem;
+        font-size: 1.8rem;
+        border: none;
+        height: 100%; }
+        .search__advance img {
+          display: none; } }
   .search__advanced-btn {
     height: 3.5rem;
     width: 3.5rem;
@@ -3992,7 +4027,7 @@ body-model-widget .body-model-popover {
   margin: 0 auto;
   width: 98%; }
   .container .select2 {
-    width: 100%;
+    width: 100% !important;
     direction: rtl !important;
     border-radius: 8px;
     border: none;
@@ -5334,7 +5369,7 @@ body-model-widget .body-model-popover {
     z-index: 99999; }
 
 .header {
-  height: 75rem;
+  height: 90vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -5345,15 +5380,22 @@ body-model-widget .body-model-popover {
   @media only screen and (min-width: 112.5em) {
     .header {
       height: 100vh; } }
-  @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (max-width: 51em) {
     .header {
-      height: 55rem; } }
+      height: 130vh; } }
+  @media only screen and (max-width: 30em) {
+    .header {
+      height: 85vh;
+      background-position: center; } }
   .header__main {
     margin: 0 3rem; }
   .header__label {
     font-size: 5rem;
     color: #ffffff;
     margin-top: 25rem; }
+    @media only screen and (max-width: 51em) {
+      .header__label {
+        margin-top: 15rem; } }
     @media only screen and (max-width: 51em) and (-webkit-min-device-pixel-ratio: 2) {
       .header__label {
         font-size: 4rem; } }
@@ -5404,7 +5446,8 @@ body-model-widget .body-model-popover {
     font-size: 5rem;
     color: rgba(238, 241, 239, 0.8);
     margin-bottom: 15rem;
-    cursor: pointer; }
+    cursor: pointer;
+    display: none; }
   .main__main-section {
     width: 75%;
     z-index: 999; }

@@ -62,14 +62,14 @@
             color: $color-gray;
             margin: 5px;
 
-            @include respond(phone-land){font-size: 1.5rem;}
+            @include respond(phone-port){font-size: 1.5rem;}
         }
 
         i{
             font-size: 1.5rem;
             color: $color-primary;
 
-            @include respond(phone-land){font-size: 2rem;}
+            @include respond(phone-port){font-size: 2rem;}
         }
     }
 
@@ -99,7 +99,7 @@
                 font-size: 1.4rem;
             }
 
-            @include respond(phone-land){
+            @include respond(phone-port){
                 font-size: 1.4rem;
             }
         }
@@ -109,7 +109,7 @@
             margin-left: 1.5rem;
             margin-right: 5px;
 
-            @include respond(phone-land){font-size: 1.4rem;}
+            @include respond(phone-port){font-size: 1.4rem;}
         }
         
     }
@@ -132,7 +132,7 @@
         
         @include respond(big-desktop){ width: 18rem;}
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             font-size: 1.8rem;
             width: 17rem;
             height: 6rem;
@@ -144,7 +144,7 @@
     &__btn-pos-bottom{
         top: 90% !important;
 
-        @include respond(phone-land){top: 88% !important;}
+        @include respond(phone-port){top: 88% !important;}
     }
 
 
@@ -167,7 +167,7 @@
             color: $color-primary-light;
             margin:0 1.5rem;
 
-            @include respond(phone-land){font-size: 2.4rem;}
+            @include respond(phone-port){font-size: 2.4rem;}
         }
 
         p{
@@ -176,7 +176,7 @@
             margin-bottom: -2rem;
             transition: all .5s ease;
 
-            @include respond(phone-land){font-size: 1.6rem;}
+            @include respond(phone-port){font-size: 1.6rem;}
         }
     }
 }

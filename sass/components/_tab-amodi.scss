@@ -2,7 +2,7 @@
     width: 52%;
     // margin-bottom: 25rem;
         
-    @include respond(phone-land){
+    @include respond(phone-port){
         width: 81%;
     }
 
@@ -15,10 +15,10 @@
     &.search-box{  
         width: 90%;  
         max-width: 1100px;
-        @include respond(phone-land){width: 95% !important;}    
+        @include respond(phone-port){width: 95% !important;}    
         @include respond(iphone){width: 100% !important;}
         
-        // @include respond(iphone-land){width: 95% !important;}
+        // @include respond(iphone-port){width: 95% !important;}
     }
 
     & h1{
@@ -27,7 +27,7 @@
         border-bottom: 1px solid $color-primary-light;
         color: $color-primary;
         
-        @include respond(phone-land){font-size: 2rem;}
+        @include respond(phone-port){font-size: 2rem;}
            
         @include respond(phone){
             font-size: 2.5rem;
@@ -47,7 +47,7 @@
         cursor: pointer;
         margin-right: 2rem;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             width: 100%;
         }   
     }
@@ -91,12 +91,12 @@
         box-shadow: 0px -2px 6px #a6a6a665;
 
         
-        // @include respond(phone-land){
+        // @include respond(phone-port){
         //     font-size: 1.8rem;
         //     padding: 1.2rem 2.5rem;
         // }
         
-        @include respond(iphone-land){
+        @include respond(iphone-port){
             font-size: 1.5rem;
             
         }
@@ -198,7 +198,7 @@
         border-left: 1px solid white;
         box-shadow: -6px -1px 5px 0px #5c5c5c28;
         
-        @include respond(phone-land){
+        @include respond(phone-port){
             left: -13px !important;
             transform: skew(-20deg, 0deg) !important;
         }
@@ -209,7 +209,7 @@
         border-right: 1px solid white;
         box-shadow: 6px -1px 8px 0px #5c5c5c28;
         
-        @include respond(phone-land){
+        @include respond(phone-port){
             right: -13px !important;
             transform: skew(20deg , 0deg);
         }
@@ -244,7 +244,7 @@
     &__prev-control {
         display:none;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             display:inline-block; 
             position:absolute; 
             left:10px; top:10px; 
@@ -257,7 +257,7 @@
     &__next-control {
         display:none;
 
-        @include respond(phone-land){
+        @include respond(phone-port){
             display:inline-block; 
             position:absolute; 
             right:10px; 
@@ -290,7 +290,7 @@
         & span{
             font-size: 3rem;
             color: white;
-            @include respond(phone-land){font-size: 7rem;}
+            @include respond(phone-port){font-size: 7rem;}
         }
     }
     .owl-next{
@@ -305,7 +305,7 @@
         & span{
             font-size: 3rem; 
             color: white;
-            @include respond(phone-land){font-size: 7rem;}
+            @include respond(phone-port){font-size: 7rem;}
         }
     }
     

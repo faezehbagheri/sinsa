@@ -10,15 +10,20 @@
         top:60px;
         z-index: -10;
     }
-    height: 75rem;
+    height: 90vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    // background-position: center;
 
     @include respond(big-desktop){height: 100vh;}
+    @include respond(phone-port ){height: 130vh;}
     
-    @include respond(iphone){height: 55rem;}
+    @include respond(phone){
+        height: 85vh;
+        background-position: center;
+    }
+    
+    // @include respond(iphone){height: 55rem;}
     
     
     &__main{
@@ -30,7 +35,9 @@
         color: #ffffff;
         margin-top: 25rem;
         
-        @include respond(iphone-land){font-size: 4rem;}
+        @include respond(phone-port){margin-top: 15rem;}
+        
+        @include respond(iphone-port){font-size: 4rem;}
     
         @include respond(iphone){margin-top: 18rem;}
     }   

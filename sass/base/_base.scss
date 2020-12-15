@@ -13,13 +13,14 @@ html {
     // scroll-behavior: smooth;
     // transition: all 2s ease;
 
-    @include respond(phone-land){font-size: 48%;}
+    @include respond(phone-port){font-size: 48%;}
     
     @include respond(phone){ font-size: 38%; }
 }
 
 body {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 *{

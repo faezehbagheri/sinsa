@@ -82,7 +82,7 @@
             left: -30%;
         }
     
-        @include respond(phone-land){display: none;}
+        @include respond(phone-port){display: none;}
     }
 
     &__sub-list{
