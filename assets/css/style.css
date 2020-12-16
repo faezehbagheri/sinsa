@@ -34,6 +34,10 @@ button {
   cursor: pointer;
   outline: none; }
 
+.outline-green {
+  border: 1px solid #90C73D;
+  border-radius: 3rem; }
+
 input {
   direction: rtl; }
 
@@ -714,7 +718,26 @@ body {
     .doctors-page__about-me-2 a:link,
     .doctors-page__about-me-2 a:visited {
       text-decoration: none;
-      color: #90C73D; }
+      color: #90C73D;
+      font-size: 1.4rem;
+      width: 15rem;
+      height: 3rem;
+      text-align: center; }
+      @media only screen and (max-width: 51em) {
+        .doctors-page__about-me-2 a,
+        .doctors-page__about-me-2 a:link,
+        .doctors-page__about-me-2 a:visited {
+          font-size: 1.6rem; } }
+      @media only screen and (max-width: 30em) {
+        .doctors-page__about-me-2 a,
+        .doctors-page__about-me-2 a:link,
+        .doctors-page__about-me-2 a:visited {
+          font-size: 1.8rem; } }
+      @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+        .doctors-page__about-me-2 a,
+        .doctors-page__about-me-2 a:link,
+        .doctors-page__about-me-2 a:visited {
+          font-size: 2.2rem; } }
     .doctors-page__about-me-2 button {
       margin-bottom: 1rem;
       width: 15rem;
