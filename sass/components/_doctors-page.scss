@@ -208,6 +208,13 @@
             width: 95%;
         }
 
+        a,
+        a:link,
+        a:visited{
+            text-decoration: none;
+            color: $color-primary-light;
+        }
+
         button{
             margin-bottom: 1rem;
             width: 15rem;
@@ -216,7 +223,6 @@
             border: 1px solid $color-primary-light;
             outline: none;
             background-color: inherit;
-            color: $color-primary-light;
             font-size: 1.4rem;
             cursor: pointer;
 

@@ -710,6 +710,11 @@ body {
     @media only screen and (max-width: 30em) {
       .doctors-page__about-me-2 {
         width: 95%; } }
+    .doctors-page__about-me-2 a,
+    .doctors-page__about-me-2 a:link,
+    .doctors-page__about-me-2 a:visited {
+      text-decoration: none;
+      color: #90C73D; }
     .doctors-page__about-me-2 button {
       margin-bottom: 1rem;
       width: 15rem;
@@ -718,7 +723,6 @@ body {
       border: 1px solid #90C73D;
       outline: none;
       background-color: inherit;
-      color: #90C73D;
       font-size: 1.4rem;
       cursor: pointer; }
       @media only screen and (max-width: 51em) {
