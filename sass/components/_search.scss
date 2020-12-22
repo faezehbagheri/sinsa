@@ -56,6 +56,19 @@
         }
     }
 
+    &__link-btn{
+        background-color: transparent;
+        border: none;        
+
+        @include respond(phone){
+            background-color: $color-gray-lighter;
+            height: 100%;
+            width: 7rem;
+            text-align: center;
+        }
+        
+    }
+
     &__btn{
         width: 15rem;
         height: 6rem;
@@ -202,6 +215,7 @@
         position: relative;
         margin: 2rem 1rem;
         background-color: #fff;
+        overflow: hidden;
         
         @include respond(phone-port){
             height: 7.5rem;
@@ -239,11 +253,12 @@
 
     &__right-icon{
         font-size: 3rem;
-        margin-right: 2rem;
         color: $color-primary;
+        margin-right: 2rem;
 
         @include respond(phone){
             font-size: 3.5rem;
+            margin-right: 0;
         }
 
     }

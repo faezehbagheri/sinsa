@@ -7,6 +7,16 @@ $(document).ready(function () {
     // $("#body:not(.visit__option)").on('click' , function(){
     //     $('.visit__option').hide();
     // })
+    var activeBtnTab = $(".btn-tabs").find('a.btn-active').data('trigger');
+    $('#' + activeBtnTab).show();
+
+    $('.btn-tabs>a').on('click', function () {
+        var tabId = $(this).data('trigger');
+        $('#' + tabId).show();
+        $('.tab-amodi__tabcontent:not(#' + tabId + ')').hide();
+        $(this).addClass('btn-active');
+        $(this).siblings('a').removeClass('btn-active');
+    });
 
     var activeTabMobile = $(".tabs-mobile").find('a.active').data('trigger');
     $('#' + activeTabMobile).show();
@@ -69,10 +79,10 @@ $(document).ready(function () {
     )
 
     $('.tabcontent').hide();
-    var activeSearchTabMobile = $(".showTab").find('a.active').data('trigger');
+    var activeSearchTabMobile = $(".tabs").find('a.active').data('trigger');
     $('#' + activeSearchTabMobile).show();
 
-    $('.showTab>a').on('click', function () {
+    $('.tabs>a').on('click', function () {
         var tabId = $(this).data('trigger');
         $('#' + tabId).show();
         $('.tabcontent:not(#' + tabId + ')').hide();

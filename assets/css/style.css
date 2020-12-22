@@ -3796,6 +3796,15 @@ body-model-widget .body-model-popover {
     @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
       .search__box {
         height: 6rem; } }
+  .search__link-btn {
+    background-color: transparent;
+    border: none; }
+    @media only screen and (max-width: 30em) {
+      .search__link-btn {
+        background-color: #EEF1EF;
+        height: 100%;
+        width: 7rem;
+        text-align: center; } }
   .search__btn {
     width: 15rem;
     height: 6rem;
@@ -3906,7 +3915,8 @@ body-model-widget .body-model-popover {
     border-radius: 5rem;
     position: relative;
     margin: 2rem 1rem;
-    background-color: #fff; }
+    background-color: #fff;
+    overflow: hidden; }
     @media only screen and (max-width: 51em) {
       .search__search-container {
         height: 7.5rem; } }
@@ -3937,11 +3947,12 @@ body-model-widget .body-model-popover {
           font-size: 2rem; } }
   .search__right-icon {
     font-size: 3rem;
-    margin-right: 2rem;
-    color: #6DC2BE; }
+    color: #6DC2BE;
+    margin-right: 2rem; }
     @media only screen and (max-width: 30em) {
       .search__right-icon {
-        font-size: 3.5rem; } }
+        font-size: 3.5rem;
+        margin-right: 0; } }
   .search__left-icon {
     font-size: 3rem;
     position: absolute;
@@ -4475,6 +4486,9 @@ body-model-widget .body-model-popover {
     @media only screen and (max-width: 51em) {
       .tab-amodi__multipleTabs {
         width: 100%; } }
+    @media only screen and (max-width: 30em) {
+      .tab-amodi__multipleTabs {
+        display: none !important; } }
   .tab-amodi__buttons {
     width: 100%;
     position: absolute;
@@ -4491,10 +4505,13 @@ body-model-widget .body-model-popover {
       border: 1px solid white;
       background-color: rgba(0, 0, 0, 0.4);
       font-size: 2.5rem;
-      color: white; }
+      color: white;
+      transition: all .3s ease; }
     .tab-amodi__buttons i {
       font-size: 3.8rem;
       margin-left: 2.5rem; }
+    .tab-amodi__buttons .btn-active {
+      background-color: #90C73D; }
   @media only screen and (max-width: 30em) {
     .tab-amodi .showTab {
       display: flex;
