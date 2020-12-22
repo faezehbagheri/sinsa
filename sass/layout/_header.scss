@@ -23,7 +23,7 @@
         background-position: center;
     }
     
-    // @include respond(iphone){height: 55rem;}
+    @include respond(iphone){height: 92rem;}
     
     
     &__main{
@@ -39,7 +39,7 @@
         
         @include respond(iphone-port){font-size: 4rem;}
     
-        @include respond(iphone){margin-top: 18rem;}
+        @include respond(iphone){margin-top: 12rem;}
     }   
 
 }

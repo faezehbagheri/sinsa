@@ -44,7 +44,7 @@
         @include respond(phone){
             width: 99%;
             padding: 0;
-            height: 9.5rem;
+            height: 10rem;
             margin: 0 auto;
             // margin: 2rem 1rem 1rem;
             // margin: 0 1rem 1rem;
@@ -52,7 +52,7 @@
         }
 
         @include respond(iphone){
-            height: 6rem;
+            height: 7rem;
         }
     }
 
@@ -66,6 +66,8 @@
             width: 7rem;
             text-align: center;
         }
+
+        @include respond(iphone){width: 5rem;}
         
     }
 
@@ -146,6 +148,8 @@
                     .container{
                         height: 7rem;
 
+                        @include respond(iphone){height: 4rem;}
+
                         .select2{
                             height: 100%;
                             font-size: 2rem !important;
@@ -153,6 +157,8 @@
 
                         .select2-selection__rendered {
                             line-height: 6rem;
+
+                            @include respond(iphone){line-height: 4rem;}
                         }
                     }
                 }
@@ -182,6 +188,8 @@
 
             img{display: none;}
         }
+
+        @include respond(iphone){width: 11rem;}
     }
 
     &__advanced-btn{

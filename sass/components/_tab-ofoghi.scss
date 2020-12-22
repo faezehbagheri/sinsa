@@ -258,6 +258,13 @@
         height: 0;
         overflow: hidden;
         transition: all 1s ease;
+
+        img{
+            max-width: 98%;
+            margin: 1.5rem;
+            border-radius: 1.2rem;
+            // display: none;
+        }
     }
 
     &__pragraph{
