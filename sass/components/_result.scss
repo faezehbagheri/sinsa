@@ -5,33 +5,27 @@
     &__item{
         margin: 0;
         width: 100%;
-        padding: 3rem 1rem;
+        padding: 1.5rem 1rem;
         &:not(:last-of-type){
             border-bottom: 2px solid $color-secondary-light;
         }
 
-        @include respond(iphone){
-            padding: 2rem 1rem;
-        }
-
         @include respond(phone){
-            flex-direction: column;
-
-            & > div{
-                margin: 3rem 0 !important;
-                width: 85% !important;
-
-                &.visit-page{
-                    justify-content: center;
-                }
-            }
+            justify-content: start;
+            padding: 2.5rem 1rem;
 
             a{
                 font-size: 2.3rem !important;
-                text-align: center !important;
+                margin-right: 4rem;
             }
 
             i{display: none !important;}
+        }
+
+        @include respond(iphone){
+            padding: 1.5rem 1rem;
+
+            a{margin-right: 2rem;}
         }
     }
 
@@ -132,20 +126,25 @@
     }
 
     &__circle{
-        width: 15rem;
-        height:15rem;
+        width: 10.5rem;
+        height:10.5rem;
         border: 2px dashed $color-gray;
         border-radius: 100%;
         position: relative;
 
+        @include respond(phone){
+            width:  14.5rem;
+            height: 14.5rem;
+        }
+
         @include respond(iphone){
-            width:  12rem;
+            width: 12rem;
             height: 12rem;
         }
 
         .bar{
-            width:  12rem;
-            height: 12rem;
+            width:  9rem;
+            height: 9rem;
             position: relative;
             @include centerABS();
 

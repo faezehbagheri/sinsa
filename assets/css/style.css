@@ -3468,25 +3468,23 @@ body-model-widget .body-model-popover {
   .result__item {
     margin: 0;
     width: 100%;
-    padding: 3rem 1rem; }
+    padding: 1.5rem 1rem; }
     .result__item:not(:last-of-type) {
       border-bottom: 2px solid #B4D3D1; }
-    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
-      .result__item {
-        padding: 2rem 1rem; } }
     @media only screen and (max-width: 30em) {
       .result__item {
-        flex-direction: column; }
-        .result__item > div {
-          margin: 3rem 0 !important;
-          width: 85% !important; }
-          .result__item > div.visit-page {
-            justify-content: center; }
+        justify-content: start;
+        padding: 2.5rem 1rem; }
         .result__item a {
           font-size: 2.3rem !important;
-          text-align: center !important; }
+          margin-right: 4rem; }
         .result__item i {
           display: none !important; } }
+    @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+      .result__item {
+        padding: 1.5rem 1rem; }
+        .result__item a {
+          margin-right: 2rem; } }
   .result i {
     font-size: 2.5rem;
     color: #49838B;
@@ -3563,18 +3561,22 @@ body-model-widget .body-model-popover {
         font-size: 2rem;
         color: #707070; } }
   .result__circle {
-    width: 15rem;
-    height: 15rem;
+    width: 10.5rem;
+    height: 10.5rem;
     border: 2px dashed #707070;
     border-radius: 100%;
     position: relative; }
+    @media only screen and (max-width: 30em) {
+      .result__circle {
+        width: 14.5rem;
+        height: 14.5rem; } }
     @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
       .result__circle {
         width: 12rem;
         height: 12rem; } }
     .result__circle .bar {
-      width: 12rem;
-      height: 12rem;
+      width: 9rem;
+      height: 9rem;
       position: relative;
       position: absolute;
       top: 50%;
@@ -5382,8 +5384,8 @@ body-model-widget .body-model-popover {
   border-radius: 50%;
   -webkit-transform: translate(50%, 50%);
   transform: translate(50%, 50%);
-  width: 12rem;
-  height: 12rem;
+  width: 9rem;
+  height: 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5392,16 +5394,34 @@ body-model-widget .body-model-popover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 30em) {
+    .radialProgressBar {
+      height: 12rem;
+      width: 12rem; } }
+  @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+    .radialProgressBar {
+      height: 10rem;
+      width: 10rem; } }
 
 .radialProgressBar .overlay {
   border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   margin: auto;
   background: #fff;
   text-align: center;
-  padding-top: 30%;
-  font-size: 2.2rem; }
+  padding-top: 25%;
+  font-size: 1.6rem; }
+  @media only screen and (max-width: 30em) {
+    .radialProgressBar .overlay {
+      height: 10rem;
+      width: 10rem;
+      font-size: 2.2rem;
+      padding-top: 28%; } }
+  @media only screen and (max-width: 30em) and (-webkit-min-device-pixel-ratio: 2) {
+    .radialProgressBar .overlay {
+      height: 8rem;
+      width: 8rem; } }
 
 .progress-25 {
   background-image: -webkit-linear-gradient(72deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #90C73D 50%, #ddd 50%);
