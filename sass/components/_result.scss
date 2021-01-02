@@ -44,7 +44,7 @@
         font-size: 1.6rem;
         text-decoration: none;
         color: $color-gray;
-        width: 65%;
+        // width: 65%;
         text-align: right;
 
         @include respond(phone-port){font-size: 2rem;}
@@ -56,7 +56,7 @@
         margin-top: 3rem;
 
         a{
-            width: 16%;
+            // width: 16%;
             background-color: $color-secondary-light;
             color: white;
             padding:1rem 5rem;

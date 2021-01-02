@@ -3497,7 +3497,6 @@ body-model-widget .body-model-popover {
     font-size: 1.6rem;
     text-decoration: none;
     color: #707070;
-    width: 65%;
     text-align: right; }
     @media only screen and (max-width: 51em) {
       .result a,
@@ -3509,7 +3508,6 @@ body-model-widget .body-model-popover {
     direction: rtl;
     margin-top: 3rem; }
     .result__tab a {
-      width: 16%;
       background-color: #B4D3D1;
       color: white;
       padding: 1rem 5rem; }
