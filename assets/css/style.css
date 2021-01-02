@@ -3465,6 +3465,8 @@ body-model-widget .body-model-popover {
 .result {
   width: 90%;
   direction: rtl; }
+  .result .min-height {
+    min-height: 20rem; }
   .result__item {
     margin: 0;
     width: 100%;
