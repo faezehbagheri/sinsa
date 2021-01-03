@@ -66,6 +66,12 @@ function openIllnessTextMobile(selector){
     document.querySelector(selector).classList.toggle("activate-mobile");
 }
 
+function reademore(selector){
+  document.querySelector(selector + ' div.result__readmore').classList.toggle('show-more');
+  document.querySelector(selector + ' div button i.fa-angle-right').classList.toggle('display-none');
+  document.querySelector(selector + ' div button i.fa-angle-down').classList.toggle('display-inline');
+}
+
 var showOption = [false ,false ,false ,false ,false ,false ];
 var filterType = ["","takhasos" , "shahr" , "mahale" , "bime" , "jensiat" , "moshavere"];
 var id = 1;
